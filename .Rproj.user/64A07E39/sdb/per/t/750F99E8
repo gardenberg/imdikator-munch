@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1444226601342.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "750F99E8",
+    "lastKnownWriteTime" : 7602273,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "2z9q6t6xiv",
+        "caption" : "befolkning_verdensregion",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=befolkning_verdensregion&cache_key=2z9q6t6xiv",
+        "displayedObservations" : 10469,
+        "environment" : "",
+        "object" : "befolkning_verdensregion",
+        "totalObservations" : 10469,
+        "variables" : 12
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
