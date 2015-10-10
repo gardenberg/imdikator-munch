@@ -1,0 +1,24 @@
+Fylke nr & navn;fylke_nr;"Fylke
+navn"
+Nedbrytninger;;
+;;
+00 Hele landet;0;Hele landet
+01 Østfold;1;Østfold
+02 Akershus;2;Akershus
+03 Oslo;3;Oslo
+04 Hedmark;4;Hedmark
+05 Oppland;5;Oppland
+06 Buskerud;6;Buskerud
+07 Vestfold;7;Vestfold
+08 Telemark;8;Telemark
+09 Aust-Agder;9;Aust-Agder
+10 Vest-Agder;10;Vest-Agder
+11 Rogaland;11;Rogaland
+12 Hordaland;12;Hordaland
+14 Sogn og Fjordane;14;Sogn og Fjordane
+15 Møre og Romsdal;15;Møte og Romsdal
+16 Sør-Trøndelag;16;Sør-Trøndelag
+17 Nord-Trøndelag;17;Nord-Trøndelag
+18 Nordland;18;Nordland
+19 Troms Romsa;19;Troms Romsa
+20 Finnmark Finnmárku;20;Finnmark Finnmárku

@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1444248533916.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "FE0D0054",
+    "lastKnownWriteTime" : 578055781,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "8a5qcibhke",
+        "caption" : "kontroll_1",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=kontroll_1&cache_key=8a5qcibhke",
+        "displayedObservations" : "34713",
+        "environment" : "",
+        "object" : "kontroll_1",
+        "totalObservations" : "34713",
+        "variables" : "11"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

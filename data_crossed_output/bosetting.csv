@@ -1,0 +1,429 @@
+fylke;kommune;Alle kommuner;;2009;2010;2011;2012;2013
+ØSTFOLD;Halden;0101;Halden;;14;14;6;10
+ØSTFOLD;Moss;0104;Moss;34;43;31;34;23
+ØSTFOLD;Sarpsborg;0105;Sarpsborg;37;46;22;44;54
+ØSTFOLD;Fredrikstad;0106;Fredrikstad;52;67;50;48;47
+ØSTFOLD;Hvaler;0111;Hvaler;15;15;4;5;16
+ØSTFOLD;Aremark;0118;Aremark;;4;;;
+ØSTFOLD;Marker;0119;Marker;2;1;2;5;
+ØSTFOLD;Rømskog;0121;Rømskog;;;;;
+ØSTFOLD;Trøgstad;0122;Trøgstad;6;12;3;5;7
+ØSTFOLD;Spydeberg;0123;Spydeberg;5;8;5;11;7
+ØSTFOLD;Askim;0124;Askim;11;10;9;9;11
+ØSTFOLD;Eidsberg;0125;Eidsberg;12;11;17;7;5
+ØSTFOLD;Skiptvet;0127;Skiptvet;6;8;2;8;
+ØSTFOLD;Rakkestad;0128;Rakkestad;12;6;;;6
+ØSTFOLD;Råde;0135;Råde;8;11;1;11;1
+ØSTFOLD;Rygge;0136;Rygge;10;;4;4;4
+ØSTFOLD;Våler (Østfold);0137;Våler (Østfold);;;;;
+ØSTFOLD;Hobøl;0138;Hobøl;;;;;3
+AKERSHUS;Vestby;0211;Vestby;14;11;17;12;18
+AKERSHUS;Ski;0213;Ski;36;21;36;33;39
+AKERSHUS;Ås;0214;Ås;13;11;8;14;22
+AKERSHUS;Frogn;0215;Frogn;13;13;18;6;19
+AKERSHUS;Nesodden;0216;Nesodden;8;29;12;12;18
+AKERSHUS;Oppegård;0217;Oppegård;29;41;43;8;26
+AKERSHUS;Bærum;0219;Bærum;100;76;89;101;92
+AKERSHUS;Asker;0220;Asker;75;52;53;48;46
+AKERSHUS;Aurskog Høland;0221;Aurskog Høland;11;11;11;9;12
+AKERSHUS;Sørum;0226;Sørum;18;6;16;9;14
+AKERSHUS;Fet;0227;Fet;;9;3;13;10
+AKERSHUS;Rælingen;0228;Rælingen;16;19;14;15;13
+AKERSHUS;Enebakk;0229;Enebakk;2;8;5;5;4
+AKERSHUS;Lørenskog;0230;Lørenskog;36;21;28;23;23
+AKERSHUS;Skedsmo;0231;Skedsmo;63;49;56;53;78
+AKERSHUS;Nittedal;0233;Nittedal;13;10;8;10;19
+AKERSHUS;Gjerdrum;0234;Gjerdrum;4;;6;2;5
+AKERSHUS;Ullensaker;0235;Ullensaker;11;9;2;11;12
+AKERSHUS;Nes (Akershus);0236;Nes (Akershus);19;28;20;19;17
+AKERSHUS;Eidsvoll;0237;Eidsvoll;22;8;4;15;19
+AKERSHUS;Nannestad;0238;Nannestad;6;6;7;8;10
+AKERSHUS;Hurdal;0239;Hurdal;10;;;;
+OSLO;Oslo;0301;Oslo;376;372;432;459;468
+HEDMARK;Kongsvinger;0402;Kongsvinger;26;19;19;8;9
+HEDMARK;Hamar;0403;Hamar;39;43;41;40;45
+HEDMARK;Ringsaker;0412;Ringsaker;20;26;15;7;19
+HEDMARK;Løten;0415;Løten;14;16;12;8;15
+HEDMARK;Stange;0417;Stange;30;36;22;26;37
+HEDMARK;Nord-Odal;0418;Nord-Odal;;5;;1;1
+HEDMARK;Sør-Odal;0419;Sør-Odal;3;6;3;6;10
+HEDMARK;Eidskog;0420;Eidskog;12;10;2;1;1
+HEDMARK;Grue;0423;Grue;2;9;6;4;3
+HEDMARK;Åsnes;0425;Åsnes;18;8;3;14;10
+HEDMARK;Våler (Hedm.);0426;Våler (Hedm.);;;;;
+HEDMARK;Elverum;0427;Elverum;29;29;31;27;31
+HEDMARK;Trysil;0428;Trysil;9;13;14;9;7
+HEDMARK;Åmot;0429;Åmot;;4;;;3
+HEDMARK;Stor-Elvdal;0430;Stor-Elvdal;2;11;4;3;5
+HEDMARK;Rendalen;0432;Rendalen;;;;;7
+HEDMARK;Engerdal;0434;Engerdal;8;1;7;5;13
+HEDMARK;Tolga;0436;Tolga;2;9;7;7;3
+HEDMARK;Tynset;0437;Tynset;15;15;14;15;18
+HEDMARK;Alvdal;0438;Alvdal;6;11;8;5;7
+HEDMARK;Folldal;0439;Folldal;5;3;;;4
+HEDMARK;Os (Østerdalen);0441;Os (Hedm.);;3;10;1;4
+OPPLAND;Lillehammer;0501;Lillehammer;53;40;43;48;50
+OPPLAND;Gjøvik;0502;Gjøvik;53;38;48;44;46
+OPPLAND;Dovre;0511;Dovre;1;5;7;6;5
+OPPLAND;Lesja;0512;Lesja;;;;;
+OPPLAND;Skjåk;0513;Skjåk;;10;6;3;5
+OPPLAND;Lom;0514;Lom;8;5;12;;2
+OPPLAND;Vågå;0515;Vågå;10;10;10;10;14
+OPPLAND;Nord-Fron;0516;Nord-Fron;10;10;3;13;12
+OPPLAND;Sel;0517;Sel;2;1;13;6;13
+OPPLAND;Sør-Fron;0519;Sør-Fron;;4;;1;
+OPPLAND;Ringebu;0520;Ringebu;9;7;4;10;
+OPPLAND;Øyer;0521;Øyer;20;21;9;16;12
+OPPLAND;Gausdal;0522;Gausdal;10;2;4;5;5
+OPPLAND;Østre Toten;0528;Østre Toten;16;17;15;11;15
+OPPLAND;Vestre Toten;0529;Vestre Toten;17;14;26;12;21
+OPPLAND;Jevnaker;0532;Jevnaker;5;4;4;5;7
+OPPLAND;Lunner;0533;Lunner;26;25;24;33;30
+OPPLAND;Gran;0534;Gran;24;36;30;30;35
+OPPLAND;Søndre Land;0536;Søndre Land;6;7;;7;7
+OPPLAND;Nordre Land;0538;Nordre Land;16;17;13;15;15
+OPPLAND;Sør-Aurdal;0540;Sør-Aurdal;11;4;2;4;9
+OPPLAND;Etnedal;0541;Etnedal;8;6;3;2;6
+OPPLAND;Nord-Aurdal;0542;Nord-Aurdal;10;14;11;12;10
+OPPLAND;Vestre Slidre;0543;Vestre Slidre;8;7;8;;
+OPPLAND;Øystre Slidre;0544;Øystre Slidre;3;4;2;2;2
+OPPLAND;Vang;0545;Vang;2;2;2;2;1
+BUSKERUD;Drammen;0602;Drammen;74;82;97;133;115
+BUSKERUD;Kongsberg;0604;Kongsberg;32;41;32;23;32
+BUSKERUD;Ringerike;0605;Ringerike;24;21;23;29;23
+BUSKERUD;Hole;0612;Hole;6;3;1;4;10
+BUSKERUD;Flå;0615;Flå;;;;;
+BUSKERUD;Nes (Buskerud);0616;Nes (Busk.);9;6;;9;7
+BUSKERUD;Gol;0617;Gol;5;7;5;11;11
+BUSKERUD;Hemsedal;0618;Hemsedal;9;7;1;7;6
+BUSKERUD;Ål;0619;Ål;1;9;1;12;7
+BUSKERUD;Hol;0620;Hol;9;4;5;3;1
+BUSKERUD;Sigdal;0621;Sigdal;4;;1;4;8
+BUSKERUD;Krødsherad;0622;Krødsherad;;;;;
+BUSKERUD;Modum;0623;Modum;19;23;14;21;20
+BUSKERUD;Øvre Eiker;0624;Øvre Eiker;16;14;25;19;22
+BUSKERUD;Nedre Eiker;0625;Nedre Eiker;7;22;19;12;21
+BUSKERUD;Lier;0626;Lier;24;28;18;18;20
+BUSKERUD;Røyken;0627;Røyken;15;16;23;16;13
+BUSKERUD;Hurum;0628;Hurum;22;16;29;14;20
+BUSKERUD;Flesberg;0631;Flesberg;4;14;7;8;16
+BUSKERUD;Rollag;0632;Rollag;;;11;4;7
+BUSKERUD;Nore og Uvdal;0633;Nore og Uvdal;;13;13;7;7
+VESTFOLD;Horten;0701;Horten;22;17;18;21;39
+VESTFOLD;Holmestrand;0702;Holmestrand;3;12;9;9;7
+VESTFOLD;Tønsberg;0704;Tønsberg;19;26;26;23;22
+VESTFOLD;Sandefjord;0706;Sandefjord;22;19;20;30;30
+VESTFOLD;Larvik;0709;Larvik;48;51;42;32;30
+VESTFOLD;Svelvik;0711;Svelvik;15;1;;5;
+VESTFOLD;Sande (Vestfold);0713;Sande (Vestf.);15;15;8;11;8
+VESTFOLD;Hof;0714;Hof;;;;;3
+VESTFOLD;Re;0716;Re;11;9;7;5;10
+VESTFOLD;Andebu;0719;Andebu;;5;6;1;3
+VESTFOLD;Stokke;0720;Stokke;11;20;21;27;17
+VESTFOLD;Nøtterøy;0722;Nøtterøy;13;19;13;19;15
+VESTFOLD;Tjøme;0723;Tjøme;8;2;1;5;7
+VESTFOLD;Lardal;0728;Lardal;6;4;;4;1
+TELEMARK;Porsgrunn;0805;Porsgrunn;46;38;40;43;47
+TELEMARK;Skien;0806;Skien;120;119;126;95;62
+TELEMARK;Notodden;0807;Notodden;14;23;30;34;29
+TELEMARK;Siljan;0811;Siljan;10;4;7;15;11
+TELEMARK;Bamble;0814;Bamble;42;34;38;42;41
+TELEMARK;Kragerø;0815;Kragerø;35;31;37;37;40
+TELEMARK;Drangedal;0817;Drangedal;9;5;11;5;12
+TELEMARK;Nome;0819;Nome;13;10;10;11;10
+TELEMARK;Bø (Telemark);0821;Bø (Telemark);20;18;13;6;17
+TELEMARK;Sauherad;0822;Sauherad;28;27;14;23;14
+TELEMARK;Tinn;0826;Tinn;19;7;8;16;22
+TELEMARK;Hjartdal;0827;Hjartdal;;;;;7
+TELEMARK;Seljord;0828;Seljord;10;11;4;1;11
+TELEMARK;Kviteseid;0829;Kviteseid;;;;;
+TELEMARK;Nissedal;0830;Nissedal;;;;;
+TELEMARK;Fyresdal;0831;Fyresdal;6;14;8;5;5
+TELEMARK;Tokke;0833;Tokke;;;;;
+TELEMARK;Vinje;0834;Vinje;6;2;1;6;
+AUST-AGDER;Risør;0901;Risør;20;27;10;18;30
+AUST-AGDER;Grimstad;0904;Grimstad;37;40;37;21;37
+AUST-AGDER;Arendal;0906;Arendal;66;80;56;73;53
+AUST-AGDER;Gjerstad;0911;Gjerstad;22;14;7;11;14
+AUST-AGDER;Vegårshei;0912;Vegårshei;5;4;;;
+AUST-AGDER;Tvedestrand;0914;Tvedestrand;19;11;7;3;6
+AUST-AGDER;Froland;0919;Froland;;;3;11;
+AUST-AGDER;Lillesand;0926;Lillesand;9;12;13;13;11
+AUST-AGDER;Birkenes;0928;Birkenes;9;15;4;6;10
+AUST-AGDER;Åmli;0929;Åmli;8;;3;7;5
+AUST-AGDER;Iveland;0935;Iveland;6;4;;7;5
+AUST-AGDER;Evje og Hornnes;0937;Evje og Hornnes;18;11;;;8
+AUST-AGDER;Bygland;0938;Bygland;;;;;
+AUST-AGDER;Valle;0940;Valle;16;6;3;;9
+AUST-AGDER;Bykle;0941;Bykle;;;5;5;1
+VEST-AGDER;Kristiansand;1001;Kristiansand;176;131;126;128;152
+VEST-AGDER;Mandal;1002;Mandal;30;33;37;25;28
+VEST-AGDER;Farsund;1003;Farsund;10;16;10;17;19
+VEST-AGDER;Flekkefjord;1004;Flekkefjord;20;15;11;6;13
+VEST-AGDER;Vennesla;1014;Vennesla;14;22;17;20;22
+VEST-AGDER;Songdalen;1017;Songdalen;14;15;17;21;20
+VEST-AGDER;Søgne;1018;Søgne;14;26;16;19;12
+VEST-AGDER;Marnardal;1021;Marnardal;8;6;2;3;6
+VEST-AGDER;Åseral;1026;Åseral;14;;;;
+VEST-AGDER;Audnedal;1027;Audnedal;;;;;9
+VEST-AGDER;Lindesnes;1029;Lindesnes;9;10;11;6;15
+VEST-AGDER;Lyngdal;1032;Lyngdal;18;20;20;17;24
+VEST-AGDER;Hægebostad;1034;Hægebostad;12;7;3;1;
+VEST-AGDER;Kvinesdal;1037;Kvinesdal;14;15;10;15;25
+VEST-AGDER;Sirdal;1046;Sirdal;4;;;5;5
+ROGALAND;Eigersund;1101;Eigersund;25;18;19;20;40
+ROGALAND;Sandnes;1102;Sandnes;57;52;60;59;57
+ROGALAND;Stavanger;1103;Stavanger;114;110;94;103;95
+ROGALAND;Haugesund;1106;Haugesund;61;37;45;49;33
+ROGALAND;Sokndal;1111;Sokndal;;;;;
+ROGALAND;Lund;1112;Lund;5;11;6;7;11
+ROGALAND;Bjerkreim;1114;Bjerkreim;;;1;;
+ROGALAND;Hå;1119;Hå;13;1;1;11;10
+ROGALAND;Klepp;1120;Klepp;17;12;21;18;21
+ROGALAND;Time;1121;Time;25;18;16;14;18
+ROGALAND;Gjesdal;1122;Gjesdal;9;16;8;15;15
+ROGALAND;Sola;1124;Sola;17;15;18;16;12
+ROGALAND;Randaberg;1127;Randaberg;12;19;21;25;11
+ROGALAND;Forsand;1129;Forsand;;;;;
+ROGALAND;Strand;1130;Strand;10;9;24;14;23
+ROGALAND;Hjelmeland;1133;Hjelmeland;20;4;1;11;11
+ROGALAND;Suldal;1134;Suldal;14;16;19;1;3
+ROGALAND;Sauda;1135;Sauda;14;25;11;;10
+ROGALAND;Finnøy;1141;Finnøy;;;;;
+ROGALAND;Rennesøy;1142;Rennesøy;7;2;10;10;8
+ROGALAND;Kvitsøy;1144;Kvitsøy;;;;;
+ROGALAND;Bokn;1145;Bokn;;;;;
+ROGALAND;Tysvær;1146;Tysvær;28;8;14;19;25
+ROGALAND;Karmøy;1149;Karmøy;24;39;31;42;37
+ROGALAND;Utsira;1151;Utsira;;;;;
+ROGALAND;Vindafjord;1160;Vindafjord;12;13;4;22;10
+HORDALAND;Bergen;1201;Bergen;256;242;212;278;318
+HORDALAND;Etne;1211;Etne;;;;;12
+HORDALAND;Sveio;1216;Sveio;9;6;5;9;10
+HORDALAND;Bømlo;1219;Bømlo;21;9;16;17;16
+HORDALAND;Stord;1221;Stord;13;10;12;10;14
+HORDALAND;Fitjar;1222;Fitjar;;;;;
+HORDALAND;Tysnes;1223;Tysnes;;;;;
+HORDALAND;Kvinnherad;1224;Kvinnherad;14;10;16;23;7
+HORDALAND;Jondal;1227;Jondal;;;;;
+HORDALAND;Odda;1228;Odda;;;;;24
+HORDALAND;Ullensvang;1231;Ullensvang;13;13;13;15;16
+HORDALAND;Eidfjord;1232;Eidfjord;;;;;4
+HORDALAND;Ulvik;1233;Ulvik;;;;;
+HORDALAND;Granvin;1234;Granvin;;;;;
+HORDALAND;Voss;1235;Voss;30;14;17;15;25
+HORDALAND;Kvam;1238;Kvam;14;20;14;13;1
+HORDALAND;Fusa;1241;Fusa;;;;;
+HORDALAND;Samnanger;1242;Samnanger;3;12;1;;
+HORDALAND;Os (Hordaland);1243;Os (Hord.);8;10;10;9;9
+HORDALAND;Austevoll;1244;Austevoll;1;;;;2
+HORDALAND;Sund;1245;Sund;5;4;;2;2
+HORDALAND;Fjell;1246;Fjell;21;14;17;15;12
+HORDALAND;Askøy;1247;Askøy;29;16;28;25;22
+HORDALAND;Vaksdal;1251;Vaksdal;20;8;12;8;8
+HORDALAND;Modalen;1252;Modalen;;;;;
+HORDALAND;Osterøy;1253;Osterøy;;;;;
+HORDALAND;Meland;1256;Meland;14;16;10;;12
+HORDALAND;Øygarden;1259;Øygarden;;10;9;13;15
+HORDALAND;Radøy;1260;Radøy;5;4;;2;3
+HORDALAND;Lindås;1263;Lindås;6;5;5;10;14
+HORDALAND;Austrheim;1264;Austrheim;;1;;;4
+HORDALAND;Fedje;1265;Fedje;;;;;
+HORDALAND;Masfjorden;1266;Masfjorden;;;;;
+SOGN OG FJORDANE;Flora;1401;Flora;36;41;35;31;39
+SOGN OG FJORDANE;Gulen;1411;Gulen;;;;;
+SOGN OG FJORDANE;Solund;1412;Solund;;;;;
+SOGN OG FJORDANE;Hyllestad;1413;Hyllestad;;;;;7
+SOGN OG FJORDANE;Høyanger;1416;Høyanger;12;12;8;1;17
+SOGN OG FJORDANE;Vik;1417;Vik;5;3;;;1
+SOGN OG FJORDANE;Balestrand;1418;Balestrand;;11;9;;
+SOGN OG FJORDANE;Leikanger;1419;Leikanger;10;1;2;2;5
+SOGN OG FJORDANE;Sogndal;1420;Sogndal;9;20;22;16;34
+ROGALAND;Aurland;1421;Aurland;;;;;
+SOGN OG FJORDANE;Lærdal;1422;Lærdal;;;;;
+SOGN OG FJORDANE;Årdal;1424;Årdal;1;;;;
+SOGN OG FJORDANE;Luster;1426;Luster;;10;4;5;11
+ROGALAND;Askvoll;1428;Askvoll;;;;;
+SOGN OG FJORDANE;Fjaler;1429;Fjaler;;;;;
+SOGN OG FJORDANE;Gaular;1430;Gaular;;;;;
+SOGN OG FJORDANE;Jølster;1431;Jølster;5;10;7;6;2
+SOGN OG FJORDANE;Førde;1432;Førde;18;8;13;18;23
+SOGN OG FJORDANE;Naustdal;1433;Naustdal;;;;;
+SOGN OG FJORDANE;Bremanger;1438;Bremanger;;7;9;;
+SOGN OG FJORDANE;Vågsøy;1439;Vågsøy;;;;;
+SOGN OG FJORDANE;Selje;1441;Selje;;;;;
+SOGN OG FJORDANE;Eid;1443;Eid;6;7;15;3;9
+SOGN OG FJORDANE;Hornindal;1444;Hornindal;;;;;
+SOGN OG FJORDANE;Gloppen;1445;Gloppen;23;8;7;14;16
+SOGN OG FJORDANE;Stryn;1449;Stryn;25;15;20;13;20
+MØRE OG ROMSDAL;Molde;1502;Molde;45;25;48;53;53
+MØRE OG ROMSDAL;Ålesund;1504;Ålesund;36;36;30;32;40
+MØRE OG ROMSDAL;Kristiansund;1505;Kristiansund;37;29;32;30;42
+MØRE OG ROMSDAL;Vanylven;1511;Vanylven;;;;;
+MØRE OG ROMSDAL;Sande (M. og R.);1514;Sande (M. og R.);;;;;
+MØRE OG ROMSDAL;Herøy (Møre og Romsdal);1515;Herøy (M. og R.);3;4;13;6;10
+MØRE OG ROMSDAL;Ulstein;1516;Ulstein;9;17;13;19;21
+MØRE OG ROMSDAL;Hareid;1517;Hareid;12;12;3;11;
+MØRE OG ROMSDAL;Volda;1519;Volda;29;42;22;29;23
+MØRE OG ROMSDAL;Ørsta;1520;Ørsta;21;17;11;24;23
+MØRE OG ROMSDAL;Ørskog;1523;Ørskog;;;;1;4
+MØRE OG ROMSDAL;Norddal;1524;Norddal;;;;;
+MØRE OG ROMSDAL;Stranda;1525;Stranda;;;;;
+MØRE OG ROMSDAL;Stordal;1526;Stordal;1;;;;1
+MØRE OG ROMSDAL;Sykkylven;1528;Sykkylven;18;13;14;11;20
+MØRE OG ROMSDAL;Skodje;1529;Skodje;;;;;
+MØRE OG ROMSDAL;Sula;1531;Sula;;;4;;7
+MØRE OG ROMSDAL;Giske;1532;Giske;4;10;8;6;5
+MØRE OG ROMSDAL;Haram;1534;Haram;11;23;10;18;11
+MØRE OG ROMSDAL;Vestnes;1535;Vestnes;;;;2;17
+MØRE OG ROMSDAL;Rauma;1539;Rauma;;;;;
+MØRE OG ROMSDAL;Nesset;1543;Nesset;;;;;
+MØRE OG ROMSDAL;Midsund;1545;Midsund;;;;;
+MØRE OG ROMSDAL;Sandøy;1546;Sandøy;;;;;
+MØRE OG ROMSDAL;Aukra;1547;Aukra;2;3;;5;1
+MØRE OG ROMSDAL;Fræna;1548;Fræna;;3;9;;9
+MØRE OG ROMSDAL;Eide;1551;Eide;;6;2;5;3
+MØRE OG ROMSDAL;Averøy;1554;Averøy;;;;;15
+MØRE OG ROMSDAL;Gjemnes;1557;Gjemnes;;;;;
+MØRE OG ROMSDAL;Tingvoll;1560;Tingvoll;7;5;5;2;3
+MØRE OG ROMSDAL;Sunndal;1563;Sunndal;18;22;28;20;41
+MØRE OG ROMSDAL;Surnadal;1566;Surnadal;;;;;11
+MØRE OG ROMSDAL;Rindal;1567;Rindal;;;;;
+MØRE OG ROMSDAL;Halsa;1571;Halsa;;;;;
+MØRE OG ROMSDAL;Smøla;1573;Smøla;;;;;
+MØRE OG ROMSDAL;Aure;1576;Aure;15;7;15;10;13
+SØR-TRØNDELAG;Trondheim;1601;Trondheim;248;274;214;242;251
+SØR-TRØNDELAG;Hemne;1612;Hemne;5;4;;5;2
+SØR-TRØNDELAG;Snillfjord;1613;Snillfjord;;;;;
+SØR-TRØNDELAG;Hitra;1617;Hitra;11;9;10;;1
+SOGN OG FJORDANE;Frøya;1620;Frøya;;;;;
+SØR-TRØNDELAG;Ørland;1621;Ørland;;;;;
+SOGN OG FJORDANE;Agdenes;1622;Agdenes;;;;;
+SØR-TRØNDELAG;Rissa;1624;Rissa;;5;3;8;14
+SOGN OG FJORDANE;Bjugn;1627;Bjugn;;;;;
+SØR-TRØNDELAG;Åfjord;1630;Åfjord;;;;;1
+SØR-TRØNDELAG;Roan;1632;Roan;;;;;
+SØR-TRØNDELAG;Osen;1633;Osen;;;;;
+SØR-TRØNDELAG;Oppdal;1634;Oppdal;12;7;11;15;15
+SØR-TRØNDELAG;Rennebu;1635;Rennebu;;;;;11
+SØR-TRØNDELAG;Meldal;1636;Meldal;;;;;
+SØR-TRØNDELAG;Orkdal;1638;Orkdal;22;18;14;20;21
+SØR-TRØNDELAG;Røros;1640;Røros;7;1;;7;3
+SØR-TRØNDELAG;Holtålen;1644;Holtålen;;;;;
+SØR-TRØNDELAG;Midtre Gauldal;1648;Midtre Gauldal;10;5;4;16;9
+SØR-TRØNDELAG;Melhus;1653;Melhus;16;11;18;14;16
+SØR-TRØNDELAG;Skaun;1657;Skaun;13;4;5;3;4
+SØR-TRØNDELAG;Klæbu;1662;Klæbu;7;;;;
+SØR-TRØNDELAG;Malvik;1663;Malvik;10;7;9;9;13
+SØR-TRØNDELAG;Selbu;1664;Selbu;;;;;
+SØR-TRØNDELAG;Tydal;1665;Tydal;;;;;
+NORD-TRØNDELAG;Steinkjer;1702;Steinkjer;38;41;32;31;32
+NORD-TRØNDELAG;Namsos;1703;Namsos;29;36;36;41;43
+NORD-TRØNDELAG;Meråker;1711;Meråker;11;22;10;13;10
+NORD-TRØNDELAG;Stjørdal;1714;Stjørdal;45;37;36;40;37
+NORDLAND;Frosta;1717;Frosta;;;;;
+NORD-TRØNDELAG;Leksvik;1718;Leksvik;;5;2;7;11
+NORD-TRØNDELAG;Levanger;1719;Levanger;46;49;26;40;43
+NORD-TRØNDELAG;Verdal;1721;Verdal;30;18;19;24;25
+NORD-TRØNDELAG;Verran;1724;Verran;;10;5;6;17
+NORD-TRØNDELAG;Namdalseid;1725;Namdalseid;;;;;
+NORD-TRØNDELAG;Snåsa;1736;Snåsa;;;;;10
+NORD-TRØNDELAG;Lierne;1738;Lierne;;;;;
+NORD-TRØNDELAG;Røyrvik;1739;Røyrvik;;;;;
+NORD-TRØNDELAG;Namsskogan;1740;Namsskogan;;;;;
+NORD-TRØNDELAG;Grong;1742;Grong;26;17;12;15;11
+NORD-TRØNDELAG;Høylandet;1743;Høylandet;;;;;
+NORD-TRØNDELAG;Overhalla;1744;Overhalla;;15;9;4;10
+NORDLAND;Fosnes;1748;Fosnes;;;;;
+NORDLAND;Flatanger;1749;Flatanger;;;;;
+NORD-TRØNDELAG;Vikna;1750;Vikna;;15;10;13;10
+NORD-TRØNDELAG;Nærøy;1751;Nærøy;;15;12;18;20
+NORD-TRØNDELAG;Leka;1755;Leka;;;;;
+NORD-TRØNDELAG;Inderøy;1756;Inderøy (f.o.m. 2012);;15;2;11;10
+NORDLAND;Bodø;1804;Bodø;101;74;49;65;72
+NORDLAND;Narvik;1805;Narvik;31;31;35;22;42
+NORDLAND;Bindal;1811;Bindal;;;;;
+NORDLAND;Sømna;1812;Sømna;;;10;11;9
+NORDLAND;Brønnøy;1813;Brønnøy;17;18;15;13;19
+NORDLAND;Vega;1815;Vega;;;;;
+NORDLAND;Vevelstad;1816;Vevelstad;;;;;
+NORDLAND;Herøy (Nordland);1818;Herøy (Nordl.);6;6;8;;
+NORDLAND;Alstahaug;1820;Alstahaug;25;28;24;28;31
+NORDLAND;Leirfjord;1822;Leirfjord;12;14;9;12;21
+NORDLAND;Vefsn;1824;Vefsn;34;20;17;23;23
+NORDLAND;Grane;1825;Grane;;;;;
+NORDLAND;Hattfjelldal;1826;Hattfjelldal;12;;;10;1
+NORDLAND;Dønna;1827;Dønna;;;;;
+NORDLAND;Nesna;1828;Nesna;27;16;12;17;15
+NORDLAND;Hemnes;1832;Hemnes;12;5;;7;4
+NORDLAND;Rana;1833;Rana;35;35;44;40;42
+NORDLAND;Lurøy;1834;Lurøy;;;;;
+NORDLAND;Træna;1835;Træna;;;;;
+NORDLAND;Rødøy;1836;Rødøy;;;;;
+NORDLAND;Meløy;1837;Meløy;4;8;12;9;15
+NORDLAND;Gildeskål;1838;Gildeskål;;14;15;1;15
+NORDLAND;Beiarn;1839;Beiarn;;;;;9
+NORDLAND;Saltdal;1840;Saltdal;12;8;8;7;17
+NORDLAND;Fauske;1841;Fauske;19;12;26;14;15
+NORDLAND;Sørfold;1845;Sørfold;;;;;
+NORDLAND;Steigen;1848;Steigen;2;5;7;1;9
+NORDLAND;Hamarøy;1849;Hamarøy;8;10;8;8;16
+NORDLAND;Tysfjord;1850;Tysfjord;;;11;2;1
+NORDLAND;Lødingen;1851;Lødingen;5;12;15;13;7
+NORDLAND;Tjeldsund;1852;Tjeldsund;;;;;
+NORDLAND;Evenes;1853;Evenes;;11;;12;5
+NORDLAND;Ballangen;1854;Ballangen;13;11;5;6;10
+NORDLAND;Røst;1856;Røst;;;;;
+NORDLAND;Værøy;1857;Værøy;;;;;
+NORDLAND;Flakstad;1859;Flakstad;;;;;
+NORDLAND;Vestvågøy;1860;Vestvågøy;38;34;38;46;36
+NORDLAND;Vågan;1865;Vågan;29;26;33;33;37
+NORDLAND;Hadsel;1866;Hadsel;46;27;21;12;16
+NORDLAND;Bø (Nordland);1867;Bø (Nordl.);19;19;;;15
+NORDLAND;Øksnes;1868;Øksnes;;1;;6;6
+NORDLAND;Sortland;1870;Sortland;28;30;31;29;29
+NORDLAND;Andøy;1871;Andøy;18;29;24;23;28
+NORDLAND;Moskenes;1874;Moskenes;;;;;
+TROMS;Tromsø;1902;Tromsø;106;75;112;112;113
+TROMS;Harstad;1903;Harstad;83;61;61;58;60
+TROMS;Kvæfjord;1911;Kvæfjord;17;12;10;8;3
+TROMS;Skånland;1913;Skånland;10;11;;12;8
+TROMS;Ibestad;1917;Ibestad;1;3;10;5;2
+TROMS;Gratangen;1919;Gratangen;14;3;3;5;1
+TROMS;Lavangen;1920;Lavangen;;;;;
+TROMS;Bardu;1922;Bardu;8;6;10;4;12
+TROMS;Salangen;1923;Salangen;21;17;18;16;17
+TROMS;Målselv;1924;Målselv;1;12;12;10;13
+TROMS;Sørreisa;1925;Sørreisa;;;;;14
+TROMS;Dyrøy;1926;Dyrøy;;;;;
+TROMS;Tranøy;1927;Tranøy;15;6;16;12;16
+TROMS;Torsken;1928;Torsken;;;;;
+TROMS;Berg;1929;Berg;;16;14;;11
+TROMS;Lenvik;1931;Lenvik;36;24;25;30;54
+TELEMARK;Balsfjord;1933;Balsfjord;;;;;
+TROMS;Karlsøy;1936;Karlsøy;;;;;
+TROMS;Lyngen;1938;Lyngen;;;;;
+TROMS;Storfjord;1939;Storfjord;;;;5;4
+TROMS;Gáivuotna Kåfjord;1940;Gáivuotna Kåfjord;;;;;
+TROMS;Skjervøy;1941;Skjervøy;3;;;1;1
+TROMS;Nordreisa;1942;Nordreisa;27;;8;15;10
+TROMS;Kvænangen;1943;Kvænangen;;;;;
+FINNMARK;Vardø;2002;Vardø;;;;;
+FINNMARK;Vadsø;2003;Vadsø;106;67;78;69;93
+FINNMARK;Hammerfest;2004;Hammerfest;38;20;16;25;33
+FINNMARK;Guovdageaidnu-Kautokeino;2011;Guovdageaidnu Kautokeino;;;1;;
+FINNMARK;Alta;2012;Alta;35;36;25;32;37
+FINNMARK;Loppa;2014;Loppa;;;;;
+FINNMARK;Hasvik;2015;Hasvik;;;;;
+FINNMARK;Kvalsund;2017;Kvalsund;;;;;
+FINNMARK;Måsøy;2018;Måsøy;;;;;
+FINNMARK;Nordkapp;2019;Nordkapp;10;;8;1;
+FINNMARK;Porsanger;2020;Porsanger;;16;6;11;17
+FINNMARK;Kárásjohka Karasjok;2021;Kárásjohka Karasjok;;;;;
+FINNMARK;Lebesby;2022;Lebesby;;;;;
+FINNMARK;Gamvik;2023;Gamvik;;;;;
+FINNMARK;Berlevåg;2024;Berlevåg;;;;;
+FINNMARK;Deatnu Tana;2025;Deatnu Tana;;;;;
+FINNMARK;Unjargga-Nesseby;2027;Unjargga-Nesseby;;;;;8
+FINNMARK;Båtsfjord;2028;Båtsfjord;6;2;6;5;
+FINNMARK;Sør-Varanger;2030;Sør-Varanger;2;9;24;27;35
