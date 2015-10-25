@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1445790724334.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "58F5727",
+    "lastKnownWriteTime" : 1278173556,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "7najpyznty",
+        "caption" : "barnehagedeltakelse",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=barnehagedeltakelse&cache_key=7najpyznty",
+        "displayedObservations" : 428,
+        "environment" : "",
+        "object" : "barnehagedeltakelse",
+        "totalObservations" : 428,
+        "variables" : 73
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
