@@ -1,0 +1,841 @@
+tabell_navn;aar;naringsregion_nr;vreg_3;botid_5;enhet;tabellvariabel
+Befolkning_botid;2015;NULL;alle;alle;person;669380
+Befolkning_botid;2015;NULL;alle;0_4;person;257426
+Befolkning_botid;2015;NULL;alle;5_9;person;150008
+Befolkning_botid;2015;NULL;alle;10+;person;261946
+Befolkning_botid;2015;NULL;1;0_4;person;155959
+Befolkning_botid;2015;NULL;2;0_4;person;101467
+Befolkning_botid;2015;NULL;1;5_9;person;82437
+Befolkning_botid;2015;NULL;2;5_9;person;67571
+Befolkning_botid;2015;NULL;1;10+;person;88660
+Befolkning_botid;2015;NULL;2;10+;person;173286
+Befolkning_botid;2015;01;alle;alle;person;3096
+Befolkning_botid;2015;02;alle;alle;person;7265
+Befolkning_botid;2015;03;alle;alle;person;7631
+Befolkning_botid;2015;04;alle;alle;person;17035
+Befolkning_botid;2015;05;alle;alle;person;29376
+Befolkning_botid;2015;06;alle;alle;person;17146
+Befolkning_botid;2015;07;alle;alle;person;26398
+Befolkning_botid;2015;08;alle;alle;person;12591
+Befolkning_botid;2015;09;alle;alle;person;158835
+Befolkning_botid;2015;10;alle;alle;person;1168
+Befolkning_botid;2015;11;alle;alle;person;3910
+Befolkning_botid;2015;12;alle;alle;person;7630
+Befolkning_botid;2015;13;alle;alle;person;3072
+Befolkning_botid;2015;14;alle;alle;person;6028
+Befolkning_botid;2015;15;alle;alle;person;2393
+Befolkning_botid;2015;16;alle;alle;person;3510
+Befolkning_botid;2015;17;alle;alle;person;956
+Befolkning_botid;2015;18;alle;alle;person;1152
+Befolkning_botid;2015;19;alle;alle;person;1593
+Befolkning_botid;2015;20;alle;alle;person;28345
+Befolkning_botid;2015;21;alle;alle;person;2613
+Befolkning_botid;2015;22;alle;alle;person;4126
+Befolkning_botid;2015;23;alle;alle;person;1633
+Befolkning_botid;2015;24;alle;alle;person;4009
+Befolkning_botid;2015;25;alle;alle;person;14285
+Befolkning_botid;2015;26;alle;alle;person;10404
+Befolkning_botid;2015;27;alle;alle;person;12245
+Befolkning_botid;2015;28;alle;alle;person;1715
+Befolkning_botid;2015;29;alle;alle;person;1819
+Befolkning_botid;2015;30;alle;alle;person;1081
+Befolkning_botid;2015;31;alle;alle;person;722
+Befolkning_botid;2015;32;alle;alle;person;9504
+Befolkning_botid;2015;33;alle;alle;person;3466
+Befolkning_botid;2015;34;alle;alle;person;2406
+Befolkning_botid;2015;35;alle;alle;person;16384
+Befolkning_botid;2015;36;alle;alle;person;2340
+Befolkning_botid;2015;37;alle;alle;person;11117
+Befolkning_botid;2015;38;alle;alle;person;2455
+Befolkning_botid;2015;39;alle;alle;person;50477
+Befolkning_botid;2015;40;alle;alle;person;38241
+Befolkning_botid;2015;41;alle;alle;person;2312
+Befolkning_botid;2015;42;alle;alle;person;2201
+Befolkning_botid;2015;43;alle;alle;person;1015
+Befolkning_botid;2015;44;alle;alle;person;2726
+Befolkning_botid;2015;45;alle;alle;person;942
+Befolkning_botid;2015;46;alle;alle;person;5783
+Befolkning_botid;2015;47;alle;alle;person;5423
+Befolkning_botid;2015;48;alle;alle;person;916
+Befolkning_botid;2015;49;alle;alle;person;3321
+Befolkning_botid;2015;50;alle;alle;person;2747
+Befolkning_botid;2015;51;alle;alle;person;3010
+Befolkning_botid;2015;52;alle;alle;person;5271
+Befolkning_botid;2015;53;alle;alle;person;5523
+Befolkning_botid;2015;54;alle;alle;person;2106
+Befolkning_botid;2015;55;alle;alle;person;5031
+Befolkning_botid;2015;56;alle;alle;person;8833
+Befolkning_botid;2015;57;alle;alle;person;1446
+Befolkning_botid;2015;58;alle;alle;person;1627
+Befolkning_botid;2015;59;alle;alle;person;605
+Befolkning_botid;2015;60;alle;alle;person;1387
+Befolkning_botid;2015;61;alle;alle;person;24696
+Befolkning_botid;2015;62;alle;alle;person;483
+Befolkning_botid;2015;63;alle;alle;person;1922
+Befolkning_botid;2015;64;alle;alle;person;4233
+Befolkning_botid;2015;65;alle;alle;person;574
+Befolkning_botid;2015;66;alle;alle;person;710
+Befolkning_botid;2015;67;alle;alle;person;1295
+Befolkning_botid;2015;68;alle;alle;person;777
+Befolkning_botid;2015;69;alle;alle;person;1229
+Befolkning_botid;2015;70;alle;alle;person;264
+Befolkning_botid;2015;71;alle;alle;person;1026
+Befolkning_botid;2015;72;alle;alle;person;2067
+Befolkning_botid;2015;73;alle;alle;person;6112
+Befolkning_botid;2015;74;alle;alle;person;2402
+Befolkning_botid;2015;75;alle;alle;person;2328
+Befolkning_botid;2015;76;alle;alle;person;2793
+Befolkning_botid;2015;77;alle;alle;person;3111
+Befolkning_botid;2015;78;alle;alle;person;2210
+Befolkning_botid;2015;79;alle;alle;person;8760
+Befolkning_botid;2015;80;alle;alle;person;1001
+Befolkning_botid;2015;81;alle;alle;person;4249
+Befolkning_botid;2015;82;alle;alle;person;1027
+Befolkning_botid;2015;83;alle;alle;person;3714
+Befolkning_botid;2015;01; ;0_4;person;792
+Befolkning_botid;2015;01; ;5_9;person;587
+Befolkning_botid;2015;01; ;10+;person;1717
+Befolkning_botid;2015;02; ;0_4;person;2251
+Befolkning_botid;2015;02; ;5_9;person;1828
+Befolkning_botid;2015;02; ;10+;person;3186
+Befolkning_botid;2015;03; ;0_4;person;2278
+Befolkning_botid;2015;03; ;5_9;person;1700
+Befolkning_botid;2015;03; ;10+;person;3653
+Befolkning_botid;2015;04; ;0_4;person;4252
+Befolkning_botid;2015;04; ;5_9;person;3835
+Befolkning_botid;2015;04; ;10+;person;8948
+Befolkning_botid;2015;05; ;0_4;person;10046
+Befolkning_botid;2015;05; ;5_9;person;6512
+Befolkning_botid;2015;05; ;10+;person;12818
+Befolkning_botid;2015;06; ;0_4;person;5477
+Befolkning_botid;2015;06; ;5_9;person;3551
+Befolkning_botid;2015;06; ;10+;person;8118
+Befolkning_botid;2015;07; ;0_4;person;7799
+Befolkning_botid;2015;07; ;5_9;person;5571
+Befolkning_botid;2015;07; ;10+;person;13028
+Befolkning_botid;2015;08; ;0_4;person;4680
+Befolkning_botid;2015;08; ;5_9;person;2921
+Befolkning_botid;2015;08; ;10+;person;4990
+Befolkning_botid;2015;09; ;0_4;person;51414
+Befolkning_botid;2015;09; ;5_9;person;29222
+Befolkning_botid;2015;09; ;10+;person;78199
+Befolkning_botid;2015;10; ;0_4;person;556
+Befolkning_botid;2015;10; ;5_9;person;298
+Befolkning_botid;2015;10; ;10+;person;314
+Befolkning_botid;2015;11; ;0_4;person;1396
+Befolkning_botid;2015;11; ;5_9;person;798
+Befolkning_botid;2015;11; ;10+;person;1716
+Befolkning_botid;2015;12; ;0_4;person;3062
+Befolkning_botid;2015;12; ;5_9;person;1834
+Befolkning_botid;2015;12; ;10+;person;2734
+Befolkning_botid;2015;13; ;0_4;person;1357
+Befolkning_botid;2015;13; ;5_9;person;639
+Befolkning_botid;2015;13; ;10+;person;1076
+Befolkning_botid;2015;14; ;0_4;person;2552
+Befolkning_botid;2015;14; ;5_9;person;1333
+Befolkning_botid;2015;14; ;10+;person;2143
+Befolkning_botid;2015;15; ;0_4;person;1083
+Befolkning_botid;2015;15; ;5_9;person;564
+Befolkning_botid;2015;15; ;10+;person;746
+Befolkning_botid;2015;16; ;0_4;person;1298
+Befolkning_botid;2015;16; ;5_9;person;902
+Befolkning_botid;2015;16; ;10+;person;1310
+Befolkning_botid;2015;17; ;0_4;person;448
+Befolkning_botid;2015;17; ;5_9;person;293
+Befolkning_botid;2015;17; ;10+;person;215
+Befolkning_botid;2015;18; ;0_4;person;664
+Befolkning_botid;2015;18; ;5_9;person;276
+Befolkning_botid;2015;18; ;10+;person;212
+Befolkning_botid;2015;19; ;0_4;person;819
+Befolkning_botid;2015;19; ;5_9;person;411
+Befolkning_botid;2015;19; ;10+;person;363
+Befolkning_botid;2015;20; ;0_4;person;9203
+Befolkning_botid;2015;20; ;5_9;person;6292
+Befolkning_botid;2015;20; ;10+;person;12850
+Befolkning_botid;2015;21; ;0_4;person;1246
+Befolkning_botid;2015;21; ;5_9;person;694
+Befolkning_botid;2015;21; ;10+;person;673
+Befolkning_botid;2015;22; ;0_4;person;1886
+Befolkning_botid;2015;22; ;5_9;person;942
+Befolkning_botid;2015;22; ;10+;person;1298
+Befolkning_botid;2015;23; ;0_4;person;647
+Befolkning_botid;2015;23; ;5_9;person;524
+Befolkning_botid;2015;23; ;10+;person;462
+Befolkning_botid;2015;24; ;0_4;person;1419
+Befolkning_botid;2015;24; ;5_9;person;1051
+Befolkning_botid;2015;24; ;10+;person;1539
+Befolkning_botid;2015;25; ;0_4;person;5156
+Befolkning_botid;2015;25; ;5_9;person;3351
+Befolkning_botid;2015;25; ;10+;person;5778
+Befolkning_botid;2015;26; ;0_4;person;3278
+Befolkning_botid;2015;26; ;5_9;person;2493
+Befolkning_botid;2015;26; ;10+;person;4633
+Befolkning_botid;2015;27; ;0_4;person;3924
+Befolkning_botid;2015;27; ;5_9;person;2864
+Befolkning_botid;2015;27; ;10+;person;5457
+Befolkning_botid;2015;28; ;0_4;person;834
+Befolkning_botid;2015;28; ;5_9;person;376
+Befolkning_botid;2015;28; ;10+;person;505
+Befolkning_botid;2015;29; ;0_4;person;805
+Befolkning_botid;2015;29; ;5_9;person;383
+Befolkning_botid;2015;29; ;10+;person;631
+Befolkning_botid;2015;30; ;0_4;person;432
+Befolkning_botid;2015;30; ;5_9;person;303
+Befolkning_botid;2015;30; ;10+;person;346
+Befolkning_botid;2015;31; ;0_4;person;239
+Befolkning_botid;2015;31; ;5_9;person;248
+Befolkning_botid;2015;31; ;10+;person;235
+Befolkning_botid;2015;32; ;0_4;person;3598
+Befolkning_botid;2015;32; ;5_9;person;2478
+Befolkning_botid;2015;32; ;10+;person;3428
+Befolkning_botid;2015;33; ;0_4;person;1382
+Befolkning_botid;2015;33; ;5_9;person;867
+Befolkning_botid;2015;33; ;10+;person;1217
+Befolkning_botid;2015;34; ;0_4;person;925
+Befolkning_botid;2015;34; ;5_9;person;708
+Befolkning_botid;2015;34; ;10+;person;773
+Befolkning_botid;2015;35; ;0_4;person;5210
+Befolkning_botid;2015;35; ;5_9;person;3726
+Befolkning_botid;2015;35; ;10+;person;7448
+Befolkning_botid;2015;36; ;0_4;person;1031
+Befolkning_botid;2015;36; ;5_9;person;690
+Befolkning_botid;2015;36; ;10+;person;619
+Befolkning_botid;2015;37; ;0_4;person;4884
+Befolkning_botid;2015;37; ;5_9;person;3133
+Befolkning_botid;2015;37; ;10+;person;3100
+Befolkning_botid;2015;38; ;0_4;person;1182
+Befolkning_botid;2015;38; ;5_9;person;675
+Befolkning_botid;2015;38; ;10+;person;598
+Befolkning_botid;2015;39; ;0_4;person;22239
+Befolkning_botid;2015;39; ;5_9;person;12518
+Befolkning_botid;2015;39; ;10+;person;15720
+Befolkning_botid;2015;40; ;0_4;person;16685
+Befolkning_botid;2015;40; ;5_9;person;8671
+Befolkning_botid;2015;40; ;10+;person;12885
+Befolkning_botid;2015;41; ;0_4;person;1040
+Befolkning_botid;2015;41; ;5_9;person;689
+Befolkning_botid;2015;41; ;10+;person;583
+Befolkning_botid;2015;42; ;0_4;person;1109
+Befolkning_botid;2015;42; ;5_9;person;620
+Befolkning_botid;2015;42; ;10+;person;472
+Befolkning_botid;2015;43; ;0_4;person;522
+Befolkning_botid;2015;43; ;5_9;person;239
+Befolkning_botid;2015;43; ;10+;person;254
+Befolkning_botid;2015;44; ;0_4;person;1268
+Befolkning_botid;2015;44; ;5_9;person;947
+Befolkning_botid;2015;44; ;10+;person;511
+Befolkning_botid;2015;45; ;0_4;person;384
+Befolkning_botid;2015;45; ;5_9;person;370
+Befolkning_botid;2015;45; ;10+;person;188
+Befolkning_botid;2015;46; ;0_4;person;2809
+Befolkning_botid;2015;46; ;5_9;person;1638
+Befolkning_botid;2015;46; ;10+;person;1336
+Befolkning_botid;2015;47; ;0_4;person;2319
+Befolkning_botid;2015;47; ;5_9;person;1582
+Befolkning_botid;2015;47; ;10+;person;1522
+Befolkning_botid;2015;48; ;0_4;person;530
+Befolkning_botid;2015;48; ;5_9;person;206
+Befolkning_botid;2015;48; ;10+;person;180
+Befolkning_botid;2015;49; ;0_4;person;1668
+Befolkning_botid;2015;49; ;5_9;person;844
+Befolkning_botid;2015;49; ;10+;person;809
+Befolkning_botid;2015;50; ;0_4;person;1429
+Befolkning_botid;2015;50; ;5_9;person;627
+Befolkning_botid;2015;50; ;10+;person;691
+Befolkning_botid;2015;51; ;0_4;person;1554
+Befolkning_botid;2015;51; ;5_9;person;718
+Befolkning_botid;2015;51; ;10+;person;738
+Befolkning_botid;2015;52; ;0_4;person;2673
+Befolkning_botid;2015;52; ;5_9;person;1421
+Befolkning_botid;2015;52; ;10+;person;1177
+Befolkning_botid;2015;53; ;0_4;person;2798
+Befolkning_botid;2015;53; ;5_9;person;1459
+Befolkning_botid;2015;53; ;10+;person;1266
+Befolkning_botid;2015;54; ;0_4;person;934
+Befolkning_botid;2015;54; ;5_9;person;656
+Befolkning_botid;2015;54; ;10+;person;516
+Befolkning_botid;2015;55; ;0_4;person;2738
+Befolkning_botid;2015;55; ;5_9;person;1236
+Befolkning_botid;2015;55; ;10+;person;1057
+Befolkning_botid;2015;56; ;0_4;person;4571
+Befolkning_botid;2015;56; ;5_9;person;2141
+Befolkning_botid;2015;56; ;10+;person;2121
+Befolkning_botid;2015;57; ;0_4;person;783
+Befolkning_botid;2015;57; ;5_9;person;373
+Befolkning_botid;2015;57; ;10+;person;290
+Befolkning_botid;2015;58; ;0_4;person;896
+Befolkning_botid;2015;58; ;5_9;person;568
+Befolkning_botid;2015;58; ;10+;person;163
+Befolkning_botid;2015;59; ;0_4;person;312
+Befolkning_botid;2015;59; ;5_9;person;162
+Befolkning_botid;2015;59; ;10+;person;131
+Befolkning_botid;2015;60; ;0_4;person;589
+Befolkning_botid;2015;60; ;5_9;person;395
+Befolkning_botid;2015;60; ;10+;person;403
+Befolkning_botid;2015;61; ;0_4;person;10736
+Befolkning_botid;2015;61; ;5_9;person;5616
+Befolkning_botid;2015;61; ;10+;person;8344
+Befolkning_botid;2015;62; ;0_4;person;196
+Befolkning_botid;2015;62; ;5_9;person;103
+Befolkning_botid;2015;62; ;10+;person;184
+Befolkning_botid;2015;63; ;0_4;person;900
+Befolkning_botid;2015;63; ;5_9;person;435
+Befolkning_botid;2015;63; ;10+;person;587
+Befolkning_botid;2015;64; ;0_4;person;2049
+Befolkning_botid;2015;64; ;5_9;person;1123
+Befolkning_botid;2015;64; ;10+;person;1061
+Befolkning_botid;2015;65; ;0_4;person;311
+Befolkning_botid;2015;65; ;5_9;person;111
+Befolkning_botid;2015;65; ;10+;person;152
+Befolkning_botid;2015;66; ;0_4;person;417
+Befolkning_botid;2015;66; ;5_9;person;173
+Befolkning_botid;2015;66; ;10+;person;120
+Befolkning_botid;2015;67; ;0_4;person;673
+Befolkning_botid;2015;67; ;5_9;person;287
+Befolkning_botid;2015;67; ;10+;person;335
+Befolkning_botid;2015;68; ;0_4;person;412
+Befolkning_botid;2015;68; ;5_9;person;180
+Befolkning_botid;2015;68; ;10+;person;185
+Befolkning_botid;2015;69; ;0_4;person;767
+Befolkning_botid;2015;69; ;5_9;person;213
+Befolkning_botid;2015;69; ;10+;person;249
+Befolkning_botid;2015;70; ;0_4;person;144
+Befolkning_botid;2015;70; ;5_9;person;81
+Befolkning_botid;2015;70; ;10+;person;39
+Befolkning_botid;2015;71; ;0_4;person;575
+Befolkning_botid;2015;71; ;5_9;person;183
+Befolkning_botid;2015;71; ;10+;person;268
+Befolkning_botid;2015;72; ;0_4;person;1081
+Befolkning_botid;2015;72; ;5_9;person;465
+Befolkning_botid;2015;72; ;10+;person;521
+Befolkning_botid;2015;73; ;0_4;person;3111
+Befolkning_botid;2015;73; ;5_9;person;1354
+Befolkning_botid;2015;73; ;10+;person;1647
+Befolkning_botid;2015;74; ;0_4;person;1351
+Befolkning_botid;2015;74; ;5_9;person;456
+Befolkning_botid;2015;74; ;10+;person;595
+Befolkning_botid;2015;75; ;0_4;person;1284
+Befolkning_botid;2015;75; ;5_9;person;574
+Befolkning_botid;2015;75; ;10+;person;470
+Befolkning_botid;2015;76; ;0_4;person;1579
+Befolkning_botid;2015;76; ;5_9;person;582
+Befolkning_botid;2015;76; ;10+;person;632
+Befolkning_botid;2015;77; ;0_4;person;1568
+Befolkning_botid;2015;77; ;5_9;person;822
+Befolkning_botid;2015;77; ;10+;person;721
+Befolkning_botid;2015;78; ;0_4;person;1338
+Befolkning_botid;2015;78; ;5_9;person;403
+Befolkning_botid;2015;78; ;10+;person;469
+Befolkning_botid;2015;79; ;0_4;person;4347
+Befolkning_botid;2015;79; ;5_9;person;1869
+Befolkning_botid;2015;79; ;10+;person;2544
+Befolkning_botid;2015;80; ;0_4;person;534
+Befolkning_botid;2015;80; ;5_9;person;215
+Befolkning_botid;2015;80; ;10+;person;252
+Befolkning_botid;2015;81; ;0_4;person;2259
+Befolkning_botid;2015;81; ;5_9;person;1048
+Befolkning_botid;2015;81; ;10+;person;942
+Befolkning_botid;2015;82; ;0_4;person;418
+Befolkning_botid;2015;82; ;5_9;person;163
+Befolkning_botid;2015;82; ;10+;person;446
+Befolkning_botid;2015;83; ;0_4;person;2021
+Befolkning_botid;2015;83; ;5_9;person;599
+Befolkning_botid;2015;83; ;10+;person;1094
+Befolkning_botid;2015;01;1;0_4;person;522
+Befolkning_botid;2015;01;2;0_4;person;270
+Befolkning_botid;2015;01;1;5_9;person;273
+Befolkning_botid;2015;01;2;5_9;person;314
+Befolkning_botid;2015;01;1;10+;person;672
+Befolkning_botid;2015;01;2;10+;person;1045
+Befolkning_botid;2015;02;1;0_4;person;1500
+Befolkning_botid;2015;02;2;0_4;person;751
+Befolkning_botid;2015;02;1;5_9;person;1090
+Befolkning_botid;2015;02;2;5_9;person;738
+Befolkning_botid;2015;02;1;10+;person;1199
+Befolkning_botid;2015;02;2;10+;person;1987
+Befolkning_botid;2015;03;1;0_4;person;1449
+Befolkning_botid;2015;03;2;0_4;person;829
+Befolkning_botid;2015;03;1;5_9;person;1019
+Befolkning_botid;2015;03;2;5_9;person;681
+Befolkning_botid;2015;03;1;10+;person;1284
+Befolkning_botid;2015;03;2;10+;person;2369
+Befolkning_botid;2015;04;1;0_4;person;2571
+Befolkning_botid;2015;04;2;0_4;person;1681
+Befolkning_botid;2015;04;1;5_9;person;1708
+Befolkning_botid;2015;04;2;5_9;person;2127
+Befolkning_botid;2015;04;1;10+;person;2428
+Befolkning_botid;2015;04;2;10+;person;6520
+Befolkning_botid;2015;05;1;0_4;person;5998
+Befolkning_botid;2015;05;2;0_4;person;4048
+Befolkning_botid;2015;05;1;5_9;person;3839
+Befolkning_botid;2015;05;2;5_9;person;2673
+Befolkning_botid;2015;05;1;10+;person;5922
+Befolkning_botid;2015;05;2;10+;person;6896
+Befolkning_botid;2015;06;1;0_4;person;3314
+Befolkning_botid;2015;06;2;0_4;person;2163
+Befolkning_botid;2015;06;1;5_9;person;2013
+Befolkning_botid;2015;06;2;5_9;person;1538
+Befolkning_botid;2015;06;1;10+;person;3849
+Befolkning_botid;2015;06;2;10+;person;4269
+Befolkning_botid;2015;07;1;0_4;person;5273
+Befolkning_botid;2015;07;2;0_4;person;2526
+Befolkning_botid;2015;07;1;5_9;person;3020
+Befolkning_botid;2015;07;2;5_9;person;2551
+Befolkning_botid;2015;07;1;10+;person;3536
+Befolkning_botid;2015;07;2;10+;person;9492
+Befolkning_botid;2015;08;1;0_4;person;3357
+Befolkning_botid;2015;08;2;0_4;person;1323
+Befolkning_botid;2015;08;1;5_9;person;1825
+Befolkning_botid;2015;08;2;5_9;person;1096
+Befolkning_botid;2015;08;1;10+;person;1863
+Befolkning_botid;2015;08;2;10+;person;3127
+Befolkning_botid;2015;09;1;0_4;person;30342
+Befolkning_botid;2015;09;2;0_4;person;21072
+Befolkning_botid;2015;09;1;5_9;person;13614
+Befolkning_botid;2015;09;2;5_9;person;15608
+Befolkning_botid;2015;09;1;10+;person;17195
+Befolkning_botid;2015;09;2;10+;person;61004
+Befolkning_botid;2015;10;1;0_4;person;321
+Befolkning_botid;2015;10;2;0_4;person;235
+Befolkning_botid;2015;10;1;5_9;person;203
+Befolkning_botid;2015;10;2;5_9;person;95
+Befolkning_botid;2015;10;1;10+;person;182
+Befolkning_botid;2015;10;2;10+;person;132
+Befolkning_botid;2015;11;1;0_4;person;684
+Befolkning_botid;2015;11;2;0_4;person;712
+Befolkning_botid;2015;11;1;5_9;person;430
+Befolkning_botid;2015;11;2;5_9;person;368
+Befolkning_botid;2015;11;1;10+;person;824
+Befolkning_botid;2015;11;2;10+;person;892
+Befolkning_botid;2015;12;1;0_4;person;1776
+Befolkning_botid;2015;12;2;0_4;person;1286
+Befolkning_botid;2015;12;1;5_9;person;904
+Befolkning_botid;2015;12;2;5_9;person;930
+Befolkning_botid;2015;12;1;10+;person;1215
+Befolkning_botid;2015;12;2;10+;person;1519
+Befolkning_botid;2015;13;1;0_4;person;697
+Befolkning_botid;2015;13;2;0_4;person;660
+Befolkning_botid;2015;13;1;5_9;person;323
+Befolkning_botid;2015;13;2;5_9;person;316
+Befolkning_botid;2015;13;1;10+;person;546
+Befolkning_botid;2015;13;2;10+;person;530
+Befolkning_botid;2015;14;1;0_4;person;1351
+Befolkning_botid;2015;14;2;0_4;person;1201
+Befolkning_botid;2015;14;1;5_9;person;664
+Befolkning_botid;2015;14;2;5_9;person;669
+Befolkning_botid;2015;14;1;10+;person;751
+Befolkning_botid;2015;14;2;10+;person;1392
+Befolkning_botid;2015;15;1;0_4;person;504
+Befolkning_botid;2015;15;2;0_4;person;579
+Befolkning_botid;2015;15;1;5_9;person;313
+Befolkning_botid;2015;15;2;5_9;person;251
+Befolkning_botid;2015;15;1;10+;person;353
+Befolkning_botid;2015;15;2;10+;person;393
+Befolkning_botid;2015;16;1;0_4;person;739
+Befolkning_botid;2015;16;2;0_4;person;559
+Befolkning_botid;2015;16;1;5_9;person;403
+Befolkning_botid;2015;16;2;5_9;person;499
+Befolkning_botid;2015;16;1;10+;person;584
+Befolkning_botid;2015;16;2;10+;person;726
+Befolkning_botid;2015;17;1;0_4;person;294
+Befolkning_botid;2015;17;2;0_4;person;154
+Befolkning_botid;2015;17;1;5_9;person;230
+Befolkning_botid;2015;17;2;5_9;person;63
+Befolkning_botid;2015;17;1;10+;person;117
+Befolkning_botid;2015;17;2;10+;person;98
+Befolkning_botid;2015;18;1;0_4;person;270
+Befolkning_botid;2015;18;2;0_4;person;394
+Befolkning_botid;2015;18;1;5_9;person;174
+Befolkning_botid;2015;18;2;5_9;person;102
+Befolkning_botid;2015;18;1;10+;person;126
+Befolkning_botid;2015;18;2;10+;person;86
+Befolkning_botid;2015;19;1;0_4;person;460
+Befolkning_botid;2015;19;2;0_4;person;359
+Befolkning_botid;2015;19;1;5_9;person;309
+Befolkning_botid;2015;19;2;5_9;person;102
+Befolkning_botid;2015;19;1;10+;person;216
+Befolkning_botid;2015;19;2;10+;person;147
+Befolkning_botid;2015;20;1;0_4;person;6040
+Befolkning_botid;2015;20;2;0_4;person;3163
+Befolkning_botid;2015;20;1;5_9;person;3546
+Befolkning_botid;2015;20;2;5_9;person;2746
+Befolkning_botid;2015;20;1;10+;person;3895
+Befolkning_botid;2015;20;2;10+;person;8955
+Befolkning_botid;2015;21;1;0_4;person;832
+Befolkning_botid;2015;21;2;0_4;person;414
+Befolkning_botid;2015;21;1;5_9;person;520
+Befolkning_botid;2015;21;2;5_9;person;174
+Befolkning_botid;2015;21;1;10+;person;430
+Befolkning_botid;2015;21;2;10+;person;243
+Befolkning_botid;2015;22;1;0_4;person;1007
+Befolkning_botid;2015;22;2;0_4;person;879
+Befolkning_botid;2015;22;1;5_9;person;479
+Befolkning_botid;2015;22;2;5_9;person;463
+Befolkning_botid;2015;22;1;10+;person;610
+Befolkning_botid;2015;22;2;10+;person;688
+Befolkning_botid;2015;23;1;0_4;person;438
+Befolkning_botid;2015;23;2;0_4;person;209
+Befolkning_botid;2015;23;1;5_9;person;354
+Befolkning_botid;2015;23;2;5_9;person;170
+Befolkning_botid;2015;23;1;10+;person;238
+Befolkning_botid;2015;23;2;10+;person;224
+Befolkning_botid;2015;24;1;0_4;person;906
+Befolkning_botid;2015;24;2;0_4;person;513
+Befolkning_botid;2015;24;1;5_9;person;641
+Befolkning_botid;2015;24;2;5_9;person;410
+Befolkning_botid;2015;24;1;10+;person;658
+Befolkning_botid;2015;24;2;10+;person;881
+Befolkning_botid;2015;25;1;0_4;person;3310
+Befolkning_botid;2015;25;2;0_4;person;1846
+Befolkning_botid;2015;25;1;5_9;person;2048
+Befolkning_botid;2015;25;2;5_9;person;1303
+Befolkning_botid;2015;25;1;10+;person;2458
+Befolkning_botid;2015;25;2;10+;person;3320
+Befolkning_botid;2015;26;1;0_4;person;2135
+Befolkning_botid;2015;26;2;0_4;person;1143
+Befolkning_botid;2015;26;1;5_9;person;1422
+Befolkning_botid;2015;26;2;5_9;person;1071
+Befolkning_botid;2015;26;1;10+;person;1654
+Befolkning_botid;2015;26;2;10+;person;2979
+Befolkning_botid;2015;27;1;0_4;person;1778
+Befolkning_botid;2015;27;2;0_4;person;2146
+Befolkning_botid;2015;27;1;5_9;person;1219
+Befolkning_botid;2015;27;2;5_9;person;1645
+Befolkning_botid;2015;27;1;10+;person;1906
+Befolkning_botid;2015;27;2;10+;person;3551
+Befolkning_botid;2015;28;1;0_4;person;483
+Befolkning_botid;2015;28;2;0_4;person;351
+Befolkning_botid;2015;28;1;5_9;person;179
+Befolkning_botid;2015;28;2;5_9;person;197
+Befolkning_botid;2015;28;1;10+;person;220
+Befolkning_botid;2015;28;2;10+;person;285
+Befolkning_botid;2015;29;1;0_4;person;360
+Befolkning_botid;2015;29;2;0_4;person;445
+Befolkning_botid;2015;29;1;5_9;person;205
+Befolkning_botid;2015;29;2;5_9;person;178
+Befolkning_botid;2015;29;1;10+;person;303
+Befolkning_botid;2015;29;2;10+;person;328
+Befolkning_botid;2015;30;1;0_4;person;304
+Befolkning_botid;2015;30;2;0_4;person;128
+Befolkning_botid;2015;30;1;5_9;person;241
+Befolkning_botid;2015;30;2;5_9;person;62
+Befolkning_botid;2015;30;1;10+;person;232
+Befolkning_botid;2015;30;2;10+;person;114
+Befolkning_botid;2015;31;1;0_4;person;107
+Befolkning_botid;2015;31;2;0_4;person;132
+Befolkning_botid;2015;31;1;5_9;person;121
+Befolkning_botid;2015;31;2;5_9;person;127
+Befolkning_botid;2015;31;1;10+;person;112
+Befolkning_botid;2015;31;2;10+;person;123
+Befolkning_botid;2015;32;1;0_4;person;2003
+Befolkning_botid;2015;32;2;0_4;person;1595
+Befolkning_botid;2015;32;1;5_9;person;1476
+Befolkning_botid;2015;32;2;5_9;person;1002
+Befolkning_botid;2015;32;1;10+;person;1561
+Befolkning_botid;2015;32;2;10+;person;1867
+Befolkning_botid;2015;33;1;0_4;person;608
+Befolkning_botid;2015;33;2;0_4;person;774
+Befolkning_botid;2015;33;1;5_9;person;535
+Befolkning_botid;2015;33;2;5_9;person;332
+Befolkning_botid;2015;33;1;10+;person;678
+Befolkning_botid;2015;33;2;10+;person;539
+Befolkning_botid;2015;34;1;0_4;person;446
+Befolkning_botid;2015;34;2;0_4;person;479
+Befolkning_botid;2015;34;1;5_9;person;456
+Befolkning_botid;2015;34;2;5_9;person;252
+Befolkning_botid;2015;34;1;10+;person;377
+Befolkning_botid;2015;34;2;10+;person;396
+Befolkning_botid;2015;35;1;0_4;person;2559
+Befolkning_botid;2015;35;2;0_4;person;2651
+Befolkning_botid;2015;35;1;5_9;person;1747
+Befolkning_botid;2015;35;2;5_9;person;1979
+Befolkning_botid;2015;35;1;10+;person;2347
+Befolkning_botid;2015;35;2;10+;person;5101
+Befolkning_botid;2015;36;1;0_4;person;588
+Befolkning_botid;2015;36;2;0_4;person;443
+Befolkning_botid;2015;36;1;5_9;person;424
+Befolkning_botid;2015;36;2;5_9;person;266
+Befolkning_botid;2015;36;1;10+;person;324
+Befolkning_botid;2015;36;2;10+;person;295
+Befolkning_botid;2015;37;1;0_4;person;3387
+Befolkning_botid;2015;37;2;0_4;person;1497
+Befolkning_botid;2015;37;1;5_9;person;2031
+Befolkning_botid;2015;37;2;5_9;person;1102
+Befolkning_botid;2015;37;1;10+;person;1284
+Befolkning_botid;2015;37;2;10+;person;1816
+Befolkning_botid;2015;38;1;0_4;person;767
+Befolkning_botid;2015;38;2;0_4;person;415
+Befolkning_botid;2015;38;1;5_9;person;506
+Befolkning_botid;2015;38;2;5_9;person;169
+Befolkning_botid;2015;38;1;10+;person;302
+Befolkning_botid;2015;38;2;10+;person;296
+Befolkning_botid;2015;39;1;0_4;person;14595
+Befolkning_botid;2015;39;2;0_4;person;7644
+Befolkning_botid;2015;39;1;5_9;person;7439
+Befolkning_botid;2015;39;2;5_9;person;5079
+Befolkning_botid;2015;39;1;10+;person;5738
+Befolkning_botid;2015;39;2;10+;person;9982
+Befolkning_botid;2015;40;1;0_4;person;10770
+Befolkning_botid;2015;40;2;0_4;person;5915
+Befolkning_botid;2015;40;1;5_9;person;4747
+Befolkning_botid;2015;40;2;5_9;person;3924
+Befolkning_botid;2015;40;1;10+;person;3955
+Befolkning_botid;2015;40;2;10+;person;8930
+Befolkning_botid;2015;41;1;0_4;person;819
+Befolkning_botid;2015;41;2;0_4;person;221
+Befolkning_botid;2015;41;1;5_9;person;529
+Befolkning_botid;2015;41;2;5_9;person;160
+Befolkning_botid;2015;41;1;10+;person;287
+Befolkning_botid;2015;41;2;10+;person;296
+Befolkning_botid;2015;42;1;0_4;person;645
+Befolkning_botid;2015;42;2;0_4;person;464
+Befolkning_botid;2015;42;1;5_9;person;440
+Befolkning_botid;2015;42;2;5_9;person;180
+Befolkning_botid;2015;42;1;10+;person;253
+Befolkning_botid;2015;42;2;10+;person;219
+Befolkning_botid;2015;43;1;0_4;person;316
+Befolkning_botid;2015;43;2;0_4;person;206
+Befolkning_botid;2015;43;1;5_9;person;116
+Befolkning_botid;2015;43;2;5_9;person;123
+Befolkning_botid;2015;43;1;10+;person;150
+Befolkning_botid;2015;43;2;10+;person;104
+Befolkning_botid;2015;44;1;0_4;person;896
+Befolkning_botid;2015;44;2;0_4;person;372
+Befolkning_botid;2015;44;1;5_9;person;715
+Befolkning_botid;2015;44;2;5_9;person;232
+Befolkning_botid;2015;44;1;10+;person;253
+Befolkning_botid;2015;44;2;10+;person;258
+Befolkning_botid;2015;45;1;0_4;person;264
+Befolkning_botid;2015;45;2;0_4;person;120
+Befolkning_botid;2015;45;1;5_9;person;313
+Befolkning_botid;2015;45;2;5_9;person;57
+Befolkning_botid;2015;45;1;10+;person;110
+Befolkning_botid;2015;45;2;10+;person;78
+Befolkning_botid;2015;46;1;0_4;person;1956
+Befolkning_botid;2015;46;2;0_4;person;853
+Befolkning_botid;2015;46;1;5_9;person;1076
+Befolkning_botid;2015;46;2;5_9;person;562
+Befolkning_botid;2015;46;1;10+;person;672
+Befolkning_botid;2015;46;2;10+;person;664
+Befolkning_botid;2015;47;1;0_4;person;1585
+Befolkning_botid;2015;47;2;0_4;person;734
+Befolkning_botid;2015;47;1;5_9;person;1062
+Befolkning_botid;2015;47;2;5_9;person;520
+Befolkning_botid;2015;47;1;10+;person;650
+Befolkning_botid;2015;47;2;10+;person;872
+Befolkning_botid;2015;48;1;0_4;person;333
+Befolkning_botid;2015;48;2;0_4;person;197
+Befolkning_botid;2015;48;1;5_9;person;166
+Befolkning_botid;2015;48;2;5_9;person;40
+Befolkning_botid;2015;48;1;10+;person;114
+Befolkning_botid;2015;48;2;10+;person;66
+Befolkning_botid;2015;49;1;0_4;person;1165
+Befolkning_botid;2015;49;2;0_4;person;503
+Befolkning_botid;2015;49;1;5_9;person;647
+Befolkning_botid;2015;49;2;5_9;person;197
+Befolkning_botid;2015;49;1;10+;person;468
+Befolkning_botid;2015;49;2;10+;person;341
+Befolkning_botid;2015;50;1;0_4;person;881
+Befolkning_botid;2015;50;2;0_4;person;548
+Befolkning_botid;2015;50;1;5_9;person;480
+Befolkning_botid;2015;50;2;5_9;person;147
+Befolkning_botid;2015;50;1;10+;person;400
+Befolkning_botid;2015;50;2;10+;person;291
+Befolkning_botid;2015;51;1;0_4;person;905
+Befolkning_botid;2015;51;2;0_4;person;649
+Befolkning_botid;2015;51;1;5_9;person;412
+Befolkning_botid;2015;51;2;5_9;person;306
+Befolkning_botid;2015;51;1;10+;person;321
+Befolkning_botid;2015;51;2;10+;person;417
+Befolkning_botid;2015;52;1;0_4;person;1553
+Befolkning_botid;2015;52;2;0_4;person;1120
+Befolkning_botid;2015;52;1;5_9;person;854
+Befolkning_botid;2015;52;2;5_9;person;567
+Befolkning_botid;2015;52;1;10+;person;542
+Befolkning_botid;2015;52;2;10+;person;635
+Befolkning_botid;2015;53;1;0_4;person;1816
+Befolkning_botid;2015;53;2;0_4;person;982
+Befolkning_botid;2015;53;1;5_9;person;1040
+Befolkning_botid;2015;53;2;5_9;person;419
+Befolkning_botid;2015;53;1;10+;person;602
+Befolkning_botid;2015;53;2;10+;person;664
+Befolkning_botid;2015;54;1;0_4;person;750
+Befolkning_botid;2015;54;2;0_4;person;184
+Befolkning_botid;2015;54;1;5_9;person;501
+Befolkning_botid;2015;54;2;5_9;person;155
+Befolkning_botid;2015;54;1;10+;person;270
+Befolkning_botid;2015;54;2;10+;person;246
+Befolkning_botid;2015;55;1;0_4;person;1907
+Befolkning_botid;2015;55;2;0_4;person;831
+Befolkning_botid;2015;55;1;5_9;person;835
+Befolkning_botid;2015;55;2;5_9;person;401
+Befolkning_botid;2015;55;1;10+;person;399
+Befolkning_botid;2015;55;2;10+;person;658
+Befolkning_botid;2015;56;1;0_4;person;3329
+Befolkning_botid;2015;56;2;0_4;person;1242
+Befolkning_botid;2015;56;1;5_9;person;1435
+Befolkning_botid;2015;56;2;5_9;person;706
+Befolkning_botid;2015;56;1;10+;person;924
+Befolkning_botid;2015;56;2;10+;person;1197
+Befolkning_botid;2015;57;1;0_4;person;524
+Befolkning_botid;2015;57;2;0_4;person;259
+Befolkning_botid;2015;57;1;5_9;person;271
+Befolkning_botid;2015;57;2;5_9;person;102
+Befolkning_botid;2015;57;1;10+;person;177
+Befolkning_botid;2015;57;2;10+;person;113
+Befolkning_botid;2015;58;1;0_4;person;777
+Befolkning_botid;2015;58;2;0_4;person;119
+Befolkning_botid;2015;58;1;5_9;person;491
+Befolkning_botid;2015;58;2;5_9;person;77
+Befolkning_botid;2015;58;1;10+;person;91
+Befolkning_botid;2015;58;2;10+;person;72
+Befolkning_botid;2015;59;1;0_4;person;207
+Befolkning_botid;2015;59;2;0_4;person;105
+Befolkning_botid;2015;59;1;5_9;person;105
+Befolkning_botid;2015;59;2;5_9;person;57
+Befolkning_botid;2015;59;1;10+;person;64
+Befolkning_botid;2015;59;2;10+;person;67
+Befolkning_botid;2015;60;1;0_4;person;287
+Befolkning_botid;2015;60;2;0_4;person;302
+Befolkning_botid;2015;60;1;5_9;person;200
+Befolkning_botid;2015;60;2;5_9;person;195
+Befolkning_botid;2015;60;1;10+;person;190
+Befolkning_botid;2015;60;2;10+;person;213
+Befolkning_botid;2015;61;1;0_4;person;6211
+Befolkning_botid;2015;61;2;0_4;person;4525
+Befolkning_botid;2015;61;1;5_9;person;2604
+Befolkning_botid;2015;61;2;5_9;person;3012
+Befolkning_botid;2015;61;1;10+;person;2848
+Befolkning_botid;2015;61;2;10+;person;5496
+Befolkning_botid;2015;62;1;0_4;person;125
+Befolkning_botid;2015;62;2;0_4;person;71
+Befolkning_botid;2015;62;1;5_9;person;80
+Befolkning_botid;2015;62;2;5_9;person;23
+Befolkning_botid;2015;62;1;10+;person;111
+Befolkning_botid;2015;62;2;10+;person;73
+Befolkning_botid;2015;63;1;0_4;person;400
+Befolkning_botid;2015;63;2;0_4;person;500
+Befolkning_botid;2015;63;1;5_9;person;166
+Befolkning_botid;2015;63;2;5_9;person;269
+Befolkning_botid;2015;63;1;10+;person;240
+Befolkning_botid;2015;63;2;10+;person;347
+Befolkning_botid;2015;64;1;0_4;person;1044
+Befolkning_botid;2015;64;2;0_4;person;1005
+Befolkning_botid;2015;64;1;5_9;person;580
+Befolkning_botid;2015;64;2;5_9;person;543
+Befolkning_botid;2015;64;1;10+;person;465
+Befolkning_botid;2015;64;2;10+;person;596
+Befolkning_botid;2015;65;1;0_4;person;113
+Befolkning_botid;2015;65;2;0_4;person;198
+Befolkning_botid;2015;65;1;5_9;person;77
+Befolkning_botid;2015;65;2;5_9;person;34
+Befolkning_botid;2015;65;1;10+;person;111
+Befolkning_botid;2015;65;2;10+;person;41
+Befolkning_botid;2015;66;1;0_4;person;180
+Befolkning_botid;2015;66;2;0_4;person;237
+Befolkning_botid;2015;66;1;5_9;person;134
+Befolkning_botid;2015;66;2;5_9;person;39
+Befolkning_botid;2015;66;1;10+;person;67
+Befolkning_botid;2015;66;2;10+;person;53
+Befolkning_botid;2015;67;1;0_4;person;283
+Befolkning_botid;2015;67;2;0_4;person;390
+Befolkning_botid;2015;67;1;5_9;person;145
+Befolkning_botid;2015;67;2;5_9;person;142
+Befolkning_botid;2015;67;1;10+;person;168
+Befolkning_botid;2015;67;2;10+;person;167
+Befolkning_botid;2015;68;1;0_4;person;153
+Befolkning_botid;2015;68;2;0_4;person;259
+Befolkning_botid;2015;68;1;5_9;person;87
+Befolkning_botid;2015;68;2;5_9;person;93
+Befolkning_botid;2015;68;1;10+;person;95
+Befolkning_botid;2015;68;2;10+;person;90
+Befolkning_botid;2015;69;1;0_4;person;339
+Befolkning_botid;2015;69;2;0_4;person;428
+Befolkning_botid;2015;69;1;5_9;person;91
+Befolkning_botid;2015;69;2;5_9;person;122
+Befolkning_botid;2015;69;1;10+;person;106
+Befolkning_botid;2015;69;2;10+;person;143
+Befolkning_botid;2015;70;1;0_4;person;112
+Befolkning_botid;2015;70;2;0_4;person;32
+Befolkning_botid;2015;70;1;5_9;person;60
+Befolkning_botid;2015;70;2;5_9;person;21
+Befolkning_botid;2015;70;1;10+;person;25
+Befolkning_botid;2015;70;2;10+;person;14
+Befolkning_botid;2015;71;1;0_4;person;207
+Befolkning_botid;2015;71;2;0_4;person;368
+Befolkning_botid;2015;71;1;5_9;person;84
+Befolkning_botid;2015;71;2;5_9;person;99
+Befolkning_botid;2015;71;1;10+;person;124
+Befolkning_botid;2015;71;2;10+;person;144
+Befolkning_botid;2015;72;1;0_4;person;477
+Befolkning_botid;2015;72;2;0_4;person;604
+Befolkning_botid;2015;72;1;5_9;person;217
+Befolkning_botid;2015;72;2;5_9;person;248
+Befolkning_botid;2015;72;1;10+;person;274
+Befolkning_botid;2015;72;2;10+;person;247
+Befolkning_botid;2015;73;1;0_4;person;1524
+Befolkning_botid;2015;73;2;0_4;person;1587
+Befolkning_botid;2015;73;1;5_9;person;582
+Befolkning_botid;2015;73;2;5_9;person;772
+Befolkning_botid;2015;73;1;10+;person;752
+Befolkning_botid;2015;73;2;10+;person;895
+Befolkning_botid;2015;74;1;0_4;person;643
+Befolkning_botid;2015;74;2;0_4;person;708
+Befolkning_botid;2015;74;1;5_9;person;198
+Befolkning_botid;2015;74;2;5_9;person;258
+Befolkning_botid;2015;74;1;10+;person;320
+Befolkning_botid;2015;74;2;10+;person;275
+Befolkning_botid;2015;75;1;0_4;person;706
+Befolkning_botid;2015;75;2;0_4;person;578
+Befolkning_botid;2015;75;1;5_9;person;311
+Befolkning_botid;2015;75;2;5_9;person;263
+Befolkning_botid;2015;75;1;10+;person;268
+Befolkning_botid;2015;75;2;10+;person;202
+Befolkning_botid;2015;76;1;0_4;person;785
+Befolkning_botid;2015;76;2;0_4;person;794
+Befolkning_botid;2015;76;1;5_9;person;216
+Befolkning_botid;2015;76;2;5_9;person;366
+Befolkning_botid;2015;76;1;10+;person;280
+Befolkning_botid;2015;76;2;10+;person;352
+Befolkning_botid;2015;77;1;0_4;person;617
+Befolkning_botid;2015;77;2;0_4;person;951
+Befolkning_botid;2015;77;1;5_9;person;309
+Befolkning_botid;2015;77;2;5_9;person;513
+Befolkning_botid;2015;77;1;10+;person;339
+Befolkning_botid;2015;77;2;10+;person;382
+Befolkning_botid;2015;78;1;0_4;person;566
+Befolkning_botid;2015;78;2;0_4;person;772
+Befolkning_botid;2015;78;1;5_9;person;200
+Befolkning_botid;2015;78;2;5_9;person;203
+Befolkning_botid;2015;78;1;10+;person;265
+Befolkning_botid;2015;78;2;10+;person;204
+Befolkning_botid;2015;79;1;0_4;person;2639
+Befolkning_botid;2015;79;2;0_4;person;1708
+Befolkning_botid;2015;79;1;5_9;person;1034
+Befolkning_botid;2015;79;2;5_9;person;835
+Befolkning_botid;2015;79;1;10+;person;1285
+Befolkning_botid;2015;79;2;10+;person;1259
+Befolkning_botid;2015;80;1;0_4;person;330
+Befolkning_botid;2015;80;2;0_4;person;204
+Befolkning_botid;2015;80;1;5_9;person;106
+Befolkning_botid;2015;80;2;5_9;person;109
+Befolkning_botid;2015;80;1;10+;person;162
+Befolkning_botid;2015;80;2;10+;person;90
+Befolkning_botid;2015;81;1;0_4;person;1397
+Befolkning_botid;2015;81;2;0_4;person;862
+Befolkning_botid;2015;81;1;5_9;person;500
+Befolkning_botid;2015;81;2;5_9;person;548
+Befolkning_botid;2015;81;1;10+;person;456
+Befolkning_botid;2015;81;2;10+;person;486
+Befolkning_botid;2015;82;1;0_4;person;261
+Befolkning_botid;2015;82;2;0_4;person;157
+Befolkning_botid;2015;82;1;5_9;person;81
+Befolkning_botid;2015;82;2;5_9;person;82
+Befolkning_botid;2015;82;1;10+;person;316
+Befolkning_botid;2015;82;2;10+;person;130
+Befolkning_botid;2015;83;1;0_4;person;1087
+Befolkning_botid;2015;83;2;0_4;person;934
+Befolkning_botid;2015;83;1;5_9;person;197
+Befolkning_botid;2015;83;2;5_9;person;402
+Befolkning_botid;2015;83;1;10+;person;502
+Befolkning_botid;2015;83;2;10+;person;592

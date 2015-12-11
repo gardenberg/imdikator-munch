@@ -32,7 +32,6 @@ befolkning_flytting_vreg = subset(befolkning_flytting,innvkat_3 =='innvandrere',
 befolkning_flytting_vreg$tabell_navn ="befolkning_flytting_vreg"
 write.csv(befolkning_flytting_vreg,"D:/R/imdikator-munch/data_flat_output/befolkning_flytting_verdensregion.csv",row.names=F)
 df=subset(befolkning_flytting,vreg_3 =='alle',select=-vreg_3)
-write.csv(df,"D:/R/imdikator-munch/data_flat_output/befolkning_flytting.csv",row.names=F)
 
 #SPLITTING AV UTDANNINGSNIVA
 #ta ut verdier med kort og lang uni- og høyskoleutd
@@ -44,6 +43,54 @@ df$utd_ny[df$utd_4!="NULL"] = df$utd_4[df$utd_4!="NULL"]
 df$utd_4=df$utd_ny
 df=subset(df,select=-c(utd_ny,utd_6))
 write.csv(df,"D:/R/imdikator-munch/data_flat_output/utdanningsniva.csv",row.names=F)
+
+#SPLITTING AV GRUNNSKOLEPOENG
+#26.oktober 2015
+#lager en fil som har ikke-kommune
+grunnskolepoeng <- read.csv("D:/R/imdikator-munch/data_flat_input/grunnskolepoeng.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE)
+df = subset(grunnskolepoeng,kommune_nr=="NULL",select=-kommune_nr)
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/31-grunnskolepoeng-ikkeKommune-2013.csv",row.names=F)
+#lager en variant av denne fila som kun har kjønn
+df_trim = subset(df,vreg_3=="alle"&invalder_3=="alle",select=-c(vreg_3,invalder_3))
+#sjekker at kjønn er uniform
+df_trim=spread(df_trim,kjonn,tabellvariabel,fill=".")
+sum(is.na(df_trim$`1`))
+sum(df_trim$`0`==".")
+df_2=gather(df_trim,kjonn,tabellvariabel,8:10,na.rm=F)
+write.csv(df_2,"D:/R/imdikator-munch/data_flat_output/31-grunnskolepoeng-ikkeKommuneLite-2013.csv",row.names=F)
+
+#SPLITTING AV INTRO_AVSLUTNING_DIREKTE
+#26.oktober 2015
+#lager en fil med vreg 8 og en fil med vreg 3
+intro_avslutning_direkte <- read.csv("D:/R/imdikator-munch/data_flat_input/intro_avslutning_direkte.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE)
+sum(is.na(intro_avslutning_direkte$tabellvariabel))
+df_8delt = subset(intro_avslutning_direkte,avslutning_arsak_3=="NULL",select=-avslutning_arsak_3)
+df_3delt = subset(intro_avslutning_direkte,avslutning_arsak_8=="NULL",select=-avslutning_arsak_8)
+#sjekker at prosenter er koda riktig 
+sum(df_8delt$tabellvariabel==":"&df_8delt$enhet=="prosent")
+sum(df_8delt$tabellvariabel=="."&df_8delt$enhet=="prosent")
+df_8delt$tabellvariabel[df_8delt$tabellvariabel==":"&df_8delt$enhet=="prosent"]="."
+sum(df_8delt$tabellvariabel==":"&df_8delt$enhet=="prosent")
+sum(df_8delt$tabellvariabel=="."&df_8delt$enhet=="prosent")
+
+sum(df_3delt$tabellvariabel==":"&df_3delt$enhet=="prosent")
+sum(df_3delt$tabellvariabel=="."&df_3delt$enhet=="prosent")
+df_3delt$tabellvariabel[df_3delt$tabellvariabel==":"&df_3delt$enhet=="prosent"]="."
+sum(df_3delt$tabellvariabel==":"&df_3delt$enhet=="prosent")
+sum(df_3delt$tabellvariabel=="."&df_3delt$enhet=="prosent")
+df_3delt$tabell_navn="intro_avslutning_direkte_3"
+df_8delt$tabell_navn="intro_avslutning_direkte_8"
+write.csv(df_3delt,"D:/R/imdikator-munch/data_flat_output/intro_avslutning_direkte_3.csv",row.names=F)
+write.csv(df_8delt,"D:/R/imdikator-munch/data_flat_output/intro_avslutning_direkte_8.csv",row.names=F)
+
+#SPLITTING AV VIDEREGÅENDE FULLFØRT
+#26.oktober 2015
+#tar ut tallene for 2011-2013
+videregaende_fullfort <- read.csv("D:/R/imdikator-munch/data_flat_input/videregaende_fullfort.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE)
+sum(is.na(videregaende_fullfort$tabellvariabel))
+df=subset(videregaende_fullfort,aar!="2011_2013")
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/videregaende_fullfort.csv",row.names=F)
+
 
 #SPLITTING AV KRYSSTABELLER (PREFLAT)
 #forsøk på script som splitter en lang tidsserie

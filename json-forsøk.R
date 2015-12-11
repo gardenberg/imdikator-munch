@@ -1,5 +1,17 @@
 library(jsonlite)
-jsonData <- fromJSON("D:/R/imdikator/data/cardPages.json")
+#cardDescriptions
+jsonData <- fromJSON("D:/R/imdikator-kode/imdikator/data/cardDescriptions.json",flatten=T)
+write.csv2(jsonData[,1:6],"df_cD.csv",row.names=F)
+df = toJSON(jsonData,pretty=T)
+write(df,file="df.json")
+
+#cardPages
+jsonData <- fromJSON("D:/R/imdikator-kode/imdikator/data/cardPages.json",flatten=T)
+#for nesta til å konverteres    
+write.csv2(jsonData[,1:6],"df_cD.csv",row.names=F)
+df = toJSON(jsonData,pretty=T)
+write(df,file="df.json")
+
 names(jsonData)
 str(jsonData$cards,max.level=2)
 

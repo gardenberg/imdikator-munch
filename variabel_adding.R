@@ -47,6 +47,143 @@ nrow(comparison_3)==0
 
 write.csv(df_2,"D:/R/imdikator-munch/data_flat_output/befolkning_alder.csv",row.names=F)
 
+#ALLE-KATEGORI I BEFOLKNING_ALDER- BYDEL-2015
+library(tidyr)
+befolkning_alder <- read.csv2("D:/R/imdikator-munch/data_flat_input/befolkning_alder_B.csv", stringsAsFactors=FALSE,colClasses = "character")
+befolkning_alder = subset(befolkning_alder,select=-X)
+befolkning_alder$alder_grupper = gsub("\\-","_",befolkning_alder$alder_grupper)
+names(befolkning_alder)[3]="bydel_nr"
+levels(as.factor(befolkning_alder$bydel_nr))
+befolkning_alder$bydel_nr[nchar(befolkning_alder$bydel_nr)==2] = paste0("0301",befolkning_alder$bydel_nr[nchar(befolkning_alder$bydel_nr)==2])
+befolkning_alder$enhet="personer"
+df=spread(befolkning_alder,alder_grupper,tabellvariabel)
+#df$alle=extract_numeric(df[,10])+extract_numeric(df[,11])+extract_numeric(df[,12])+extract_numeric(df[,13])+extract_numeric(df[,14])+extract_numeric(df[,15])+extract_numeric(df[,16])
+df$alle=apply(df[,7:13],1,
+              function(x){
+                      sum(extract_numeric(x))
+              }
+)
+sum(is.na(df$alle))
+df$alle[is.na(df$alle)]="."
+df_2=gather(df,alder_grupper,tabellvariabel,`0_5`:alle)
+#lager kontroll-frame av df med de nye observasjonene
+df_kontroll=subset(df,select=c(aar:bydel_nr,alle))
+df_kontroll=gather(df_kontroll,alder_grupper,tabellvariabel,alle)
+#trekker ut enheter som er i df_2 som ikke er i befolkning_alder - altså de nye enhetene
+comparison_2=anti_join(df_2,befolkning_alder)
+#trekker ut enheter som er nye i df_2 som ikke er en del av de nye observasjonene
+comparison_3=anti_join(comparison_2,df_kontroll)
+#comparison_3 skal være lik 0
+nrow(comparison_3)==0
+#kontroll nr. 2
+#er forskjellen mellom nytt datasett og gammelt datasett lik antallet nye observasjoner som skal være lagt til?
+nrow(df_2)-nrow(befolkning_alder)==nrow(befolkning_alder)/nlevels(as.factor(befolkning_alder$alder_grupper))
+
+write.csv(df_2,"D:/R/imdikator-munch/data_flat_output/befolkning_alder-bydel-2015.csv",row.names=F)
+
+#ALLE-KATEGORI I BEFOLKNING_ALDER- KOMMUNE-2015
+befolkning_alder <- read.csv2("D:/R/imdikator-munch/data_flat_input/befolkning_alder_K.csv", stringsAsFactors=FALSE,colClasses = "character")
+befolkning_alder = subset(befolkning_alder,select=-X)
+befolkning_alder$alder_grupper = gsub("\\-","_",befolkning_alder$alder_grupper)
+names(befolkning_alder)[3]="kommune_nr"
+befolkning_alder$enhet="personer"
+df=spread(befolkning_alder,alder_grupper,tabellvariabel)
+#df$alle=extract_numeric(df[,10])+extract_numeric(df[,11])+extract_numeric(df[,12])+extract_numeric(df[,13])+extract_numeric(df[,14])+extract_numeric(df[,15])+extract_numeric(df[,16])
+df$alle=apply(df[,7:13],1,
+              function(x){
+                      sum(extract_numeric(x))
+              }
+)
+sum(is.na(df$alle))
+df$alle[is.na(df$alle)]="."
+df_2=gather(df,alder_grupper,tabellvariabel,`0_5`:alle)
+#lager kontroll-frame av df med de nye observasjonene
+df_kontroll=subset(df,select=c(aar:kommune_nr,alle))
+df_kontroll=gather(df_kontroll,alder_grupper,tabellvariabel,alle)
+#trekker ut enheter som er i df_2 som ikke er i befolkning_alder - altså de nye enhetene
+comparison_2=anti_join(df_2,befolkning_alder)
+#trekker ut enheter som er nye i df_2 som ikke er en del av de nye observasjonene
+comparison_3=anti_join(comparison_2,df_kontroll)
+#comparison_3 skal være lik 0
+nrow(comparison_3)==0
+#kontroll nr. 2
+#er forskjellen mellom nytt datasett og gammelt datasett lik antallet nye observasjoner som skal være lagt til?
+nrow(df_2)-nrow(befolkning_alder)==nrow(befolkning_alder)/nlevels(as.factor(befolkning_alder$alder_grupper))
+write.csv(df_2,"D:/R/imdikator-munch/data_flat_output/befolkning_alder-kommune-2015.csv",row.names=F)
+
+#ALLE-KATEGORI I BEFOLKNING_ALDER- NÆRINGSREGION-2015
+befolkning_alder <- read.csv2("D:/R/imdikator-munch/data_flat_input/befolkning_alder_N.csv", stringsAsFactors=FALSE,colClasses = "character")
+befolkning_alder = subset(befolkning_alder,select=-X)
+befolkning_alder$alder_grupper = gsub("\\-","_",befolkning_alder$alder_grupper)
+names(befolkning_alder)[3]="naringsregion_nr"
+befolkning_alder$enhet="personer"
+df=spread(befolkning_alder,alder_grupper,tabellvariabel)
+df$alle=apply(df[,7:13],1,
+              function(x){
+                      sum(extract_numeric(x))
+              }
+)
+sum(is.na(df$alle))
+df$alle[is.na(df$alle)]="."
+df_2=gather(df,alder_grupper,tabellvariabel,`0_5`:alle)
+#lager kontroll-frame av df med de nye observasjonene
+df_kontroll=subset(df,select=c(aar:naringsregion_nr,alle))
+df_kontroll=gather(df_kontroll,alder_grupper,tabellvariabel,alle)
+#trekker ut enheter som er i df_2 som ikke er i befolkning_alder - altså de nye enhetene
+comparison_2=anti_join(df_2,befolkning_alder)
+#trekker ut enheter som er nye i df_2 som ikke er en del av de nye observasjonene
+comparison_3=anti_join(comparison_2,df_kontroll)
+#comparison_3 skal være lik 0
+nrow(comparison_3)==0
+#kontroll nr. 2
+#er forskjellen mellom nytt datasett og gammelt datasett lik antallet nye observasjoner som skal være lagt til?
+nrow(df_2)-nrow(befolkning_alder)==nrow(befolkning_alder)/nlevels(as.factor(befolkning_alder$alder_grupper))
+write.csv(df_2,"D:/R/imdikator-munch/data_flat_output/befolkning_alder-naringsregion-2015.csv",row.names=F)
+
+#ALLE-KATEGORI I BEFOLKNING_ALDER- NASJONEN-2015
+befolkning_alder <- read.csv2("D:/R/imdikator-munch/data_flat_input/befolkning_alder_L.csv", stringsAsFactors=FALSE,colClasses = "character")
+befolkning_alder = subset(befolkning_alder,select=-X)
+befolkning_alder$alder_grupper = gsub("\\-","_",befolkning_alder$alder_grupper)
+names(befolkning_alder)[3]="fylke_nr"
+befolkning_alder$enhet="personer"
+df=spread(befolkning_alder,alder_grupper,tabellvariabel)
+df$alle=apply(df[,7:13],1,
+              function(x){
+                      sum(extract_numeric(x))
+              }
+)
+sum(is.na(df$alle))
+df$alle[is.na(df$alle)]="."
+df_2=gather(df,alder_grupper,tabellvariabel,`0_5`:alle)
+#KONTROLL
+nrow(anti_join(anti_join(df_2,befolkning_alder),gather(subset(df,select=c(aar:fylke_nr,alle)),alder_grupper,tabellvariabel,alle)))==0
+nrow(df_2)-nrow(befolkning_alder)==nrow(befolkning_alder)/nlevels(as.factor(befolkning_alder$alder_grupper))
+#lagrer som dataframe til splice med fylke
+befolkning_alder_nasjon = df_2
+
+#ALLE-KATEGORI I BEFOLKNING_ALDER- FYLKE-2015
+befolkning_alder <- read.csv2("D:/R/imdikator-munch/data_flat_input/befolkning_alder_F.csv", stringsAsFactors=FALSE,colClasses = "character")
+befolkning_alder = subset(befolkning_alder,select=-X)
+befolkning_alder$alder_grupper = gsub("\\-","_",befolkning_alder$alder_grupper)
+names(befolkning_alder)[3]="fylke_nr"
+befolkning_alder$enhet="personer"
+df=spread(befolkning_alder,alder_grupper,tabellvariabel)
+df$alle=apply(df[,7:13],1,
+              function(x){
+                      sum(extract_numeric(x))
+              }
+)
+sum(is.na(df$alle))
+df$alle[is.na(df$alle)]="."
+df_2=gather(df,alder_grupper,tabellvariabel,`0_5`:alle)
+#KONTROLL
+nrow(anti_join(anti_join(df_2,befolkning_alder),gather(subset(df,select=c(aar:fylke_nr,alle)),alder_grupper,tabellvariabel,alle)))==0
+nrow(df_2)-nrow(befolkning_alder)==nrow(befolkning_alder)/nlevels(as.factor(befolkning_alder$alder_grupper))
+#legger til befolkning_alder_nasjonen
+df_3 = rbind(df_2,befolkning_alder_nasjon)
+#utskrift
+write.csv(df_3,"D:/R/imdikator-munch/data_flat_output/befolkning_alder-fylke-2015.csv",row.names=F)
+
 #ALLE-KATEGORI I BEFOLKNING_VERDENSREGION
 #trenger alle-kategori for vreg_2, vreg_5 og vreg_9
 library(tidyr)
@@ -170,8 +307,6 @@ sum(is.na(befolkning_verdensregion_2$tabellvariabel))
 sum(befolkning_verdensregion_2$tabellvariabel==":")
 #Er det "."?
 sum(befolkning_verdensregion_2$tabellvariabel==".")
-
-olddf=nrow(befolkning_verdensregion_2)
 df=spread(befolkning_verdensregion_2,vreg_2,tabellvariabel)
 
 #legger sammen vreg_2.1 og .2 til .alle
@@ -192,10 +327,9 @@ nrow(df_2)==nrow(befolkning_verdensregion_2)+nrow(df)-sum(is.na(df$alle))
 nrow(df_2)==nrow(befolkning_verdensregion_2)+sum(befolkning_verdensregion_2$vreg_2=="1")
 sum(df_2$vreg_3=="alle")==sum(befolkning_verdensregion_2$vreg_2==1)
 #ingen avvik.
-
-df <- read.csv("D:/R/imdikator-munch/data_flat_output/befolkning_verdensregion_3_v2.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE)
-df$tabell_navn="befolkning_verdensregion_3"
-write.csv(df,"D:/R/imdikator-munch/data_flat_output/befolkning_verdensregion_3_v2.csv",row.names=F)
+#anna informasjon som må oppdateres
+df_2$tabell_navn="befolkning_verdensregion_3"
+write.csv(df_2,"D:/R/imdikator-munch/data_flat_output/befolkning_verdensregion_3.csv",row.names=F)
 
 #BEFOLKNING_VERDENSREGION_5 -> ALLE-kategori
 befolkning_verdensregion_5 <- read.csv("D:/R/imdikator-munch/data_flat_output/befolkning_verdensregion_5.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE)
@@ -281,3 +415,65 @@ df_kontroll=gather(df_kontroll,utd_5,tabellvariabel,alle,na.rm=T)
 
 #eksporterer ferdig datasett
 write.csv(df_2,"D:/R/imdikator-munch/data_flat_output/utdanningsniva.csv",row.names=F)
+
+#GRUNNSKOLEPOENG - MANGLENDE KOMBINASJONER AV KJØNN FOR KOMMUNEDATA
+#26.10.2015
+library(tidyr)
+library(dplyr)
+grunnskolepoeng <- read.csv("D:/R/imdikator-munch/data_flat_input/grunnskolepoeng.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE)
+#v1: tok  kun ut enhetene som handler om kommune, la til 6848 manglende observasjoner.
+#men problemet kan være på flere nivåer. 
+#imidlertid får jeg feilmelding hvis jeg kjører alt - det blir svært mange komboer
+df=subset(grunnskolepoeng,kommune_nr!="NULL",select=-c(bydel_nr,naringsregion_nr,fylke_nr,vreg_3,invalder_3))
+df=spread(df,kjonn,tabellvariabel,drop=F,fill=".")
+#samler variabler til opprinnelig variabel
+df_2=gather(df,kjonn,tabellvariabel,6:8,na.rm=F)
+#kontroll
+#ingen kontroll, 
+#eksporterer ferdig datasett
+write.csv(df_2,"D:/R/imdikator-munch/data_flat_output/31-grunnskolepoeng-kommune-2013.csv",row.names=F)
+
+
+#NORSK - PROVER
+#26.10.2015
+#provetype mangler alle
+#spraakniva.alle mangler prosenter
+
+norsk_prover <- read.csv("D:/R/imdikator-munch/data_flat_input/norsk_prover.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE)
+#Er det NA?
+sum(is.na(norsk_prover$tabellvariabel))
+#Er det ":"?
+sum(norsk_prover$tabellvariabel==":")
+#Er det "."?
+sum(norsk_prover$tabellvariabel==".")
+
+df=spread(norsk_prover,provetype,tabellvariabel)
+sum(is.na(df$lese))
+sum(is.na(df$lytting))
+sum(is.na(df$muntlig))
+sum(is.na(df$skriftlig))
+
+#legger sammen alle
+df$alle=extract_numeric(df[,7])+extract_numeric(df[,8])+extract_numeric(df[,9])+extract_numeric(df[,10])
+
+#er det innført NA?
+sum(is.na(df$alle))
+#koder denne om til "." manglende data
+df$alle[is.na(df$alle)==T] ="."
+sum(is.na(df$alle))
+sum(df$alle==".")
+
+#samler vreg-variabler til vreg_6
+df_2=gather(df,vreg_6,tabellvariabel,8:13,na.rm=T)
+
+#kontroll
+#er ny df utvidet med riktig nrow?
+nrow(df_2)==nrow(befolkning_verdensregion_5)+nrow(df)-sum(is.na(df$alle))
+nrow(df_2)==nrow(befolkning_verdensregion_5)+sum(befolkning_verdensregion_5$vreg_5=="afrika")
+sum(df_2$vreg_6=="alle")==sum(befolkning_verdensregion_5$vreg_5=="afrika")
+#ingen avvik.
+
+#eksporterer ferdig datasett
+df <- read.csv("D:/R/imdikator-munch/data_flat_output/befolkning_verdensregion_6_v2.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE)
+df$tabell_navn="befolkning_verdensregion_6"
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/befolkning_verdensregion_6_v2.csv",row.names=F)
