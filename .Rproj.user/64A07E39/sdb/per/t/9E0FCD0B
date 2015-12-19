@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1450378032061.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "9E0FCD0B",
+    "lastKnownWriteTime" : 539763315,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "yamsf3b17j",
+        "caption" : "utdanningsniva",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=utdanningsniva&cache_key=yamsf3b17j",
+        "displayedObservations" : 49584,
+        "environment" : "",
+        "object" : "utdanningsniva",
+        "totalObservations" : 49584,
+        "variables" : 11
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

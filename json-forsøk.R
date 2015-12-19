@@ -1,3 +1,21 @@
+#Eksperiment for å se om variabel + kategorier kan kryssjekkes fra dimensions-fil
+
+#JSON (javascript object notation)
+library(jsonlite)
+jsonData <- fromJSON("parameters/dimensions.json")
+variables = toJSON(jsonData$variables)
+df_variables = fromJSON(variables,flatten=T)
+
+a = unlist(jsonData$variables,recursive=F)
+names(jsonData)
+names(jsonData$variables)
+jsonData$owner$login
+myjson=toJSON(iris,pretty=T)
+cat(myjson)
+iris2=fromJSON(myjson)
+head(iris2)
+#http://www.r-bloggers.com/new-package-jsonlite-a-smarter-json-encoderdecoder/
+
 library(jsonlite)
 #cardDescriptions
 jsonData <- fromJSON("D:/R/imdikator-kode/imdikator/data/cardDescriptions.json",flatten=T)

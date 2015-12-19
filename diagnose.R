@@ -853,6 +853,7 @@ write.csv(sosialhjelp,"D:/R/imdikator-munch/data_flat_output/sosialhjelp-alle-20
 
 #GRUNNSKOLEPOENG
 #10. desember
+#bydel - 2014
 # aar er feil - må kodes som siste året i intervallet, avgangsåret.
 # person må bli personer
 # logiske sjekker
@@ -864,3 +865,351 @@ grunnskolepoeng$enhet[grunnskolepoeng$enhet=="person"]="personer"
 library(tidyr)
 df=spread(grunnskolepoeng,innvkat_5,tabellvariabel,drop=F)
 #noe må gjøres med denne, kanskje tilsvarende som for flyktninger: skjære ut innvandrere som vi har mer informasjon om til egen tabell
+#kun hvis deler er lopsided, blir ulike headergroups? hvis ikke...
+
+nlevels(as.factor(grunnskolepoeng$bydel_nr))
+df_grunn = subset(grunnskolepoeng,subset=c((vreg_3=="alle"|vreg_3=="NULL")&(invalder_3=="alle"|invalder_3=="NULL")))
+grunnskolepoeng_innvkat5 = subset(df_grunn,select=-c(vreg_3,invalder_3))
+#1: grunnsettet - 17 bydeler * 3 kjønn * 5innvkat * 2 enheter
+nrow(grunnskolepoeng_innvkat5)==17*3*5*2
+write.csv(grunnskolepoeng_innvkat5,"D:/R/imdikator-munch/data_flat_output/grunnskolepoeng-bydel-2014.csv",row.names=F)
+
+#setter opp en ny tabell med tabell_navn grunnskolepoeng_innvandrere
+df_innv = subset(grunnskolepoeng,subset=c(vreg_3!="NULL"|invalder_3!="NULL"))
+grunnskolepoeng_innvandrere = subset(df_innv,select=-innvkat_5)
+nrow(grunnskolepoeng_innvandrere)==17*3*1*3*3*2
+grunnskolepoeng_innvandrere$tabell_navn="grunnskolepoeng_innvandrere"
+write.csv(grunnskolepoeng_innvandrere,"D:/R/imdikator-munch/data_flat_output/grunnskolepoeng_innvandrere-bydel-2014.csv",row.names=F)
+
+#alle observasjoner er her, men hva skjer ved innlesning? Får vi headergroups som kan brukes?
+#svaret er nei: innleseren leser headergroups ut fra hva som er gyldig og hva som har null
+#men det gir en headergroup for innvandrere og en for de andre.
+
+#bydel - 2015
+# aar er feil - må kodes som siste året i intervallet, avgangsåret.
+# person må bli personer
+# logiske sjekker
+grunnskolepoeng <- read.csv("D:/R/imdikator-munch/data_flat_input/grunnskolepoeng_bydel_2015_ny.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=";", dec=",",colClasses="character")
+grunnskolepoeng$aar[grunnskolepoeng$aar=="2014-2015"]="2015"
+grunnskolepoeng$enhet[grunnskolepoeng$enhet=="person"]="personer"
+nlevels(as.factor(grunnskolepoeng$bydel_nr))
+df_grunn = subset(grunnskolepoeng,subset=c((vreg_3=="alle"|vreg_3=="NULL")&(invalder_3=="alle"|invalder_3=="NULL")))
+grunnskolepoeng_innvkat5 = subset(df_grunn,select=-c(vreg_3,invalder_3))
+nrow(grunnskolepoeng_innvkat5)==17*3*5*2
+write.csv(grunnskolepoeng_innvkat5,"D:/R/imdikator-munch/data_flat_output/grunnskolepoeng-bydel-2015.csv",row.names=F)
+
+df_innv = subset(grunnskolepoeng,subset=c(vreg_3!="NULL"|invalder_3!="NULL"))
+grunnskolepoeng_innvandrere = subset(df_innv,select=-innvkat_5)
+nrow(grunnskolepoeng_innvandrere)==17*3*1*3*3*2
+grunnskolepoeng_innvandrere$tabell_navn="grunnskolepoeng_innvandrere"
+write.csv(grunnskolepoeng_innvandrere,"D:/R/imdikator-munch/data_flat_output/grunnskolepoeng_innvandrere-bydel-2015.csv",row.names=F)
+
+#kommune - 2014
+# aar er feil - må kodes som siste året i intervallet, avgangsåret.
+# person må bli personer
+# logiske sjekker
+grunnskolepoeng <- read.csv("D:/R/imdikator-munch/data_flat_input/grunnskolepoeng_kommune_2014_ny.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=";", dec=",",colClasses="character")
+grunnskolepoeng$aar[grunnskolepoeng$aar=="2013-2014"]="2014"
+grunnskolepoeng$enhet[grunnskolepoeng$enhet=="person"]="personer"
+nlevels(as.factor(grunnskolepoeng$kommune_nr))
+df_grunn = subset(grunnskolepoeng,subset=c((vreg_3=="alle"|vreg_3=="NULL")&(invalder_3=="alle"|invalder_3=="NULL")))
+grunnskolepoeng_innvkat5 = subset(df_grunn,select=-c(vreg_3,invalder_3))
+nrow(grunnskolepoeng_innvkat5)==427*3*5*2
+write.csv(grunnskolepoeng_innvkat5,"D:/R/imdikator-munch/data_flat_output/grunnskolepoeng-kommune-2014.csv",row.names=F)
+
+df_innv = subset(grunnskolepoeng,subset=c(vreg_3!="NULL"|invalder_3!="NULL"))
+grunnskolepoeng_innvandrere = subset(df_innv,select=-innvkat_5)
+nrow(grunnskolepoeng_innvandrere)==427*3*1*3*3*2
+grunnskolepoeng_innvandrere$tabell_navn="grunnskolepoeng_innvandrere"
+write.csv(grunnskolepoeng_innvandrere,"D:/R/imdikator-munch/data_flat_output/grunnskolepoeng_innvandrere-kommune-2014.csv",row.names=F)
+
+#kommune - 2015
+# aar er feil - må kodes som siste året i intervallet, avgangsåret.
+# person må bli personer
+# logiske sjekker
+grunnskolepoeng <- read.csv("D:/R/imdikator-munch/data_flat_input/grunnskolepoeng_kommune_2015_ny.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=";", dec=",",colClasses="character")
+grunnskolepoeng$aar[grunnskolepoeng$aar=="2014-2015"]="2015"
+grunnskolepoeng$enhet[grunnskolepoeng$enhet=="person"]="personer"
+nlevels(as.factor(grunnskolepoeng$kommune_nr))
+df_grunn = subset(grunnskolepoeng,subset=c((vreg_3=="alle"|vreg_3=="NULL")&(invalder_3=="alle"|invalder_3=="NULL")))
+grunnskolepoeng_innvkat5 = subset(df_grunn,select=-c(vreg_3,invalder_3))
+nrow(grunnskolepoeng_innvkat5)==427*3*5*2
+write.csv(grunnskolepoeng_innvkat5,"D:/R/imdikator-munch/data_flat_output/grunnskolepoeng-kommune-2015.csv",row.names=F)
+
+df_innv = subset(grunnskolepoeng,subset=c(vreg_3!="NULL"|invalder_3!="NULL"))
+grunnskolepoeng_innvandrere = subset(df_innv,select=-innvkat_5)
+nrow(grunnskolepoeng_innvandrere)==427*3*1*3*3*2
+grunnskolepoeng_innvandrere$tabell_navn="grunnskolepoeng_innvandrere"
+write.csv(grunnskolepoeng_innvandrere,"D:/R/imdikator-munch/data_flat_output/grunnskolepoeng_innvandrere-kommune-2015.csv",row.names=F)
+
+#næringsregion - 2014
+# aar er feil - må kodes som siste året i intervallet, avgangsåret.
+# person må bli personer
+# logiske sjekker
+grunnskolepoeng <- read.csv("D:/R/imdikator-munch/data_flat_input/grunnskolepoeng_næringsregion_2014_ny.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=";", dec=",",colClasses="character")
+grunnskolepoeng$aar[grunnskolepoeng$aar=="2013-2014"]="2014"
+grunnskolepoeng$enhet[grunnskolepoeng$enhet=="person"]="personer"
+nlevels(as.factor(grunnskolepoeng$naringsregion_nr))
+df_grunn = subset(grunnskolepoeng,subset=c((vreg_3=="alle"|vreg_3=="NULL")&(invalder_3=="alle"|invalder_3=="NULL")))
+grunnskolepoeng_innvkat5 = subset(df_grunn,select=-c(vreg_3,invalder_3))
+nrow(grunnskolepoeng_innvkat5)==84*3*5*2
+write.csv(grunnskolepoeng_innvkat5,"D:/R/imdikator-munch/data_flat_output/grunnskolepoeng-naringsregion-2014.csv",row.names=F)
+
+df_innv = subset(grunnskolepoeng,subset=c(vreg_3!="NULL"|invalder_3!="NULL"))
+grunnskolepoeng_innvandrere = subset(df_innv,select=-innvkat_5)
+nrow(grunnskolepoeng_innvandrere)==84*3*1*3*3*2
+grunnskolepoeng_innvandrere$tabell_navn="grunnskolepoeng_innvandrere"
+write.csv(grunnskolepoeng_innvandrere,"D:/R/imdikator-munch/data_flat_output/grunnskolepoeng_innvandrere-naringsregion-2014.csv",row.names=F)
+
+#næringsregion - 2015
+# aar er feil - må kodes som siste året i intervallet, avgangsåret.
+# person må bli personer
+# logiske sjekker
+grunnskolepoeng <- read.csv("D:/R/imdikator-munch/data_flat_input/grunnskolepoeng_næringsregion_2015_ny.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=";", dec=",",colClasses="character")
+grunnskolepoeng$aar[grunnskolepoeng$aar=="2014-2015"]="2015"
+grunnskolepoeng$enhet[grunnskolepoeng$enhet=="person"]="personer"
+nlevels(as.factor(grunnskolepoeng$naringsregion_nr))
+df_grunn = subset(grunnskolepoeng,subset=c((vreg_3=="alle"|vreg_3=="NULL")&(invalder_3=="alle"|invalder_3=="NULL")))
+grunnskolepoeng_innvkat5 = subset(df_grunn,select=-c(vreg_3,invalder_3))
+nrow(grunnskolepoeng_innvkat5)==84*3*5*2
+write.csv(grunnskolepoeng_innvkat5,"D:/R/imdikator-munch/data_flat_output/grunnskolepoeng-naringsregion-2015.csv",row.names=F)
+
+df_innv = subset(grunnskolepoeng,subset=c(vreg_3!="NULL"|invalder_3!="NULL"))
+grunnskolepoeng_innvandrere = subset(df_innv,select=-innvkat_5)
+nrow(grunnskolepoeng_innvandrere)==84*3*1*3*3*2
+grunnskolepoeng_innvandrere$tabell_navn="grunnskolepoeng_innvandrere"
+write.csv(grunnskolepoeng_innvandrere,"D:/R/imdikator-munch/data_flat_output/grunnskolepoeng_innvandrere-naringsregion-2015.csv",row.names=F)
+
+# fylke - 2014
+# aar er feil - må kodes som siste året i intervallet, avgangsåret.
+# person må bli personer
+# logiske sjekker
+grunnskolepoeng <- read.csv("D:/R/imdikator-munch/data_flat_input/grunnskolepoeng_fylke_2014_ny.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=";", dec=",",colClasses="character")
+grunnskolepoeng$aar[grunnskolepoeng$aar=="2013-2014"]="2014"
+grunnskolepoeng$enhet[grunnskolepoeng$enhet=="person"]="personer"
+nlevels(as.factor(grunnskolepoeng$fylke_nr))
+df_grunn = subset(grunnskolepoeng,subset=c((vreg_3=="alle"|vreg_3=="NULL")&(invalder_3=="alle"|invalder_3=="NULL")))
+grunnskolepoeng_innvkat5 = subset(df_grunn,select=-c(vreg_3,invalder_3))
+nrow(grunnskolepoeng_innvkat5)==21*3*5*2
+write.csv(grunnskolepoeng_innvkat5,"D:/R/imdikator-munch/data_flat_output/grunnskolepoeng-fylke-2014.csv",row.names=F)
+
+df_innv = subset(grunnskolepoeng,subset=c(vreg_3!="NULL"|invalder_3!="NULL"))
+grunnskolepoeng_innvandrere = subset(df_innv,select=-innvkat_5)
+nrow(grunnskolepoeng_innvandrere)==21*3*1*3*3*2
+grunnskolepoeng_innvandrere$tabell_navn="grunnskolepoeng_innvandrere"
+write.csv(grunnskolepoeng_innvandrere,"D:/R/imdikator-munch/data_flat_output/grunnskolepoeng_innvandrere-fylke-2014.csv",row.names=F)
+
+# fylke - 2015
+# aar er feil - må kodes som siste året i intervallet, avgangsåret.
+# person må bli personer
+# logiske sjekker
+grunnskolepoeng <- read.csv("D:/R/imdikator-munch/data_flat_input/grunnskolepoeng_fylke_2015_ny.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=";", dec=",",colClasses="character")
+grunnskolepoeng$aar[grunnskolepoeng$aar=="2014-2015"]="2015"
+grunnskolepoeng$enhet[grunnskolepoeng$enhet=="person"]="personer"
+nlevels(as.factor(grunnskolepoeng$fylke_nr))
+df_grunn = subset(grunnskolepoeng,subset=c((vreg_3=="alle"|vreg_3=="NULL")&(invalder_3=="alle"|invalder_3=="NULL")))
+grunnskolepoeng_innvkat5 = subset(df_grunn,select=-c(vreg_3,invalder_3))
+nrow(grunnskolepoeng_innvkat5)==21*3*5*2
+write.csv(grunnskolepoeng_innvkat5,"D:/R/imdikator-munch/data_flat_output/grunnskolepoeng-fylke-2015.csv",row.names=F)
+
+df_innv = subset(grunnskolepoeng,subset=c(vreg_3!="NULL"|invalder_3!="NULL"))
+grunnskolepoeng_innvandrere = subset(df_innv,select=-innvkat_5)
+nrow(grunnskolepoeng_innvandrere)==21*3*1*3*3*2
+grunnskolepoeng_innvandrere$tabell_navn="grunnskolepoeng_innvandrere"
+write.csv(grunnskolepoeng_innvandrere,"D:/R/imdikator-munch/data_flat_output/grunnskolepoeng_innvandrere-fylke-2015.csv",row.names=F)
+
+#VIDEREGÅENDE_FULLFØRT
+library(tidyr)
+#sjekk av alle komboer - 2009
+videregaende_fullfort <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab34_2009.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+levels(as.factor(videregaende_fullfort$invkat_5))
+#geoenheter * 5 innvkat * 3 kjønn * 2 enheter
+df = subset(videregaende_fullfort,fylke_nr!="NULL")
+nlevels(as.factor(df$fylke_nr))
+nrow(subset(videregaende_fullfort,fylke_nr!="NULL"))==20*5*3*2
+df_2=spread(df,invkat_5,tabellvariabel,drop=F)
+
+df = subset(videregaende_fullfort,naringsregion_nr!="NULL")
+nrow(df)==nlevels(as.factor(df$naringsregion_nr))*5*3*2
+df_2=spread(df,invkat_5,tabellvariabel,drop=F)
+
+df = subset(videregaende_fullfort,kommune_nr!="NULL")
+nrow(df)==nlevels(as.factor(df$kommune_nr))*5*3*2
+df_2=spread(df,invkat_5,tabellvariabel,drop=F)
+
+df = subset(videregaende_fullfort,bydel_nr!="NULL")
+nrow(df)==nlevels(as.factor(df$bydel_nr))*5*3*2
+df_2=spread(df,invkat_5,tabellvariabel,drop=F)
+
+#VIDEREGÅENDE_FULLFØRT
+library(tidyr)
+#sjekk av alle komboer - 2010
+videregaende_fullfort <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab34_2010.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+levels(as.factor(videregaende_fullfort$invkat_5))
+#geoenheter * 5 innvkat * 3 kjønn * 2 enheter
+df = subset(videregaende_fullfort,fylke_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$fylke_nr))*5*3*2
+
+df = subset(videregaende_fullfort,naringsregion_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$naringsregion_nr))*5*3*2
+
+df = subset(videregaende_fullfort,kommune_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$kommune_nr))*5*3*2
+
+#VIDEREGÅENDE_FULLFØRT
+library(tidyr)
+#sjekk av alle komboer - 2011
+videregaende_fullfort <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab34_2011.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+levels(as.factor(videregaende_fullfort$invkat_5))
+#geoenheter * 5 innvkat * 3 kjønn * 2 enheter
+df = subset(videregaende_fullfort,fylke_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$fylke_nr))*5*3*2
+
+df = subset(videregaende_fullfort,naringsregion_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$naringsregion_nr))*5*3*2
+
+df = subset(videregaende_fullfort,kommune_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$kommune_nr))*5*3*2
+
+#SYSSELSATTE_INNVANDRINGSGRUNN
+library(tidyr)
+#sjekk av alle komboer - 2011
+sysselsatte_innvandringsgrunn <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_1_60a.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_innvandringsgrunn$kommune_nr))
+levels(as.factor(sysselsatte_innvandringsgrunn$innvgrunn_6))
+levels(as.factor(sysselsatte_innvandringsgrunn$aar))
+levels(as.factor(sysselsatte_innvandringsgrunn$enhet))
+#geoenheter * 5 innvgrunn * 3 kjønn * 2 enheter * 9 år
+df = subset(sysselsatte_innvandringsgrunn,aar=="2014")
+nrow(df)-nlevels(as.factor(df$kommune_nr))*5*3*2
+
+#SYSSELSATTE_INNVANDRINGSGRUNN
+library(tidyr)
+sysselsatte_innvkat_alder <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_9_612a.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_innvandringsgrunn$kommune_nr))
+levels(as.factor(sysselsatte_innvkat_alder$arbeidsalder_18_69))
+levels(as.factor(sysselsatte_innvandringsgrunn$aar))
+levels(as.factor(sysselsatte_innvandringsgrunn$enhet))
+#geoenheter * 5 innvgrunn * 3 kjønn * 2 enheter * 9 år
+df = subset(sysselsatte_innvandringsgrunn,aar=="2014")
+nrow(df)-nlevels(as.factor(df$kommune_nr))*5*3*2
+
+#SYSSELSATTE_BOTID
+library(tidyr)
+sysselsatte_botid <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_13_62a.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_botid$kommune_nr))
+levels(as.factor(sysselsatte_botid$botid_5))
+levels(as.factor(sysselsatte_botid$aar))
+levels(as.factor(sysselsatte_botid$enhet))
+#geoenheter * 4 botid * 2 enheter * 1 år
+df = subset(sysselsatte_botid,aar=="2014")
+nrow(df)-nlevels(as.factor(df$kommune_nr))*4*2
+
+#SYSSELSATTE_BOTID
+library(tidyr)
+sysselsatte_botid_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_17_631a.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_botid_land$kommune_nr))
+levels(as.factor(sysselsatte_botid_land$botid_5))
+levels(as.factor(sysselsatte_botid_land$vreg_3))
+levels(as.factor(sysselsatte_botid_land$aar))
+levels(as.factor(sysselsatte_botid_land$enhet))
+#geoenheter * 4 botid * 3 vreg * 2 enheter * 1 år
+df = subset(sysselsatte_botid_land,aar=="2014")
+nrow(df)-nlevels(as.factor(df$kommune_nr))*4*3*2
+
+#SYSSELSATTE_KJONN_LAND
+library(tidyr)
+sysselsatte_kjonn_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_21_632a.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_kjonn_land$kommune_nr))
+levels(as.factor(sysselsatte_kjonn_land$vreg_3))
+levels(as.factor(sysselsatte_kjonn_land$kjonn))
+levels(as.factor(sysselsatte_kjonn_land$aar))
+levels(as.factor(sysselsatte_kjonn_land$enhet))
+#geoenheter * 3 kjønn * 3 vreg * 2 enheter * 1 år
+df = subset(sysselsatte_kjonn_land,aar=="2014")
+nrow(df)-nlevels(as.factor(df$kommune_nr))*3*3*2
+
+#SYSSELSATTE_LAND
+library(tidyr)
+sysselsatte_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_25_633a.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_land$kommune_nr))
+levels(as.factor(sysselsatte_land$vreg_9))
+levels(as.factor(sysselsatte_land$aar))
+levels(as.factor(sysselsatte_land$enhet))
+#geoenheter * 9 vreg * 2 enheter * 1 år
+df = subset(sysselsatte_land,aar=="2014")
+nrow(df)-nlevels(as.factor(df$kommune_nr))*9*2
+
+#VOKSNE_VIDEREGAENDE
+library(tidyr)
+voksne_videregaende <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab36_2012.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_land$kommune_nr))
+levels(as.factor(sysselsatte_land$vreg_9))
+levels(as.factor(sysselsatte_land$aar))
+levels(as.factor(sysselsatte_land$enhet))
+#geoenheter * 9 vreg * 2 enheter * 1 år
+df = subset(sysselsatte_land,aar=="2014")
+nrow(df)-nlevels(as.factor(df$kommune_nr))*9*2
+
+#utdanningsniva
+#2009
+utdanningsniva <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab37_2009.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+names(utdanningsniva)
+levels(as.factor(utdanningsniva$bydel_nr))
+df=subset(utdanningsniva,utdanningsniva$bydel_nr=="1001")
+df = subset(utdanningsniva,fylke_nr!="NULL")
+levels(as.factor(df$invkat_3))
+levels(as.factor(df$kjonn))
+levels(as.factor(df$utd_5))
+nrow(df)-nlevels(as.factor(df$fylke_nr))*3*3*6*2
+
+df = subset(utdanningsniva,naringsregion_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$naringsregion_nr))*5*3*2
+
+df = subset(videregaende_fullfort,kommune_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$kommune_nr))*5*3*2
+
+#2010
+utdanningsniva <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab37_2010.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+names(utdanningsniva)
+levels(as.factor(utdanningsniva$bydel_nr))
+df = subset(utdanningsniva,fylke_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$fylke_nr))*3*3*6*2
+
+#2011
+utdanningsniva <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab37_2011.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+names(utdanningsniva)
+levels(as.factor(utdanningsniva$bydel_nr))
+df = subset(utdanningsniva,fylke_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$fylke_nr))*3*3*6*2
+
+#2012
+utdanningsniva <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab37_2012.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+names(utdanningsniva)
+levels(as.factor(utdanningsniva$bydel_nr))
+df = subset(utdanningsniva,fylke_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$fylke_nr))*3*3*6*2
+
+#2013
+utdanningsniva <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab37_2013.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+names(utdanningsniva)
+levels(as.factor(utdanningsniva$bydel_nr))
+df = subset(utdanningsniva,fylke_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$fylke_nr))*3*3*6*2
+
+#2014
+utdanningsniva <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab37_2014.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+names(utdanningsniva)
+levels(as.factor(utdanningsniva$bydel_nr))
+df = subset(utdanningsniva,fylke_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$fylke_nr))*3*3*6*2
+
+#geoenheter * 5 innvkat * 3 kjønn * 2 enheter
+df = subset(videregaende_fullfort,fylke_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$fylke_nr))*5*3*2
+
+df = subset(videregaende_fullfort,naringsregion_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$naringsregion_nr))*5*3*2
+
+df = subset(videregaende_fullfort,kommune_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$kommune_nr))*5*3*2
