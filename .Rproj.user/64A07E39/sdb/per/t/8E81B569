@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1453400275031.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "8E81B569",
+    "lastKnownWriteTime" : 7602273,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "pkpym8gnn3",
+        "caption" : "bosatt_anmodede",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=bosatt_anmodede&cache_key=pkpym8gnn3",
+        "displayedObservations" : "428",
+        "environment" : "",
+        "object" : "bosatt_anmodede",
+        "totalObservations" : "428",
+        "variables" : "19"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
