@@ -6,7 +6,9 @@
 #så: hva som er gjort med SSBs leveranse i 2015
 
 #BEFOLKNING-ALDER
-befolkning_alder <- read.csv2("D:/R/imdikator-munch/data_flat_input/befolkning_alder_B.csv", stringsAsFactors=FALSE,colClasses = "character")
+#3. februar 2016
+#bydel
+befolkning_alder <- read.csv2("D:/R/imdikator-munch/data_flat_input/befolkning_alder_B_2006_2013.csv", stringsAsFactors=FALSE,colClasses = "character")
 #etter visuell inspeksjon
 #1: en kolonne for mye
 #2: alder_grupper-variabler har - som skilletegn, ikke _
@@ -16,7 +18,109 @@ befolkning_alder <- read.csv2("D:/R/imdikator-munch/data_flat_input/befolkning_a
 #6: alder_grupper-dimensjon mangler alle-variabel
 #7: må ha sep=, dec=.
 #8: fylke=00 og alle andre fylker kan ikke legges i ulike filer. disse må splices.
-#løses i variabel_adding.R
+#9: logisk test
+#bydel
+#1
+befolkning_alder = subset(befolkning_alder,select=-9)
+#2
+befolkning_alder$alder_grupper = gsub("\\-","_",befolkning_alder$alder_grupper)
+levels(as.factor(befolkning_alder$alder_grupper))
+#3
+names(befolkning_alder)[3] = gsub("id","nr",names(befolkning_alder[3]))
+#4
+befolkning_alder$bydel_nr = paste0("0301",befolkning_alder$bydel_nr)
+#5
+levels(as.factor(befolkning_alder$enhet))
+#6 -logisk
+nrow(befolkning_alder)==18*8*3*3*7
+#mangler 1 observasjon.
+#7 - allevariabel
+df=spread(befolkning_alder,alder_grupper,tabellvariabel)
+#df$alle=extract_numeric(df[,10])+extract_numeric(df[,11])+extract_numeric(df[,12])+extract_numeric(df[,13])+extract_numeric(df[,14])+extract_numeric(df[,15])+extract_numeric(df[,16])
+df$alle=apply(df[,7:13],1,
+              function(x){
+                      sum(extract_numeric(x))
+              }
+)
+test = subset(df,is.na(df$alle)==T)
+df=gather(df,alder_grupper,tabellvariabel,`0_5`:alle)
+sum(is.na(df$tabellvariabel))
+df$tabellvariabel[is.na(df$tabellvariabel)==T]="."
+#8 - ny logisk
+nrow(df)==18*8*3*3*8
+#utskrift
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/befolkning_alder-bydel-2006_2013.csv",row.names=F)
+
+#KOMMUNE
+befolkning_alder <- read.csv2("D:/R/imdikator-munch/data_flat_input/befolkning_alder_K_2006_2013.csv", stringsAsFactors=FALSE,colClasses = "character")
+befolkning_alder = subset(befolkning_alder,select=-9)
+befolkning_alder$alder_grupper = gsub("\\-","_",befolkning_alder$alder_grupper)
+levels(as.factor(befolkning_alder$alder_grupper))
+names(befolkning_alder)[3] = gsub("id","nr",names(befolkning_alder[3]))
+levels(as.factor(befolkning_alder$enhet))
+nrow(befolkning_alder)==428*8*3*3*7
+df=spread(befolkning_alder,alder_grupper,tabellvariabel)
+df$alle=apply(df[,7:13],1,
+              function(x){
+                      sum(extract_numeric(x))
+              }
+)
+test = subset(df,is.na(df$alle)==T)
+df=gather(df,alder_grupper,tabellvariabel,`0_5`:alle)
+sum(is.na(df$tabellvariabel))
+nrow(df)==428*8*3*3*8
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/befolkning_alder-kommune-2006_2013.csv",row.names=F)
+
+#NÆRINGSREGION
+befolkning_alder <- read.csv2("D:/R/imdikator-munch/data_flat_input/befolkning_alder_N_2006_2013.csv", stringsAsFactors=FALSE,colClasses = "character")
+befolkning_alder = subset(befolkning_alder,select=-9)
+befolkning_alder$alder_grupper = gsub("\\-","_",befolkning_alder$alder_grupper)
+levels(as.factor(befolkning_alder$alder_grupper))
+names(befolkning_alder)[3] = gsub("id","nr",names(befolkning_alder[3]))
+levels(as.factor(befolkning_alder$enhet))
+befolkning_alder$enhet="personer"
+nrow(befolkning_alder)==83*8*3*3*7
+df=spread(befolkning_alder,alder_grupper,tabellvariabel)
+df$alle=apply(df[,7:13],1,
+              function(x){
+                      sum(extract_numeric(x))
+              }
+)
+test = subset(df,is.na(df$alle)==T)
+df=gather(df,alder_grupper,tabellvariabel,`0_5`:alle)
+sum(is.na(df$tabellvariabel))
+df$tabellvariabel[is.na(df$tabellvariabel)==T]="."
+nrow(df)==83*8*3*3*8
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/befolkning_alder-naringsregion-2006_2013.csv",row.names=F)
+
+#FYLKE INKL LANDET
+befolkning_alder <- read.csv2("D:/R/imdikator-munch/data_flat_input/befolkning_alder_F_2006_2013.csv", stringsAsFactors=FALSE,colClasses = "character")
+befolkning_alder_landet <- read.csv2("D:/R/imdikator-munch/data_flat_input/befolkning_alder_L_2006_2013.csv", stringsAsFactors=FALSE,colClasses = "character")
+befolkning_alder = rbind(befolkning_alder,befolkning_alder_landet)
+befolkning_alder = subset(befolkning_alder,select=-9)
+befolkning_alder$alder_grupper = gsub("\\-","_",befolkning_alder$alder_grupper)
+levels(as.factor(befolkning_alder$alder_grupper))
+names(befolkning_alder)[3] = gsub("id","nr",names(befolkning_alder[3]))
+levels(as.factor(befolkning_alder$fylke_nr))
+levels(as.factor(befolkning_alder$enhet))
+nrow(befolkning_alder)==20*8*3*3*7
+df=spread(befolkning_alder,alder_grupper,tabellvariabel)
+df$alle=apply(df[,7:13],1,
+              function(x){
+                      sum(extract_numeric(x))
+              }
+)
+test = subset(df,is.na(df$alle)==T)
+df=gather(df,alder_grupper,tabellvariabel,`0_5`:alle)
+sum(is.na(df$tabellvariabel))
+df$tabellvariabel[is.na(df$tabellvariabel)==T]="."
+nrow(df)==20*8*3*3*8
+
+#substansiell sjekk
+df$tabellvariabel[df$alder_grupper=="alle"&df$aar=="2013"&df$innvkat_3=="alle"&df$fylke_nr=="00"&df$kjonn=="alle"]
+
+#utskrift
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/befolkning_alder-fylke-2006_2013.csv",row.names=F)
 
 #BARNEHAGEDELTAKELSE
 test <- read.csv("D:/R/imdikator-munch/data_flat_output/barnehagedeltakelse_spraak-bydel-2013.csv", stringsAsFactors=FALSE,colClasses = "character")
@@ -78,6 +182,9 @@ norsk_prover <- read.csv("D:/R/imdikator-munch/data_flat_input/norsk_prover.csv"
 
 norsk_prover <- read.csv("D:/R/imdikator-munch/data_crossed_input/norsk_prover-fylke-halvar2014.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE)
 #krysstabell, ikke flat.
+
+#25. januar
+norsk_prover <- read.csv("D:/R/imdikator-munch/data_crossed_input/norsk_prover-fylke-2015.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=";", dec=",",colClasses="character")
 
 #intro avslutning direkte
 #26. oktober
@@ -163,6 +270,37 @@ levels(as.factor(befolkning_innvandringsgrunn$innvgrunn_6))
 befolkning_innvandringsgrunn = subset(befolkning_innvandringsgrunn,innvgrunn_6!=" ")
 write.csv(befolkning_innvandringsgrunn,"D:/R/imdikator-munch/data_flat_output/befolkning_innvandringsgrunn-bydel-2015.csv",row.names=F)
 
+#Bydel 2006-2013
+befolkning_innvandringsgrunn_06 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_B_2006.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_07 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_B_2007.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_08 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_B_2008.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_09 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_B_2009.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_10 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_B_2010.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_11 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_B_2011.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_12 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_B_2012.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_13 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_B_2013.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn = rbind(befolkning_innvandringsgrunn_06,befolkning_innvandringsgrunn_07,befolkning_innvandringsgrunn_08,befolkning_innvandringsgrunn_09,befolkning_innvandringsgrunn_10,befolkning_innvandringsgrunn_11,befolkning_innvandringsgrunn_12,befolkning_innvandringsgrunn_13)
+
+#0. en kolonne for mye
+#1. Bydel-ID har feil lengde
+#2. Bydel_nr
+#3. feil sep
+#4. innvgrunn_6 har tomme verdier
+#5 enhet skal være personer
+befolkning_innvandringsgrunn = subset(befolkning_innvandringsgrunn,select=-8)
+befolkning_innvandringsgrunn$bydel_id[nchar(befolkning_innvandringsgrunn$bydel_id)==1] = paste0("0",befolkning_innvandringsgrunn$bydel_id[nchar(befolkning_innvandringsgrunn$bydel_id)==1])
+befolkning_innvandringsgrunn$bydel_id[nchar(befolkning_innvandringsgrunn$bydel_id)==2] = paste0("0301",befolkning_innvandringsgrunn$bydel_id[nchar(befolkning_innvandringsgrunn$bydel_id)==2])
+names(befolkning_innvandringsgrunn)[3] = "bydel_nr"
+levels(as.factor(befolkning_innvandringsgrunn$innvgrunn_6))
+befolkning_innvandringsgrunn = subset(befolkning_innvandringsgrunn,innvgrunn_6!=" ")
+levels(as.factor(befolkning_innvandringsgrunn$kjonn))
+levels(as.factor(befolkning_innvandringsgrunn$enhet))
+befolkning_innvandringsgrunn$enhet[befolkning_innvandringsgrunn$enhet=="person"]="personer"
+#logisk sjekk
+nrow(befolkning_innvandringsgrunn)==8*18*6*3*2
+write.csv(befolkning_innvandringsgrunn,"D:/R/imdikator-munch/data_flat_output/befolkning_innvandringsgrunn-bydel-2006_2013.csv",row.names=F)
+
+
 #2014-kommune
 befolkning_innvandringsgrunn <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_K_2014.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE)
 #0. en kolonne for mye
@@ -191,6 +329,36 @@ levels(as.factor(befolkning_innvandringsgrunn$innvgrunn_6))
 befolkning_innvandringsgrunn = subset(befolkning_innvandringsgrunn,innvgrunn_6!=" ")
 write.csv(befolkning_innvandringsgrunn,"D:/R/imdikator-munch/data_flat_output/befolkning_innvandringsgrunn-kommune-2015.csv",row.names=F)
 
+#Kommune 2006-2013
+befolkning_innvandringsgrunn_06 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_K_2006.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_07 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_K_2007.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_08 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_K_2008.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_09 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_K_2009.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_10 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_K_2010.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_11 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_K_2011.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_12 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_K_2012.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_13 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_K_2013.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn = rbind(befolkning_innvandringsgrunn_06,befolkning_innvandringsgrunn_07,befolkning_innvandringsgrunn_08,befolkning_innvandringsgrunn_09,befolkning_innvandringsgrunn_10,befolkning_innvandringsgrunn_11,befolkning_innvandringsgrunn_12,befolkning_innvandringsgrunn_13)
+
+#0. en kolonne for mye
+#1. Bydel-ID har feil lengde
+#2. Bydel_nr
+#3. feil sep
+#4. innvgrunn_6 har tomme verdier
+#5 enhet skal være personer
+befolkning_innvandringsgrunn = subset(befolkning_innvandringsgrunn,select=-8)
+befolkning_innvandringsgrunn$kommune_id[nchar(befolkning_innvandringsgrunn$kommune_id)==3] = paste0("0",befolkning_innvandringsgrunn$kommune_id[nchar(befolkning_innvandringsgrunn$kommune_id)==3])
+names(befolkning_innvandringsgrunn)[3] = "kommune_nr"
+levels(as.factor(befolkning_innvandringsgrunn$innvgrunn_6))
+befolkning_innvandringsgrunn = subset(befolkning_innvandringsgrunn,innvgrunn_6!=" ")
+levels(as.factor(befolkning_innvandringsgrunn$kjonn))
+levels(as.factor(befolkning_innvandringsgrunn$enhet))
+befolkning_innvandringsgrunn$enhet[befolkning_innvandringsgrunn$enhet=="person"]="personer"
+nlevels(as.factor(befolkning_innvandringsgrunn$kommune_nr))
+#logisk sjekk
+nrow(befolkning_innvandringsgrunn)==8*428*6*3*2
+write.csv(befolkning_innvandringsgrunn,"D:/R/imdikator-munch/data_flat_output/befolkning_innvandringsgrunn-kommune-2006_2013.csv",row.names=F)
+
 #2014-næringsregion
 befolkning_innvandringsgrunn <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_N_2014.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE)
 #0. en kolonne for mye
@@ -218,6 +386,32 @@ names(befolkning_innvandringsgrunn)[3] = "naringsregion_nr"
 levels(as.factor(befolkning_innvandringsgrunn$innvgrunn_6))
 befolkning_innvandringsgrunn = subset(befolkning_innvandringsgrunn,innvgrunn_6!=" ")
 write.csv(befolkning_innvandringsgrunn,"D:/R/imdikator-munch/data_flat_output/befolkning_innvandringsgrunn-naringsregion-2015.csv",row.names=F)
+
+#Næringsregion 2006-2013
+befolkning_innvandringsgrunn_06 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_N_2006.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_07 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_N_2007.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_08 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_N_2008.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_09 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_N_2009.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_10 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_N_2010.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_11 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_N_2011.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_12 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_N_2012.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_13 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_N_2013.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn = rbind(befolkning_innvandringsgrunn_06,befolkning_innvandringsgrunn_07,befolkning_innvandringsgrunn_08,befolkning_innvandringsgrunn_09,befolkning_innvandringsgrunn_10,befolkning_innvandringsgrunn_11,befolkning_innvandringsgrunn_12,befolkning_innvandringsgrunn_13)
+
+befolkning_innvandringsgrunn = subset(befolkning_innvandringsgrunn,select=-8)
+befolkning_innvandringsgrunn$naringsregion_id[nchar(befolkning_innvandringsgrunn$naringsregion_id)==1] = paste0("0",befolkning_innvandringsgrunn$naringsregion_id[nchar(befolkning_innvandringsgrunn$naringsregion_id)==1])
+names(befolkning_innvandringsgrunn)[3] = "naringsregion_nr"
+levels(as.factor(befolkning_innvandringsgrunn$innvgrunn_6))
+befolkning_innvandringsgrunn = subset(befolkning_innvandringsgrunn,innvgrunn_6!=" ")
+levels(as.factor(befolkning_innvandringsgrunn$kjonn))
+levels(as.factor(befolkning_innvandringsgrunn$enhet))
+befolkning_innvandringsgrunn$enhet[befolkning_innvandringsgrunn$enhet=="person"]="personer"
+nlevels(as.factor(befolkning_innvandringsgrunn$naringsregion_nr))
+levels(as.factor(befolkning_innvandringsgrunn$naringsregion_nr))
+#logisk sjekk
+nrow(befolkning_innvandringsgrunn)==8*84*6*3*2
+test = subset(befolkning_innvandringsgrunn,naringsregion_nr=="99")
+write.csv(befolkning_innvandringsgrunn,"D:/R/imdikator-munch/data_flat_output/befolkning_innvandringsgrunn-naringsregion-2006_2013.csv",row.names=F)
 
 #2014-fylke
 befolkning_innvandringsgrunn <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_F_2014.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE)
@@ -263,8 +457,45 @@ befolkning_innvandringsgrunn_norge = subset(befolkning_innvandringsgrunn_norge,i
 befolkning_innvandringsgrunn = rbind(befolkning_innvandringsgrunn,befolkning_innvandringsgrunn_norge)
 write.csv(befolkning_innvandringsgrunn,"D:/R/imdikator-munch/data_flat_output/befolkning_innvandringsgrunn-fylke-2015.csv",row.names=F)
 
+#Fylke og land 2006-2013
+befolkning_innvandringsgrunn_06 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_F_2006.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_07 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_F_2007.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_08 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_F_2008.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_09 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_F_2009.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_10 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_F_2010.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_11 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_F_2011.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_12 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_F_2012.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_13 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_F_2013.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn = rbind(befolkning_innvandringsgrunn_06,befolkning_innvandringsgrunn_07,befolkning_innvandringsgrunn_08,befolkning_innvandringsgrunn_09,befolkning_innvandringsgrunn_10,befolkning_innvandringsgrunn_11,befolkning_innvandringsgrunn_12,befolkning_innvandringsgrunn_13)
+
+befolkning_innvandringsgrunn_06 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_L_2006.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_07 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_L_2007.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_08 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_L_2008.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_09 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_L_2009.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_10 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_L_2010.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_11 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_L_2011.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_12 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_L_2012.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_13 <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_innvandringsgrunn_L_2013.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses="character")
+befolkning_innvandringsgrunn_land = rbind(befolkning_innvandringsgrunn_06,befolkning_innvandringsgrunn_07,befolkning_innvandringsgrunn_08,befolkning_innvandringsgrunn_09,befolkning_innvandringsgrunn_10,befolkning_innvandringsgrunn_11,befolkning_innvandringsgrunn_12,befolkning_innvandringsgrunn_13)
+befolkning_innvandringsgrunn = rbind(befolkning_innvandringsgrunn,befolkning_innvandringsgrunn_land)
+
+befolkning_innvandringsgrunn = subset(befolkning_innvandringsgrunn,select=-8)
+befolkning_innvandringsgrunn$fylke_id[nchar(befolkning_innvandringsgrunn$fylke_id)==1] = paste0("0",befolkning_innvandringsgrunn$fylke_id[nchar(befolkning_innvandringsgrunn$fylke_id)==1])
+names(befolkning_innvandringsgrunn)[3] = "fylke_nr"
+levels(as.factor(befolkning_innvandringsgrunn$innvgrunn_6))
+befolkning_innvandringsgrunn = subset(befolkning_innvandringsgrunn,innvgrunn_6!=" ")
+befolkning_innvandringsgrunn$enhet[befolkning_innvandringsgrunn$enhet=="person"]="personer"
+
+nlevels(as.factor(befolkning_innvandringsgrunn$fylke_nr))
+levels(as.factor(befolkning_innvandringsgrunn$fylke_nr))
+#logisk sjekk
+nrow(befolkning_innvandringsgrunn)==8*20*6*3*2
+write.csv(befolkning_innvandringsgrunn,"D:/R/imdikator-munch/data_flat_output/befolkning_innvandringsgrunn-fylke-2006_2013.csv",row.names=F)
+
 #BEFOLKNING_OPPRINNELSESLAND
-befolkning_opprinnelsesland <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_opprinnelsesland_B.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE)
+#kjørt på nytt 31. januar.
+befolkning_opprinnelsesland <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_opprinnelsesland_B_2006_2013.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses = "character")
+#2 kolonner for mye
 #1. Bydel-ID har feil lengde
 #2. Bydel_nr
 #3. feil sep
@@ -273,10 +504,10 @@ befolkning_opprinnelsesland = subset(befolkning_opprinnelsesland,select=c(-8,-kj
 befolkning_opprinnelsesland$bydel_id[nchar(befolkning_opprinnelsesland$bydel_id)==1] = paste0("0",befolkning_opprinnelsesland$bydel_id[nchar(befolkning_opprinnelsesland$bydel_id)==1])
 befolkning_opprinnelsesland$bydel_id[nchar(befolkning_opprinnelsesland$bydel_id)==2] = paste0("0301",befolkning_opprinnelsesland$bydel_id[nchar(befolkning_opprinnelsesland$bydel_id)==2])
 names(befolkning_opprinnelsesland)[3] = "bydel_nr"
-write.csv(befolkning_opprinnelsesland,"D:/R/imdikator-munch/data_flat_output/befolkning_opprinnelsesland-bydel-2015.csv",row.names=F)
+write.csv(befolkning_opprinnelsesland,"D:/R/imdikator-munch/data_flat_output/befolkning_opprinnelsesland-bydel-2006_2013.csv",row.names=F)
 
 #kommune
-befolkning_opprinnelsesland <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_opprinnelsesland_K.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE)
+befolkning_opprinnelsesland <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_opprinnelsesland_K_2006_2013.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses = "character")
 #1. kommune-ID har feil lengde
 #2. kommune_nr
 #3. feil sep
@@ -284,10 +515,10 @@ levels(as.factor(befolkning_opprinnelsesland$kjonn))
 befolkning_opprinnelsesland = subset(befolkning_opprinnelsesland,select=c(-8,-kjonn))
 befolkning_opprinnelsesland$kommune_id[nchar(befolkning_opprinnelsesland$kommune_id)==3] = paste0("0",befolkning_opprinnelsesland$kommune_id[nchar(befolkning_opprinnelsesland$kommune_id)==3])
 names(befolkning_opprinnelsesland)[3] = "kommune_nr"
-write.csv(befolkning_opprinnelsesland,"D:/R/imdikator-munch/data_flat_output/befolkning_opprinnelsesland-kommune-2015.csv",row.names=F)
+write.csv(befolkning_opprinnelsesland,"D:/R/imdikator-munch/data_flat_output/befolkning_opprinnelsesland-kommune-2006_2013.csv",row.names=F)
 
 #naringsregion
-befolkning_opprinnelsesland <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_opprinnelsesland_N.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE)
+befolkning_opprinnelsesland <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_opprinnelsesland_N_2006_2013.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses = "character")
 #1. naringsregion-ID har feil lengde
 #2. naringsregion_nr
 #3. feil sep
@@ -295,10 +526,12 @@ levels(as.factor(befolkning_opprinnelsesland$kjonn))
 befolkning_opprinnelsesland = subset(befolkning_opprinnelsesland,select=c(-8,-kjonn))
 befolkning_opprinnelsesland$naringsregion_id[nchar(befolkning_opprinnelsesland$naringsregion_id)==1] = paste0("0",befolkning_opprinnelsesland$naringsregion_id[nchar(befolkning_opprinnelsesland$naringsregion_id)==1])
 names(befolkning_opprinnelsesland)[3] = "naringsregion_nr"
-write.csv(befolkning_opprinnelsesland,"D:/R/imdikator-munch/data_flat_output/befolkning_opprinnelsesland-naringsregion-2015.csv",row.names=F)
+write.csv(befolkning_opprinnelsesland,"D:/R/imdikator-munch/data_flat_output/befolkning_opprinnelsesland-naringsregion-2006_2013.csv",row.names=F)
 
 #fylke + land
-befolkning_opprinnelsesland <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_opprinnelsesland_F.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE)
+befolkning_opprinnelsesland <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_opprinnelsesland_F_2006_2013.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE)
+befolkning_opprinnelsesland_N <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_opprinnelsesland_L_2006_2013.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE)
+befolkning_opprinnelsesland = rbind(befolkning_opprinnelsesland,befolkning_opprinnelsesland_N)
 #1. fylke-ID har feil lengde
 #2. fylke_nr
 #3. feil sep
@@ -306,13 +539,7 @@ levels(as.factor(befolkning_opprinnelsesland$kjonn))
 befolkning_opprinnelsesland = subset(befolkning_opprinnelsesland,select=c(-8,-kjonn))
 befolkning_opprinnelsesland$fylke_id[nchar(befolkning_opprinnelsesland$fylke_id)==1] = paste0("0",befolkning_opprinnelsesland$fylke_id[nchar(befolkning_opprinnelsesland$fylke_id)==1])
 names(befolkning_opprinnelsesland)[3] = "fylke_nr"
-befolkning_opprinnelsesland_norge <- read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_opprinnelsesland_L.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE)
-levels(as.factor(befolkning_opprinnelsesland_norge$kjonn))
-befolkning_opprinnelsesland_norge = subset(befolkning_opprinnelsesland_norge,select=c(-8,-kjonn))
-befolkning_opprinnelsesland_norge$fylke_id[nchar(befolkning_opprinnelsesland_norge$fylke_id)==1] = paste0("0",befolkning_opprinnelsesland_norge$fylke_id[nchar(befolkning_opprinnelsesland_norge$fylke_id)==1])
-names(befolkning_opprinnelsesland_norge)[3] = "fylke_nr"
-befolkning_opprinnelsesland = rbind(befolkning_opprinnelsesland,befolkning_opprinnelsesland_norge)
-write.csv(befolkning_opprinnelsesland,"D:/R/imdikator-munch/data_flat_output/befolkning_opprinnelsesland-fylke-2015.csv",row.names=F)
+write.csv(befolkning_opprinnelsesland,"D:/R/imdikator-munch/data_flat_output/befolkning_opprinnelsesland-fylke-2006_2013.csv",row.names=F)
 
 #BEFOLKNING_Verdensregion
 #6. desember 2015
@@ -1053,6 +1280,7 @@ write.csv(grunnskolepoeng_innvandrere,"D:/R/imdikator-munch/data_flat_output/gru
 
 #VIDEREGÅENDE_FULLFØRT
 library(tidyr)
+#kjørt på nytt 25. januar
 #sjekk av alle komboer - 2009
 videregaende_fullfort <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab34_2009.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
 levels(as.factor(videregaende_fullfort$invkat_5))
@@ -1061,15 +1289,15 @@ df = subset(videregaende_fullfort,fylke_nr!="NULL")
 nlevels(as.factor(df$fylke_nr))
 nrow(subset(videregaende_fullfort,fylke_nr!="NULL"))==20*5*3*2
 df_2=spread(df,invkat_5,tabellvariabel,drop=F)
-
+sum(is.na(df_2[,9:13])==T,na.rm=F)
 df = subset(videregaende_fullfort,naringsregion_nr!="NULL")
 nrow(df)==nlevels(as.factor(df$naringsregion_nr))*5*3*2
 df_2=spread(df,invkat_5,tabellvariabel,drop=F)
-
+sum(is.na(df_2[,9:13])==T,na.rm=F)
 df = subset(videregaende_fullfort,kommune_nr!="NULL")
 nrow(df)==nlevels(as.factor(df$kommune_nr))*5*3*2
 df_2=spread(df,invkat_5,tabellvariabel,drop=F)
-
+sum(is.na(df_2[,9:13])==T,na.rm=F)
 df = subset(videregaende_fullfort,bydel_nr!="NULL")
 nrow(df)==nlevels(as.factor(df$bydel_nr))*5*3*2
 df_2=spread(df,invkat_5,tabellvariabel,drop=F)
@@ -1082,7 +1310,7 @@ levels(as.factor(videregaende_fullfort$invkat_5))
 #geoenheter * 5 innvkat * 3 kjønn * 2 enheter
 df = subset(videregaende_fullfort,fylke_nr!="NULL")
 nrow(df)-nlevels(as.factor(df$fylke_nr))*5*3*2
-
+df_2=spread(df,invkat_5,tabellvariabel,drop=F)
 df = subset(videregaende_fullfort,naringsregion_nr!="NULL")
 nrow(df)-nlevels(as.factor(df$naringsregion_nr))*5*3*2
 
@@ -1104,74 +1332,665 @@ nrow(df)-nlevels(as.factor(df$naringsregion_nr))*5*3*2
 df = subset(videregaende_fullfort,kommune_nr!="NULL")
 nrow(df)-nlevels(as.factor(df$kommune_nr))*5*3*2
 
+#VIDEREGÅENDE_FULLFØRT
+library(tidyr)
+#sjekk av alle komboer - 2012
+videregaende_fullfort <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab34_2012.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+levels(as.factor(videregaende_fullfort$invkat_5))
+#geoenheter * 5 innvkat * 3 kjønn * 2 enheter
+df = subset(videregaende_fullfort,fylke_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$fylke_nr))*5*3*2
+df = subset(videregaende_fullfort,naringsregion_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$naringsregion_nr))*5*3*2
+df = subset(videregaende_fullfort,kommune_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$kommune_nr))*5*3*2
+
+#sjekk av alle komboer - 2013
+videregaende_fullfort <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab34_2013.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+levels(as.factor(videregaende_fullfort$invkat_5))
+#geoenheter * 5 innvkat * 3 kjønn * 2 enheter
+df = subset(videregaende_fullfort,fylke_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$fylke_nr))*5*3*2
+df = subset(videregaende_fullfort,naringsregion_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$naringsregion_nr))*5*3*2
+df = subset(videregaende_fullfort,kommune_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$kommune_nr))*5*3*2
+
+#sjekk av alle komboer - 2014
+videregaende_fullfort <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab34_2014.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+levels(as.factor(videregaende_fullfort$invkat_5))
+#geoenheter * 5 innvkat * 3 kjønn * 2 enheter
+df = subset(videregaende_fullfort,fylke_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$fylke_nr))*5*3*2
+df = subset(videregaende_fullfort,naringsregion_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$naringsregion_nr))*5*3*2
+df = subset(videregaende_fullfort,kommune_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$kommune_nr))*5*3*2
+
+#Videregående-fullført
+#25. januar
+#1. aar kodet xaar
+#2. innvkat5 kodet invkat5
+videregaende_fullfort <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab34_2009.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+names(videregaende_fullfort)[2]="aar"
+names(videregaende_fullfort)[7]="innvkat_5"
+write.csv(videregaende_fullfort,"D:/R/imdikator-munch/data_flat_output/videregaende_fullfort-alle-2009.csv",row.names=F)
+videregaende_fullfort <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab34_2010.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+names(videregaende_fullfort)[2]="aar"
+names(videregaende_fullfort)[7]="innvkat_5"
+write.csv(videregaende_fullfort,"D:/R/imdikator-munch/data_flat_output/videregaende_fullfort-alle-2010.csv",row.names=F)
+videregaende_fullfort <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab34_2011.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+names(videregaende_fullfort)[2]="aar"
+names(videregaende_fullfort)[7]="innvkat_5"
+write.csv(videregaende_fullfort,"D:/R/imdikator-munch/data_flat_output/videregaende_fullfort-alle-2011.csv",row.names=F)
+videregaende_fullfort <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab34_2012.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+names(videregaende_fullfort)[2]="aar"
+names(videregaende_fullfort)[7]="innvkat_5"
+write.csv(videregaende_fullfort,"D:/R/imdikator-munch/data_flat_output/videregaende_fullfort-alle-2012.csv",row.names=F)
+videregaende_fullfort <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab34_2013.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+names(videregaende_fullfort)[2]="aar"
+names(videregaende_fullfort)[7]="innvkat_5"
+write.csv(videregaende_fullfort,"D:/R/imdikator-munch/data_flat_output/videregaende_fullfort-alle-2013.csv",row.names=F)
+videregaende_fullfort <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab34_2014.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+names(videregaende_fullfort)[2]="aar"
+names(videregaende_fullfort)[7]="innvkat_5"
+write.csv(videregaende_fullfort,"D:/R/imdikator-munch/data_flat_output/videregaende_fullfort-alle-2014.csv",row.names=F)
+
 #SYSSELSATTE_INNVANDRINGSGRUNN
 library(tidyr)
-#sjekk av alle komboer - 2011
+#kjørt på nytt 27. januar, 31. januar og 3. februar
+#sjekk av alle komboer
 sysselsatte_innvandringsgrunn <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_1_60a.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
 nlevels(as.factor(sysselsatte_innvandringsgrunn$kommune_nr))
+levels(as.factor(sysselsatte_innvandringsgrunn$kommune_nr))
 levels(as.factor(sysselsatte_innvandringsgrunn$innvgrunn_6))
 levels(as.factor(sysselsatte_innvandringsgrunn$aar))
 levels(as.factor(sysselsatte_innvandringsgrunn$enhet))
-#geoenheter * 5 innvgrunn * 3 kjønn * 2 enheter * 9 år
-df = subset(sysselsatte_innvandringsgrunn,aar=="2014")
-nrow(df)-nlevels(as.factor(df$kommune_nr))*5*3*2
+#logisk sjekk
+df=subset(sysselsatte_innvandringsgrunn,aar=="2013")
+nrow(df)==nlevels(as.factor(df[,2]))*7*3*2
+#substanssjekk - populasjonen
+df=subset(sysselsatte_innvandringsgrunn,aar=="2013"&kommune_nr=="0000"&kjonn=="alle"&enhet=="personer")
+df=subset(sysselsatte_innvandringsgrunn,aar=="2013"&kommune_nr=="0000"&kjonn=="alle"&enhet=="prosent")
 
-#SYSSELSATTE_INNVANDRINGSGRUNN
-library(tidyr)
-sysselsatte_innvkat_alder <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_9_612a.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
-nlevels(as.factor(sysselsatte_innvandringsgrunn$kommune_nr))
-levels(as.factor(sysselsatte_innvkat_alder$arbeidsalder_18_69))
+#for testing i testmiljø
+names(sysselsatte_innvandringsgrunn)[3]="innvgrunn_5"
+df = spread(sysselsatte_innvandringsgrunn,innvgrunn_5,tabellvariabel)
+df$annet_uoppgitt = extract_numeric(df$annet)+extract_numeric(df$uoppgitt)+extract_numeric(df$utdanning)
+df$annet_uoppgitt[df$enhet=="prosent"]="."
+df = gather(df,innvgrunn_5,tabellvariabel,6:13)
+df$tabellvariabel[df$enhet=="prosent"]=extract_numeric(df$tabellvariabel[df$enhet=="prosent"])*100
+df$tabellvariabel[is.na(df$tabellvariabel)==T]="."
+
+#bydel
+sysselsatte_innvandringsgrunn <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_2_60b.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_innvandringsgrunn$bydel_nr))
+levels(as.factor(sysselsatte_innvandringsgrunn$bydel_nr))
+levels(as.factor(sysselsatte_innvandringsgrunn$innvgrunn_6))
 levels(as.factor(sysselsatte_innvandringsgrunn$aar))
 levels(as.factor(sysselsatte_innvandringsgrunn$enhet))
-#geoenheter * 5 innvgrunn * 3 kjønn * 2 enheter * 9 år
-df = subset(sysselsatte_innvandringsgrunn,aar=="2014")
-nrow(df)-nlevels(as.factor(df$kommune_nr))*5*3*2
+levels(as.factor(sysselsatte_innvandringsgrunn$kjonn))
+#logisk sjekk
+df=subset(sysselsatte_innvandringsgrunn,aar=="2013")
+nrow(df)==nlevels(as.factor(df[,2]))*7*3*2
+
+#fylke
+sysselsatte_innvandringsgrunn <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_3_60c.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_innvandringsgrunn$fylke_nr))
+levels(as.factor(sysselsatte_innvandringsgrunn$fylke_nr))
+levels(as.factor(sysselsatte_innvandringsgrunn$innvgrunn_6))
+levels(as.factor(sysselsatte_innvandringsgrunn$aar))
+levels(as.factor(sysselsatte_innvandringsgrunn$enhet))
+levels(as.factor(sysselsatte_innvandringsgrunn$kjonn))
+sysselsatte_innvandringsgrunn$tabellvariabel[sysselsatte_innvandringsgrunn$innvgrunn_6=="alle"&sysselsatte_innvandringsgrunn$fylke_nr=="00"&sysselsatte_innvandringsgrunn$enhet=="personer"&sysselsatte_innvandringsgrunn$kjonn=="alle"]
+
+#næringsregion
+sysselsatte_innvandringsgrunn <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_4_60d.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_innvandringsgrunn$naringsregion_nr))
+levels(as.factor(sysselsatte_innvandringsgrunn$naringsregion_nr))
+levels(as.factor(sysselsatte_innvandringsgrunn$innvgrunn_6))
+levels(as.factor(sysselsatte_innvandringsgrunn$aar))
+levels(as.factor(sysselsatte_innvandringsgrunn$enhet))
+levels(as.factor(sysselsatte_innvandringsgrunn$kjonn))
+
+#sysselsatte innvandringskategori
+#kommune
+sysselsatte_innvkat <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_5_611a.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_innvkat$kommune_nr))
+levels(as.factor(sysselsatte_innvkat$kommune_nr))
+levels(as.factor(sysselsatte_innvkat$innvkat_2))
+levels(as.factor(sysselsatte_innvkat$aar))
+levels(as.factor(sysselsatte_innvkat$enhet))
+#logisk sjekk
+df=subset(sysselsatte_innvkat,aar=="2013")
+nrow(df)==nlevels(as.factor(df[,2]))*3*2
+#substanssjekk - populasjonen
+df=subset(sysselsatte_innvkat,aar=="2014"&kommune_nr=="0000"&innvkat_2=="alle")
+df=subset(sysselsatte_innvkat,aar=="2014"&kommune_nr=="0000")
+
+#for testing i miljø
+names(sysselsatte_innvkat)[3]="innvkat_3"
+sysselsatte_innvkat$tabellvariabel[sysselsatte_innvkat$enhet=="prosent"]=extract_numeric(sysselsatte_innvkat$tabellvariabel[sysselsatte_innvkat$enhet=="prosent"])*100
+df=subset(sysselsatte_innvkat,aar=="2014"&kommune_nr=="0000"&innvkat_3=="alle")
+write.csv(sysselsatte_innvkat,"D:/R/imdikator-munch/data_flat_output/sysselsatte_innvkat-kommune-2006_2014.csv",row.names=F)
+
+#bydel
+sysselsatte_innvkat <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_6_611b.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_innvkat$bydel_nr))
+levels(as.factor(sysselsatte_innvkat$bydel_nr))
+levels(as.factor(sysselsatte_innvkat$innvkat_2))
+levels(as.factor(sysselsatte_innvkat$aar))
+levels(as.factor(sysselsatte_innvkat$enhet))
+
+#for testing i miljø
+names(sysselsatte_innvkat)[3]="innvkat_3"
+sysselsatte_innvkat$tabellvariabel[sysselsatte_innvkat$enhet=="prosent"]=extract_numeric(sysselsatte_innvkat$tabellvariabel[sysselsatte_innvkat$enhet=="prosent"])*100
+write.csv(sysselsatte_innvkat,"D:/R/imdikator-munch/data_flat_output/sysselsatte_innvkat-bydel-2006_2014.csv",row.names=F)
+
+#fylke
+sysselsatte_innvkat <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_7_611c.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_innvkat$fylke_nr))
+levels(as.factor(sysselsatte_innvkat$fylke_nr))
+levels(as.factor(sysselsatte_innvkat$innvkat_2))
+levels(as.factor(sysselsatte_innvkat$aar))
+levels(as.factor(sysselsatte_innvkat$enhet))
+
+#for testing i miljø
+names(sysselsatte_innvkat)[3]="innvkat_3"
+sysselsatte_innvkat$tabellvariabel[sysselsatte_innvkat$enhet=="prosent"]=extract_numeric(sysselsatte_innvkat$tabellvariabel[sysselsatte_innvkat$enhet=="prosent"])*100
+write.csv(sysselsatte_innvkat,"D:/R/imdikator-munch/data_flat_output/sysselsatte_innvkat-fylke-2006_2014.csv",row.names=F)
+
+#næringsregion
+sysselsatte_innvkat <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_8_611d.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_innvkat$naringsregion_nr))
+levels(as.factor(sysselsatte_innvkat$naringsregion_nr))
+levels(as.factor(sysselsatte_innvkat$innvkat_2))
+levels(as.factor(sysselsatte_innvkat$aar))
+levels(as.factor(sysselsatte_innvkat$enhet))
+
+#for testing i miljø
+names(sysselsatte_innvkat)[3]="innvkat_3"
+sysselsatte_innvkat$tabellvariabel[sysselsatte_innvkat$enhet=="prosent"]=extract_numeric(sysselsatte_innvkat$tabellvariabel[sysselsatte_innvkat$enhet=="prosent"])*100
+write.csv(sysselsatte_innvkat,"D:/R/imdikator-munch/data_flat_output/sysselsatte_innvkat-naringsregion-2006_2014.csv",row.names=F)
+
+#SYSSELSATTE_INNVKAT_ALDER
+library(tidyr)
+#kommune
+sysselsatte_innvkat_alder <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_9_612a.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_innvkat_alder$kommune_nr))
+levels(as.factor(sysselsatte_innvkat_alder$arbeidsalder_18_69))
+levels(as.factor(sysselsatte_innvkat_alder$innvkat_2))
+levels(as.factor(sysselsatte_innvkat_alder$aar))
+levels(as.factor(sysselsatte_innvkat_alder$enhet))
+#logisk sjekk
+df=subset(sysselsatte_innvkat_alder,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*3*4*2
+#substanssjekk - populasjonen
+df=subset(sysselsatte_innvkat_alder,aar=="2014"&kommune_nr=="0000"&innvkat_2=="alle"&arbeidsalder_18_69=="alle")
+
+#for testing i miljø
+names(sysselsatte_innvkat_alder)[3]="innvkat_3"
+sysselsatte_innvkat_alder$tabellvariabel[sysselsatte_innvkat_alder$enhet=="prosent"]=extract_numeric(sysselsatte_innvkat_alder$tabellvariabel[sysselsatte_innvkat_alder$enhet=="prosent"])*100
+write.csv(sysselsatte_innvkat_alder,"D:/R/imdikator-munch/data_flat_output/sysselsatte_innvkat_alder-kommune-2006_2014.csv",row.names=F)
+
+#bydel
+sysselsatte_innvkat_alder <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_10_612b.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_innvkat_alder$bydel_nr))
+levels(as.factor(sysselsatte_innvkat_alder$bydel_nr))
+levels(as.factor(sysselsatte_innvkat_alder$arbeidsalder_18_69))
+levels(as.factor(sysselsatte_innvkat_alder$innvkat_2))
+levels(as.factor(sysselsatte_innvkat_alder$aar))
+levels(as.factor(sysselsatte_innvkat_alder$enhet))
+#logisk sjekk
+df=subset(sysselsatte_innvkat_alder,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*3*4*2
+
+#for testing i miljø
+names(sysselsatte_innvkat_alder)[3]="innvkat_3"
+sysselsatte_innvkat_alder$tabellvariabel[sysselsatte_innvkat_alder$enhet=="prosent"]=extract_numeric(sysselsatte_innvkat_alder$tabellvariabel[sysselsatte_innvkat_alder$enhet=="prosent"])*100
+write.csv(sysselsatte_innvkat_alder,"D:/R/imdikator-munch/data_flat_output/sysselsatte_innvkat_alder-bydel-2006_2014.csv",row.names=F)
+
+#fylke
+sysselsatte_innvkat_alder <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_11_612c.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_innvkat_alder$fylke_nr))
+levels(as.factor(sysselsatte_innvkat_alder$fylke_nr))
+levels(as.factor(sysselsatte_innvkat_alder$arbeidsalder_18_69))
+levels(as.factor(sysselsatte_innvkat_alder$innvkat_2))
+levels(as.factor(sysselsatte_innvkat_alder$aar))
+levels(as.factor(sysselsatte_innvkat_alder$enhet))
+#logisk sjekk
+df=subset(sysselsatte_innvkat_alder,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*3*4*2
+
+#for testing i miljø
+names(sysselsatte_innvkat_alder)[3]="innvkat_3"
+sysselsatte_innvkat_alder$tabellvariabel[sysselsatte_innvkat_alder$enhet=="prosent"]=extract_numeric(sysselsatte_innvkat_alder$tabellvariabel[sysselsatte_innvkat_alder$enhet=="prosent"])*100
+write.csv(sysselsatte_innvkat_alder,"D:/R/imdikator-munch/data_flat_output/sysselsatte_innvkat_alder-fylke-2006_2014.csv",row.names=F)
+
+#næringsregion
+sysselsatte_innvkat_alder <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_12_612d.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_innvkat_alder$naringsregion_nr))
+levels(as.factor(sysselsatte_innvkat_alder$naringsregion_nr))
+levels(as.factor(sysselsatte_innvkat_alder$arbeidsalder_18_69))
+levels(as.factor(sysselsatte_innvkat_alder$innvkat_2))
+levels(as.factor(sysselsatte_innvkat_alder$aar))
+levels(as.factor(sysselsatte_innvkat_alder$enhet))
+#logisk sjekk
+df=subset(sysselsatte_innvkat_alder,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*3*4*2
+
+#for testing i miljø
+names(sysselsatte_innvkat_alder)[3]="innvkat_3"
+sysselsatte_innvkat_alder$tabellvariabel[sysselsatte_innvkat_alder$enhet=="prosent"]=extract_numeric(sysselsatte_innvkat_alder$tabellvariabel[sysselsatte_innvkat_alder$enhet=="prosent"])*100
+write.csv(sysselsatte_innvkat_alder,"D:/R/imdikator-munch/data_flat_output/sysselsatte_innvkat_alder-naringsregion-2006_2014.csv",row.names=F)
 
 #SYSSELSATTE_BOTID
 library(tidyr)
+#kommune
 sysselsatte_botid <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_13_62a.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
 nlevels(as.factor(sysselsatte_botid$kommune_nr))
 levels(as.factor(sysselsatte_botid$botid_5))
 levels(as.factor(sysselsatte_botid$aar))
 levels(as.factor(sysselsatte_botid$enhet))
-#geoenheter * 4 botid * 2 enheter * 1 år
-df = subset(sysselsatte_botid,aar=="2014")
-nrow(df)-nlevels(as.factor(df$kommune_nr))*4*2
+#logisk sjekk
+df=subset(sysselsatte_botid,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*4*2
+#substanssjekk - populasjonen
+df=subset(sysselsatte_botid,aar=="2014"&kommune_nr=="0000"&botid_5=="alle")
+#substans - summering
+df=subset(sysselsatte_botid,aar=="2014"&kommune_nr=="0000"&enhet=="personer")
 
-#SYSSELSATTE_BOTID
+#for testing i miljø
+sysselsatte_botid$tabellvariabel[sysselsatte_botid$enhet=="prosent"]=extract_numeric(sysselsatte_botid$tabellvariabel[sysselsatte_botid$enhet=="prosent"])*100
+write.csv(sysselsatte_botid,"D:/R/imdikator-munch/data_flat_output/sysselsatte_botid-kommune-2006_2014.csv",row.names=F)
+
+#bydel
+sysselsatte_botid <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_14_62b.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_botid$bydel_nr))
+levels(as.factor(sysselsatte_botid$bydel_nr))
+levels(as.factor(sysselsatte_botid$botid_5))
+levels(as.factor(sysselsatte_botid$aar))
+levels(as.factor(sysselsatte_botid$enhet))
+#logisk sjekk
+df=subset(sysselsatte_botid,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*4*2
+
+#for testing i miljø
+sysselsatte_botid$tabellvariabel[sysselsatte_botid$enhet=="prosent"]=extract_numeric(sysselsatte_botid$tabellvariabel[sysselsatte_botid$enhet=="prosent"])*100
+write.csv(sysselsatte_botid,"D:/R/imdikator-munch/data_flat_output/sysselsatte_botid-bydel-2006_2014.csv",row.names=F)
+
+#fylke
+sysselsatte_botid <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_15_62c.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_botid$fylke_nr))
+levels(as.factor(sysselsatte_botid$fylke_nr))
+levels(as.factor(sysselsatte_botid$botid_5))
+levels(as.factor(sysselsatte_botid$aar))
+levels(as.factor(sysselsatte_botid$enhet))
+#logisk sjekk
+df=subset(sysselsatte_botid,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*4*2
+#substanssjekk - populasjonen
+df=subset(sysselsatte_botid,aar=="2014"&fylke_nr=="00"&botid_5=="alle")
+#substans - summering
+df=subset(sysselsatte_botid,aar=="2014"&fylke_nr=="00"&enhet=="personer")
+#for testing i miljø
+sysselsatte_botid$tabellvariabel[sysselsatte_botid$enhet=="prosent"]=extract_numeric(sysselsatte_botid$tabellvariabel[sysselsatte_botid$enhet=="prosent"])*100
+write.csv(sysselsatte_botid,"D:/R/imdikator-munch/data_flat_output/sysselsatte_botid-fylke-2006_2014.csv",row.names=F)
+
+#næringsregion
+sysselsatte_botid <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_16_62d.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_botid$naringsregion_nr))
+levels(as.factor(sysselsatte_botid$naringsregion_nr))
+levels(as.factor(sysselsatte_botid$botid_5))
+levels(as.factor(sysselsatte_botid$aar))
+levels(as.factor(sysselsatte_botid$enhet))
+#logisk sjekk
+df=subset(sysselsatte_botid,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*4*2
+#for testing i miljø
+sysselsatte_botid$tabellvariabel[sysselsatte_botid$enhet=="prosent"]=extract_numeric(sysselsatte_botid$tabellvariabel[sysselsatte_botid$enhet=="prosent"])*100
+write.csv(sysselsatte_botid,"D:/R/imdikator-munch/data_flat_output/sysselsatte_botid-naringsregion-2006_2014.csv",row.names=F)
+
+#SYSSELSATTE_BOTID_LAND
 library(tidyr)
+#kommune
 sysselsatte_botid_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_17_631a.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
 nlevels(as.factor(sysselsatte_botid_land$kommune_nr))
 levels(as.factor(sysselsatte_botid_land$botid_5))
 levels(as.factor(sysselsatte_botid_land$vreg_3))
 levels(as.factor(sysselsatte_botid_land$aar))
 levels(as.factor(sysselsatte_botid_land$enhet))
-#geoenheter * 4 botid * 3 vreg * 2 enheter * 1 år
-df = subset(sysselsatte_botid_land,aar=="2014")
-nrow(df)-nlevels(as.factor(df$kommune_nr))*4*3*2
+#logisk sjekk
+df=subset(sysselsatte_botid_land,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*4*3*2
+#substanssjekk - populasjonen
+df=subset(sysselsatte_botid_land,aar=="2014"&kommune_nr=="0000"&botid_5=="alle"&vreg_3=="alle")
+#substanssjekk - summering
+df=subset(sysselsatte_botid_land,aar=="2014"&kommune_nr=="0000"&vreg_3=="alle"&enhet=="personer")
+
+#for testing i miljø
+#annen botidsinndeling, krever endring i cardpages før vi får testa den.
+names(sysselsatte_botid_land)[3]="innvkat_3"
+sysselsatte_innvkat_alder$tabellvariabel[sysselsatte_innvkat_alder$enhet=="prosent"]=extract_numeric(sysselsatte_innvkat_alder$tabellvariabel[sysselsatte_innvkat_alder$enhet=="prosent"])*100
+write.csv(sysselsatte_innvkat_alder,"D:/R/imdikator-munch/data_flat_output/sysselsatte_innvkat_alder-naringsregion-2006_2014.csv",row.names=F)
+
+#bydel
+sysselsatte_botid_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_18_631b.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_botid_land$bydel_nr))
+levels(as.factor(sysselsatte_botid_land$bydel_nr))
+levels(as.factor(sysselsatte_botid_land$botid_5))
+levels(as.factor(sysselsatte_botid_land$vreg_3))
+levels(as.factor(sysselsatte_botid_land$aar))
+levels(as.factor(sysselsatte_botid_land$enhet))
+#logisk sjekk
+df=subset(sysselsatte_botid_land,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*4*3*2
+
+#fylke
+sysselsatte_botid_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_19_631c.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_botid_land$fylke_nr))
+levels(as.factor(sysselsatte_botid_land$fylke_nr))
+levels(as.factor(sysselsatte_botid_land$botid_5))
+levels(as.factor(sysselsatte_botid_land$vreg_3))
+levels(as.factor(sysselsatte_botid_land$aar))
+levels(as.factor(sysselsatte_botid_land$enhet))
+#logisk sjekk
+df=subset(sysselsatte_botid_land,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*4*3*2
+
+#naringsregion
+sysselsatte_botid_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_20_631d.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_botid_land$naringsregion_nr))
+levels(as.factor(sysselsatte_botid_land$naringsregion_nr))
+levels(as.factor(sysselsatte_botid_land$botid_5))
+levels(as.factor(sysselsatte_botid_land$vreg_3))
+levels(as.factor(sysselsatte_botid_land$aar))
+levels(as.factor(sysselsatte_botid_land$enhet))
+#logisk sjekk
+df=subset(sysselsatte_botid_land,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*4*3*2
 
 #SYSSELSATTE_KJONN_LAND
 library(tidyr)
+#kommune
 sysselsatte_kjonn_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_21_632a.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
 nlevels(as.factor(sysselsatte_kjonn_land$kommune_nr))
+levels(as.factor(sysselsatte_kjonn_land$kommune_nr))
 levels(as.factor(sysselsatte_kjonn_land$vreg_3))
 levels(as.factor(sysselsatte_kjonn_land$kjonn))
 levels(as.factor(sysselsatte_kjonn_land$aar))
 levels(as.factor(sysselsatte_kjonn_land$enhet))
-#geoenheter * 3 kjønn * 3 vreg * 2 enheter * 1 år
-df = subset(sysselsatte_kjonn_land,aar=="2014")
-nrow(df)-nlevels(as.factor(df$kommune_nr))*3*3*2
+#logisk sjekk
+df=subset(sysselsatte_kjonn_land,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*3*3*2
+#substanssjekk - populasjonen
+df=subset(sysselsatte_kjonn_land,aar=="2014"&kommune_nr=="0000"&vreg_3=="alle"&kjonn=="alle")
+#substanssjekk - summering
+df=subset(sysselsatte_kjonn_land,aar=="2014"&kommune_nr=="0000"&kjonn=="alle"&enhet=="personer")
+df=subset(sysselsatte_kjonn_land,aar=="2014"&kommune_nr=="0000"&vreg_3=="alle"&enhet=="personer")
+
+#for testing i miljø
+sysselsatte_kjonn_land$tabellvariabel[sysselsatte_kjonn_land$enhet=="prosent"]=extract_numeric(sysselsatte_kjonn_land$tabellvariabel[sysselsatte_kjonn_land$enhet=="prosent"])*100
+write.csv(sysselsatte_kjonn_land,"D:/R/imdikator-munch/data_flat_output/sysselsatte_kjonn_land-kommune-2006_2014.csv",row.names=F)
+
+#bydel
+sysselsatte_kjonn_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_22_632b.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_kjonn_land$bydel_nr))
+levels(as.factor(sysselsatte_kjonn_land$bydel_nr))
+levels(as.factor(sysselsatte_kjonn_land$vreg_3))
+levels(as.factor(sysselsatte_kjonn_land$kjonn))
+levels(as.factor(sysselsatte_kjonn_land$aar))
+levels(as.factor(sysselsatte_kjonn_land$enhet))
+#logisk sjekk
+df=subset(sysselsatte_kjonn_land,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*3*3*2
+
+#for testing i miljø
+sysselsatte_kjonn_land$tabellvariabel[sysselsatte_kjonn_land$enhet=="prosent"]=extract_numeric(sysselsatte_kjonn_land$tabellvariabel[sysselsatte_kjonn_land$enhet=="prosent"])*100
+write.csv(sysselsatte_kjonn_land,"D:/R/imdikator-munch/data_flat_output/sysselsatte_kjonn_land-bydel-2006_2014.csv",row.names=F)
+
+#fylke
+sysselsatte_kjonn_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_23_632c.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_kjonn_land$fylke_nr))
+levels(as.factor(sysselsatte_kjonn_land$fylke_nr))
+levels(as.factor(sysselsatte_kjonn_land$vreg_3))
+levels(as.factor(sysselsatte_kjonn_land$kjonn))
+levels(as.factor(sysselsatte_kjonn_land$aar))
+levels(as.factor(sysselsatte_kjonn_land$enhet))
+#logisk sjekk
+df=subset(sysselsatte_kjonn_land,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*3*3*2
+
+#for testing i miljø
+sysselsatte_kjonn_land$tabellvariabel[sysselsatte_kjonn_land$enhet=="prosent"]=extract_numeric(sysselsatte_kjonn_land$tabellvariabel[sysselsatte_kjonn_land$enhet=="prosent"])*100
+write.csv(sysselsatte_kjonn_land,"D:/R/imdikator-munch/data_flat_output/sysselsatte_kjonn_land-fylke-2006_2014.csv",row.names=F)
+
+#naringsregion
+sysselsatte_kjonn_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_24_632d.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_kjonn_land$naringsregion_nr))
+levels(as.factor(sysselsatte_kjonn_land$naringsregion_nr))
+levels(as.factor(sysselsatte_kjonn_land$vreg_3))
+levels(as.factor(sysselsatte_kjonn_land$kjonn))
+levels(as.factor(sysselsatte_kjonn_land$aar))
+levels(as.factor(sysselsatte_kjonn_land$enhet))
+#logisk sjekk
+df=subset(sysselsatte_kjonn_land,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*3*3*2
+
+#for testing i miljø
+sysselsatte_kjonn_land$tabellvariabel[sysselsatte_kjonn_land$enhet=="prosent"]=extract_numeric(sysselsatte_kjonn_land$tabellvariabel[sysselsatte_kjonn_land$enhet=="prosent"])*100
+write.csv(sysselsatte_kjonn_land,"D:/R/imdikator-munch/data_flat_output/sysselsatte_kjonn_land-naringsregion-2006_2014.csv",row.names=F)
 
 #SYSSELSATTE_LAND
 library(tidyr)
+#kommune
 sysselsatte_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_25_633a.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
 nlevels(as.factor(sysselsatte_land$kommune_nr))
+levels(as.factor(sysselsatte_land$kommune_nr))
 levels(as.factor(sysselsatte_land$vreg_9))
 levels(as.factor(sysselsatte_land$aar))
 levels(as.factor(sysselsatte_land$enhet))
-#geoenheter * 9 vreg * 2 enheter * 1 år
-df = subset(sysselsatte_land,aar=="2014")
-nrow(df)-nlevels(as.factor(df$kommune_nr))*9*2
+#logisk sjekk
+df=subset(sysselsatte_land,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*9*2
+#substanssjekk - populasjonen
+df=subset(sysselsatte_land,aar=="2014"&kommune_nr=="0000"&vreg_9=="alle")
+
+#for testing i miljø
+sysselsatte_land$tabellvariabel[sysselsatte_land$enhet=="prosent"]=extract_numeric(sysselsatte_land$tabellvariabel[sysselsatte_land$enhet=="prosent"])*100
+write.csv(sysselsatte_land,"D:/R/imdikator-munch/data_flat_output/sysselsatte_land-kommune-2006_2014.csv",row.names=F)
+
+#bydel
+sysselsatte_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_26_633b.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_land$bydel_nr))
+levels(as.factor(sysselsatte_land$bydel_nr))
+levels(as.factor(sysselsatte_land$vreg_9))
+levels(as.factor(sysselsatte_land$aar))
+levels(as.factor(sysselsatte_land$enhet))
+#logisk sjekk
+df=subset(sysselsatte_land,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*9*2
+
+#for testing i miljø
+sysselsatte_land$tabellvariabel[sysselsatte_land$enhet=="prosent"]=extract_numeric(sysselsatte_land$tabellvariabel[sysselsatte_land$enhet=="prosent"])*100
+write.csv(sysselsatte_land,"D:/R/imdikator-munch/data_flat_output/sysselsatte_land-bydel-2006_2014.csv",row.names=F)
+
+#fylke
+sysselsatte_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_27_633c.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_land$fylke_nr))
+levels(as.factor(sysselsatte_land$fylke_nr))
+levels(as.factor(sysselsatte_land$vreg_9))
+levels(as.factor(sysselsatte_land$aar))
+levels(as.factor(sysselsatte_land$enhet))
+#logisk sjekk
+df=subset(sysselsatte_land,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*9*2
+
+#for testing i miljø
+sysselsatte_land$tabellvariabel[sysselsatte_land$enhet=="prosent"]=extract_numeric(sysselsatte_land$tabellvariabel[sysselsatte_land$enhet=="prosent"])*100
+write.csv(sysselsatte_land,"D:/R/imdikator-munch/data_flat_output/sysselsatte_land-fylke-2006_2014.csv",row.names=F)
+
+#næringsregion
+sysselsatte_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_28_633d.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(sysselsatte_land$naringsregion_nr))
+levels(as.factor(sysselsatte_land$naringsregion_nr))
+levels(as.factor(sysselsatte_land$vreg_9))
+levels(as.factor(sysselsatte_land$aar))
+levels(as.factor(sysselsatte_land$enhet))
+#logisk sjekk
+df=subset(sysselsatte_land,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*9*2
+
+#for testing i miljø
+sysselsatte_land$tabellvariabel[sysselsatte_land$enhet=="prosent"]=extract_numeric(sysselsatte_land$tabellvariabel[sysselsatte_land$enhet=="prosent"])*100
+write.csv(sysselsatte_land,"D:/R/imdikator-munch/data_flat_output/sysselsatte_land-naringsregion-2006_2014.csv",row.names=F)
+
+#ARBLEDIGE_INNVKAT_LAND
+library(tidyr)
+#kommune
+arbledige_innvkat_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_29_64a.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(arbledige_innvkat_land$kommune_nr))
+levels(as.factor(arbledige_innvkat_land$kommune_nr))
+levels(as.factor(arbledige_innvkat_land$innvkat_3))
+levels(as.factor(arbledige_innvkat_land$vreg_3))
+levels(as.factor(arbledige_innvkat_land$enhet))
+#logisk sjekk
+df=subset(arbledige_innvkat_land,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*3*3*2
+#substanssjekk - populasjonen
+df=subset(arbledige_innvkat_land,aar=="2014"&kommune_nr=="0000"&innvkat_3=="alle")
+df=subset(arbledige_innvkat_land,aar=="2014"&kommune_nr=="0000"&vreg_3=="alle")
+
+#bydel
+arbledige_innvkat_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_30_64b.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(arbledige_innvkat_land$bydel_nr))
+levels(as.factor(arbledige_innvkat_land$bydel_nr))
+levels(as.factor(arbledige_innvkat_land$innvkat_3))
+levels(as.factor(arbledige_innvkat_land$vreg_3))
+levels(as.factor(arbledige_innvkat_land$aar))
+levels(as.factor(arbledige_innvkat_land$enhet))
+#logisk sjekk
+df=subset(arbledige_innvkat_land,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*3*3*2
+
+#fylke
+arbledige_innvkat_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_31_64c.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(arbledige_innvkat_land$fylke_nr))
+levels(as.factor(arbledige_innvkat_land$fylke_nr))
+levels(as.factor(arbledige_innvkat_land$innvkat_3))
+levels(as.factor(arbledige_innvkat_land$vreg_3))
+levels(as.factor(arbledige_innvkat_land$aar))
+levels(as.factor(arbledige_innvkat_land$enhet))
+#logisk sjekk
+df=subset(arbledige_innvkat_land,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*3*3*2
+
+#næringsregion
+arbledige_innvkat_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_32_64d.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(arbledige_innvkat_land$naringsregion_nr))
+levels(as.factor(arbledige_innvkat_land$naringsregion_nr))
+levels(as.factor(arbledige_innvkat_land$innvkat_3))
+levels(as.factor(arbledige_innvkat_land$vreg_3))
+levels(as.factor(arbledige_innvkat_land$aar))
+levels(as.factor(arbledige_innvkat_land$enhet))
+#logisk sjekk
+df=subset(arbledige_innvkat_land,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*3*3*2
+
+#IKKE_ARBUTD_INNVKAT_LAND
+library(tidyr)
+#kommune
+ikke_arbutd_innvkat_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_33_65a.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(ikke_arbutd_innvkat_land$kommune_nr))
+levels(as.factor(ikke_arbutd_innvkat_land$kommune_nr))
+levels(as.factor(ikke_arbutd_innvkat_land$innvkat_3))
+levels(as.factor(ikke_arbutd_innvkat_land$vreg_3))
+levels(as.factor(ikke_arbutd_innvkat_land$kjonn))
+levels(as.factor(ikke_arbutd_innvkat_land$enhet))
+#logisk sjekk
+df=subset(ikke_arbutd_innvkat_land,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*3*3*3*2
+#substanssjekk - populasjonen
+df=subset(ikke_arbutd_innvkat_land,aar=="2014"&kommune_nr=="0000"&innvkat_3=="alle")
+df=subset(ikke_arbutd_innvkat_land,aar=="2014"&kommune_nr=="0000"&vreg_3=="alle")
+
+#bydel
+ikke_arbutd_innvkat_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_34_65b.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(ikke_arbutd_innvkat_land$bydel_nr))
+levels(as.factor(ikke_arbutd_innvkat_land$bydel_nr))
+levels(as.factor(ikke_arbutd_innvkat_land$innvkat_3))
+levels(as.factor(ikke_arbutd_innvkat_land$kjonn))
+levels(as.factor(ikke_arbutd_innvkat_land$vreg_3))
+levels(as.factor(ikke_arbutd_innvkat_land$aar))
+levels(as.factor(ikke_arbutd_innvkat_land$enhet))
+
+#fylke
+ikke_arbutd_innvkat_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_35_65c.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(ikke_arbutd_innvkat_land$fylke_nr))
+levels(as.factor(ikke_arbutd_innvkat_land$fylke_nr))
+levels(as.factor(ikke_arbutd_innvkat_land$innvkat_3))
+levels(as.factor(ikke_arbutd_innvkat_land$vreg_3))
+levels(as.factor(ikke_arbutd_innvkat_land$kjonn))
+levels(as.factor(ikke_arbutd_innvkat_land$aar))
+levels(as.factor(ikke_arbutd_innvkat_land$enhet))
+
+#næringsregion
+ikke_arbutd_innvkat_land <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_36_65d.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(ikke_arbutd_innvkat_land$naringsregion_nr))
+levels(as.factor(ikke_arbutd_innvkat_land$naringsregion_nr))
+levels(as.factor(ikke_arbutd_innvkat_land$innvkat_3))
+levels(as.factor(ikke_arbutd_innvkat_land$kjonn))
+levels(as.factor(ikke_arbutd_innvkat_land$vreg_3))
+levels(as.factor(ikke_arbutd_innvkat_land$aar))
+levels(as.factor(ikke_arbutd_innvkat_land$enhet))
+
+#ikke_arbutd_innvkat_alder
+library(tidyr)
+#kommune
+ikke_arbutd_innvkat_alder <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_37_66a.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(ikke_arbutd_innvkat_alder$kommune_nr))
+levels(as.factor(ikke_arbutd_innvkat_alder$kommune_nr))
+levels(as.factor(ikke_arbutd_innvkat_alder$innvkat_3))
+levels(as.factor(ikke_arbutd_innvkat_alder$aldersinndeling_etter_grskole))
+levels(as.factor(ikke_arbutd_innvkat_alder$kjonn))
+levels(as.factor(ikke_arbutd_innvkat_alder[,5]))
+levels(as.factor(ikke_arbutd_innvkat_alder$enhet))
+#logisk sjekk
+df=subset(ikke_arbutd_innvkat_alder,aar=="2014")
+nrow(df)==nlevels(as.factor(df[,2]))*3*3*3*2
+#substanssjekk - populasjonen
+df=subset(ikke_arbutd_innvkat_alder,aar=="2013"&kommune_nr=="0000"&innvkat_3=="innvandrere")
+df=subset(ikke_arbutd_innvkat_alder,aar=="2014"&kommune_nr=="0000"&aldersinndeling_etter_grskole=="alle")
+
+#bydel
+ikke_arbutd_innvkat_alder <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_38_66b.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(ikke_arbutd_innvkat_alder$bydel_nr))
+levels(as.factor(ikke_arbutd_innvkat_alder$bydel_nr))
+levels(as.factor(ikke_arbutd_innvkat_alder$innvkat_2))
+levels(as.factor(ikke_arbutd_innvkat_alder$kjonn))
+levels(as.factor(ikke_arbutd_innvkat_alder[,5]))
+levels(as.factor(ikke_arbutd_innvkat_alder$aar))
+levels(as.factor(ikke_arbutd_innvkat_alder$enhet))
+
+#fylke
+ikke_arbutd_innvkat_alder <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_39_66c.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(ikke_arbutd_innvkat_alder$fylke_nr))
+levels(as.factor(ikke_arbutd_innvkat_alder$fylke_nr))
+levels(as.factor(ikke_arbutd_innvkat_alder$innvkat_2))
+levels(as.factor(ikke_arbutd_innvkat_alder[,5]))
+levels(as.factor(ikke_arbutd_innvkat_alder$kjonn))
+levels(as.factor(ikke_arbutd_innvkat_alder$aar))
+levels(as.factor(ikke_arbutd_innvkat_alder$enhet))
+
+#næringsregion
+ikke_arbutd_innvkat_alder <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/Tab_40_66d.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+nlevels(as.factor(ikke_arbutd_innvkat_alder$naringsregion_nr))
+levels(as.factor(ikke_arbutd_innvkat_alder$naringsregion_nr))
+levels(as.factor(ikke_arbutd_innvkat_alder$innvkat_2))
+levels(as.factor(ikke_arbutd_innvkat_alder$kjonn))
+levels(as.factor(ikke_arbutd_innvkat_alder$vreg_3))
+levels(as.factor(ikke_arbutd_innvkat_alder$aar))
+levels(as.factor(ikke_arbutd_innvkat_alder$enhet))
 
 #VOKSNE_VIDEREGAENDE
 library(tidyr)
@@ -1181,61 +2000,76 @@ levels(as.factor(sysselsatte_land$vreg_9))
 levels(as.factor(sysselsatte_land$aar))
 levels(as.factor(sysselsatte_land$enhet))
 #geoenheter * 9 vreg * 2 enheter * 1 år
-df = subset(sysselsatte_land,aar=="2014")
-nrow(df)-nlevels(as.factor(df$kommune_nr))*9*2
+
+voksne_videregaende <- read.csv("D:/R/imdikator-munch/data_flat_input/voksne_videregaende-alle-2013.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+#invkat 3 -> innvkat_3, aar
+levels(as.factor(voksne_videregaende$aar))
+voksne_videregaende$aar = "2013"
+names(voksne_videregaende)[7]="innvkat_3"
+nlevels(as.factor(voksne_videregaende$bydel_nr))
+nlevels(as.factor(voksne_videregaende$kommune_nr))
+nlevels(as.factor(voksne_videregaende$fylke_nr))
+nlevels(as.factor(voksne_videregaende$naringsregion_nr))
+nrow(voksne_videregaende)==(3*3*2*426)+(3*3*2*21)+(3*3*2*84)+(3*3*2*19)
+#possibly lopsided
+
 
 #utdanningsniva
+#kjørt 16. desember, og på nytt 25. januar 2016
 #2009
 utdanningsniva <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab37_2009.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
 names(utdanningsniva)
 levels(as.factor(utdanningsniva$bydel_nr))
 df=subset(utdanningsniva,utdanningsniva$bydel_nr=="1001")
+
+#test av fylket
 df = subset(utdanningsniva,fylke_nr!="NULL")
 levels(as.factor(df$invkat_3))
 levels(as.factor(df$kjonn))
 levels(as.factor(df$utd_5))
-nrow(df)-nlevels(as.factor(df$fylke_nr))*3*3*6*2
+nrow(df)-nlevels(as.factor(df$fylke_nr))*3*3*5*2
+df_2 = spread(df,utd_5,tabellvariabel)
 
 df = subset(utdanningsniva,naringsregion_nr!="NULL")
-nrow(df)-nlevels(as.factor(df$naringsregion_nr))*5*3*2
+nrow(df)-nlevels(as.factor(df$naringsregion_nr))*3*3*5*2
 
-df = subset(videregaende_fullfort,kommune_nr!="NULL")
-nrow(df)-nlevels(as.factor(df$kommune_nr))*5*3*2
+df = subset(utdanningsniva,kommune_nr!="NULL")
+nrow(df)-nlevels(as.factor(df$kommune_nr))*3*3*5*2
 
 #2010
 utdanningsniva <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab37_2010.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
 names(utdanningsniva)
 levels(as.factor(utdanningsniva$bydel_nr))
 df = subset(utdanningsniva,fylke_nr!="NULL")
-nrow(df)-nlevels(as.factor(df$fylke_nr))*3*3*6*2
+nrow(df)-nlevels(as.factor(df$fylke_nr))*3*3*5*2
 
 #2011
 utdanningsniva <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab37_2011.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
 names(utdanningsniva)
 levels(as.factor(utdanningsniva$bydel_nr))
 df = subset(utdanningsniva,fylke_nr!="NULL")
-nrow(df)-nlevels(as.factor(df$fylke_nr))*3*3*6*2
+nrow(df)-nlevels(as.factor(df$fylke_nr))*3*3*5*2
 
 #2012
 utdanningsniva <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab37_2012.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
 names(utdanningsniva)
 levels(as.factor(utdanningsniva$bydel_nr))
 df = subset(utdanningsniva,fylke_nr!="NULL")
-nrow(df)-nlevels(as.factor(df$fylke_nr))*3*3*6*2
+nrow(df)-nlevels(as.factor(df$fylke_nr))*3*3*5*2
 
 #2013
 utdanningsniva <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab37_2013.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
 names(utdanningsniva)
 levels(as.factor(utdanningsniva$bydel_nr))
 df = subset(utdanningsniva,fylke_nr!="NULL")
-nrow(df)-nlevels(as.factor(df$fylke_nr))*3*3*6*2
+nrow(df)-nlevels(as.factor(df$fylke_nr))*3*3*5*2
 
 #2014
 utdanningsniva <- read.csv("D:/R/imdikator-munch/data_flat_input/diagnose/tab37_2014.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
 names(utdanningsniva)
 levels(as.factor(utdanningsniva$bydel_nr))
 df = subset(utdanningsniva,fylke_nr!="NULL")
-nrow(df)-nlevels(as.factor(df$fylke_nr))*3*3*6*2
+nrow(df)-nlevels(as.factor(df$fylke_nr))*3*3*5*2
 
 #geoenheter * 5 innvkat * 3 kjønn * 2 enheter
 df = subset(videregaende_fullfort,fylke_nr!="NULL")
@@ -1444,3 +2278,485 @@ nrow(df)==84*3*3*2
 #resterende
 df$tabell_navn="bosatt_anmodede"
 write.csv(df,"D:/R/imdikator-munch/data_flat_output/bosetting_anmodede-naringsregion-2015_2017.csv",row.names=F)
+
+#TILSKUDD - KOMMUNE 2015
+#26. januar 2016
+#1. tabellvariabel som skal være 0, er kodet NA
+#2. spread kommer tilbake med duplicate identifiers - feil i grunnlagsdata med kommunenummer og totaler.
+tilskudd <- read.csv("D:/R/imdikator-munch/data_flat_input/tilskudd-kommune-2015.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=";", dec=",")
+#1. tilskuddsdataene har ikke skjulte eller manglende data
+sum(is.na(tilskudd$tabellvariabel))
+tilskudd$tabellvariabel[is.na(tilskudd$tabellvariabel)]=0
+sum(is.na(tilskudd$tabellvariabel))
+#logisk sjekk
+nlevels(as.factor(tilskudd$kommune_nr))
+nlevels(as.factor(tilskudd$tilskudd_til_kommuner))
+# det er 11 kategorier tilskudd, en ny fra 2014
+nrow(tilskudd)==424*11
+#duplikatsjekk
+df = spread(tilskudd,tilskudd_til_kommuner,tabellvariabel)
+df = gather(df,tilskudd_til_kommuner,tabellvariabel,barnehage_tilsk:totalt)
+#5 kommuner mottok ikke tilskudd fra IMDi i 2015. Disse bør legges til og kodes 0
+kinfo <- read.csv("D:/R/imdikator-munch/parameters/kommunesort.csv", sep=";", stringsAsFactors=FALSE)
+kinfo = subset(kinfo,select="Nr")
+df = spread(tilskudd,tilskudd_til_kommuner,tabellvariabel)
+df2 = merge(df,kinfo,by.x="kommune_nr",by.y="Nr",all.x=T,all.y=T)
+df2 = gather(df2,tilskudd_til_kommuner,tabellvariabel,barnehage_tilsk:totalt)
+#introduserer NA for kommunene som ikke har mottatt noen tilskudd
+sum(is.na(df2$tabellvariabel))
+df2$tabellvariabel[is.na(df2$tabellvariabel)]=0
+sum(is.na(df2$tabellvariabel))
+sum(is.na(df2$aar))
+df2$aar[is.na(df2$aar)]=2015
+sum(is.na(df2$aar))
+sum(is.na(df2$enhet))
+df2$enhet[is.na(df2$enhet)]="kroner"
+sum(is.na(df2$enhet))
+sum(is.na(df2$tabell_navn))
+df2$tabell_navn[is.na(df2$tabell_navn)]="tilskudd"
+sum(is.na(df2$tabell_navn))
+sum(is.na(df2$tilskudd_til_kommuner))
+sum(is.na(df2))
+#logisk sjekk
+nlevels(as.factor(df2$kommune_nr))
+nlevels(as.factor(df2$tilskudd_til_kommuner)) # det er 11 kategorier tilskudd, en ny fra 201
+nrow(df2)==429*11
+#skriver ut fil
+df2$kommune_nr[nchar(df2$kommune_nr)==3] = paste0("0",df2$kommune_nr[nchar(df2$kommune_nr)==3])
+options(scipen = 999)
+write.csv(df2,"D:/R/imdikator-munch/data_flat_output/tilskudd-kommune-2015.csv",row.names=F)
+#problemer med scientific notation i output
+#setter retta tilskuddsfil lik tilskudd
+tilskudd = df2
+
+#AGGREGERING TILSKUDD 2015
+#26. januar, 3. februar
+#næringsregion
+library(reshape)
+library(tidyr)
+tilskudd <- read.csv("D:/R/imdikator-munch/data_flat_output/tilskudd-kommune-2015.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".")
+kinfo <- read.csv("D:/R/imdikator-munch/parameters/kommunesort.csv", sep=";", stringsAsFactors=FALSE)
+kinfo = subset(kinfo,select=c("Nr","Naringregnr"))
+names(kinfo)[2] = "naringsregion_nr"
+kinfo$naringsregion_nr[nchar(kinfo$naringsregion_nr)==1] = paste0("0",kinfo$naringsregion_nr[nchar(kinfo$naringsregion_nr)==1])
+checksum_start = sum(tilskudd$tabellvariabel)
+#input for aggregering bør være krysstabellen, ikke flatfila.
+tilskudd = spread(tilskudd,tilskudd_til_kommuner,tabellvariabel)
+df = merge(tilskudd,kinfo,by.x="kommune_nr",by.y ="Nr",all.x=T,all.y=T)
+tilskudd_data = melt.data.frame(df,id.vars=c("kommune_nr","naringsregion_nr","aar","tabell_navn","enhet"),na.rm=F)
+tilskudd_nareg = cast(tilskudd_data,naringsregion_nr~variable,fun.aggregate=sum,na.rm=F,add.missing=T,fill=NA)
+df = gather(tilskudd_nareg,"tilskudd_til_kommuner","tabellvariabel",barnehage_tilsk:totalt)
+checksum_start == sum(df$tabellvariabel)
+#logisk sjekk
+nrow(df)==84*11
+#resterende
+df$tabell_navn="tilskudd"
+df$aar="2015"
+df$enhet="kroner"
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/tilskudd-naringsregion-2015.csv",row.names=F)
+
+#fylke 2014
+tilskudd <- read.csv("D:/R/imdikator-munch/data_flat_output/tilskudd-kommune-2015.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".")
+kinfo <- read.csv("D:/R/imdikator-munch/parameters/kommunesort.csv", sep=";", stringsAsFactors=FALSE)
+kinfo = subset(kinfo,select=c("Nr","Fylkenr"))
+names(kinfo)[2] = "fylke_nr"
+kinfo$fylke_nr[nchar(kinfo$fylke_nr)==1] = paste0("0",kinfo$fylke_nr[nchar(kinfo$fylke_nr)==1])
+checksum_start = sum(tilskudd$tabellvariabel)
+#input for aggregering bør være krysstabellen, ikke flatfila.
+tilskudd = spread(tilskudd,tilskudd_til_kommuner,tabellvariabel)
+df = merge(tilskudd,kinfo,by.x="kommune_nr",by.y ="Nr",all.x=T,all.y=T)
+tilskudd_data = melt.data.frame(df,id.vars=c("kommune_nr","fylke_nr","aar","tabell_navn","enhet"),na.rm=F)
+tilskudd_fylke = cast(tilskudd_data,fylke_nr~variable,fun.aggregate=sum,na.rm=F,add.missing=T,fill=NA,margins="grand_row")
+tilskudd_fylke = subset(tilskudd_fylke,select=-13)
+tilskudd_fylke$fylke_nr = gsub(".all.","00",tilskudd_fylke$fylke_nr)
+df = gather(tilskudd_fylke,"tilskudd_til_kommuner","tabellvariabel",barnehage_tilsk:totalt)
+checksum_start == sum(df$tabellvariabel)/2
+#logisk sjekk
+nrow(df)==21*11
+#resterende
+df$tabell_navn="tilskudd"
+df$aar="2015"
+df$enhet="kroner"
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/tilskudd-fylke-2015.csv",row.names=F)
+
+#TILSKUDD
+#fiks av manglende summer
+options(scipen = 999)
+#kommune
+library(tidyr)
+tilskudd <- read.csv("D:/R/imdikator-munch/data_flat_input/tilskudd-kommune-2015.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",fileEncoding = "UTF-8-BOM")
+df=spread(tilskudd,tilskudd_til_kommuner,tabellvariabel)
+#først ny inttilsk_1_5
+df$inttilsk_1_5_ny = df$inttilsk_1+df$inttilsk_2_5
+df$sjekk = df$inttilsk_1_5_ny-df$inttilsk_1_5
+df$inttilsk_1_5 = df$inttilsk_1_5_ny
+df = subset(df,select=c(-inttilsk_1_5_ny,-sjekk))
+df$totalt_2=extract_numeric(df[,5])+extract_numeric(df[,6])+extract_numeric(df[,7])+extract_numeric(df[,8])+extract_numeric(df[,9])+extract_numeric(df[,11])+extract_numeric(df[,13])+extract_numeric(df[,14])
+df$sjekk = df$totalt-df$totalt_2
+#noen avvik
+write.csv(df,"D:/R/imdikator-munch/data_crossed_output/tilskudd-kommune-2015.csv",row.names=F)
+checksum_k = sum(df$totalt_2)
+sum(is.na(df$totalt_2))
+df$totalt=df$totalt_2
+df = subset(df,select=-c(totalt_2,sjekk))
+df=gather(df,tilskudd_til_kommuner,tabellvariabel,barnehage_tilsk:totalt)
+df$kommune_nr[nchar(df$kommune_nr)==3] = paste0("0",df$kommune_nr[nchar(df$kommune_nr)==3])
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/tilskudd-kommune-2015.csv",row.names=F)
+
+#fylke
+library(tidyr)
+tilskudd <- read.csv("D:/R/imdikator-munch/data_flat_input/tilskudd-fylke-2015.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",fileEncoding = "UTF-8-BOM")
+df=spread(tilskudd,tilskudd_til_kommuner,tabellvariabel)
+df$totalt_2=extract_numeric(df[,5])+extract_numeric(df[,6])+extract_numeric(df[,7])+extract_numeric(df[,8])+extract_numeric(df[,9])+extract_numeric(df[,11])+extract_numeric(df[,13])+extract_numeric(df[,14])
+df$sjekk = df$totalt-df$totalt_2
+#noen avvik
+write.csv(df,"D:/R/imdikator-munch/data_crossed_output/tilskudd-fylke-2015.csv",row.names=F)
+checksum_f = sum(df$totalt_2[df$fylke_nr!=00])
+sum(is.na(df$totalt_2))
+df$totalt=df$totalt_2
+df = subset(df,select=-c(totalt_2,sjekk))
+df=gather(df,tilskudd_til_kommuner,tabellvariabel,barnehage_tilsk:totalt)
+df$fylke_nr[nchar(df$fylke_nr)==1] = paste0("0",df$fylke_nr[nchar(df$fylke_nr)==1])
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/tilskudd-fylke-2015.csv",row.names=F)
+
+#næringsregion
+library(tidyr)
+tilskudd <- read.csv("D:/R/imdikator-munch/data_flat_input/tilskudd-naringsregion-2015.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",fileEncoding = "UTF-8-BOM")
+df=spread(tilskudd,tilskudd_til_kommuner,tabellvariabel)
+df$totalt_2=extract_numeric(df[,5])+extract_numeric(df[,6])+extract_numeric(df[,7])+extract_numeric(df[,8])+extract_numeric(df[,9])+extract_numeric(df[,11])+extract_numeric(df[,13])+extract_numeric(df[,14])
+df$sjekk = df$totalt-df$totalt_2
+#noen avvik
+write.csv(df,"D:/R/imdikator-munch/data_crossed_output/tilskudd-naringsregion-2015.csv",row.names=F)
+checksum_n = sum(df$totalt_2)
+sum(is.na(df$totalt_2))
+df$totalt=df$totalt_2
+df = subset(df,select=-c(totalt_2,sjekk))
+df=gather(df,tilskudd_til_kommuner,tabellvariabel,barnehage_tilsk:totalt)
+df$naringsregion_nr[nchar(df$naringsregion_nr)==1] = paste0("0",df$naringsregion_nr[nchar(df$naringsregion_nr)==1])
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/tilskudd-naringsregion-2015.csv",row.names=F)
+
+#UTDANNINGSNIVA - omregning av prosent
+#26. januar
+#prosentene er regnet av totalen, ikke gruppetotalen.
+#utfordringen er å ta vare på informasjon om ":" og ".", men få gjort beregninger
+#2009
+utdanningsniva <- read.csv("D:/R/imdikator-munch/data_flat_input/utdanningsniva-alle-2009.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+checksum_1 = nrow(utdanningsniva)
+checksum_2 = sum(extract_numeric(utdanningsniva$tabellvariabel[utdanningsniva$enhet=="personer"]),na.rm=T)
+#df = recast(subset(utdanningsniva,fylke_nr!="NULL"),fylke_nr~variable+enhet+innvkat_3+kjonn+utd_5,measure.var = "tabellvariabel")
+df = spread(utdanningsniva,utd_5,tabellvariabel)
+df = subset(df,enhet=="personer",select=-enhet)
+names(df)[9:13]=c("grunnskole.personer","ingen.personer","universitet_og_hogskole.personer","uoppgitt.personer","vgs.personer")
+df$totalt.personer = extract_numeric(df[,9])+extract_numeric(df[,10])+extract_numeric(df[,11])+extract_numeric(df[,12])+extract_numeric(df[,13])
+df$grunnskole.prosent = extract_numeric(df$grunnskole.personer)/df$totalt.personer*100
+df$ingen.prosent = extract_numeric(df$ingen.personer)/df$totalt.personer*100
+df$universitet_og_hogskole.prosent = extract_numeric(df$universitet_og_hogskole.personer)/df$totalt.personer*100
+df$uoppgitt.prosent = extract_numeric(df$uoppgitt.personer)/df$totalt.personer*100
+df$vgs.prosent = extract_numeric(df$vgs.personer)/df$totalt.personer*100
+df$totalt.prosent = df[,15]+df[,16]+df[,17]+df[,18]+df[,19]
+df2 = gather(df,variabler,tabellvariabel,9:20)
+df2=separate(df2,variabler,c("utd5","enhet"),"\\.")
+df2 = subset(df2,utd5!="totalt")
+#alle NAs behandles som manglende data
+sum(is.na(df2))
+sum(is.na(df2$tabellvariabel))
+df2$tabellvariabel[is.na(df2$tabellvariabel)==T]="."
+sum(is.na(df2$tabellvariabel))
+#logisk sjekk
+checksum_1 == nrow(df2)
+checksum_2 == sum(extract_numeric(df2$tabellvariabel[df2$enhet=="personer"]),na.rm=T)
+write.csv(df2,"D:/R/imdikator-munch/data_flat_output/utdanningsniva-alle-2009.csv",row.names=F)
+
+#2010
+utdanningsniva <- read.csv("D:/R/imdikator-munch/data_flat_input/utdanningsniva-alle-2010.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+checksum_1 = nrow(utdanningsniva)
+checksum_2 = sum(extract_numeric(utdanningsniva$tabellvariabel[utdanningsniva$enhet=="personer"]),na.rm=T)
+#df = recast(subset(utdanningsniva,fylke_nr!="NULL"),fylke_nr~variable+enhet+innvkat_3+kjonn+utd_5,measure.var = "tabellvariabel")
+df = spread(utdanningsniva,utd_5,tabellvariabel)
+df = subset(df,enhet=="personer",select=-enhet)
+names(df)[9:13]=c("grunnskole.personer","ingen.personer","universitet_og_hogskole.personer","uoppgitt.personer","vgs.personer")
+df$totalt.personer = extract_numeric(df[,9])+extract_numeric(df[,10])+extract_numeric(df[,11])+extract_numeric(df[,12])+extract_numeric(df[,13])
+df$grunnskole.prosent = extract_numeric(df$grunnskole.personer)/df$totalt.personer*100
+df$ingen.prosent = extract_numeric(df$ingen.personer)/df$totalt.personer*100
+df$universitet_og_hogskole.prosent = extract_numeric(df$universitet_og_hogskole.personer)/df$totalt.personer*100
+df$uoppgitt.prosent = extract_numeric(df$uoppgitt.personer)/df$totalt.personer*100
+df$vgs.prosent = extract_numeric(df$vgs.personer)/df$totalt.personer*100
+df$totalt.prosent = df[,15]+df[,16]+df[,17]+df[,18]+df[,19]
+df2 = gather(df,variabler,tabellvariabel,9:20)
+df2=separate(df2,variabler,c("utd5","enhet"),"\\.")
+df2 = subset(df2,utd5!="totalt")
+#alle NAs behandles som manglende data
+sum(is.na(df2))
+sum(is.na(df2$tabellvariabel))
+df2$tabellvariabel[is.na(df2$tabellvariabel)==T]="."
+sum(is.na(df2$tabellvariabel))
+#logisk sjekk
+checksum_1 == nrow(df2)
+checksum_2 == sum(extract_numeric(df2$tabellvariabel[df2$enhet=="personer"]),na.rm=T)
+write.csv(df2,"D:/R/imdikator-munch/data_flat_output/utdanningsniva-alle-2010.csv",row.names=F)
+
+#2011
+utdanningsniva <- read.csv("D:/R/imdikator-munch/data_flat_input/utdanningsniva-alle-2011.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+checksum_1 = nrow(utdanningsniva)
+checksum_2 = sum(extract_numeric(utdanningsniva$tabellvariabel[utdanningsniva$enhet=="personer"]),na.rm=T)
+#df = recast(subset(utdanningsniva,fylke_nr!="NULL"),fylke_nr~variable+enhet+innvkat_3+kjonn+utd_5,measure.var = "tabellvariabel")
+df = spread(utdanningsniva,utd_5,tabellvariabel)
+df = subset(df,enhet=="personer",select=-enhet)
+names(df)[9:13]=c("grunnskole.personer","ingen.personer","universitet_og_hogskole.personer","uoppgitt.personer","vgs.personer")
+df$totalt.personer = extract_numeric(df[,9])+extract_numeric(df[,10])+extract_numeric(df[,11])+extract_numeric(df[,12])+extract_numeric(df[,13])
+df$grunnskole.prosent = extract_numeric(df$grunnskole.personer)/df$totalt.personer*100
+df$ingen.prosent = extract_numeric(df$ingen.personer)/df$totalt.personer*100
+df$universitet_og_hogskole.prosent = extract_numeric(df$universitet_og_hogskole.personer)/df$totalt.personer*100
+df$uoppgitt.prosent = extract_numeric(df$uoppgitt.personer)/df$totalt.personer*100
+df$vgs.prosent = extract_numeric(df$vgs.personer)/df$totalt.personer*100
+df$totalt.prosent = df[,15]+df[,16]+df[,17]+df[,18]+df[,19]
+df2 = gather(df,variabler,tabellvariabel,9:20)
+df2=separate(df2,variabler,c("utd5","enhet"),"\\.")
+df2 = subset(df2,utd5!="totalt")
+#alle NAs behandles som manglende data
+sum(is.na(df2))
+sum(is.na(df2$tabellvariabel))
+df2$tabellvariabel[is.na(df2$tabellvariabel)==T]="."
+sum(is.na(df2$tabellvariabel))
+#logisk sjekk
+checksum_1 == nrow(df2)
+checksum_2 == sum(extract_numeric(df2$tabellvariabel[df2$enhet=="personer"]),na.rm=T)
+write.csv(df2,"D:/R/imdikator-munch/data_flat_output/utdanningsniva-alle-2011.csv",row.names=F)
+
+#2012
+utdanningsniva <- read.csv("D:/R/imdikator-munch/data_flat_input/utdanningsniva-alle-2012.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+checksum_1 = nrow(utdanningsniva)
+checksum_2 = sum(extract_numeric(utdanningsniva$tabellvariabel[utdanningsniva$enhet=="personer"]),na.rm=T)
+#df = recast(subset(utdanningsniva,fylke_nr!="NULL"),fylke_nr~variable+enhet+innvkat_3+kjonn+utd_5,measure.var = "tabellvariabel")
+df = spread(utdanningsniva,utd_5,tabellvariabel)
+df = subset(df,enhet=="personer",select=-enhet)
+names(df)[9:13]=c("grunnskole.personer","ingen.personer","universitet_og_hogskole.personer","uoppgitt.personer","vgs.personer")
+df$totalt.personer = extract_numeric(df[,9])+extract_numeric(df[,10])+extract_numeric(df[,11])+extract_numeric(df[,12])+extract_numeric(df[,13])
+df$grunnskole.prosent = extract_numeric(df$grunnskole.personer)/df$totalt.personer*100
+df$ingen.prosent = extract_numeric(df$ingen.personer)/df$totalt.personer*100
+df$universitet_og_hogskole.prosent = extract_numeric(df$universitet_og_hogskole.personer)/df$totalt.personer*100
+df$uoppgitt.prosent = extract_numeric(df$uoppgitt.personer)/df$totalt.personer*100
+df$vgs.prosent = extract_numeric(df$vgs.personer)/df$totalt.personer*100
+df$totalt.prosent = df[,15]+df[,16]+df[,17]+df[,18]+df[,19]
+df2 = gather(df,variabler,tabellvariabel,9:20)
+df2=separate(df2,variabler,c("utd5","enhet"),"\\.")
+df2 = subset(df2,utd5!="totalt")
+#alle NAs behandles som manglende data
+sum(is.na(df2))
+sum(is.na(df2$tabellvariabel))
+df2$tabellvariabel[is.na(df2$tabellvariabel)==T]="."
+sum(is.na(df2$tabellvariabel))
+#logisk sjekk
+checksum_1 == nrow(df2)
+checksum_2 == sum(extract_numeric(df2$tabellvariabel[df2$enhet=="personer"]),na.rm=T)
+write.csv(df2,"D:/R/imdikator-munch/data_flat_output/utdanningsniva-alle-2012.csv",row.names=F)
+
+#2013
+utdanningsniva <- read.csv("D:/R/imdikator-munch/data_flat_input/utdanningsniva-alle-2013.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+checksum_1 = nrow(utdanningsniva)
+checksum_2 = sum(extract_numeric(utdanningsniva$tabellvariabel[utdanningsniva$enhet=="personer"]),na.rm=T)
+#df = recast(subset(utdanningsniva,fylke_nr!="NULL"),fylke_nr~variable+enhet+innvkat_3+kjonn+utd_5,measure.var = "tabellvariabel")
+df = spread(utdanningsniva,utd_5,tabellvariabel)
+df = subset(df,enhet=="personer",select=-enhet)
+names(df)[9:13]=c("grunnskole.personer","ingen.personer","universitet_og_hogskole.personer","uoppgitt.personer","vgs.personer")
+df$totalt.personer = extract_numeric(df[,9])+extract_numeric(df[,10])+extract_numeric(df[,11])+extract_numeric(df[,12])+extract_numeric(df[,13])
+df$grunnskole.prosent = extract_numeric(df$grunnskole.personer)/df$totalt.personer*100
+df$ingen.prosent = extract_numeric(df$ingen.personer)/df$totalt.personer*100
+df$universitet_og_hogskole.prosent = extract_numeric(df$universitet_og_hogskole.personer)/df$totalt.personer*100
+df$uoppgitt.prosent = extract_numeric(df$uoppgitt.personer)/df$totalt.personer*100
+df$vgs.prosent = extract_numeric(df$vgs.personer)/df$totalt.personer*100
+df$totalt.prosent = df[,15]+df[,16]+df[,17]+df[,18]+df[,19]
+df2 = gather(df,variabler,tabellvariabel,9:20)
+df2=separate(df2,variabler,c("utd5","enhet"),"\\.")
+df2 = subset(df2,utd5!="totalt")
+#alle NAs behandles som manglende data
+sum(is.na(df2))
+sum(is.na(df2$tabellvariabel))
+df2$tabellvariabel[is.na(df2$tabellvariabel)==T]="."
+sum(is.na(df2$tabellvariabel))
+#logisk sjekk
+checksum_1 == nrow(df2)
+checksum_2 == sum(extract_numeric(df2$tabellvariabel[df2$enhet=="personer"]),na.rm=T)
+write.csv(df2,"D:/R/imdikator-munch/data_flat_output/utdanningsniva-alle-2013.csv",row.names=F)
+
+#2014
+utdanningsniva <- read.csv("D:/R/imdikator-munch/data_flat_input/utdanningsniva-alle-2014.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+checksum_1 = nrow(utdanningsniva)
+checksum_2 = sum(extract_numeric(utdanningsniva$tabellvariabel[utdanningsniva$enhet=="personer"]),na.rm=T)
+#df = recast(subset(utdanningsniva,fylke_nr!="NULL"),fylke_nr~variable+enhet+innvkat_3+kjonn+utd_5,measure.var = "tabellvariabel")
+df = spread(utdanningsniva,utd_5,tabellvariabel)
+df = subset(df,enhet=="personer",select=-enhet)
+names(df)[9:13]=c("grunnskole.personer","ingen.personer","universitet_og_hogskole.personer","uoppgitt.personer","vgs.personer")
+df$totalt.personer = extract_numeric(df[,9])+extract_numeric(df[,10])+extract_numeric(df[,11])+extract_numeric(df[,12])+extract_numeric(df[,13])
+df$grunnskole.prosent = extract_numeric(df$grunnskole.personer)/df$totalt.personer*100
+df$ingen.prosent = extract_numeric(df$ingen.personer)/df$totalt.personer*100
+df$universitet_og_hogskole.prosent = extract_numeric(df$universitet_og_hogskole.personer)/df$totalt.personer*100
+df$uoppgitt.prosent = extract_numeric(df$uoppgitt.personer)/df$totalt.personer*100
+df$vgs.prosent = extract_numeric(df$vgs.personer)/df$totalt.personer*100
+df$totalt.prosent = df[,15]+df[,16]+df[,17]+df[,18]+df[,19]
+df2 = gather(df,variabler,tabellvariabel,9:20)
+df2=separate(df2,variabler,c("utd5","enhet"),"\\.")
+df2 = subset(df2,utd5!="totalt")
+#alle NAs behandles som manglende data
+sum(is.na(df2))
+sum(is.na(df2$tabellvariabel))
+df2$tabellvariabel[is.na(df2$tabellvariabel)==T]="."
+sum(is.na(df2$tabellvariabel))
+#logisk sjekk
+checksum_1 == nrow(df2)
+checksum_2 == sum(extract_numeric(df2$tabellvariabel[df2$enhet=="personer"]),na.rm=T)
+write.csv(df2,"D:/R/imdikator-munch/data_flat_output/utdanningsniva-alle-2014.csv",row.names=F)
+
+#SYSSELSATTE_KJØNN_LAND
+#26. januar 2016
+sysselsatte_kjonn_land <- read.csv("D:/R/imdikator-munch/data_flat_input/sysselsatte_kjonn_land-alle-2013.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+sum(sysselsatte_kjonn_land$kjonn=="0")
+sysselsatte_kjonn_land$kjonn[sysselsatte_kjonn_land$kjonn=="0"]="3"
+sum(sysselsatte_kjonn_land$kjonn=="1")
+sysselsatte_kjonn_land$kjonn[sysselsatte_kjonn_land$kjonn=="1"]="0"
+sysselsatte_kjonn_land$kjonn[sysselsatte_kjonn_land$kjonn=="3"]="1"
+write.csv(sysselsatte_kjonn_land,"D:/R/imdikator-munch/data_flat_output/sysselsatte_kjonn_land-alle-2013.csv",row.names=F)
+
+#NORSK_DELTAKERE
+#27. januar
+#data er ikke deltakere, men antallet nye inn i personkrets i 2013. litt utdatert, og vanskelig å forklare uten kontekst
+#midlertidig løsning: prikke alt.
+norsk_deltakere <- read.csv("D:/R/imdikator-munch/data_flat_input/norsk_deltakere-alle-2013.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+norsk_deltakere$aar = "2015"
+norsk_deltakere$tabellvariabel = "."
+write.csv(norsk_deltakere,"D:/R/imdikator-munch/data_flat_output/norsk_deltakere-alle-2015.csv",row.names=F)
+
+#BOSETTING
+#kommunedata mangler tabell_navn
+#2017-data fjernes midlertidig
+bosetting <- read.csv("D:/R/imdikator-munch/data_flat_input/bosatt_anmodede-kommune-2015_2017.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+bosetting$tabell_navn = "bosatt_anmodede"
+bosetting = subset(bosetting,aar!="2017")
+#logisk sjekk
+nrow(bosetting) == nlevels(as.factor(bosetting$kommune_nr))*3*2*2
+write.csv(bosetting,"D:/R/imdikator-munch/data_flat_output/bosatt_anmodede-kommune-2015_2016.csv",row.names=F)
+
+#næringsregion
+bosetting <- read.csv("D:/R/imdikator-munch/data_flat_input/bosatt_anmodede-naringsregion-2015_2017.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+bosetting = subset(bosetting,aar!="2017")
+#logisk sjekk
+nrow(bosetting) == nlevels(as.factor(bosetting$naringsregion_nr))*3*2*2
+write.csv(bosetting,"D:/R/imdikator-munch/data_flat_output/bosatt_anmodede-naringsregion-2015_2016.csv",row.names=F)
+
+#fylke
+bosetting <- read.csv("D:/R/imdikator-munch/data_flat_input/bosatt_anmodede-fylke-2015_2017.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+bosetting = subset(bosetting,aar!="2017")
+#logisk sjekk
+nrow(bosetting) == nlevels(as.factor(bosetting$fylke_nr))*3*2*2
+write.csv(bosetting,"D:/R/imdikator-munch/data_flat_output/bosatt_anmodede-fylke-2015_2016.csv",row.names=F)
+
+#BOSATT_BEFOLKNING
+#beregnes med basis i bosatt_anmodede og befolkning_hovedgruppe
+#2012-2014, kommune, næringsregion og fylke
+#erstatter 2014-data med nye data
+bosatt_befolkning_2012_2014 <- read.csv("D:/R/imdikator-munch/data_flat_input/bosatt_befolkning.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+levels(as.factor(bosatt_befolkning_2012_2014$aar))
+bosatt_anmodede_2012_2013 = read.csv("D:/R/imdikator-munch/data_flat_input/bosatt_anmodede.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character",fileEncoding = "UTF-8-BOM")
+bosatt_anmodede_2012_2013 = subset(bosatt_anmodede_2012_2013,aar=="2012"|aar=="2013")
+levels(as.factor(bosatt_anmodede_2012_2013$aar))
+befolkning_hovedgruppe_2012_2014 = read.csv("D:/R/imdikator-munch/data_flat_input/befolkning_hovedgruppe.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character",fileEncoding = "UTF-8-BOM")
+befolkning_hovedgruppe_2012_2014 = subset(befolkning_hovedgruppe_2012_2014,aar=="2012"|aar=="2013"|aar=="2014")
+levels(as.factor(befolkning_hovedgruppe_2012_2014$aar))
+befolkning_hovedgruppe_2012_2014 = subset(befolkning_hovedgruppe_2012_2014,innvkat_5=="alle"&enhet=="personer"&kjonn=="alle")
+
+#kommune
+library(tidyr)
+bosatt_befolkning = subset(bosatt_befolkning_2012_2014,kommune_nr!="NULL",select=-c(fylke_nr,naringsregion_nr,bydel_nr))
+df = spread(bosatt_befolkning,bosetting,tabellvariabel)
+befolkning_hovedgruppe = subset(befolkning_hovedgruppe_2012_2014,kommune_nr!="NULL",select=-c(fylke_nr,naringsregion_nr,kjonn,enhet,tabell_navn))
+df_2 = spread(befolkning_hovedgruppe,innvkat_5,tabellvariabel)
+df3 = merge(df,df_2,all.y=F)
+bosatt_anmodede = subset(bosatt_anmodede_2012_2013,kommune_nr!="NULL"&bosetting=="bosatt"&enhet=="personer",select=-c(fylke_nr,naringsregion_nr,bydel_nr,enhet,tabell_navn))
+bosatt_anmodede_2014 = read.csv("D:/R/imdikator-munch/data_flat_input/bosatt_anmodede-kommune-2014.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character",fileEncoding = "UTF-8-BOM")
+bosatt_anmodede_2014 = subset(bosatt_anmodede_2014,bosetting=="bosatt"&enhet=="personer",select=-c(enhet,tabell_navn))
+df=rbind(bosatt_anmodede,bosatt_anmodede_2014)
+df_2 = spread (df,bosetting,tabellvariabel)
+df = merge(df3,df_2,all=T)
+df$bosatt_per_1000_ny = round(extract_numeric(df$bosatt)/extract_numeric(df$alle)*1000,1)
+df$bosatt_per_1000 = df$bosatt_per_1000_ny
+df = subset(df,select=-6:-8)
+df = gather(df,bosetting,tabellvariabel,bosatt_per_1000)
+sum(is.na(df$aar))
+sum(is.na(df$kommune_nr))
+sum(is.na(df$enhet))
+df$enhet="promille"
+sum(is.na(df$tabell_navn))
+df$tabell_navn="bosatt_befolkning"
+sum(is.na(df$bosetting))
+levels(as.factor(df$bosetting))
+sum(is.na(df$tabellvariabel))
+df$tabellvariabel[is.na(df$tabellvariabel)==T]="."
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/bosatt_befolkning-kommune-2012_2014.csv",row.names=F)
+
+#FYLKE
+library(tidyr)
+bosatt_befolkning = subset(bosatt_befolkning_2012_2014,fylke_nr!="NULL",select=-c(kommune_nr,naringsregion_nr,bydel_nr))
+df = spread(bosatt_befolkning,bosetting,tabellvariabel)
+befolkning_hovedgruppe = subset(befolkning_hovedgruppe_2012_2014,fylke_nr!="NULL",select=-c(kommune_nr,naringsregion_nr,kjonn,enhet,tabell_navn))
+df_2 = spread(befolkning_hovedgruppe,innvkat_5,tabellvariabel)
+df3 = merge(df,df_2,all.y=F)
+bosatt_anmodede = subset(bosatt_anmodede_2012_2013,fylke_nr!="NULL"&bosetting=="bosatt"&enhet=="personer",select=-c(kommune_nr,naringsregion_nr,bydel_nr,enhet,tabell_navn))
+bosatt_anmodede_2014 = read.csv("D:/R/imdikator-munch/data_flat_input/bosatt_anmodede-fylke-2014.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character",fileEncoding = "UTF-8-BOM")
+bosatt_anmodede_2014 = subset(bosatt_anmodede_2014,bosetting=="bosatt"&enhet=="personer",select=-c(enhet,tabell_navn))
+df=rbind(bosatt_anmodede,bosatt_anmodede_2014)
+df_2 = spread (df,bosetting,tabellvariabel)
+df = merge(df3,df_2,all=T)
+df$bosatt_per_1000_ny = round(extract_numeric(df$bosatt)/extract_numeric(df$alle)*1000,1)
+df$bosatt_per_1000 = df$bosatt_per_1000_ny
+df = subset(df,select=-6:-8)
+df = gather(df,bosetting,tabellvariabel,bosatt_per_1000)
+sum(is.na(df$aar))
+sum(is.na(df$fylke_nr))
+sum(is.na(df$enhet))
+levels(as.factor(df$enhet))
+df$enhet="promille"
+sum(is.na(df$tabell_navn))
+df$tabell_navn="bosatt_befolkning"
+sum(is.na(df$bosetting))
+levels(as.factor(df$bosetting))
+sum(is.na(df$tabellvariabel))
+df$tabellvariabel[is.na(df$tabellvariabel)==T]="."
+sum(is.na(df))==0
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/bosatt_befolkning-fylke-2012_2014.csv",row.names=F)
+
+#Næringsregion
+library(tidyr)
+bosatt_befolkning = subset(bosatt_befolkning_2012_2014,naringsregion_nr!="NULL",select=-c(kommune_nr,fylke_nr,bydel_nr))
+df = spread(bosatt_befolkning,bosetting,tabellvariabel)
+befolkning_hovedgruppe = subset(befolkning_hovedgruppe_2012_2014,naringsregion_nr!="NULL",select=-c(kommune_nr,fylke_nr,kjonn,enhet,tabell_navn))
+df_2 = spread(befolkning_hovedgruppe,innvkat_5,tabellvariabel)
+df3 = merge(df,df_2,all.y=F)
+bosatt_anmodede = subset(bosatt_anmodede_2012_2013,naringsregion_nr!="NULL"&bosetting=="bosatt"&enhet=="personer",select=-c(kommune_nr,fylke_nr,bydel_nr,enhet,tabell_navn))
+bosatt_anmodede_2014 = read.csv("D:/R/imdikator-munch/data_flat_input/bosatt_anmodede-naringsregion-2014.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character",fileEncoding = "UTF-8-BOM")
+bosatt_anmodede_2014 = subset(bosatt_anmodede_2014,bosetting=="bosatt"&enhet=="personer",select=-c(enhet,tabell_navn))
+df=rbind(bosatt_anmodede,bosatt_anmodede_2014)
+df_2 = spread (df,bosetting,tabellvariabel)
+df = merge(df3,df_2,all=T)
+df$bosatt_per_1000_ny = round(extract_numeric(df$bosatt)/extract_numeric(df$alle)*1000,1)
+df$bosatt_per_1000 = df$bosatt_per_1000_ny
+df = subset(df,select=-6:-8)
+df = gather(df,bosetting,tabellvariabel,bosatt_per_1000)
+sum(is.na(df))
+sum(is.na(df$aar))
+sum(is.na(df$naringsregion_nr))
+sum(is.na(df$enhet))
+levels(as.factor(df$enhet))
+df$enhet="promille"
+sum(is.na(df$tabell_navn))
+df$tabell_navn="bosatt_befolkning"
+sum(is.na(df$bosetting))
+levels(as.factor(df$bosetting))
+sum(is.na(df$tabellvariabel))
+df$tabellvariabel[is.na(df$tabellvariabel)==T]="."
+sum(is.na(df))==0
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/bosatt_befolkning-naringsregion-2012_2014.csv",row.names=F)
+
+#INTRO_STATUS_ARBUTD
+intro_status_arbutd <- read.csv("D:/R/imdikator-munch/data_flat_output/intro_status_arbutd-kommune-2014.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
+df = subset(intro_status_arbutd,avslutta=="ettaar"&avslstat4=="arbutd"&kjonn=="alle"&enhet=="personer")
+sum(df$tabellvariabel=="."|df$tabellvariabel==":")

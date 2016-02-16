@@ -293,7 +293,7 @@ splitDF$tabell_navn = "barnehagedeltakelse"
 write.csv(splitDF,"D:/R/imdikator-munch/data_flat_output/barnehagedeltakelse_barnikommune-kommune-2013.csv",row.names=F)
 
 #KONVERTERING TIL FLATFIL - BARNEHAGEDELTAKELSE - KOMMUNE2014
-barnehagedeltakelse <- read.csv("data_crossed_input/30-barnehagedeltakelse-kommune-2014.csv", header=T, row.names=NULL, sep=";", dec=",", stringsAsFactors = F)
+barnehagedeltakelse <- read.csv("data_crossed_input/barnehagedeltakelse-kommune-2014.csv", header=T, row.names=NULL, sep=";", dec=",", stringsAsFactors = F)
 samlaDF_1=gather(data=barnehagedeltakelse,variabler,tabellvariabel,c(-1,-starts_with("barnikommune")))
 samlaDF_1 = subset(samlaDF_1,select = c(1,variabler,tabellvariabel))
 samlaDF_2=gather(data=barnehagedeltakelse,variabler,tabellvariabel,starts_with("barnikommune"))
@@ -457,6 +457,60 @@ splitDF$aar = 2014
 splitDF$tabell_navn = "norsk_prover"
 write.csv(splitDF,"D:/R/imdikator-munch/data_flat_output/norsk_prover-kommune-2014.csv",row.names=F)
 
+#NORSKPRØVER - RESULTATER - KOMMUNE 1. halvår 2015
+#26. januar
+library(tidyr)
+norsk_prover <- read.csv("D:/R/imdikator-munch/data_crossed_input/norsk_prover-kommune-2015.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=";", dec=",",colClasses="character")
+samlaDF=gather(data=norsk_prover,variabler,tabellvariabel,-1)
+sum(is.na(samlaDF$tabellvariabel))
+splitDF=separate(samlaDF,variabler,c("spraaknivaa","provetype","enhet","aar"),"_")
+splitDF=separate(splitDF,spraaknivaa,c("variabel","spraaknivaa"),(nchar("spraaknivaa")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,provetype,c("variabel","provetype"),(nchar("provetype")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,enhet,c("variabel","enhet"),(nchar("enhet")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,aar,c("variabel","aar"),(nchar("aar")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF$kommune_nr[nchar(splitDF$kommune_nr)==3] = paste0("0",splitDF$kommune_nr[nchar(splitDF$kommune_nr)==3])
+splitDF$spraaknivaa = gsub("\\.","_",splitDF$spraaknivaa)
+splitDF$provetype = gsub("\\.","_",splitDF$provetype)
+splitDF$tabell_navn = "norsk_prover"
+#logisk test
+nrow(splitDF)==nlevels(as.factor(norsk_prover$kommune_nr))*6*4*2
+#mangler noen nivåer av spraaknivaa==alle, fill = "."
+df = spread(splitDF,spraaknivaa,tabellvariabel,fill=".")
+df = gather(df,spraaknivaa,tabellvariabel,6:11)
+#utskrift
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/norsk_prover-kommune-2015.csv",row.names=F)
+
+#NORSKPRØVER - RESULTATER - FYLKE 1. halvår 2015
+#26. januar
+library(tidyr)
+norsk_prover <- read.csv("D:/R/imdikator-munch/data_crossed_input/norsk_prover-fylke-2015.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=";", dec=",",colClasses="character")
+samlaDF=gather(data=norsk_prover,variabler,tabellvariabel,-1)
+sum(is.na(samlaDF$tabellvariabel))
+splitDF=separate(samlaDF,variabler,c("spraaknivaa","provetype","enhet","aar"),"_")
+splitDF=separate(splitDF,spraaknivaa,c("variabel","spraaknivaa"),(nchar("spraaknivaa")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,provetype,c("variabel","provetype"),(nchar("provetype")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,enhet,c("variabel","enhet"),(nchar("enhet")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,aar,c("variabel","aar"),(nchar("aar")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF$fylke_nr[nchar(splitDF$fylke_nr)==3] = paste0("0",splitDF$fylke_nr[nchar(splitDF$fylke_nr)==3])
+splitDF$spraaknivaa = gsub("\\.","_",splitDF$spraaknivaa)
+splitDF$provetype = gsub("\\.","_",splitDF$provetype)
+splitDF$tabell_navn = "norsk_prover"
+#logisk test
+nrow(splitDF)==nlevels(as.factor(norsk_prover$fylke_nr))*6*4*2
+#mangler noen nivåer av spraaknivaa==alle, fill = "."
+df = spread(splitDF,spraaknivaa,tabellvariabel,fill=".")
+df = gather(df,spraaknivaa,tabellvariabel,6:11)
+#utskrift
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/norsk_prover-fylke-2015.csv",row.names=F)
+
 #INTRO_STATUS_ARBUTD - FYLKE
 #27. okt, kjørt på nytt 17. nov
 library(tidyr)
@@ -488,7 +542,7 @@ write.csv(splitDF,"D:/R/imdikator-munch/data_flat_output/intro_status_arbutd-fyl
 #INTRO_STATUS_ARBUTD - KOMMUNE
 #29. okt
 library(tidyr)
-intro_status_arbutd <- read.csv("D:/R/imdikator-munch/data_crossed_input/intro_status_arbutd-kommune-2011_2013.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses = "character")
+intro_status_arbutd <- read.csv("D:/R/imdikator-munch/data_crossed_input/intro_status_arbutd-kommune-2014.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses = "character")
 samlaDF=gather(data=intro_status_arbutd,variabler,tabellvariabel,-1)
 sum(is.na(samlaDF$tabellvariabel))
 splitDF=separate(samlaDF,variabler,c("avslutta","kjonn","avslstat4","aar","enhet"),"_")
@@ -510,12 +564,12 @@ splitDF$aar = gsub("\\.","_",splitDF$aar)
 splitDF$enhet = gsub("\\.","_",splitDF$enhet)
 splitDF$tabell_navn = "intro_status_arbutd"
 levels(as.factor(splitDF$avslstat4))
-write.csv(splitDF,"D:/R/imdikator-munch/data_flat_output/intro_status_arbutd-kommune-2011_2013.csv",row.names=F)
+write.csv(splitDF,"D:/R/imdikator-munch/data_flat_output/intro_status_arbutd-kommune-2014.csv",row.names=F)
 
 #INTRO_STATUS_ARBUTD - BYDEL
-#29. okt
+#25. januar
 library(tidyr)
-intro_status_arbutd <- read.csv("D:/R/imdikator-munch/data_crossed_input/intro_status_arbutd-bydel-2011_2013.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses = "character")
+intro_status_arbutd <- read.csv("D:/R/imdikator-munch/data_crossed_input/intro_status_arbutd-bydel-2014.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses = "character")
 samlaDF=gather(data=intro_status_arbutd,variabler,tabellvariabel,-1)
 sum(is.na(samlaDF$tabellvariabel))
 splitDF=separate(samlaDF,variabler,c("avslutta","kjonn","avslstat4","aar","enhet"),"_")
@@ -538,12 +592,12 @@ splitDF$aar = gsub("\\.","_",splitDF$aar)
 splitDF$enhet = gsub("\\.","_",splitDF$enhet)
 splitDF$tabell_navn = "intro_status_arbutd"
 levels(as.factor(splitDF$avslstat4))
-write.csv(splitDF,"D:/R/imdikator-munch/data_flat_output/intro_status_arbutd-bydel-2011_2013.csv",row.names=F)
+write.csv(splitDF,"D:/R/imdikator-munch/data_flat_output/intro_status_arbutd-bydel-2014.csv",row.names=F)
 
 #INTRO_STATUS_ARBUTD - NÆRINGSREGION
 #17. nov
 library(tidyr)
-intro_status_arbutd <- read.csv("D:/R/imdikator-munch/data_crossed_input/intro_status_arbutd-naringsregion-2011_2013.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses = "character")
+intro_status_arbutd <- read.csv("D:/R/imdikator-munch/data_crossed_input/intro_status_arbutd-naringsregion-2014.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses = "character")
 samlaDF=gather(data=intro_status_arbutd,variabler,tabellvariabel,-1)
 sum(is.na(samlaDF$tabellvariabel))
 splitDF=separate(samlaDF,variabler,c("avslutta","kjonn","avslstat4","aar","enhet"),"_")
@@ -565,7 +619,117 @@ splitDF$aar = gsub("\\.","_",splitDF$aar)
 splitDF$enhet = gsub("\\.","_",splitDF$enhet)
 splitDF$tabell_navn = "intro_status_arbutd"
 levels(as.factor(splitDF$avslstat4))
-write.csv(splitDF,"D:/R/imdikator-munch/data_flat_output/intro_status_arbutd-naringsregion-2011_2013.csv",row.names=F)
+write.csv(splitDF,"D:/R/imdikator-munch/data_flat_output/intro_status_arbutd-naringsregion-2014.csv",row.names=F)
+
+#INTRO_STATUS_ARBUTD - FYLKE 2014
+#25. januar 2016
+library(tidyr)
+intro_status_arbutd <- read.csv("D:/R/imdikator-munch/data_crossed_input/intro_status_arbutd-fylke-2014.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses = "character")
+samlaDF=gather(data=intro_status_arbutd,variabler,tabellvariabel,-1)
+sum(is.na(samlaDF$tabellvariabel))
+splitDF=separate(samlaDF,variabler,c("avslutta","kjonn","avslstat4","aar","enhet"),"_")
+splitDF=separate(splitDF,avslutta,c("variabel","avslutta"),(nchar("avslutta")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,kjonn,c("variabel","kjonn"),(nchar("kjonn")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,avslstat4,c("variabel","avslstat4"),(nchar("avslutning.status.4")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,aar,c("variabel","aar"),(nchar("aar")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,enhet,c("variabel","enhet"),(nchar("enhet")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF$fylke_nr[nchar(splitDF$fylke_nr)==1] = paste0("0",splitDF$fylke_nr[nchar(splitDF$fylke_nr)==1])
+splitDF$avslutta = gsub("\\.","_",splitDF$avslutta)
+splitDF$kjonn = gsub("\\.","_",splitDF$kjonn)
+splitDF$avslstat4 = gsub("\\.","_",splitDF$avslstat4)
+splitDF$aar = gsub("\\.","_",splitDF$aar)
+splitDF$enhet = gsub("\\.","_",splitDF$enhet)
+splitDF$tabell_navn = "intro_status_arbutd"
+#logisk sjekk
+
+levels(as.factor(splitDF$avslstat4))
+write.csv(splitDF,"D:/R/imdikator-munch/data_flat_output/intro_status_arbutd-fylke-2014.csv",row.names=F)
+
+#INTRO_STATUS_ARBUTD - KOMMUNE
+#25. jan 2016
+library(tidyr)
+intro_status_arbutd <- read.csv("D:/R/imdikator-munch/data_crossed_input/intro_status_arbutd-kommune-2014.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses = "character")
+samlaDF=gather(data=intro_status_arbutd,variabler,tabellvariabel,-1)
+sum(is.na(samlaDF$tabellvariabel))
+splitDF=separate(samlaDF,variabler,c("avslutta","kjonn","avslstat4","aar","enhet"),"_")
+splitDF=separate(splitDF,avslutta,c("variabel","avslutta"),(nchar("avslutta")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,kjonn,c("variabel","kjonn"),(nchar("kjonn")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,avslstat4,c("variabel","avslstat4"),(nchar("avslutning.status.4")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,aar,c("variabel","aar"),(nchar("aar")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,enhet,c("variabel","enhet"),(nchar("enhet")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF$kommune_nr[nchar(splitDF$kommune_nr)==3] = paste0("0",splitDF$kommune_nr[nchar(splitDF$kommune_nr)==3])
+splitDF$avslutta = gsub("\\.","_",splitDF$avslutta)
+splitDF$kjonn = gsub("\\.","_",splitDF$kjonn)
+splitDF$avslstat4 = gsub("\\.","_",splitDF$avslstat4)
+splitDF$aar = gsub("\\.","_",splitDF$aar)
+splitDF$enhet = gsub("\\.","_",splitDF$enhet)
+splitDF$tabell_navn = "intro_status_arbutd"
+levels(as.factor(splitDF$avslstat4))
+write.csv(splitDF,"D:/R/imdikator-munch/data_flat_output/intro_status_arbutd-kommune-2014.csv",row.names=F)
+
+#INTRO_STATUS_ARBUTD - BYDEL
+#29. okt
+library(tidyr)
+intro_status_arbutd <- read.csv("D:/R/imdikator-munch/data_crossed_input/intro_status_arbutd-bydel-2014.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses = "character")
+samlaDF=gather(data=intro_status_arbutd,variabler,tabellvariabel,-1)
+sum(is.na(samlaDF$tabellvariabel))
+splitDF=separate(samlaDF,variabler,c("avslutta","kjonn","avslstat4","aar","enhet"),"_")
+splitDF=separate(splitDF,avslutta,c("variabel","avslutta"),(nchar("avslutta")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,kjonn,c("variabel","kjonn"),(nchar("kjonn")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,avslstat4,c("variabel","avslstat4"),(nchar("avslutning.status.4")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,aar,c("variabel","aar"),(nchar("aar")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,enhet,c("variabel","enhet"),(nchar("enhet")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF$bydel_nr[nchar(splitDF$bydel_nr)==5] = paste0("0",splitDF$bydel_nr[nchar(splitDF$bydel_nr)==5])
+splitDF$avslutta = gsub("\\.","_",splitDF$avslutta)
+splitDF$kjonn = gsub("\\.","_",splitDF$kjonn)
+splitDF$avslstat4 = gsub("\\.","_",splitDF$avslstat4)
+splitDF$aar = gsub("\\.","_",splitDF$aar)
+splitDF$enhet = gsub("\\.","_",splitDF$enhet)
+splitDF$tabell_navn = "intro_status_arbutd"
+levels(as.factor(splitDF$avslstat4))
+write.csv(splitDF,"D:/R/imdikator-munch/data_flat_output/intro_status_arbutd-bydel-2014.csv",row.names=F)
+
+#INTRO_STATUS_ARBUTD - NÆRINGSREGION
+#17. nov
+library(tidyr)
+intro_status_arbutd <- read.csv("D:/R/imdikator-munch/data_crossed_input/intro_status_arbutd-naringsregion-2014.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses = "character")
+samlaDF=gather(data=intro_status_arbutd,variabler,tabellvariabel,-1)
+sum(is.na(samlaDF$tabellvariabel))
+splitDF=separate(samlaDF,variabler,c("avslutta","kjonn","avslstat4","aar","enhet"),"_")
+splitDF=separate(splitDF,avslutta,c("variabel","avslutta"),(nchar("avslutta")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,kjonn,c("variabel","kjonn"),(nchar("kjonn")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,avslstat4,c("variabel","avslstat4"),(nchar("avslutning.status.4")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,aar,c("variabel","aar"),(nchar("aar")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,enhet,c("variabel","enhet"),(nchar("enhet")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF$naringsregion_nr[nchar(splitDF$naringsregion_nr)==1] = paste0("0",splitDF$naringsregion_nr[nchar(splitDF$naringsregion_nr)==1])
+splitDF$avslutta = gsub("\\.","_",splitDF$avslutta)
+splitDF$kjonn = gsub("\\.","_",splitDF$kjonn)
+splitDF$avslstat4 = gsub("\\.","_",splitDF$avslstat4)
+splitDF$aar = gsub("\\.","_",splitDF$aar)
+splitDF$enhet = gsub("\\.","_",splitDF$enhet)
+splitDF$tabell_navn = "intro_status_arbutd"
+levels(as.factor(splitDF$avslstat4))
+write.csv(splitDF,"D:/R/imdikator-munch/data_flat_output/intro_status_arbutd-naringsregion-2014.csv",row.names=F)
 
 #BOSETTING_MAANED
 #27. okt
