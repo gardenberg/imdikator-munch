@@ -186,8 +186,8 @@ write.csv(df,"D:/R/imdikator-munch/data_flat_output/bosetting_anmodede-naringsre
 
 #AGGREGERING OG FLATFILERING AV 2016-DATA
 #forbehandla krysstabell i excel
-#31. januar, 3. februar, 12. februar
-data = read.csv("D:/R/imdikator-munch/data_crossed_input/bosatt_anmodede-kommune-2016-160212.csv", row.names=NULL, na.strings=c("NA",":","."), stringsAsFactors=FALSE, sep=";", dec=",")
+#31. januar, 3. februar, 12. februar, 18. februar
+data = read.csv("D:/R/imdikator-munch/data_crossed_input/bosatt_anmodede-kommune-2016-160218.csv", row.names=NULL, na.strings=c("NA",":","."), stringsAsFactors=FALSE, sep=";", dec=",")
 library(tidyr)
 #KOMMUNE 2016
 bosatt_anmodede = data
@@ -209,7 +209,7 @@ nrow(df)==428*3*2
 #resterende
 df$tabell_navn="bosatt_anmodede"
 df$kommune_nr[nchar(df$kommune_nr)==3] = paste0("0",df$kommune_nr[nchar(df$kommune_nr)==3])
-write.csv(df,"D:/R/imdikator-munch/data_flat_output/bosatt_anmodede-kommune-2016-160212.csv",row.names=F)
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/bosatt_anmodede-kommune-2016-160218.csv",row.names=F)
 
 #FYLKE 2016
 kinfo = read.csv("D:/R/imdikator-munch/parameters/kommunesort.csv", sep=";", stringsAsFactors=FALSE)
@@ -249,7 +249,7 @@ checksum_start==df$tabellvariabel[df$fylke_nr=="00"&df$bosetting=="vedtak"&df$aa
 #resterende
 df$tabell_navn="bosatt_anmodede"
 df$tabellvariabel[df$bosetting=="bosatt"]="."
-write.csv(df,"D:/R/imdikator-munch/data_flat_output/bosatt_anmodede-fylke-2016-160212.csv",row.names=F)
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/bosatt_anmodede-fylke-2016-160218.csv",row.names=F)
 
 #Næringsregion 2016
 kinfo <- read.csv("D:/R/imdikator-munch/parameters/kommunesort.csv", sep=";", stringsAsFactors=FALSE)
@@ -285,4 +285,4 @@ nrow(df)==84*3*2
 #resterende
 df$tabell_navn="bosatt_anmodede"
 df$tabellvariabel[df$bosetting=="bosatt"]="."
-write.csv(df,"D:/R/imdikator-munch/data_flat_output/bosatt_anmodede-naringsregion-2016-160212.csv",row.names=F)
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/bosatt_anmodede-naringsregion-2016-160218.csv",row.names=F)

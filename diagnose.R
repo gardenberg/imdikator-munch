@@ -4,6 +4,13 @@
 #dette scriptet må dokumentere hva som er kommet inn, og hva som er gjort med disse filene.
 #først: hvilke endringer og rettelser som er gjort på Benglers flatfilleveranse
 #så: hva som er gjort med SSBs leveranse i 2015
+#ambisjonen er at dette scriptet kaller funksjoner, som utfører de vanligste oppgavene, og så blir resultatet resultatet.
+
+#dette scriptet bør derfor først samle alle operasjoner som nå gjøres i ulike script, 
+#og så fordele disse på en mer fornuftig måte
+
+#fordelingen kan være på en datasett-basis, etter nummerering
+
 
 #BEFOLKNING-ALDER
 #3. februar 2016
@@ -2760,3 +2767,40 @@ write.csv(df,"D:/R/imdikator-munch/data_flat_output/bosatt_befolkning-naringsreg
 intro_status_arbutd <- read.csv("D:/R/imdikator-munch/data_flat_output/intro_status_arbutd-kommune-2014.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character")
 df = subset(intro_status_arbutd,avslutta=="ettaar"&avslstat4=="arbutd"&kjonn=="alle"&enhet=="personer")
 sum(df$tabellvariabel=="."|df$tabellvariabel==":")
+
+#VOKSNE_GRUNNSKOLE
+#test av om ikke-uniformtabell fungerer
+voksne_grunnskole <- read.csv("D:/R/imdikator-munch/data_flat_input/voksne_grunnskole.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character",fileEncoding = "UTF-8-BOM")
+sum(voksne_grunnskole$tabellvariabel==":")
+sum(voksne_grunnskole$tabellvariabel==".")
+#funnet feil: prosentdesimaler, ikke prosenter, for spraak==alle
+voksne_grunnskole$tabellvariabel[voksne_grunnskole$spraak=="alle"&voksne_grunnskole$enhet=="prosent"&voksne_grunnskole$undervisning_grskole!="alle"]=extract_numeric(voksne_grunnskole$tabellvariabel[voksne_grunnskole$spraak=="alle"&voksne_grunnskole$enhet=="prosent"&voksne_grunnskole$undervisning_grskole!="alle"])*100
+sum(is.na(voksne_grunnskole$tabellvariabel))
+sum(voksne_grunnskole$tabellvariabel==":")
+sum(voksne_grunnskole$tabellvariabel==".")
+voksne_grunnskole$tabellvariabel[is.na(voksne_grunnskole$tabellvariabel)==T]="."
+voksne_grunnskole = subset(voksne_grunnskole,fylke_nr!="NULL",select=-8:-9)
+df = subset(voksne_grunnskole, spraak="alle"|(spraak=="minoritet"&undervisning_grskole=="alle")|(spraak=="ikke_minoritet"&undervisning_grskole=="alle"))
+df = subset(voksne_grunnskole, (spraak=="ikke_minoritet"&undervisning_grskole=="alle")|spraak=="alle"|(spraak=="minoritet"&undervisning_grskole=="alle"))
+sum(is.na(df$tabellvariabel))
+nlevels(as.factor(df$fylke_nr))
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/voksne_grunnskole-fylke-2013.csv",row.names=F)
+
+#HELE DATASETTET
+#test av om ikke-uniformtabell fungerer
+voksne_grunnskole <- read.csv("D:/R/imdikator-munch/data_flat_input/voksne_grunnskole.csv", row.names=NULL, na.strings="NA", stringsAsFactors=FALSE, sep=",", dec=".",colClasses="character",fileEncoding = "UTF-8-BOM")
+sum(voksne_grunnskole$tabellvariabel==":")
+sum(voksne_grunnskole$tabellvariabel==".")
+#funnet feil: prosentdesimaler, ikke prosenter, for spraak==alle
+voksne_grunnskole$tabellvariabel[voksne_grunnskole$spraak=="alle"&voksne_grunnskole$enhet=="prosent"&voksne_grunnskole$undervisning_grskole!="alle"]=extract_numeric(voksne_grunnskole$tabellvariabel[voksne_grunnskole$spraak=="alle"&voksne_grunnskole$enhet=="prosent"&voksne_grunnskole$undervisning_grskole!="alle"])*100
+#sjekker for NA
+sum(is.na(voksne_grunnskole$tabellvariabel))
+sum(voksne_grunnskole$tabellvariabel==":")
+sum(voksne_grunnskole$tabellvariabel==".")
+voksne_grunnskole$tabellvariabel[is.na(voksne_grunnskole$tabellvariabel)==T]="."
+#subsetter ut tom informasjon
+df = subset(voksne_grunnskole, spraak="alle"|(spraak=="minoritet"&undervisning_grskole=="alle")|(spraak=="ikke_minoritet"&undervisning_grskole=="alle"))
+df = subset(voksne_grunnskole, (spraak=="ikke_minoritet"&undervisning_grskole=="alle")|spraak=="alle"|(spraak=="minoritet"&undervisning_grskole=="alle"))
+sum(is.na(df$tabellvariabel))
+write.csv(df,"D:/R/imdikator-munch/data_flat_output/voksne_grunnskole-alle-2013.csv",row.names=F)
+
