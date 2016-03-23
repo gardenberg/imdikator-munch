@@ -749,3 +749,165 @@ splitDF$tabell_navn = "bosetting_maaned"
 splitDF$aar=2012
 levels(as.factor(splitDF$maaned))
 write.csv(splitDF,"D:/R/imdikator-munch/data_flat_output/bosetting_maaned-kommune-2012-dummy.csv",row.names=F)
+
+#GJENNOMSNITTSINNTEKT
+#BYDEL
+#14. mars
+library(tidyr)
+gjennomsnittsinntekt <- read.csv("D:/R/imdikator-munch/data_crossed_input/90-gjennomsnittsinntekt-bydel-2014.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses = "character")
+samlaDF=gather(data=gjennomsnittsinntekt,variabler,tabellvariabel,-1)
+sum(is.na(samlaDF$tabellvariabel))
+splitDF=separate(samlaDF,variabler,c("innvkat_3","vreg_3","enhet","aar"),"_")
+splitDF=separate(splitDF,innvkat_3,c("variabel","innvkat_3"),(nchar("innvkat_3")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,vreg_3,c("variabel","vreg_3"),(nchar("vreg_3")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,aar,c("variabel","aar"),(nchar("aar")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,enhet,c("variabel","enhet"),(nchar("enhet")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF$bydel_nr[nchar(splitDF$bydel_nr)==5] = paste0("0",splitDF$bydel_nr[nchar(splitDF$bydel_nr)==5])
+splitDF$innvkat_3 = gsub("\\.","_",splitDF$innvkat_3)
+splitDF$vreg_3 = gsub("\\.","_",splitDF$vreg_3)
+splitDF$aar = gsub("\\.","_",splitDF$aar)
+splitDF$enhet = gsub("\\.","_",splitDF$enhet)
+splitDF$tabellvariabel = gsub(" ","",splitDF$tabellvariabel)
+splitDF$tabell_navn = "gjennomsnittsinntekt"
+#logisk test: antallet obs. i en flatfil skal være lik som celler i krysstabell
+nrow(gjennomsnittsinntekt)*(ncol(gjennomsnittsinntekt)-1)==nrow(splitDF)
+write.csv(splitDF,"D:/R/imdikator-munch/data_flat_output/gjennomsnittsinntekt-bydel-2014.csv",row.names=F)
+
+#NÆRINGSREGION
+#14. mars
+library(tidyr)
+gjennomsnittsinntekt <- read.csv("D:/R/imdikator-munch/data_crossed_input/90-gjennomsnittsinntekt-naringsregion-2014.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses = "character")
+samlaDF=gather(data=gjennomsnittsinntekt,variabler,tabellvariabel,-1)
+sum(is.na(samlaDF$tabellvariabel))
+splitDF=separate(samlaDF,variabler,c("innvkat_3","vreg_3","enhet","aar"),"_")
+splitDF=separate(splitDF,innvkat_3,c("variabel","innvkat_3"),(nchar("innvkat_3")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,vreg_3,c("variabel","vreg_3"),(nchar("vreg_3")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,aar,c("variabel","aar"),(nchar("aar")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,enhet,c("variabel","enhet"),(nchar("enhet")+1))
+splitDF=subset(splitDF,select=-variabel)
+#splitDF$bydel_nr[nchar(splitDF$bydel_nr)==5] = paste0("0",splitDF$bydel_nr[nchar(splitDF$bydel_nr)==5])
+splitDF$innvkat_3 = gsub("\\.","_",splitDF$innvkat_3)
+splitDF$vreg_3 = gsub("\\.","_",splitDF$vreg_3)
+splitDF$aar = gsub("\\.","_",splitDF$aar)
+splitDF$enhet = gsub("\\.","_",splitDF$enhet)
+splitDF$tabellvariabel = gsub(" ","",splitDF$tabellvariabel)
+splitDF$tabell_navn = "gjennomsnittsinntekt"
+#logisk test: antallet obs. i en flatfil skal være lik som celler i krysstabell
+nrow(gjennomsnittsinntekt)*(ncol(gjennomsnittsinntekt)-1)==nrow(splitDF)
+write.csv(splitDF,"D:/R/imdikator-munch/data_flat_output/gjennomsnittsinntekt-naringsregion-2014.csv",row.names=F)
+
+#KOMMUNE
+#14. mars
+library(tidyr)
+gjennomsnittsinntekt <- read.csv("D:/R/imdikator-munch/data_crossed_input/90-gjennomsnittsinntekt-kommune-2014.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses = "character")
+gjennomsnittsinntekt = subset(gjennomsnittsinntekt,select=-6)
+samlaDF=gather(data=gjennomsnittsinntekt,variabler,tabellvariabel,-1)
+sum(is.na(samlaDF$tabellvariabel))
+splitDF=separate(samlaDF,variabler,c("innvkat_3","vreg_3","enhet","aar"),"_")
+splitDF=separate(splitDF,innvkat_3,c("variabel","innvkat_3"),(nchar("innvkat_3")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,vreg_3,c("variabel","vreg_3"),(nchar("vreg_3")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,aar,c("variabel","aar"),(nchar("aar")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,enhet,c("variabel","enhet"),(nchar("enhet")+1))
+splitDF=subset(splitDF,select=-variabel)
+#splitDF$bydel_nr[nchar(splitDF$bydel_nr)==5] = paste0("0",splitDF$bydel_nr[nchar(splitDF$bydel_nr)==5])
+splitDF$innvkat_3 = gsub("\\.","_",splitDF$innvkat_3)
+splitDF$vreg_3 = gsub("\\.","_",splitDF$vreg_3)
+splitDF$aar = gsub("\\.","_",splitDF$aar)
+splitDF$enhet = gsub("\\.","_",splitDF$enhet)
+splitDF$tabellvariabel = gsub(" ","",splitDF$tabellvariabel)
+splitDF$tabell_navn = "gjennomsnittsinntekt"
+#logisk test: antallet obs. i en flatfil skal være lik som celler i krysstabell
+nrow(gjennomsnittsinntekt)*(ncol(gjennomsnittsinntekt)-1)==nrow(splitDF)
+write.csv(splitDF,"D:/R/imdikator-munch/data_flat_output/gjennomsnittsinntekt-kommune-2014.csv",row.names=F)
+
+#FYLKE
+#14. mars
+library(tidyr)
+gjennomsnittsinntekt <- read.csv("D:/R/imdikator-munch/data_crossed_input/90-gjennomsnittsinntekt-fylke-2014.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses = "character")
+samlaDF=gather(data=gjennomsnittsinntekt,variabler,tabellvariabel,-1)
+sum(is.na(samlaDF$tabellvariabel))
+splitDF=separate(samlaDF,variabler,c("innvkat_3","vreg_3","enhet","aar"),"_")
+splitDF=separate(splitDF,innvkat_3,c("variabel","innvkat_3"),(nchar("innvkat_3")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,vreg_3,c("variabel","vreg_3"),(nchar("vreg_3")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,aar,c("variabel","aar"),(nchar("aar")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,enhet,c("variabel","enhet"),(nchar("enhet")+1))
+splitDF=subset(splitDF,select=-variabel)
+#splitDF$bydel_nr[nchar(splitDF$bydel_nr)==5] = paste0("0",splitDF$bydel_nr[nchar(splitDF$bydel_nr)==5])
+splitDF$innvkat_3 = gsub("\\.","_",splitDF$innvkat_3)
+splitDF$vreg_3 = gsub("\\.","_",splitDF$vreg_3)
+splitDF$aar = gsub("\\.","_",splitDF$aar)
+splitDF$enhet = gsub("\\.","_",splitDF$enhet)
+splitDF$tabellvariabel = gsub(" ","",splitDF$tabellvariabel)
+splitDF$tabell_navn = "gjennomsnittsinntekt"
+#logisk test: antallet obs. i en flatfil skal være lik som celler i krysstabell
+nrow(gjennomsnittsinntekt)*(ncol(gjennomsnittsinntekt)-1)==nrow(splitDF)
+write.csv(splitDF,"D:/R/imdikator-munch/data_flat_output/gjennomsnittsinntekt-fylke-2014.csv",row.names=F)
+
+#VEDVARENDE LAVINNTEKT
+#BYDEL - 2012
+#14. mars
+library(tidyr)
+vedvarende_lavinntekt <- read.csv("D:/R/imdikator-munch/data_crossed_input/91-vedvarende_lavinntekt-bydel-2012.csv", row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses = "character")
+samlaDF=gather(data=vedvarende_lavinntekt,variabler,tabellvariabel,-1)
+sum(is.na(samlaDF$tabellvariabel))
+splitDF=separate(samlaDF,variabler,c("innvkat_3","vreg_3","enhet","aar"),"_")
+splitDF=separate(splitDF,innvkat_3,c("variabel","innvkat_3"),(nchar("innvkat_3")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,vreg_3,c("variabel","vreg_3"),(nchar("vreg_3")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,aar,c("variabel","aar"),(nchar("aar")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,enhet,c("variabel","enhet"),(nchar("enhet")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF$bydel_nr[nchar(splitDF$bydel_nr)==5] = paste0("0",splitDF$bydel_nr[nchar(splitDF$bydel_nr)==5])
+splitDF$innvkat_3 = gsub("\\.","_",splitDF$innvkat_3)
+splitDF$vreg_3 = gsub("\\.","_",splitDF$vreg_3)
+splitDF$aar = gsub("\\.","_",splitDF$aar)
+splitDF$enhet = gsub("\\.","_",splitDF$enhet)
+splitDF$tabellvariabel = gsub(" ","",splitDF$tabellvariabel)
+splitDF$tabellvariabel = gsub("\\,","\\.",splitDF$tabellvariabel)
+splitDF$tabell_navn = "vedvarende_lavinntekt"
+#logisk test: antallet obs. i en flatfil skal være lik som celler i krysstabell
+nrow(vedvarende_lavinntekt)*(ncol(vedvarende_lavinntekt)-1)==nrow(splitDF)
+write.csv(splitDF,"D:/R/imdikator-munch/data_flat_output/vedvarende_lavinntekt-bydel-2012.csv",row.names=F)
+
+#BYDEL
+#første steg mot generalisering
+#14. mars
+library(tidyr)
+level_year = "fylke-2014"
+vedvarende_lavinntekt <- read.csv(paste0("D:/R/imdikator-munch/data_crossed_input/91-vedvarende_lavinntekt-",level_year,".csv"), row.names=NULL, sep=";", dec=",", na.strings="NA", stringsAsFactors=FALSE,colClasses = "character")
+samlaDF=gather(data=vedvarende_lavinntekt,variabler,tabellvariabel,-1)
+sum(is.na(samlaDF$tabellvariabel))
+splitDF=separate(samlaDF,variabler,c("innvkat_3","vreg_3","enhet","aar"),"_")
+splitDF=separate(splitDF,innvkat_3,c("variabel","innvkat_3"),(nchar("innvkat_3")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,vreg_3,c("variabel","vreg_3"),(nchar("vreg_3")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,aar,c("variabel","aar"),(nchar("aar")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF=separate(splitDF,enhet,c("variabel","enhet"),(nchar("enhet")+1))
+splitDF=subset(splitDF,select=-variabel)
+splitDF$innvkat_3 = gsub("\\.","_",splitDF$innvkat_3)
+splitDF$vreg_3 = gsub("\\.","_",splitDF$vreg_3)
+splitDF$aar = gsub("\\.","_",splitDF$aar)
+splitDF$enhet = gsub("\\.","_",splitDF$enhet)
+splitDF$tabellvariabel = gsub(" ","",splitDF$tabellvariabel)
+splitDF$tabellvariabel = gsub("\\,","\\.",splitDF$tabellvariabel)
+splitDF$tabell_navn = "vedvarende_lavinntekt"
+#logisk test: antallet obs. i en flatfil skal være lik som celler i krysstabell
+nrow(vedvarende_lavinntekt)*(ncol(vedvarende_lavinntekt)-1)==nrow(splitDF)
+write.csv(splitDF,paste0("D:/R/imdikator-munch/data_flat_output/vedvarende_lavinntekt-",level_year,".csv"),row.names=F)

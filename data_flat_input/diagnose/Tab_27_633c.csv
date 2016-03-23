@@ -1,6 +1,6 @@
 aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,00,afrika,15027,sysselsatte_land,personer
-2006,00,alle,181411,sysselsatte_land,personer
+2006,00,alle,2388660,sysselsatte_land,personer
 2006,00,asia,57736,sysselsatte_land,personer
 2006,00,eu_ost_europa,19452,sysselsatte_land,personer
 2006,00,nord_amerika_oseania,4516,sysselsatte_land,personer
@@ -9,7 +9,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,00,sor_og_mellom_amerika,7651,sysselsatte_land,personer
 2006,00,vest_europa,23964,sysselsatte_land,personer
 2006,01,afrika,486,sysselsatte_land,personer
-2006,01,alle,8927,sysselsatte_land,personer
+2006,01,alle,128095,sysselsatte_land,personer
 2006,01,asia,2542,sysselsatte_land,personer
 2006,01,eu_ost_europa,1196,sysselsatte_land,personer
 2006,01,nord_amerika_oseania,143,sysselsatte_land,personer
@@ -18,7 +18,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,01,sor_og_mellom_amerika,216,sysselsatte_land,personer
 2006,01,vest_europa,804,sysselsatte_land,personer
 2006,02,afrika,1454,sysselsatte_land,personer
-2006,02,alle,25028,sysselsatte_land,personer
+2006,02,alle,266713,sysselsatte_land,personer
 2006,02,asia,7929,sysselsatte_land,personer
 2006,02,eu_ost_europa,2663,sysselsatte_land,personer
 2006,02,nord_amerika_oseania,759,sysselsatte_land,personer
@@ -27,7 +27,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,02,sor_og_mellom_amerika,862,sysselsatte_land,personer
 2006,02,vest_europa,3482,sysselsatte_land,personer
 2006,03,afrika,6810,sysselsatte_land,personer
-2006,03,alle,52627,sysselsatte_land,personer
+2006,03,alle,293422,sysselsatte_land,personer
 2006,03,asia,21286,sysselsatte_land,personer
 2006,03,eu_ost_europa,4273,sysselsatte_land,personer
 2006,03,nord_amerika_oseania,1097,sysselsatte_land,personer
@@ -36,7 +36,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,03,sor_og_mellom_amerika,2317,sysselsatte_land,personer
 2006,03,vest_europa,4601,sysselsatte_land,personer
 2006,04,afrika,190,sysselsatte_land,personer
-2006,04,alle,3895,sysselsatte_land,personer
+2006,04,alle,91809,sysselsatte_land,personer
 2006,04,asia,952,sysselsatte_land,personer
 2006,04,eu_ost_europa,468,sysselsatte_land,personer
 2006,04,nord_amerika_oseania,77,sysselsatte_land,personer
@@ -45,7 +45,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,04,sor_og_mellom_amerika,112,sysselsatte_land,personer
 2006,04,vest_europa,480,sysselsatte_land,personer
 2006,05,afrika,223,sysselsatte_land,personer
-2006,05,alle,3828,sysselsatte_land,personer
+2006,05,alle,93253,sysselsatte_land,personer
 2006,05,asia,930,sysselsatte_land,personer
 2006,05,eu_ost_europa,404,sysselsatte_land,personer
 2006,05,nord_amerika_oseania,78,sysselsatte_land,personer
@@ -54,7 +54,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,05,sor_og_mellom_amerika,99,sysselsatte_land,personer
 2006,05,vest_europa,618,sysselsatte_land,personer
 2006,06,afrika,565,sysselsatte_land,personer
-2006,06,alle,10426,sysselsatte_land,personer
+2006,06,alle,127944,sysselsatte_land,personer
 2006,06,asia,3550,sysselsatte_land,personer
 2006,06,eu_ost_europa,1076,sysselsatte_land,personer
 2006,06,nord_amerika_oseania,197,sysselsatte_land,personer
@@ -63,7 +63,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,06,sor_og_mellom_amerika,392,sysselsatte_land,personer
 2006,06,vest_europa,1294,sysselsatte_land,personer
 2006,07,afrika,367,sysselsatte_land,personer
-2006,07,alle,6995,sysselsatte_land,personer
+2006,07,alle,110169,sysselsatte_land,personer
 2006,07,asia,1969,sysselsatte_land,personer
 2006,07,eu_ost_europa,830,sysselsatte_land,personer
 2006,07,nord_amerika_oseania,186,sysselsatte_land,personer
@@ -72,7 +72,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,07,sor_og_mellom_amerika,185,sysselsatte_land,personer
 2006,07,vest_europa,1009,sysselsatte_land,personer
 2006,08,afrika,350,sysselsatte_land,personer
-2006,08,alle,4337,sysselsatte_land,personer
+2006,08,alle,81098,sysselsatte_land,personer
 2006,08,asia,1161,sysselsatte_land,personer
 2006,08,eu_ost_europa,436,sysselsatte_land,personer
 2006,08,nord_amerika_oseania,75,sysselsatte_land,personer
@@ -81,7 +81,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,08,sor_og_mellom_amerika,235,sysselsatte_land,personer
 2006,08,vest_europa,637,sysselsatte_land,personer
 2006,09,afrika,113,sysselsatte_land,personer
-2006,09,alle,2561,sysselsatte_land,personer
+2006,09,alle,50806,sysselsatte_land,personer
 2006,09,asia,615,sysselsatte_land,personer
 2006,09,eu_ost_europa,263,sysselsatte_land,personer
 2006,09,nord_amerika_oseania,90,sysselsatte_land,personer
@@ -90,7 +90,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,09,sor_og_mellom_amerika,79,sysselsatte_land,personer
 2006,09,vest_europa,470,sysselsatte_land,personer
 2006,10,afrika,288,sysselsatte_land,personer
-2006,10,alle,5494,sysselsatte_land,personer
+2006,10,alle,80503,sysselsatte_land,personer
 2006,10,asia,1492,sysselsatte_land,personer
 2006,10,eu_ost_europa,551,sysselsatte_land,personer
 2006,10,nord_amerika_oseania,170,sysselsatte_land,personer
@@ -99,7 +99,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,10,sor_og_mellom_amerika,515,sysselsatte_land,personer
 2006,10,vest_europa,786,sysselsatte_land,personer
 2006,11,afrika,1104,sysselsatte_land,personer
-2006,11,alle,15911,sysselsatte_land,personer
+2006,11,alle,211677,sysselsatte_land,personer
 2006,11,asia,4296,sysselsatte_land,personer
 2006,11,eu_ost_europa,2140,sysselsatte_land,personer
 2006,11,nord_amerika_oseania,611,sysselsatte_land,personer
@@ -108,7 +108,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,11,sor_og_mellom_amerika,624,sysselsatte_land,personer
 2006,11,vest_europa,3094,sysselsatte_land,personer
 2006,12,afrika,1183,sysselsatte_land,personer
-2006,12,alle,13867,sysselsatte_land,personer
+2006,12,alle,234618,sysselsatte_land,personer
 2006,12,asia,3870,sysselsatte_land,personer
 2006,12,eu_ost_europa,2015,sysselsatte_land,personer
 2006,12,nord_amerika_oseania,439,sysselsatte_land,personer
@@ -117,7 +117,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,12,sor_og_mellom_amerika,1059,sysselsatte_land,personer
 2006,12,vest_europa,2371,sysselsatte_land,personer
 2006,14,afrika,114,sysselsatte_land,personer
-2006,14,alle,2384,sysselsatte_land,personer
+2006,14,alle,55157,sysselsatte_land,personer
 2006,14,asia,583,sysselsatte_land,personer
 2006,14,eu_ost_europa,363,sysselsatte_land,personer
 2006,14,nord_amerika_oseania,40,sysselsatte_land,personer
@@ -126,7 +126,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,14,sor_og_mellom_amerika,166,sysselsatte_land,personer
 2006,14,vest_europa,511,sysselsatte_land,personer
 2006,15,afrika,293,sysselsatte_land,personer
-2006,15,alle,5360,sysselsatte_land,personer
+2006,15,alle,125793,sysselsatte_land,personer
 2006,15,asia,1511,sysselsatte_land,personer
 2006,15,eu_ost_europa,716,sysselsatte_land,personer
 2006,15,nord_amerika_oseania,112,sysselsatte_land,personer
@@ -135,7 +135,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,15,sor_og_mellom_amerika,173,sysselsatte_land,personer
 2006,15,vest_europa,972,sysselsatte_land,personer
 2006,16,afrika,563,sysselsatte_land,personer
-2006,16,alle,7535,sysselsatte_land,personer
+2006,16,alle,144020,sysselsatte_land,personer
 2006,16,asia,2254,sysselsatte_land,personer
 2006,16,eu_ost_europa,1017,sysselsatte_land,personer
 2006,16,nord_amerika_oseania,207,sysselsatte_land,personer
@@ -144,7 +144,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,16,sor_og_mellom_amerika,325,sysselsatte_land,personer
 2006,16,vest_europa,1138,sysselsatte_land,personer
 2006,17,afrika,124,sysselsatte_land,personer
-2006,17,alle,1759,sysselsatte_land,personer
+2006,17,alle,63558,sysselsatte_land,personer
 2006,17,asia,454,sysselsatte_land,personer
 2006,17,eu_ost_europa,238,sysselsatte_land,personer
 2006,17,nord_amerika_oseania,37,sysselsatte_land,personer
@@ -153,7 +153,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,17,sor_og_mellom_amerika,23,sysselsatte_land,personer
 2006,17,vest_europa,253,sysselsatte_land,personer
 2006,18,afrika,249,sysselsatte_land,personer
-2006,18,alle,4009,sysselsatte_land,personer
+2006,18,alle,114524,sysselsatte_land,personer
 2006,18,asia,1130,sysselsatte_land,personer
 2006,18,eu_ost_europa,385,sysselsatte_land,personer
 2006,18,nord_amerika_oseania,82,sysselsatte_land,personer
@@ -162,7 +162,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,18,sor_og_mellom_amerika,108,sysselsatte_land,personer
 2006,18,vest_europa,525,sysselsatte_land,personer
 2006,19,afrika,404,sysselsatte_land,personer
-2006,19,alle,4041,sysselsatte_land,personer
+2006,19,alle,79037,sysselsatte_land,personer
 2006,19,asia,789,sysselsatte_land,personer
 2006,19,eu_ost_europa,316,sysselsatte_land,personer
 2006,19,nord_amerika_oseania,101,sysselsatte_land,personer
@@ -171,7 +171,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,19,sor_og_mellom_amerika,121,sysselsatte_land,personer
 2006,19,vest_europa,725,sysselsatte_land,personer
 2006,20,afrika,147,sysselsatte_land,personer
-2006,20,alle,2427,sysselsatte_land,personer
+2006,20,alle,36464,sysselsatte_land,personer
 2006,20,asia,423,sysselsatte_land,personer
 2006,20,eu_ost_europa,102,sysselsatte_land,personer
 2006,20,nord_amerika_oseania,15,sysselsatte_land,personer
@@ -180,7 +180,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,20,sor_og_mellom_amerika,40,sysselsatte_land,personer
 2006,20,vest_europa,194,sysselsatte_land,personer
 2007,00,afrika,17728,sysselsatte_land,personer
-2007,00,alle,213108,sysselsatte_land,personer
+2007,00,alle,2483703,sysselsatte_land,personer
 2007,00,asia,65075,sysselsatte_land,personer
 2007,00,eu_ost_europa,32094,sysselsatte_land,personer
 2007,00,nord_amerika_oseania,5018,sysselsatte_land,personer
@@ -189,7 +189,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,00,sor_og_mellom_amerika,8506,sysselsatte_land,personer
 2007,00,vest_europa,27223,sysselsatte_land,personer
 2007,01,afrika,563,sysselsatte_land,personer
-2007,01,alle,10366,sysselsatte_land,personer
+2007,01,alle,132237,sysselsatte_land,personer
 2007,01,asia,2976,sysselsatte_land,personer
 2007,01,eu_ost_europa,1737,sysselsatte_land,personer
 2007,01,nord_amerika_oseania,150,sysselsatte_land,personer
@@ -198,7 +198,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,01,sor_og_mellom_amerika,242,sysselsatte_land,personer
 2007,01,vest_europa,886,sysselsatte_land,personer
 2007,02,afrika,1710,sysselsatte_land,personer
-2007,02,alle,28860,sysselsatte_land,personer
+2007,02,alle,277140,sysselsatte_land,personer
 2007,02,asia,9004,sysselsatte_land,personer
 2007,02,eu_ost_europa,4202,sysselsatte_land,personer
 2007,02,nord_amerika_oseania,806,sysselsatte_land,personer
@@ -207,7 +207,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,02,sor_og_mellom_amerika,948,sysselsatte_land,personer
 2007,02,vest_europa,3762,sysselsatte_land,personer
 2007,03,afrika,7709,sysselsatte_land,personer
-2007,03,alle,59360,sysselsatte_land,personer
+2007,03,alle,307404,sysselsatte_land,personer
 2007,03,asia,23183,sysselsatte_land,personer
 2007,03,eu_ost_europa,6220,sysselsatte_land,personer
 2007,03,nord_amerika_oseania,1221,sysselsatte_land,personer
@@ -216,7 +216,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,03,sor_og_mellom_amerika,2504,sysselsatte_land,personer
 2007,03,vest_europa,5110,sysselsatte_land,personer
 2007,04,afrika,240,sysselsatte_land,personer
-2007,04,alle,4443,sysselsatte_land,personer
+2007,04,alle,94179,sysselsatte_land,personer
 2007,04,asia,1054,sysselsatte_land,personer
 2007,04,eu_ost_europa,672,sysselsatte_land,personer
 2007,04,nord_amerika_oseania,80,sysselsatte_land,personer
@@ -225,7 +225,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,04,sor_og_mellom_amerika,123,sysselsatte_land,personer
 2007,04,vest_europa,574,sysselsatte_land,personer
 2007,05,afrika,268,sysselsatte_land,personer
-2007,05,alle,4492,sysselsatte_land,personer
+2007,05,alle,95542,sysselsatte_land,personer
 2007,05,asia,1041,sysselsatte_land,personer
 2007,05,eu_ost_europa,694,sysselsatte_land,personer
 2007,05,nord_amerika_oseania,92,sysselsatte_land,personer
@@ -234,7 +234,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,05,sor_og_mellom_amerika,116,sysselsatte_land,personer
 2007,05,vest_europa,694,sysselsatte_land,personer
 2007,06,afrika,712,sysselsatte_land,personer
-2007,06,alle,12263,sysselsatte_land,personer
+2007,06,alle,133121,sysselsatte_land,personer
 2007,06,asia,3972,sysselsatte_land,personer
 2007,06,eu_ost_europa,1937,sysselsatte_land,personer
 2007,06,nord_amerika_oseania,228,sysselsatte_land,personer
@@ -243,7 +243,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,06,sor_og_mellom_amerika,443,sysselsatte_land,personer
 2007,06,vest_europa,1426,sysselsatte_land,personer
 2007,07,afrika,447,sysselsatte_land,personer
-2007,07,alle,8555,sysselsatte_land,personer
+2007,07,alle,114904,sysselsatte_land,personer
 2007,07,asia,2293,sysselsatte_land,personer
 2007,07,eu_ost_europa,1611,sysselsatte_land,personer
 2007,07,nord_amerika_oseania,198,sysselsatte_land,personer
@@ -252,7 +252,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,07,sor_og_mellom_amerika,221,sysselsatte_land,personer
 2007,07,vest_europa,1130,sysselsatte_land,personer
 2007,08,afrika,418,sysselsatte_land,personer
-2007,08,alle,5095,sysselsatte_land,personer
+2007,08,alle,83403,sysselsatte_land,personer
 2007,08,asia,1362,sysselsatte_land,personer
 2007,08,eu_ost_europa,754,sysselsatte_land,personer
 2007,08,nord_amerika_oseania,85,sysselsatte_land,personer
@@ -261,7 +261,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,08,sor_og_mellom_amerika,268,sysselsatte_land,personer
 2007,08,vest_europa,690,sysselsatte_land,personer
 2007,09,afrika,152,sysselsatte_land,personer
-2007,09,alle,3195,sysselsatte_land,personer
+2007,09,alle,53370,sysselsatte_land,personer
 2007,09,asia,786,sysselsatte_land,personer
 2007,09,eu_ost_europa,465,sysselsatte_land,personer
 2007,09,nord_amerika_oseania,101,sysselsatte_land,personer
@@ -270,7 +270,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,09,sor_og_mellom_amerika,94,sysselsatte_land,personer
 2007,09,vest_europa,565,sysselsatte_land,personer
 2007,10,afrika,366,sysselsatte_land,personer
-2007,10,alle,6566,sysselsatte_land,personer
+2007,10,alle,84716,sysselsatte_land,personer
 2007,10,asia,1724,sysselsatte_land,personer
 2007,10,eu_ost_europa,833,sysselsatte_land,personer
 2007,10,nord_amerika_oseania,185,sysselsatte_land,personer
@@ -279,7 +279,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,10,sor_og_mellom_amerika,554,sysselsatte_land,personer
 2007,10,vest_europa,1013,sysselsatte_land,personer
 2007,11,afrika,1368,sysselsatte_land,personer
-2007,11,alle,20030,sysselsatte_land,personer
+2007,11,alle,222959,sysselsatte_land,personer
 2007,11,asia,5157,sysselsatte_land,personer
 2007,11,eu_ost_europa,3933,sysselsatte_land,personer
 2007,11,nord_amerika_oseania,684,sysselsatte_land,personer
@@ -288,7 +288,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,11,sor_og_mellom_amerika,717,sysselsatte_land,personer
 2007,11,vest_europa,3631,sysselsatte_land,personer
 2007,12,afrika,1406,sysselsatte_land,personer
-2007,12,alle,16835,sysselsatte_land,personer
+2007,12,alle,244073,sysselsatte_land,personer
 2007,12,asia,4396,sysselsatte_land,personer
 2007,12,eu_ost_europa,3492,sysselsatte_land,personer
 2007,12,nord_amerika_oseania,496,sysselsatte_land,personer
@@ -297,7 +297,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,12,sor_og_mellom_amerika,1185,sysselsatte_land,personer
 2007,12,vest_europa,2658,sysselsatte_land,personer
 2007,14,afrika,152,sysselsatte_land,personer
-2007,14,alle,2850,sysselsatte_land,personer
+2007,14,alle,56705,sysselsatte_land,personer
 2007,14,asia,608,sysselsatte_land,personer
 2007,14,eu_ost_europa,592,sysselsatte_land,personer
 2007,14,nord_amerika_oseania,50,sysselsatte_land,personer
@@ -306,7 +306,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,14,sor_og_mellom_amerika,185,sysselsatte_land,personer
 2007,14,vest_europa,594,sysselsatte_land,personer
 2007,15,afrika,352,sysselsatte_land,personer
-2007,15,alle,6735,sysselsatte_land,personer
+2007,15,alle,130668,sysselsatte_land,personer
 2007,15,asia,1752,sysselsatte_land,personer
 2007,15,eu_ost_europa,1314,sysselsatte_land,personer
 2007,15,nord_amerika_oseania,132,sysselsatte_land,personer
@@ -315,7 +315,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,15,sor_og_mellom_amerika,236,sysselsatte_land,personer
 2007,15,vest_europa,1240,sysselsatte_land,personer
 2007,16,afrika,697,sysselsatte_land,personer
-2007,16,alle,9170,sysselsatte_land,personer
+2007,16,alle,150021,sysselsatte_land,personer
 2007,16,asia,2581,sysselsatte_land,personer
 2007,16,eu_ost_europa,1762,sysselsatte_land,personer
 2007,16,nord_amerika_oseania,240,sysselsatte_land,personer
@@ -324,7 +324,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,16,sor_og_mellom_amerika,363,sysselsatte_land,personer
 2007,16,vest_europa,1352,sysselsatte_land,personer
 2007,17,afrika,163,sysselsatte_land,personer
-2007,17,alle,2330,sysselsatte_land,personer
+2007,17,alle,66160,sysselsatte_land,personer
 2007,17,asia,516,sysselsatte_land,personer
 2007,17,eu_ost_europa,603,sysselsatte_land,personer
 2007,17,nord_amerika_oseania,51,sysselsatte_land,personer
@@ -333,7 +333,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,17,sor_og_mellom_amerika,26,sysselsatte_land,personer
 2007,17,vest_europa,287,sysselsatte_land,personer
 2007,18,afrika,321,sysselsatte_land,personer
-2007,18,alle,4709,sysselsatte_land,personer
+2007,18,alle,118372,sysselsatte_land,personer
 2007,18,asia,1329,sysselsatte_land,personer
 2007,18,eu_ost_europa,607,sysselsatte_land,personer
 2007,18,nord_amerika_oseania,89,sysselsatte_land,personer
@@ -342,7 +342,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,18,sor_og_mellom_amerika,124,sysselsatte_land,personer
 2007,18,vest_europa,597,sysselsatte_land,personer
 2007,19,afrika,464,sysselsatte_land,personer
-2007,19,alle,4520,sysselsatte_land,personer
+2007,19,alle,81295,sysselsatte_land,personer
 2007,19,asia,843,sysselsatte_land,personer
 2007,19,eu_ost_europa,482,sysselsatte_land,personer
 2007,19,nord_amerika_oseania,110,sysselsatte_land,personer
@@ -351,7 +351,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,19,sor_og_mellom_amerika,122,sysselsatte_land,personer
 2007,19,vest_europa,806,sysselsatte_land,personer
 2007,20,afrika,220,sysselsatte_land,personer
-2007,20,alle,2734,sysselsatte_land,personer
+2007,20,alle,37434,sysselsatte_land,personer
 2007,20,asia,498,sysselsatte_land,personer
 2007,20,eu_ost_europa,184,sysselsatte_land,personer
 2007,20,nord_amerika_oseania,20,sysselsatte_land,personer
@@ -360,7 +360,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,20,sor_og_mellom_amerika,35,sysselsatte_land,personer
 2007,20,vest_europa,208,sysselsatte_land,personer
 2008,00,afrika,19467,sysselsatte_land,personer
-2008,00,alle,241015,sysselsatte_land,personer
+2008,00,alle,2524752,sysselsatte_land,personer
 2008,00,asia,70735,sysselsatte_land,personer
 2008,00,eu_ost_europa,43121,sysselsatte_land,personer
 2008,00,nord_amerika_oseania,5488,sysselsatte_land,personer
@@ -369,7 +369,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,00,sor_og_mellom_amerika,9300,sysselsatte_land,personer
 2008,00,vest_europa,31303,sysselsatte_land,personer
 2008,01,afrika,669,sysselsatte_land,personer
-2008,01,alle,11713,sysselsatte_land,personer
+2008,01,alle,133968,sysselsatte_land,personer
 2008,01,asia,3288,sysselsatte_land,personer
 2008,01,eu_ost_europa,2274,sysselsatte_land,personer
 2008,01,nord_amerika_oseania,144,sysselsatte_land,personer
@@ -378,7 +378,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,01,sor_og_mellom_amerika,280,sysselsatte_land,personer
 2008,01,vest_europa,963,sysselsatte_land,personer
 2008,02,afrika,1937,sysselsatte_land,personer
-2008,02,alle,32200,sysselsatte_land,personer
+2008,02,alle,282382,sysselsatte_land,personer
 2008,02,asia,10037,sysselsatte_land,personer
 2008,02,eu_ost_europa,5398,sysselsatte_land,personer
 2008,02,nord_amerika_oseania,859,sysselsatte_land,personer
@@ -387,7 +387,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,02,sor_og_mellom_amerika,1011,sysselsatte_land,personer
 2008,02,vest_europa,4151,sysselsatte_land,personer
 2008,03,afrika,8172,sysselsatte_land,personer
-2008,03,alle,65719,sysselsatte_land,personer
+2008,03,alle,316353,sysselsatte_land,personer
 2008,03,asia,24410,sysselsatte_land,personer
 2008,03,eu_ost_europa,8129,sysselsatte_land,personer
 2008,03,nord_amerika_oseania,1358,sysselsatte_land,personer
@@ -396,7 +396,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,03,sor_og_mellom_amerika,2740,sysselsatte_land,personer
 2008,03,vest_europa,6027,sysselsatte_land,personer
 2008,04,afrika,279,sysselsatte_land,personer
-2008,04,alle,4889,sysselsatte_land,personer
+2008,04,alle,95057,sysselsatte_land,personer
 2008,04,asia,1137,sysselsatte_land,personer
 2008,04,eu_ost_europa,842,sysselsatte_land,personer
 2008,04,nord_amerika_oseania,83,sysselsatte_land,personer
@@ -405,7 +405,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,04,sor_og_mellom_amerika,124,sysselsatte_land,personer
 2008,04,vest_europa,667,sysselsatte_land,personer
 2008,05,afrika,286,sysselsatte_land,personer
-2008,05,alle,5073,sysselsatte_land,personer
+2008,05,alle,95882,sysselsatte_land,personer
 2008,05,asia,1152,sysselsatte_land,personer
 2008,05,eu_ost_europa,980,sysselsatte_land,personer
 2008,05,nord_amerika_oseania,97,sysselsatte_land,personer
@@ -414,7 +414,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,05,sor_og_mellom_amerika,120,sysselsatte_land,personer
 2008,05,vest_europa,793,sysselsatte_land,personer
 2008,06,afrika,811,sysselsatte_land,personer
-2008,06,alle,13763,sysselsatte_land,personer
+2008,06,alle,135125,sysselsatte_land,personer
 2008,06,asia,4279,sysselsatte_land,personer
 2008,06,eu_ost_europa,2591,sysselsatte_land,personer
 2008,06,nord_amerika_oseania,240,sysselsatte_land,personer
@@ -423,7 +423,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,06,sor_og_mellom_amerika,475,sysselsatte_land,personer
 2008,06,vest_europa,1588,sysselsatte_land,personer
 2008,07,afrika,494,sysselsatte_land,personer
-2008,07,alle,9561,sysselsatte_land,personer
+2008,07,alle,116420,sysselsatte_land,personer
 2008,07,asia,2462,sysselsatte_land,personer
 2008,07,eu_ost_europa,2135,sysselsatte_land,personer
 2008,07,nord_amerika_oseania,231,sysselsatte_land,personer
@@ -432,7 +432,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,07,sor_og_mellom_amerika,225,sysselsatte_land,personer
 2008,07,vest_europa,1229,sysselsatte_land,personer
 2008,08,afrika,482,sysselsatte_land,personer
-2008,08,alle,5710,sysselsatte_land,personer
+2008,08,alle,84641,sysselsatte_land,personer
 2008,08,asia,1495,sysselsatte_land,personer
 2008,08,eu_ost_europa,941,sysselsatte_land,personer
 2008,08,nord_amerika_oseania,92,sysselsatte_land,personer
@@ -441,7 +441,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,08,sor_og_mellom_amerika,274,sysselsatte_land,personer
 2008,08,vest_europa,799,sysselsatte_land,personer
 2008,09,afrika,192,sysselsatte_land,personer
-2008,09,alle,3730,sysselsatte_land,personer
+2008,09,alle,54352,sysselsatte_land,personer
 2008,09,asia,902,sysselsatte_land,personer
 2008,09,eu_ost_europa,663,sysselsatte_land,personer
 2008,09,nord_amerika_oseania,110,sysselsatte_land,personer
@@ -450,7 +450,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,09,sor_og_mellom_amerika,98,sysselsatte_land,personer
 2008,09,vest_europa,682,sysselsatte_land,personer
 2008,10,afrika,414,sysselsatte_land,personer
-2008,10,alle,7478,sysselsatte_land,personer
+2008,10,alle,86172,sysselsatte_land,personer
 2008,10,asia,1922,sysselsatte_land,personer
 2008,10,eu_ost_europa,1160,sysselsatte_land,personer
 2008,10,nord_amerika_oseania,204,sysselsatte_land,personer
@@ -459,7 +459,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,10,sor_og_mellom_amerika,590,sysselsatte_land,personer
 2008,10,vest_europa,1182,sysselsatte_land,personer
 2008,11,afrika,1577,sysselsatte_land,personer
-2008,11,alle,23750,sysselsatte_land,personer
+2008,11,alle,229132,sysselsatte_land,personer
 2008,11,asia,5773,sysselsatte_land,personer
 2008,11,eu_ost_europa,5504,sysselsatte_land,personer
 2008,11,nord_amerika_oseania,764,sysselsatte_land,personer
@@ -468,7 +468,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,11,sor_og_mellom_amerika,865,sysselsatte_land,personer
 2008,11,vest_europa,4336,sysselsatte_land,personer
 2008,12,afrika,1567,sysselsatte_land,personer
-2008,12,alle,19471,sysselsatte_land,personer
+2008,12,alle,249354,sysselsatte_land,personer
 2008,12,asia,4929,sysselsatte_land,personer
 2008,12,eu_ost_europa,4651,sysselsatte_land,personer
 2008,12,nord_amerika_oseania,571,sysselsatte_land,personer
@@ -477,7 +477,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,12,sor_og_mellom_amerika,1272,sysselsatte_land,personer
 2008,12,vest_europa,3020,sysselsatte_land,personer
 2008,14,afrika,169,sysselsatte_land,personer
-2008,14,alle,3273,sysselsatte_land,personer
+2008,14,alle,56953,sysselsatte_land,personer
 2008,14,asia,645,sysselsatte_land,personer
 2008,14,eu_ost_europa,846,sysselsatte_land,personer
 2008,14,nord_amerika_oseania,53,sysselsatte_land,personer
@@ -486,7 +486,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,14,sor_og_mellom_amerika,183,sysselsatte_land,personer
 2008,14,vest_europa,698,sysselsatte_land,personer
 2008,15,afrika,391,sysselsatte_land,personer
-2008,15,alle,8116,sysselsatte_land,personer
+2008,15,alle,131931,sysselsatte_land,personer
 2008,15,asia,1953,sysselsatte_land,personer
 2008,15,eu_ost_europa,2108,sysselsatte_land,personer
 2008,15,nord_amerika_oseania,145,sysselsatte_land,personer
@@ -495,7 +495,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,15,sor_og_mellom_amerika,256,sysselsatte_land,personer
 2008,15,vest_europa,1498,sysselsatte_land,personer
 2008,16,afrika,752,sysselsatte_land,personer
-2008,16,alle,10382,sysselsatte_land,personer
+2008,16,alle,152508,sysselsatte_land,personer
 2008,16,asia,2818,sysselsatte_land,personer
 2008,16,eu_ost_europa,2257,sysselsatte_land,personer
 2008,16,nord_amerika_oseania,260,sysselsatte_land,personer
@@ -504,7 +504,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,16,sor_og_mellom_amerika,407,sysselsatte_land,personer
 2008,16,vest_europa,1498,sysselsatte_land,personer
 2008,17,afrika,207,sysselsatte_land,personer
-2008,17,alle,2641,sysselsatte_land,personer
+2008,17,alle,66254,sysselsatte_land,personer
 2008,17,asia,581,sysselsatte_land,personer
 2008,17,eu_ost_europa,712,sysselsatte_land,personer
 2008,17,nord_amerika_oseania,48,sysselsatte_land,personer
@@ -513,7 +513,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,17,sor_og_mellom_amerika,42,sysselsatte_land,personer
 2008,17,vest_europa,350,sysselsatte_land,personer
 2008,18,afrika,370,sysselsatte_land,personer
-2008,18,alle,5414,sysselsatte_land,personer
+2008,18,alle,118941,sysselsatte_land,personer
 2008,18,asia,1468,sysselsatte_land,personer
 2008,18,eu_ost_europa,898,sysselsatte_land,personer
 2008,18,nord_amerika_oseania,94,sysselsatte_land,personer
@@ -522,7 +522,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,18,sor_og_mellom_amerika,153,sysselsatte_land,personer
 2008,18,vest_europa,674,sysselsatte_land,personer
 2008,19,afrika,500,sysselsatte_land,personer
-2008,19,alle,5011,sysselsatte_land,personer
+2008,19,alle,81652,sysselsatte_land,personer
 2008,19,asia,947,sysselsatte_land,personer
 2008,19,eu_ost_europa,629,sysselsatte_land,personer
 2008,19,nord_amerika_oseania,119,sysselsatte_land,personer
@@ -531,7 +531,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,19,sor_og_mellom_amerika,140,sysselsatte_land,personer
 2008,19,vest_europa,905,sysselsatte_land,personer
 2008,20,afrika,198,sysselsatte_land,personer
-2008,20,alle,3121,sysselsatte_land,personer
+2008,20,alle,37675,sysselsatte_land,personer
 2008,20,asia,537,sysselsatte_land,personer
 2008,20,eu_ost_europa,403,sysselsatte_land,personer
 2008,20,nord_amerika_oseania,16,sysselsatte_land,personer
@@ -540,7 +540,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,20,sor_og_mellom_amerika,45,sysselsatte_land,personer
 2008,20,vest_europa,243,sysselsatte_land,personer
 2009,00,afrika,19559,sysselsatte_land,personer
-2009,00,alle,251136,sysselsatte_land,personer
+2009,00,alle,2496719,sysselsatte_land,personer
 2009,00,asia,71697,sysselsatte_land,personer
 2009,00,eu_ost_europa,48305,sysselsatte_land,personer
 2009,00,nord_amerika_oseania,5659,sysselsatte_land,personer
@@ -549,7 +549,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,00,sor_og_mellom_amerika,9385,sysselsatte_land,personer
 2009,00,vest_europa,32885,sysselsatte_land,personer
 2009,01,afrika,645,sysselsatte_land,personer
-2009,01,alle,11773,sysselsatte_land,personer
+2009,01,alle,130726,sysselsatte_land,personer
 2009,01,asia,3183,sysselsatte_land,personer
 2009,01,eu_ost_europa,2520,sysselsatte_land,personer
 2009,01,nord_amerika_oseania,149,sysselsatte_land,personer
@@ -558,7 +558,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,01,sor_og_mellom_amerika,284,sysselsatte_land,personer
 2009,01,vest_europa,975,sysselsatte_land,personer
 2009,02,afrika,1987,sysselsatte_land,personer
-2009,02,alle,33472,sysselsatte_land,personer
+2009,02,alle,279532,sysselsatte_land,personer
 2009,02,asia,10406,sysselsatte_land,personer
 2009,02,eu_ost_europa,5870,sysselsatte_land,personer
 2009,02,nord_amerika_oseania,873,sysselsatte_land,personer
@@ -567,7 +567,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,02,sor_og_mellom_amerika,1026,sysselsatte_land,personer
 2009,02,vest_europa,4217,sysselsatte_land,personer
 2009,03,afrika,8049,sysselsatte_land,personer
-2009,03,alle,66897,sysselsatte_land,personer
+2009,03,alle,314826,sysselsatte_land,personer
 2009,03,asia,24404,sysselsatte_land,personer
 2009,03,eu_ost_europa,8266,sysselsatte_land,personer
 2009,03,nord_amerika_oseania,1395,sysselsatte_land,personer
@@ -576,7 +576,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,03,sor_og_mellom_amerika,2707,sysselsatte_land,personer
 2009,03,vest_europa,6362,sysselsatte_land,personer
 2009,04,afrika,284,sysselsatte_land,personer
-2009,04,alle,5091,sysselsatte_land,personer
+2009,04,alle,92883,sysselsatte_land,personer
 2009,04,asia,1142,sysselsatte_land,personer
 2009,04,eu_ost_europa,993,sysselsatte_land,personer
 2009,04,nord_amerika_oseania,85,sysselsatte_land,personer
@@ -585,7 +585,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,04,sor_og_mellom_amerika,133,sysselsatte_land,personer
 2009,04,vest_europa,692,sysselsatte_land,personer
 2009,05,afrika,287,sysselsatte_land,personer
-2009,05,alle,5196,sysselsatte_land,personer
+2009,05,alle,93862,sysselsatte_land,personer
 2009,05,asia,1141,sysselsatte_land,personer
 2009,05,eu_ost_europa,1102,sysselsatte_land,personer
 2009,05,nord_amerika_oseania,95,sysselsatte_land,personer
@@ -594,7 +594,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,05,sor_og_mellom_amerika,116,sysselsatte_land,personer
 2009,05,vest_europa,812,sysselsatte_land,personer
 2009,06,afrika,794,sysselsatte_land,personer
-2009,06,alle,14212,sysselsatte_land,personer
+2009,06,alle,132948,sysselsatte_land,personer
 2009,06,asia,4248,sysselsatte_land,personer
 2009,06,eu_ost_europa,2995,sysselsatte_land,personer
 2009,06,nord_amerika_oseania,262,sysselsatte_land,personer
@@ -603,7 +603,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,06,sor_og_mellom_amerika,490,sysselsatte_land,personer
 2009,06,vest_europa,1644,sysselsatte_land,personer
 2009,07,afrika,453,sysselsatte_land,personer
-2009,07,alle,9768,sysselsatte_land,personer
+2009,07,alle,113983,sysselsatte_land,personer
 2009,07,asia,2463,sysselsatte_land,personer
 2009,07,eu_ost_europa,2293,sysselsatte_land,personer
 2009,07,nord_amerika_oseania,235,sysselsatte_land,personer
@@ -612,7 +612,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,07,sor_og_mellom_amerika,240,sysselsatte_land,personer
 2009,07,vest_europa,1280,sysselsatte_land,personer
 2009,08,afrika,447,sysselsatte_land,personer
-2009,08,alle,5782,sysselsatte_land,personer
+2009,08,alle,82675,sysselsatte_land,personer
 2009,08,asia,1492,sysselsatte_land,personer
 2009,08,eu_ost_europa,987,sysselsatte_land,personer
 2009,08,nord_amerika_oseania,97,sysselsatte_land,personer
@@ -621,7 +621,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,08,sor_og_mellom_amerika,273,sysselsatte_land,personer
 2009,08,vest_europa,856,sysselsatte_land,personer
 2009,09,afrika,182,sysselsatte_land,personer
-2009,09,alle,3878,sysselsatte_land,personer
+2009,09,alle,53297,sysselsatte_land,personer
 2009,09,asia,884,sysselsatte_land,personer
 2009,09,eu_ost_europa,815,sysselsatte_land,personer
 2009,09,nord_amerika_oseania,114,sysselsatte_land,personer
@@ -630,7 +630,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,09,sor_og_mellom_amerika,94,sysselsatte_land,personer
 2009,09,vest_europa,711,sysselsatte_land,personer
 2009,10,afrika,425,sysselsatte_land,personer
-2009,10,alle,7713,sysselsatte_land,personer
+2009,10,alle,85118,sysselsatte_land,personer
 2009,10,asia,1979,sysselsatte_land,personer
 2009,10,eu_ost_europa,1241,sysselsatte_land,personer
 2009,10,nord_amerika_oseania,197,sysselsatte_land,personer
@@ -639,7 +639,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,10,sor_og_mellom_amerika,566,sysselsatte_land,personer
 2009,10,vest_europa,1235,sysselsatte_land,personer
 2009,11,afrika,1623,sysselsatte_land,personer
-2009,11,alle,25187,sysselsatte_land,personer
+2009,11,alle,228088,sysselsatte_land,personer
 2009,11,asia,5901,sysselsatte_land,personer
 2009,11,eu_ost_europa,6113,sysselsatte_land,personer
 2009,11,nord_amerika_oseania,780,sysselsatte_land,personer
@@ -648,7 +648,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,11,sor_og_mellom_amerika,904,sysselsatte_land,personer
 2009,11,vest_europa,4653,sysselsatte_land,personer
 2009,12,afrika,1642,sysselsatte_land,personer
-2009,12,alle,21021,sysselsatte_land,personer
+2009,12,alle,249453,sysselsatte_land,personer
 2009,12,asia,5096,sysselsatte_land,personer
 2009,12,eu_ost_europa,5488,sysselsatte_land,personer
 2009,12,nord_amerika_oseania,570,sysselsatte_land,personer
@@ -657,7 +657,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,12,sor_og_mellom_amerika,1299,sysselsatte_land,personer
 2009,12,vest_europa,3261,sysselsatte_land,personer
 2009,14,afrika,163,sysselsatte_land,personer
-2009,14,alle,3710,sysselsatte_land,personer
+2009,14,alle,56256,sysselsatte_land,personer
 2009,14,asia,621,sysselsatte_land,personer
 2009,14,eu_ost_europa,1239,sysselsatte_land,personer
 2009,14,nord_amerika_oseania,60,sysselsatte_land,personer
@@ -666,7 +666,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,14,sor_og_mellom_amerika,174,sysselsatte_land,personer
 2009,14,vest_europa,726,sysselsatte_land,personer
 2009,15,afrika,414,sysselsatte_land,personer
-2009,15,alle,9158,sysselsatte_land,personer
+2009,15,alle,130959,sysselsatte_land,personer
 2009,15,asia,1994,sysselsatte_land,personer
 2009,15,eu_ost_europa,2877,sysselsatte_land,personer
 2009,15,nord_amerika_oseania,157,sysselsatte_land,personer
@@ -675,7 +675,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,15,sor_og_mellom_amerika,274,sysselsatte_land,personer
 2009,15,vest_europa,1623,sysselsatte_land,personer
 2009,16,afrika,802,sysselsatte_land,personer
-2009,16,alle,11075,sysselsatte_land,personer
+2009,16,alle,151128,sysselsatte_land,personer
 2009,16,asia,3051,sysselsatte_land,personer
 2009,16,eu_ost_europa,2452,sysselsatte_land,personer
 2009,16,nord_amerika_oseania,289,sysselsatte_land,personer
@@ -684,7 +684,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,16,sor_og_mellom_amerika,435,sysselsatte_land,personer
 2009,16,vest_europa,1572,sysselsatte_land,personer
 2009,17,afrika,211,sysselsatte_land,personer
-2009,17,alle,2708,sysselsatte_land,personer
+2009,17,alle,65427,sysselsatte_land,personer
 2009,17,asia,588,sysselsatte_land,personer
 2009,17,eu_ost_europa,726,sysselsatte_land,personer
 2009,17,nord_amerika_oseania,52,sysselsatte_land,personer
@@ -693,7 +693,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,17,sor_og_mellom_amerika,44,sysselsatte_land,personer
 2009,17,vest_europa,364,sysselsatte_land,personer
 2009,18,afrika,403,sysselsatte_land,personer
-2009,18,alle,5910,sysselsatte_land,personer
+2009,18,alle,117569,sysselsatte_land,personer
 2009,18,asia,1517,sysselsatte_land,personer
 2009,18,eu_ost_europa,1095,sysselsatte_land,personer
 2009,18,nord_amerika_oseania,97,sysselsatte_land,personer
@@ -702,7 +702,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,18,sor_og_mellom_amerika,152,sysselsatte_land,personer
 2009,18,vest_europa,744,sysselsatte_land,personer
 2009,19,afrika,507,sysselsatte_land,personer
-2009,19,alle,5271,sysselsatte_land,personer
+2009,19,alle,80758,sysselsatte_land,personer
 2009,19,asia,1005,sysselsatte_land,personer
 2009,19,eu_ost_europa,762,sysselsatte_land,personer
 2009,19,nord_amerika_oseania,130,sysselsatte_land,personer
@@ -711,7 +711,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,19,sor_og_mellom_amerika,137,sysselsatte_land,personer
 2009,19,vest_europa,915,sysselsatte_land,personer
 2009,20,afrika,241,sysselsatte_land,personer
-2009,20,alle,3314,sysselsatte_land,personer
+2009,20,alle,37231,sysselsatte_land,personer
 2009,20,asia,582,sysselsatte_land,personer
 2009,20,eu_ost_europa,471,sysselsatte_land,personer
 2009,20,nord_amerika_oseania,22,sysselsatte_land,personer
@@ -720,7 +720,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,20,sor_og_mellom_amerika,37,sysselsatte_land,personer
 2009,20,vest_europa,243,sysselsatte_land,personer
 2010,00,afrika,20898,sysselsatte_land,personer
-2010,00,alle,274815,sysselsatte_land,personer
+2010,00,alle,2516744,sysselsatte_land,personer
 2010,00,asia,75202,sysselsatte_land,personer
 2010,00,eu_ost_europa,60275,sysselsatte_land,personer
 2010,00,nord_amerika_oseania,5823,sysselsatte_land,personer
@@ -729,7 +729,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,00,sor_og_mellom_amerika,9874,sysselsatte_land,personer
 2010,00,vest_europa,35046,sysselsatte_land,personer
 2010,01,afrika,733,sysselsatte_land,personer
-2010,01,alle,12882,sysselsatte_land,personer
+2010,01,alle,131567,sysselsatte_land,personer
 2010,01,asia,3359,sysselsatte_land,personer
 2010,01,eu_ost_europa,3126,sysselsatte_land,personer
 2010,01,nord_amerika_oseania,150,sysselsatte_land,personer
@@ -738,7 +738,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,01,sor_og_mellom_amerika,290,sysselsatte_land,personer
 2010,01,vest_europa,996,sysselsatte_land,personer
 2010,02,afrika,2062,sysselsatte_land,personer
-2010,02,alle,36201,sysselsatte_land,personer
+2010,02,alle,282042,sysselsatte_land,personer
 2010,02,asia,10855,sysselsatte_land,personer
 2010,02,eu_ost_europa,7338,sysselsatte_land,personer
 2010,02,nord_amerika_oseania,872,sysselsatte_land,personer
@@ -747,7 +747,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,02,sor_og_mellom_amerika,1058,sysselsatte_land,personer
 2010,02,vest_europa,4433,sysselsatte_land,personer
 2010,03,afrika,8308,sysselsatte_land,personer
-2010,03,alle,71510,sysselsatte_land,personer
+2010,03,alle,319866,sysselsatte_land,personer
 2010,03,asia,25243,sysselsatte_land,personer
 2010,03,eu_ost_europa,9455,sysselsatte_land,personer
 2010,03,nord_amerika_oseania,1423,sysselsatte_land,personer
@@ -756,7 +756,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,03,sor_og_mellom_amerika,2885,sysselsatte_land,personer
 2010,03,vest_europa,6706,sysselsatte_land,personer
 2010,04,afrika,317,sysselsatte_land,personer
-2010,04,alle,5562,sysselsatte_land,personer
+2010,04,alle,92856,sysselsatte_land,personer
 2010,04,asia,1187,sysselsatte_land,personer
 2010,04,eu_ost_europa,1313,sysselsatte_land,personer
 2010,04,nord_amerika_oseania,94,sysselsatte_land,personer
@@ -765,7 +765,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,04,sor_og_mellom_amerika,131,sysselsatte_land,personer
 2010,04,vest_europa,744,sysselsatte_land,personer
 2010,05,afrika,334,sysselsatte_land,personer
-2010,05,alle,5796,sysselsatte_land,personer
+2010,05,alle,94215,sysselsatte_land,personer
 2010,05,asia,1257,sysselsatte_land,personer
 2010,05,eu_ost_europa,1476,sysselsatte_land,personer
 2010,05,nord_amerika_oseania,103,sysselsatte_land,personer
@@ -774,7 +774,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,05,sor_og_mellom_amerika,114,sysselsatte_land,personer
 2010,05,vest_europa,844,sysselsatte_land,personer
 2010,06,afrika,835,sysselsatte_land,personer
-2010,06,alle,15636,sysselsatte_land,personer
+2010,06,alle,133939,sysselsatte_land,personer
 2010,06,asia,4448,sysselsatte_land,personer
 2010,06,eu_ost_europa,3866,sysselsatte_land,personer
 2010,06,nord_amerika_oseania,259,sysselsatte_land,personer
@@ -783,7 +783,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,06,sor_og_mellom_amerika,497,sysselsatte_land,personer
 2010,06,vest_europa,1780,sysselsatte_land,personer
 2010,07,afrika,470,sysselsatte_land,personer
-2010,07,alle,10593,sysselsatte_land,personer
+2010,07,alle,114412,sysselsatte_land,personer
 2010,07,asia,2574,sysselsatte_land,personer
 2010,07,eu_ost_europa,2777,sysselsatte_land,personer
 2010,07,nord_amerika_oseania,233,sysselsatte_land,personer
@@ -792,7 +792,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,07,sor_og_mellom_amerika,257,sysselsatte_land,personer
 2010,07,vest_europa,1385,sysselsatte_land,personer
 2010,08,afrika,517,sysselsatte_land,personer
-2010,08,alle,6295,sysselsatte_land,personer
+2010,08,alle,82518,sysselsatte_land,personer
 2010,08,asia,1602,sysselsatte_land,personer
 2010,08,eu_ost_europa,1258,sysselsatte_land,personer
 2010,08,nord_amerika_oseania,98,sysselsatte_land,personer
@@ -801,7 +801,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,08,sor_og_mellom_amerika,287,sysselsatte_land,personer
 2010,08,vest_europa,874,sysselsatte_land,personer
 2010,09,afrika,206,sysselsatte_land,personer
-2010,09,alle,4278,sysselsatte_land,personer
+2010,09,alle,53935,sysselsatte_land,personer
 2010,09,asia,957,sysselsatte_land,personer
 2010,09,eu_ost_europa,976,sysselsatte_land,personer
 2010,09,nord_amerika_oseania,112,sysselsatte_land,personer
@@ -810,7 +810,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,09,sor_og_mellom_amerika,110,sysselsatte_land,personer
 2010,09,vest_europa,764,sysselsatte_land,personer
 2010,10,afrika,478,sysselsatte_land,personer
-2010,10,alle,8291,sysselsatte_land,personer
+2010,10,alle,85854,sysselsatte_land,personer
 2010,10,asia,2071,sysselsatte_land,personer
 2010,10,eu_ost_europa,1512,sysselsatte_land,personer
 2010,10,nord_amerika_oseania,195,sysselsatte_land,personer
@@ -819,7 +819,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,10,sor_og_mellom_amerika,564,sysselsatte_land,personer
 2010,10,vest_europa,1292,sysselsatte_land,personer
 2010,11,afrika,1754,sysselsatte_land,personer
-2010,11,alle,28324,sysselsatte_land,personer
+2010,11,alle,231701,sysselsatte_land,personer
 2010,11,asia,6273,sysselsatte_land,personer
 2010,11,eu_ost_europa,7879,sysselsatte_land,personer
 2010,11,nord_amerika_oseania,854,sysselsatte_land,personer
@@ -828,7 +828,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,11,sor_og_mellom_amerika,963,sysselsatte_land,personer
 2010,11,vest_europa,5012,sysselsatte_land,personer
 2010,12,afrika,1787,sysselsatte_land,personer
-2010,12,alle,23310,sysselsatte_land,personer
+2010,12,alle,251089,sysselsatte_land,personer
 2010,12,asia,5274,sysselsatte_land,personer
 2010,12,eu_ost_europa,6890,sysselsatte_land,personer
 2010,12,nord_amerika_oseania,582,sysselsatte_land,personer
@@ -837,7 +837,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,12,sor_og_mellom_amerika,1349,sysselsatte_land,personer
 2010,12,vest_europa,3526,sysselsatte_land,personer
 2010,14,afrika,184,sysselsatte_land,personer
-2010,14,alle,4175,sysselsatte_land,personer
+2010,14,alle,56508,sysselsatte_land,personer
 2010,14,asia,660,sysselsatte_land,personer
 2010,14,eu_ost_europa,1571,sysselsatte_land,personer
 2010,14,nord_amerika_oseania,64,sysselsatte_land,personer
@@ -846,7 +846,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,14,sor_og_mellom_amerika,182,sysselsatte_land,personer
 2010,14,vest_europa,762,sysselsatte_land,personer
 2010,15,afrika,449,sysselsatte_land,personer
-2010,15,alle,10680,sysselsatte_land,personer
+2010,15,alle,131792,sysselsatte_land,personer
 2010,15,asia,2099,sysselsatte_land,personer
 2010,15,eu_ost_europa,4044,sysselsatte_land,personer
 2010,15,nord_amerika_oseania,167,sysselsatte_land,personer
@@ -855,7 +855,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,15,sor_og_mellom_amerika,301,sysselsatte_land,personer
 2010,15,vest_europa,1721,sysselsatte_land,personer
 2010,16,afrika,912,sysselsatte_land,personer
-2010,16,alle,12203,sysselsatte_land,personer
+2010,16,alle,152239,sysselsatte_land,personer
 2010,16,asia,3253,sysselsatte_land,personer
 2010,16,eu_ost_europa,2922,sysselsatte_land,personer
 2010,16,nord_amerika_oseania,292,sysselsatte_land,personer
@@ -864,7 +864,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,16,sor_og_mellom_amerika,462,sysselsatte_land,personer
 2010,16,vest_europa,1779,sysselsatte_land,personer
 2010,17,afrika,241,sysselsatte_land,personer
-2010,17,alle,2866,sysselsatte_land,personer
+2010,17,alle,65488,sysselsatte_land,personer
 2010,17,asia,640,sysselsatte_land,personer
 2010,17,eu_ost_europa,746,sysselsatte_land,personer
 2010,17,nord_amerika_oseania,50,sysselsatte_land,personer
@@ -873,7 +873,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,17,sor_og_mellom_amerika,54,sysselsatte_land,personer
 2010,17,vest_europa,378,sysselsatte_land,personer
 2010,18,afrika,496,sysselsatte_land,personer
-2010,18,alle,6640,sysselsatte_land,personer
+2010,18,alle,118310,sysselsatte_land,personer
 2010,18,asia,1677,sysselsatte_land,personer
 2010,18,eu_ost_europa,1419,sysselsatte_land,personer
 2010,18,nord_amerika_oseania,115,sysselsatte_land,personer
@@ -882,7 +882,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,18,sor_og_mellom_amerika,162,sysselsatte_land,personer
 2010,18,vest_europa,799,sysselsatte_land,personer
 2010,19,afrika,569,sysselsatte_land,personer
-2010,19,alle,5815,sysselsatte_land,personer
+2010,19,alle,80887,sysselsatte_land,personer
 2010,19,asia,1127,sysselsatte_land,personer
 2010,19,eu_ost_europa,1008,sysselsatte_land,personer
 2010,19,nord_amerika_oseania,136,sysselsatte_land,personer
@@ -891,7 +891,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,19,sor_og_mellom_amerika,157,sysselsatte_land,personer
 2010,19,vest_europa,974,sysselsatte_land,personer
 2010,20,afrika,246,sysselsatte_land,personer
-2010,20,alle,3758,sysselsatte_land,personer
+2010,20,alle,37526,sysselsatte_land,personer
 2010,20,asia,646,sysselsatte_land,personer
 2010,20,eu_ost_europa,699,sysselsatte_land,personer
 2010,20,nord_amerika_oseania,24,sysselsatte_land,personer
@@ -900,7 +900,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,20,sor_og_mellom_amerika,51,sysselsatte_land,personer
 2010,20,vest_europa,277,sysselsatte_land,personer
 2011,00,afrika,22880,sysselsatte_land,personer
-2011,00,alle,307161,sysselsatte_land,personer
+2011,00,alle,2561684,sysselsatte_land,personer
 2011,00,asia,80364,sysselsatte_land,personer
 2011,00,eu_ost_europa,77636,sysselsatte_land,personer
 2011,00,nord_amerika_oseania,6126,sysselsatte_land,personer
@@ -909,7 +909,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,00,sor_og_mellom_amerika,10537,sysselsatte_land,personer
 2011,00,vest_europa,37099,sysselsatte_land,personer
 2011,01,afrika,823,sysselsatte_land,personer
-2011,01,alle,14415,sysselsatte_land,personer
+2011,01,alle,133091,sysselsatte_land,personer
 2011,01,asia,3596,sysselsatte_land,personer
 2011,01,eu_ost_europa,4041,sysselsatte_land,personer
 2011,01,nord_amerika_oseania,164,sysselsatte_land,personer
@@ -918,7 +918,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,01,sor_og_mellom_amerika,315,sysselsatte_land,personer
 2011,01,vest_europa,1044,sysselsatte_land,personer
 2011,02,afrika,2277,sysselsatte_land,personer
-2011,02,alle,40820,sysselsatte_land,personer
+2011,02,alle,288431,sysselsatte_land,personer
 2011,02,asia,11762,sysselsatte_land,personer
 2011,02,eu_ost_europa,9955,sysselsatte_land,personer
 2011,02,nord_amerika_oseania,917,sysselsatte_land,personer
@@ -927,7 +927,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,02,sor_og_mellom_amerika,1131,sysselsatte_land,personer
 2011,02,vest_europa,4614,sysselsatte_land,personer
 2011,03,afrika,8857,sysselsatte_land,personer
-2011,03,alle,78496,sysselsatte_land,personer
+2011,03,alle,330034,sysselsatte_land,personer
 2011,03,asia,26434,sysselsatte_land,personer
 2011,03,eu_ost_europa,11624,sysselsatte_land,personer
 2011,03,nord_amerika_oseania,1531,sysselsatte_land,personer
@@ -936,7 +936,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,03,sor_og_mellom_amerika,3044,sysselsatte_land,personer
 2011,03,vest_europa,7185,sysselsatte_land,personer
 2011,04,afrika,393,sysselsatte_land,personer
-2011,04,alle,6205,sysselsatte_land,personer
+2011,04,alle,93153,sysselsatte_land,personer
 2011,04,asia,1310,sysselsatte_land,personer
 2011,04,eu_ost_europa,1723,sysselsatte_land,personer
 2011,04,nord_amerika_oseania,93,sysselsatte_land,personer
@@ -945,7 +945,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,04,sor_og_mellom_amerika,136,sysselsatte_land,personer
 2011,04,vest_europa,745,sysselsatte_land,personer
 2011,05,afrika,387,sysselsatte_land,personer
-2011,05,alle,6551,sysselsatte_land,personer
+2011,05,alle,94688,sysselsatte_land,personer
 2011,05,asia,1342,sysselsatte_land,personer
 2011,05,eu_ost_europa,2054,sysselsatte_land,personer
 2011,05,nord_amerika_oseania,100,sysselsatte_land,personer
@@ -954,7 +954,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,05,sor_og_mellom_amerika,119,sysselsatte_land,personer
 2011,05,vest_europa,895,sysselsatte_land,personer
 2011,06,afrika,951,sysselsatte_land,personer
-2011,06,alle,17772,sysselsatte_land,personer
+2011,06,alle,136238,sysselsatte_land,personer
 2011,06,asia,4817,sysselsatte_land,personer
 2011,06,eu_ost_europa,5122,sysselsatte_land,personer
 2011,06,nord_amerika_oseania,277,sysselsatte_land,personer
@@ -963,7 +963,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,06,sor_og_mellom_amerika,536,sysselsatte_land,personer
 2011,06,vest_europa,1948,sysselsatte_land,personer
 2011,07,afrika,514,sysselsatte_land,personer
-2011,07,alle,11643,sysselsatte_land,personer
+2011,07,alle,115874,sysselsatte_land,personer
 2011,07,asia,2708,sysselsatte_land,personer
 2011,07,eu_ost_europa,3479,sysselsatte_land,personer
 2011,07,nord_amerika_oseania,235,sysselsatte_land,personer
@@ -972,7 +972,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,07,sor_og_mellom_amerika,271,sysselsatte_land,personer
 2011,07,vest_europa,1435,sysselsatte_land,personer
 2011,08,afrika,568,sysselsatte_land,personer
-2011,08,alle,6836,sysselsatte_land,personer
+2011,08,alle,82722,sysselsatte_land,personer
 2011,08,asia,1702,sysselsatte_land,personer
 2011,08,eu_ost_europa,1573,sysselsatte_land,personer
 2011,08,nord_amerika_oseania,105,sysselsatte_land,personer
@@ -981,7 +981,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,08,sor_og_mellom_amerika,298,sysselsatte_land,personer
 2011,08,vest_europa,901,sysselsatte_land,personer
 2011,09,afrika,241,sysselsatte_land,personer
-2011,09,alle,4730,sysselsatte_land,personer
+2011,09,alle,54416,sysselsatte_land,personer
 2011,09,asia,1031,sysselsatte_land,personer
 2011,09,eu_ost_europa,1275,sysselsatte_land,personer
 2011,09,nord_amerika_oseania,115,sysselsatte_land,personer
@@ -990,7 +990,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,09,sor_og_mellom_amerika,123,sysselsatte_land,personer
 2011,09,vest_europa,773,sysselsatte_land,personer
 2011,10,afrika,515,sysselsatte_land,personer
-2011,10,alle,8919,sysselsatte_land,personer
+2011,10,alle,86841,sysselsatte_land,personer
 2011,10,asia,2179,sysselsatte_land,personer
 2011,10,eu_ost_europa,1787,sysselsatte_land,personer
 2011,10,nord_amerika_oseania,201,sysselsatte_land,personer
@@ -999,7 +999,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,10,sor_og_mellom_amerika,599,sysselsatte_land,personer
 2011,10,vest_europa,1346,sysselsatte_land,personer
 2011,11,afrika,1940,sysselsatte_land,personer
-2011,11,alle,31999,sysselsatte_land,personer
+2011,11,alle,238080,sysselsatte_land,personer
 2011,11,asia,6857,sysselsatte_land,personer
 2011,11,eu_ost_europa,9929,sysselsatte_land,personer
 2011,11,nord_amerika_oseania,898,sysselsatte_land,personer
@@ -1008,7 +1008,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,11,sor_og_mellom_amerika,1088,sysselsatte_land,personer
 2011,11,vest_europa,5304,sysselsatte_land,personer
 2011,12,afrika,1974,sysselsatte_land,personer
-2011,12,alle,26470,sysselsatte_land,personer
+2011,12,alle,256298,sysselsatte_land,personer
 2011,12,asia,5707,sysselsatte_land,personer
 2011,12,eu_ost_europa,8852,sysselsatte_land,personer
 2011,12,nord_amerika_oseania,599,sysselsatte_land,personer
@@ -1017,7 +1017,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,12,sor_og_mellom_amerika,1397,sysselsatte_land,personer
 2011,12,vest_europa,3801,sysselsatte_land,personer
 2011,14,afrika,195,sysselsatte_land,personer
-2011,14,alle,4739,sysselsatte_land,personer
+2011,14,alle,56999,sysselsatte_land,personer
 2011,14,asia,691,sysselsatte_land,personer
 2011,14,eu_ost_europa,1975,sysselsatte_land,personer
 2011,14,nord_amerika_oseania,65,sysselsatte_land,personer
@@ -1026,7 +1026,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,14,sor_og_mellom_amerika,192,sysselsatte_land,personer
 2011,14,vest_europa,816,sysselsatte_land,personer
 2011,15,afrika,510,sysselsatte_land,personer
-2011,15,alle,12321,sysselsatte_land,personer
+2011,15,alle,133431,sysselsatte_land,personer
 2011,15,asia,2235,sysselsatte_land,personer
 2011,15,eu_ost_europa,5209,sysselsatte_land,personer
 2011,15,nord_amerika_oseania,181,sysselsatte_land,personer
@@ -1035,7 +1035,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,15,sor_og_mellom_amerika,327,sysselsatte_land,personer
 2011,15,vest_europa,1829,sysselsatte_land,personer
 2011,16,afrika,975,sysselsatte_land,personer
-2011,16,alle,13651,sysselsatte_land,personer
+2011,16,alle,155199,sysselsatte_land,personer
 2011,16,asia,3521,sysselsatte_land,personer
 2011,16,eu_ost_europa,3711,sysselsatte_land,personer
 2011,16,nord_amerika_oseania,311,sysselsatte_land,personer
@@ -1044,7 +1044,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,16,sor_og_mellom_amerika,499,sysselsatte_land,personer
 2011,16,vest_europa,1878,sysselsatte_land,personer
 2011,17,afrika,279,sysselsatte_land,personer
-2011,17,alle,3487,sysselsatte_land,personer
+2011,17,alle,66538,sysselsatte_land,personer
 2011,17,asia,736,sysselsatte_land,personer
 2011,17,eu_ost_europa,1117,sysselsatte_land,personer
 2011,17,nord_amerika_oseania,51,sysselsatte_land,personer
@@ -1053,7 +1053,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,17,sor_og_mellom_amerika,65,sysselsatte_land,personer
 2011,17,vest_europa,421,sysselsatte_land,personer
 2011,18,afrika,600,sysselsatte_land,personer
-2011,18,alle,7557,sysselsatte_land,personer
+2011,18,alle,119519,sysselsatte_land,personer
 2011,18,asia,1826,sysselsatte_land,personer
 2011,18,eu_ost_europa,1952,sysselsatte_land,personer
 2011,18,nord_amerika_oseania,113,sysselsatte_land,personer
@@ -1062,7 +1062,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,18,sor_og_mellom_amerika,176,sysselsatte_land,personer
 2011,18,vest_europa,855,sysselsatte_land,personer
 2011,19,afrika,639,sysselsatte_land,personer
-2011,19,alle,6389,sysselsatte_land,personer
+2011,19,alle,82098,sysselsatte_land,personer
 2011,19,asia,1210,sysselsatte_land,personer
 2011,19,eu_ost_europa,1300,sysselsatte_land,personer
 2011,19,nord_amerika_oseania,148,sysselsatte_land,personer
@@ -1071,7 +1071,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,19,sor_og_mellom_amerika,175,sysselsatte_land,personer
 2011,19,vest_europa,1015,sysselsatte_land,personer
 2011,20,afrika,242,sysselsatte_land,personer
-2011,20,alle,4161,sysselsatte_land,personer
+2011,20,alle,38034,sysselsatte_land,personer
 2011,20,asia,700,sysselsatte_land,personer
 2011,20,eu_ost_europa,958,sysselsatte_land,personer
 2011,20,nord_amerika_oseania,22,sysselsatte_land,personer
@@ -1080,7 +1080,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,20,sor_og_mellom_amerika,46,sysselsatte_land,personer
 2011,20,vest_europa,294,sysselsatte_land,personer
 2012,00,afrika,24703,sysselsatte_land,personer
-2012,00,alle,333959,sysselsatte_land,personer
+2012,00,alle,2588660,sysselsatte_land,personer
 2012,00,asia,85914,sysselsatte_land,personer
 2012,00,eu_ost_europa,89487,sysselsatte_land,personer
 2012,00,nord_amerika_oseania,6501,sysselsatte_land,personer
@@ -1089,7 +1089,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,00,sor_og_mellom_amerika,11114,sysselsatte_land,personer
 2012,00,vest_europa,39287,sysselsatte_land,personer
 2012,01,afrika,888,sysselsatte_land,personer
-2012,01,alle,15654,sysselsatte_land,personer
+2012,01,alle,133825,sysselsatte_land,personer
 2012,01,asia,3846,sysselsatte_land,personer
 2012,01,eu_ost_europa,4625,sysselsatte_land,personer
 2012,01,nord_amerika_oseania,176,sysselsatte_land,personer
@@ -1098,7 +1098,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,01,sor_og_mellom_amerika,330,sysselsatte_land,personer
 2012,01,vest_europa,1110,sysselsatte_land,personer
 2012,02,afrika,2502,sysselsatte_land,personer
-2012,02,alle,44396,sysselsatte_land,personer
+2012,02,alle,292893,sysselsatte_land,personer
 2012,02,asia,12681,sysselsatte_land,personer
 2012,02,eu_ost_europa,11301,sysselsatte_land,personer
 2012,02,nord_amerika_oseania,928,sysselsatte_land,personer
@@ -1107,7 +1107,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,02,sor_og_mellom_amerika,1225,sysselsatte_land,personer
 2012,02,vest_europa,4844,sysselsatte_land,personer
 2012,03,afrika,9160,sysselsatte_land,personer
-2012,03,alle,82349,sysselsatte_land,personer
+2012,03,alle,334623,sysselsatte_land,personer
 2012,03,asia,27426,sysselsatte_land,personer
 2012,03,eu_ost_europa,12790,sysselsatte_land,personer
 2012,03,nord_amerika_oseania,1634,sysselsatte_land,personer
@@ -1116,7 +1116,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,03,sor_og_mellom_amerika,3151,sysselsatte_land,personer
 2012,03,vest_europa,7624,sysselsatte_land,personer
 2012,04,afrika,438,sysselsatte_land,personer
-2012,04,alle,6697,sysselsatte_land,personer
+2012,04,alle,93553,sysselsatte_land,personer
 2012,04,asia,1455,sysselsatte_land,personer
 2012,04,eu_ost_europa,1886,sysselsatte_land,personer
 2012,04,nord_amerika_oseania,97,sysselsatte_land,personer
@@ -1125,7 +1125,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,04,sor_og_mellom_amerika,140,sysselsatte_land,personer
 2012,04,vest_europa,790,sysselsatte_land,personer
 2012,05,afrika,429,sysselsatte_land,personer
-2012,05,alle,7036,sysselsatte_land,personer
+2012,05,alle,94318,sysselsatte_land,personer
 2012,05,asia,1434,sysselsatte_land,personer
 2012,05,eu_ost_europa,2329,sysselsatte_land,personer
 2012,05,nord_amerika_oseania,104,sysselsatte_land,personer
@@ -1134,7 +1134,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,05,sor_og_mellom_amerika,150,sysselsatte_land,personer
 2012,05,vest_europa,898,sysselsatte_land,personer
 2012,06,afrika,1051,sysselsatte_land,personer
-2012,06,alle,19401,sysselsatte_land,personer
+2012,06,alle,137707,sysselsatte_land,personer
 2012,06,asia,5182,sysselsatte_land,personer
 2012,06,eu_ost_europa,5864,sysselsatte_land,personer
 2012,06,nord_amerika_oseania,302,sysselsatte_land,personer
@@ -1143,7 +1143,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,06,sor_og_mellom_amerika,553,sysselsatte_land,personer
 2012,06,vest_europa,2061,sysselsatte_land,personer
 2012,07,afrika,573,sysselsatte_land,personer
-2012,07,alle,12692,sysselsatte_land,personer
+2012,07,alle,116599,sysselsatte_land,personer
 2012,07,asia,2934,sysselsatte_land,personer
 2012,07,eu_ost_europa,3998,sysselsatte_land,personer
 2012,07,nord_amerika_oseania,254,sysselsatte_land,personer
@@ -1152,7 +1152,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,07,sor_og_mellom_amerika,291,sysselsatte_land,personer
 2012,07,vest_europa,1508,sysselsatte_land,personer
 2012,08,afrika,588,sysselsatte_land,personer
-2012,08,alle,7230,sysselsatte_land,personer
+2012,08,alle,82709,sysselsatte_land,personer
 2012,08,asia,1769,sysselsatte_land,personer
 2012,08,eu_ost_europa,1710,sysselsatte_land,personer
 2012,08,nord_amerika_oseania,96,sysselsatte_land,personer
@@ -1161,7 +1161,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,08,sor_og_mellom_amerika,300,sysselsatte_land,personer
 2012,08,vest_europa,981,sysselsatte_land,personer
 2012,09,afrika,258,sysselsatte_land,personer
-2012,09,alle,5177,sysselsatte_land,personer
+2012,09,alle,54822,sysselsatte_land,personer
 2012,09,asia,1142,sysselsatte_land,personer
 2012,09,eu_ost_europa,1472,sysselsatte_land,personer
 2012,09,nord_amerika_oseania,118,sysselsatte_land,personer
@@ -1170,7 +1170,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,09,sor_og_mellom_amerika,127,sysselsatte_land,personer
 2012,09,vest_europa,845,sysselsatte_land,personer
 2012,10,afrika,538,sysselsatte_land,personer
-2012,10,alle,9517,sysselsatte_land,personer
+2012,10,alle,87462,sysselsatte_land,personer
 2012,10,asia,2303,sysselsatte_land,personer
 2012,10,eu_ost_europa,1889,sysselsatte_land,personer
 2012,10,nord_amerika_oseania,220,sysselsatte_land,personer
@@ -1179,7 +1179,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,10,sor_og_mellom_amerika,601,sysselsatte_land,personer
 2012,10,vest_europa,1424,sysselsatte_land,personer
 2012,11,afrika,2211,sysselsatte_land,personer
-2012,11,alle,35728,sysselsatte_land,personer
+2012,11,alle,242656,sysselsatte_land,personer
 2012,11,asia,7732,sysselsatte_land,personer
 2012,11,eu_ost_europa,11450,sysselsatte_land,personer
 2012,11,nord_amerika_oseania,954,sysselsatte_land,personer
@@ -1188,7 +1188,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,11,sor_og_mellom_amerika,1225,sysselsatte_land,personer
 2012,11,vest_europa,5653,sysselsatte_land,personer
 2012,12,afrika,2162,sysselsatte_land,personer
-2012,12,alle,29551,sysselsatte_land,personer
+2012,12,alle,260139,sysselsatte_land,personer
 2012,12,asia,6186,sysselsatte_land,personer
 2012,12,eu_ost_europa,10431,sysselsatte_land,personer
 2012,12,nord_amerika_oseania,671,sysselsatte_land,personer
@@ -1197,7 +1197,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,12,sor_og_mellom_amerika,1447,sysselsatte_land,personer
 2012,12,vest_europa,4040,sysselsatte_land,personer
 2012,14,afrika,233,sysselsatte_land,personer
-2012,14,alle,5139,sysselsatte_land,personer
+2012,14,alle,56879,sysselsatte_land,personer
 2012,14,asia,713,sysselsatte_land,personer
 2012,14,eu_ost_europa,2295,sysselsatte_land,personer
 2012,14,nord_amerika_oseania,64,sysselsatte_land,personer
@@ -1206,7 +1206,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,14,sor_og_mellom_amerika,185,sysselsatte_land,personer
 2012,14,vest_europa,824,sysselsatte_land,personer
 2012,15,afrika,590,sysselsatte_land,personer
-2012,15,alle,13860,sysselsatte_land,personer
+2012,15,alle,134704,sysselsatte_land,personer
 2012,15,asia,2424,sysselsatte_land,personer
 2012,15,eu_ost_europa,6155,sysselsatte_land,personer
 2012,15,nord_amerika_oseania,195,sysselsatte_land,personer
@@ -1215,7 +1215,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,15,sor_og_mellom_amerika,343,sysselsatte_land,personer
 2012,15,vest_europa,1937,sysselsatte_land,personer
 2012,16,afrika,1086,sysselsatte_land,personer
-2012,16,alle,15173,sysselsatte_land,personer
+2012,16,alle,158358,sysselsatte_land,personer
 2012,16,asia,3707,sysselsatte_land,personer
 2012,16,eu_ost_europa,4471,sysselsatte_land,personer
 2012,16,nord_amerika_oseania,341,sysselsatte_land,personer
@@ -1224,7 +1224,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,16,sor_og_mellom_amerika,543,sysselsatte_land,personer
 2012,16,vest_europa,2012,sysselsatte_land,personer
 2012,17,afrika,352,sysselsatte_land,personer
-2012,17,alle,4170,sysselsatte_land,personer
+2012,17,alle,67340,sysselsatte_land,personer
 2012,17,asia,852,sysselsatte_land,personer
 2012,17,eu_ost_europa,1529,sysselsatte_land,personer
 2012,17,nord_amerika_oseania,59,sysselsatte_land,personer
@@ -1233,7 +1233,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,17,sor_og_mellom_amerika,75,sysselsatte_land,personer
 2012,17,vest_europa,453,sysselsatte_land,personer
 2012,18,afrika,682,sysselsatte_land,personer
-2012,18,alle,8457,sysselsatte_land,personer
+2012,18,alle,119106,sysselsatte_land,personer
 2012,18,asia,1963,sysselsatte_land,personer
 2012,18,eu_ost_europa,2442,sysselsatte_land,personer
 2012,18,nord_amerika_oseania,127,sysselsatte_land,personer
@@ -1242,7 +1242,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,18,sor_og_mellom_amerika,185,sysselsatte_land,personer
 2012,18,vest_europa,895,sysselsatte_land,personer
 2012,19,afrika,704,sysselsatte_land,personer
-2012,19,alle,7050,sysselsatte_land,personer
+2012,19,alle,82747,sysselsatte_land,personer
 2012,19,asia,1333,sysselsatte_land,personer
 2012,19,eu_ost_europa,1615,sysselsatte_land,personer
 2012,19,nord_amerika_oseania,136,sysselsatte_land,personer
@@ -1251,7 +1251,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,19,sor_og_mellom_amerika,191,sysselsatte_land,personer
 2012,19,vest_europa,1065,sysselsatte_land,personer
 2012,20,afrika,258,sysselsatte_land,personer
-2012,20,alle,4682,sysselsatte_land,personer
+2012,20,alle,38220,sysselsatte_land,personer
 2012,20,asia,832,sysselsatte_land,personer
 2012,20,eu_ost_europa,1235,sysselsatte_land,personer
 2012,20,nord_amerika_oseania,25,sysselsatte_land,personer
@@ -1260,7 +1260,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,20,sor_og_mellom_amerika,52,sysselsatte_land,personer
 2012,20,vest_europa,323,sysselsatte_land,personer
 2013,00,afrika,26793,sysselsatte_land,personer
-2013,00,alle,358390,sysselsatte_land,personer
+2013,00,alle,2618620,sysselsatte_land,personer
 2013,00,asia,91167,sysselsatte_land,personer
 2013,00,eu_ost_europa,102843,sysselsatte_land,personer
 2013,00,nord_amerika_oseania,6620,sysselsatte_land,personer
@@ -1269,7 +1269,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,00,sor_og_mellom_amerika,11690,sysselsatte_land,personer
 2013,00,vest_europa,41380,sysselsatte_land,personer
 2013,01,afrika,952,sysselsatte_land,personer
-2013,01,alle,16675,sysselsatte_land,personer
+2013,01,alle,134854,sysselsatte_land,personer
 2013,01,asia,4130,sysselsatte_land,personer
 2013,01,eu_ost_europa,5148,sysselsatte_land,personer
 2013,01,nord_amerika_oseania,186,sysselsatte_land,personer
@@ -1278,7 +1278,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,01,sor_og_mellom_amerika,356,sysselsatte_land,personer
 2013,01,vest_europa,1167,sysselsatte_land,personer
 2013,02,afrika,2723,sysselsatte_land,personer
-2013,02,alle,47693,sysselsatte_land,personer
+2013,02,alle,296840,sysselsatte_land,personer
 2013,02,asia,13600,sysselsatte_land,personer
 2013,02,eu_ost_europa,13009,sysselsatte_land,personer
 2013,02,nord_amerika_oseania,952,sysselsatte_land,personer
@@ -1287,7 +1287,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,02,sor_og_mellom_amerika,1332,sysselsatte_land,personer
 2013,02,vest_europa,5032,sysselsatte_land,personer
 2013,03,afrika,9647,sysselsatte_land,personer
-2013,03,alle,87096,sysselsatte_land,personer
+2013,03,alle,341489,sysselsatte_land,personer
 2013,03,asia,28654,sysselsatte_land,personer
 2013,03,eu_ost_europa,14815,sysselsatte_land,personer
 2013,03,nord_amerika_oseania,1661,sysselsatte_land,personer
@@ -1296,7 +1296,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,03,sor_og_mellom_amerika,3324,sysselsatte_land,personer
 2013,03,vest_europa,8296,sysselsatte_land,personer
 2013,04,afrika,494,sysselsatte_land,personer
-2013,04,alle,7257,sysselsatte_land,personer
+2013,04,alle,93618,sysselsatte_land,personer
 2013,04,asia,1554,sysselsatte_land,personer
 2013,04,eu_ost_europa,2213,sysselsatte_land,personer
 2013,04,nord_amerika_oseania,107,sysselsatte_land,personer
@@ -1305,7 +1305,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,04,sor_og_mellom_amerika,148,sysselsatte_land,personer
 2013,04,vest_europa,846,sysselsatte_land,personer
 2013,05,afrika,498,sysselsatte_land,personer
-2013,05,alle,7536,sysselsatte_land,personer
+2013,05,alle,94751,sysselsatte_land,personer
 2013,05,asia,1515,sysselsatte_land,personer
 2013,05,eu_ost_europa,2645,sysselsatte_land,personer
 2013,05,nord_amerika_oseania,106,sysselsatte_land,personer
@@ -1314,7 +1314,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,05,sor_og_mellom_amerika,142,sysselsatte_land,personer
 2013,05,vest_europa,899,sysselsatte_land,personer
 2013,06,afrika,1130,sysselsatte_land,personer
-2013,06,alle,21011,sysselsatte_land,personer
+2013,06,alle,138998,sysselsatte_land,personer
 2013,06,asia,5541,sysselsatte_land,personer
 2013,06,eu_ost_europa,6870,sysselsatte_land,personer
 2013,06,nord_amerika_oseania,279,sysselsatte_land,personer
@@ -1323,7 +1323,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,06,sor_og_mellom_amerika,573,sysselsatte_land,personer
 2013,06,vest_europa,2138,sysselsatte_land,personer
 2013,07,afrika,636,sysselsatte_land,personer
-2013,07,alle,13446,sysselsatte_land,personer
+2013,07,alle,117594,sysselsatte_land,personer
 2013,07,asia,3039,sysselsatte_land,personer
 2013,07,eu_ost_europa,4530,sysselsatte_land,personer
 2013,07,nord_amerika_oseania,229,sysselsatte_land,personer
@@ -1332,7 +1332,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,07,sor_og_mellom_amerika,302,sysselsatte_land,personer
 2013,07,vest_europa,1541,sysselsatte_land,personer
 2013,08,afrika,670,sysselsatte_land,personer
-2013,08,alle,7742,sysselsatte_land,personer
+2013,08,alle,83103,sysselsatte_land,personer
 2013,08,asia,1889,sysselsatte_land,personer
 2013,08,eu_ost_europa,2059,sysselsatte_land,personer
 2013,08,nord_amerika_oseania,100,sysselsatte_land,personer
@@ -1341,7 +1341,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,08,sor_og_mellom_amerika,306,sysselsatte_land,personer
 2013,08,vest_europa,1013,sysselsatte_land,personer
 2013,09,afrika,283,sysselsatte_land,personer
-2013,09,alle,5488,sysselsatte_land,personer
+2013,09,alle,54784,sysselsatte_land,personer
 2013,09,asia,1218,sysselsatte_land,personer
 2013,09,eu_ost_europa,1671,sysselsatte_land,personer
 2013,09,nord_amerika_oseania,122,sysselsatte_land,personer
@@ -1350,7 +1350,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,09,sor_og_mellom_amerika,124,sysselsatte_land,personer
 2013,09,vest_europa,856,sysselsatte_land,personer
 2013,10,afrika,622,sysselsatte_land,personer
-2013,10,alle,10030,sysselsatte_land,personer
+2013,10,alle,88586,sysselsatte_land,personer
 2013,10,asia,2393,sysselsatte_land,personer
 2013,10,eu_ost_europa,2240,sysselsatte_land,personer
 2013,10,nord_amerika_oseania,220,sysselsatte_land,personer
@@ -1359,7 +1359,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,10,sor_og_mellom_amerika,602,sysselsatte_land,personer
 2013,10,vest_europa,1475,sysselsatte_land,personer
 2013,11,afrika,2434,sysselsatte_land,personer
-2013,11,alle,38572,sysselsatte_land,personer
+2013,11,alle,246805,sysselsatte_land,personer
 2013,11,asia,8223,sysselsatte_land,personer
 2013,11,eu_ost_europa,13008,sysselsatte_land,personer
 2013,11,nord_amerika_oseania,967,sysselsatte_land,personer
@@ -1368,7 +1368,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,11,sor_og_mellom_amerika,1286,sysselsatte_land,personer
 2013,11,vest_europa,5856,sysselsatte_land,personer
 2013,12,afrika,2365,sysselsatte_land,personer
-2013,12,alle,32166,sysselsatte_land,personer
+2013,12,alle,264334,sysselsatte_land,personer
 2013,12,asia,6639,sysselsatte_land,personer
 2013,12,eu_ost_europa,11935,sysselsatte_land,personer
 2013,12,nord_amerika_oseania,709,sysselsatte_land,personer
@@ -1377,7 +1377,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,12,sor_og_mellom_amerika,1507,sysselsatte_land,personer
 2013,12,vest_europa,4313,sysselsatte_land,personer
 2013,14,afrika,287,sysselsatte_land,personer
-2013,14,alle,5466,sysselsatte_land,personer
+2013,14,alle,57167,sysselsatte_land,personer
 2013,14,asia,748,sysselsatte_land,personer
 2013,14,eu_ost_europa,2495,sysselsatte_land,personer
 2013,14,nord_amerika_oseania,61,sysselsatte_land,personer
@@ -1386,7 +1386,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,14,sor_og_mellom_amerika,196,sysselsatte_land,personer
 2013,14,vest_europa,813,sysselsatte_land,personer
 2013,15,afrika,644,sysselsatte_land,personer
-2013,15,alle,15015,sysselsatte_land,personer
+2013,15,alle,135461,sysselsatte_land,personer
 2013,15,asia,2637,sysselsatte_land,personer
 2013,15,eu_ost_europa,6941,sysselsatte_land,personer
 2013,15,nord_amerika_oseania,201,sysselsatte_land,personer
@@ -1395,7 +1395,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,15,sor_og_mellom_amerika,370,sysselsatte_land,personer
 2013,15,vest_europa,2032,sysselsatte_land,personer
 2013,16,afrika,1175,sysselsatte_land,personer
-2013,16,alle,16638,sysselsatte_land,personer
+2013,16,alle,160738,sysselsatte_land,personer
 2013,16,asia,4034,sysselsatte_land,personer
 2013,16,eu_ost_europa,5265,sysselsatte_land,personer
 2013,16,nord_amerika_oseania,357,sysselsatte_land,personer
@@ -1404,7 +1404,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,16,sor_og_mellom_amerika,574,sysselsatte_land,personer
 2013,16,vest_europa,2183,sysselsatte_land,personer
 2013,17,afrika,410,sysselsatte_land,personer
-2013,17,alle,4321,sysselsatte_land,personer
+2013,17,alle,67275,sysselsatte_land,personer
 2013,17,asia,928,sysselsatte_land,personer
 2013,17,eu_ost_europa,1528,sysselsatte_land,personer
 2013,17,nord_amerika_oseania,61,sysselsatte_land,personer
@@ -1413,7 +1413,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,17,sor_og_mellom_amerika,79,sysselsatte_land,personer
 2013,17,vest_europa,461,sysselsatte_land,personer
 2013,18,afrika,735,sysselsatte_land,personer
-2013,18,alle,9255,sysselsatte_land,personer
+2013,18,alle,119770,sysselsatte_land,personer
 2013,18,asia,2068,sysselsatte_land,personer
 2013,18,eu_ost_europa,2952,sysselsatte_land,personer
 2013,18,nord_amerika_oseania,124,sysselsatte_land,personer
@@ -1422,7 +1422,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,18,sor_og_mellom_amerika,202,sysselsatte_land,personer
 2013,18,vest_europa,960,sysselsatte_land,personer
 2013,19,afrika,816,sysselsatte_land,personer
-2013,19,alle,7955,sysselsatte_land,personer
+2013,19,alle,84032,sysselsatte_land,personer
 2013,19,asia,1477,sysselsatte_land,personer
 2013,19,eu_ost_europa,2033,sysselsatte_land,personer
 2013,19,nord_amerika_oseania,147,sysselsatte_land,personer
@@ -1431,7 +1431,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,19,sor_og_mellom_amerika,208,sysselsatte_land,personer
 2013,19,vest_europa,1157,sysselsatte_land,personer
 2013,20,afrika,272,sysselsatte_land,personer
-2013,20,alle,5028,sysselsatte_land,personer
+2013,20,alle,38421,sysselsatte_land,personer
 2013,20,asia,880,sysselsatte_land,personer
 2013,20,eu_ost_europa,1486,sysselsatte_land,personer
 2013,20,nord_amerika_oseania,31,sysselsatte_land,personer
@@ -1440,7 +1440,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,20,sor_og_mellom_amerika,59,sysselsatte_land,personer
 2013,20,vest_europa,342,sysselsatte_land,personer
 2014,00,afrika,29289,sysselsatte_land,personer
-2014,00,alle,381799,sysselsatte_land,personer
+2014,00,alle,2649584,sysselsatte_land,personer
 2014,00,asia,96461,sysselsatte_land,personer
 2014,00,eu_ost_europa,113328,sysselsatte_land,personer
 2014,00,nord_amerika_oseania,6760,sysselsatte_land,personer
@@ -1449,7 +1449,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,00,sor_og_mellom_amerika,12228,sysselsatte_land,personer
 2014,00,vest_europa,43169,sysselsatte_land,personer
 2014,01,afrika,1073,sysselsatte_land,personer
-2014,01,alle,17625,sysselsatte_land,personer
+2014,01,alle,135734,sysselsatte_land,personer
 2014,01,asia,4399,sysselsatte_land,personer
 2014,01,eu_ost_europa,5492,sysselsatte_land,personer
 2014,01,nord_amerika_oseania,195,sysselsatte_land,personer
@@ -1458,7 +1458,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,01,sor_og_mellom_amerika,379,sysselsatte_land,personer
 2014,01,vest_europa,1220,sysselsatte_land,personer
 2014,02,afrika,3019,sysselsatte_land,personer
-2014,02,alle,51282,sysselsatte_land,personer
+2014,02,alle,301338,sysselsatte_land,personer
 2014,02,asia,14705,sysselsatte_land,personer
 2014,02,eu_ost_europa,14291,sysselsatte_land,personer
 2014,02,nord_amerika_oseania,973,sysselsatte_land,personer
@@ -1467,7 +1467,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,02,sor_og_mellom_amerika,1402,sysselsatte_land,personer
 2014,02,vest_europa,5278,sysselsatte_land,personer
 2014,03,afrika,10168,sysselsatte_land,personer
-2014,03,alle,91951,sysselsatte_land,personer
+2014,03,alle,349929,sysselsatte_land,personer
 2014,03,asia,29932,sysselsatte_land,personer
 2014,03,eu_ost_europa,16338,sysselsatte_land,personer
 2014,03,nord_amerika_oseania,1727,sysselsatte_land,personer
@@ -1476,7 +1476,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,03,sor_og_mellom_amerika,3516,sysselsatte_land,personer
 2014,03,vest_europa,8901,sysselsatte_land,personer
 2014,04,afrika,564,sysselsatte_land,personer
-2014,04,alle,7834,sysselsatte_land,personer
+2014,04,alle,94273,sysselsatte_land,personer
 2014,04,asia,1641,sysselsatte_land,personer
 2014,04,eu_ost_europa,2504,sysselsatte_land,personer
 2014,04,nord_amerika_oseania,112,sysselsatte_land,personer
@@ -1485,7 +1485,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,04,sor_og_mellom_amerika,152,sysselsatte_land,personer
 2014,04,vest_europa,881,sysselsatte_land,personer
 2014,05,afrika,583,sysselsatte_land,personer
-2014,05,alle,8117,sysselsatte_land,personer
+2014,05,alle,95416,sysselsatte_land,personer
 2014,05,asia,1650,sysselsatte_land,personer
 2014,05,eu_ost_europa,2906,sysselsatte_land,personer
 2014,05,nord_amerika_oseania,106,sysselsatte_land,personer
@@ -1494,7 +1494,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,05,sor_og_mellom_amerika,150,sysselsatte_land,personer
 2014,05,vest_europa,945,sysselsatte_land,personer
 2014,06,afrika,1250,sysselsatte_land,personer
-2014,06,alle,22182,sysselsatte_land,personer
+2014,06,alle,140157,sysselsatte_land,personer
 2014,06,asia,5830,sysselsatte_land,personer
 2014,06,eu_ost_europa,7524,sysselsatte_land,personer
 2014,06,nord_amerika_oseania,292,sysselsatte_land,personer
@@ -1503,7 +1503,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,06,sor_og_mellom_amerika,588,sysselsatte_land,personer
 2014,06,vest_europa,2143,sysselsatte_land,personer
 2014,07,afrika,689,sysselsatte_land,personer
-2014,07,alle,14405,sysselsatte_land,personer
+2014,07,alle,119021,sysselsatte_land,personer
 2014,07,asia,3268,sysselsatte_land,personer
 2014,07,eu_ost_europa,5090,sysselsatte_land,personer
 2014,07,nord_amerika_oseania,239,sysselsatte_land,personer
@@ -1512,7 +1512,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,07,sor_og_mellom_amerika,333,sysselsatte_land,personer
 2014,07,vest_europa,1555,sysselsatte_land,personer
 2014,08,afrika,726,sysselsatte_land,personer
-2014,08,alle,8045,sysselsatte_land,personer
+2014,08,alle,83058,sysselsatte_land,personer
 2014,08,asia,1982,sysselsatte_land,personer
 2014,08,eu_ost_europa,2157,sysselsatte_land,personer
 2014,08,nord_amerika_oseania,101,sysselsatte_land,personer
@@ -1521,7 +1521,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,08,sor_og_mellom_amerika,300,sysselsatte_land,personer
 2014,08,vest_europa,1034,sysselsatte_land,personer
 2014,09,afrika,314,sysselsatte_land,personer
-2014,09,alle,5751,sysselsatte_land,personer
+2014,09,alle,55184,sysselsatte_land,personer
 2014,09,asia,1286,sysselsatte_land,personer
 2014,09,eu_ost_europa,1766,sysselsatte_land,personer
 2014,09,nord_amerika_oseania,131,sysselsatte_land,personer
@@ -1530,7 +1530,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,09,sor_og_mellom_amerika,122,sysselsatte_land,personer
 2014,09,vest_europa,890,sysselsatte_land,personer
 2014,10,afrika,670,sysselsatte_land,personer
-2014,10,alle,10569,sysselsatte_land,personer
+2014,10,alle,89865,sysselsatte_land,personer
 2014,10,asia,2532,sysselsatte_land,personer
 2014,10,eu_ost_europa,2480,sysselsatte_land,personer
 2014,10,nord_amerika_oseania,218,sysselsatte_land,personer
@@ -1539,7 +1539,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,10,sor_og_mellom_amerika,602,sysselsatte_land,personer
 2014,10,vest_europa,1542,sysselsatte_land,personer
 2014,11,afrika,2640,sysselsatte_land,personer
-2014,11,alle,40967,sysselsatte_land,personer
+2014,11,alle,249658,sysselsatte_land,personer
 2014,11,asia,8589,sysselsatte_land,personer
 2014,11,eu_ost_europa,14283,sysselsatte_land,personer
 2014,11,nord_amerika_oseania,967,sysselsatte_land,personer
@@ -1548,7 +1548,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,11,sor_og_mellom_amerika,1361,sysselsatte_land,personer
 2014,11,vest_europa,5960,sysselsatte_land,personer
 2014,12,afrika,2660,sysselsatte_land,personer
-2014,12,alle,34835,sysselsatte_land,personer
+2014,12,alle,268154,sysselsatte_land,personer
 2014,12,asia,7130,sysselsatte_land,personer
 2014,12,eu_ost_europa,13424,sysselsatte_land,personer
 2014,12,nord_amerika_oseania,690,sysselsatte_land,personer
@@ -1557,7 +1557,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,12,sor_og_mellom_amerika,1539,sysselsatte_land,personer
 2014,12,vest_europa,4492,sysselsatte_land,personer
 2014,14,afrika,317,sysselsatte_land,personer
-2014,14,alle,5853,sysselsatte_land,personer
+2014,14,alle,57450,sysselsatte_land,personer
 2014,14,asia,777,sysselsatte_land,personer
 2014,14,eu_ost_europa,2750,sysselsatte_land,personer
 2014,14,nord_amerika_oseania,68,sysselsatte_land,personer
@@ -1566,7 +1566,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,14,sor_og_mellom_amerika,189,sysselsatte_land,personer
 2014,14,vest_europa,847,sysselsatte_land,personer
 2014,15,afrika,729,sysselsatte_land,personer
-2014,15,alle,16149,sysselsatte_land,personer
+2014,15,alle,136770,sysselsatte_land,personer
 2014,15,asia,2805,sysselsatte_land,personer
 2014,15,eu_ost_europa,7673,sysselsatte_land,personer
 2014,15,nord_amerika_oseania,192,sysselsatte_land,personer
@@ -1575,7 +1575,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,15,sor_og_mellom_amerika,405,sysselsatte_land,personer
 2014,15,vest_europa,2074,sysselsatte_land,personer
 2014,16,afrika,1290,sysselsatte_land,personer
-2014,16,alle,17599,sysselsatte_land,personer
+2014,16,alle,162679,sysselsatte_land,personer
 2014,16,asia,4187,sysselsatte_land,personer
 2014,16,eu_ost_europa,5713,sysselsatte_land,personer
 2014,16,nord_amerika_oseania,365,sysselsatte_land,personer
@@ -1584,7 +1584,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,16,sor_og_mellom_amerika,591,sysselsatte_land,personer
 2014,16,vest_europa,2320,sysselsatte_land,personer
 2014,17,afrika,439,sysselsatte_land,personer
-2014,17,alle,4496,sysselsatte_land,personer
+2014,17,alle,67221,sysselsatte_land,personer
 2014,17,asia,985,sysselsatte_land,personer
 2014,17,eu_ost_europa,1572,sysselsatte_land,personer
 2014,17,nord_amerika_oseania,59,sysselsatte_land,personer
@@ -1593,7 +1593,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,17,sor_og_mellom_amerika,89,sysselsatte_land,personer
 2014,17,vest_europa,460,sysselsatte_land,personer
 2014,18,afrika,913,sysselsatte_land,personer
-2014,18,alle,10178,sysselsatte_land,personer
+2014,18,alle,120466,sysselsatte_land,personer
 2014,18,asia,2269,sysselsatte_land,personer
 2014,18,eu_ost_europa,3359,sysselsatte_land,personer
 2014,18,nord_amerika_oseania,129,sysselsatte_land,personer
@@ -1602,7 +1602,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,18,sor_og_mellom_amerika,223,sysselsatte_land,personer
 2014,18,vest_europa,1005,sysselsatte_land,personer
 2014,19,afrika,933,sysselsatte_land,personer
-2014,19,alle,8691,sysselsatte_land,personer
+2014,19,alle,84631,sysselsatte_land,personer
 2014,19,asia,1571,sysselsatte_land,personer
 2014,19,eu_ost_europa,2394,sysselsatte_land,personer
 2014,19,nord_amerika_oseania,157,sysselsatte_land,personer
@@ -1611,7 +1611,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,19,sor_og_mellom_amerika,226,sysselsatte_land,personer
 2014,19,vest_europa,1267,sysselsatte_land,personer
 2014,20,afrika,312,sysselsatte_land,personer
-2014,20,alle,5270,sysselsatte_land,personer
+2014,20,alle,38580,sysselsatte_land,personer
 2014,20,asia,923,sysselsatte_land,personer
 2014,20,eu_ost_europa,1612,sysselsatte_land,personer
 2014,20,nord_amerika_oseania,39,sysselsatte_land,personer
@@ -1620,7 +1620,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,20,sor_og_mellom_amerika,61,sysselsatte_land,personer
 2014,20,vest_europa,355,sysselsatte_land,personer
 2006,00,afrika,0.45,sysselsatte_land,prosent
-2006,00,alle,0.60,sysselsatte_land,prosent
+2006,00,alle,0.70,sysselsatte_land,prosent
 2006,00,asia,0.53,sysselsatte_land,prosent
 2006,00,eu_ost_europa,0.70,sysselsatte_land,prosent
 2006,00,nord_amerika_oseania,0.61,sysselsatte_land,prosent
@@ -1629,7 +1629,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,00,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2006,00,vest_europa,0.71,sysselsatte_land,prosent
 2006,01,afrika,0.37,sysselsatte_land,prosent
-2006,01,alle,0.54,sysselsatte_land,prosent
+2006,01,alle,0.67,sysselsatte_land,prosent
 2006,01,asia,0.46,sysselsatte_land,prosent
 2006,01,eu_ost_europa,0.67,sysselsatte_land,prosent
 2006,01,nord_amerika_oseania,0.58,sysselsatte_land,prosent
@@ -1638,7 +1638,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,01,sor_og_mellom_amerika,0.59,sysselsatte_land,prosent
 2006,01,vest_europa,0.64,sysselsatte_land,prosent
 2006,02,afrika,0.53,sysselsatte_land,prosent
-2006,02,alle,0.65,sysselsatte_land,prosent
+2006,02,alle,0.72,sysselsatte_land,prosent
 2006,02,asia,0.58,sysselsatte_land,prosent
 2006,02,eu_ost_europa,0.69,sysselsatte_land,prosent
 2006,02,nord_amerika_oseania,0.69,sysselsatte_land,prosent
@@ -1647,7 +1647,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,02,sor_og_mellom_amerika,0.66,sysselsatte_land,prosent
 2006,02,vest_europa,0.73,sysselsatte_land,prosent
 2006,03,afrika,0.46,sysselsatte_land,prosent
-2006,03,alle,0.58,sysselsatte_land,prosent
+2006,03,alle,0.70,sysselsatte_land,prosent
 2006,03,asia,0.53,sysselsatte_land,prosent
 2006,03,eu_ost_europa,0.69,sysselsatte_land,prosent
 2006,03,nord_amerika_oseania,0.64,sysselsatte_land,prosent
@@ -1656,7 +1656,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,03,sor_og_mellom_amerika,0.64,sysselsatte_land,prosent
 2006,03,vest_europa,0.71,sysselsatte_land,prosent
 2006,04,afrika,0.30,sysselsatte_land,prosent
-2006,04,alle,0.57,sysselsatte_land,prosent
+2006,04,alle,0.67,sysselsatte_land,prosent
 2006,04,asia,0.51,sysselsatte_land,prosent
 2006,04,eu_ost_europa,0.70,sysselsatte_land,prosent
 2006,04,nord_amerika_oseania,0.61,sysselsatte_land,prosent
@@ -1665,7 +1665,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,04,sor_og_mellom_amerika,0.60,sysselsatte_land,prosent
 2006,04,vest_europa,0.63,sysselsatte_land,prosent
 2006,05,afrika,0.38,sysselsatte_land,prosent
-2006,05,alle,0.60,sysselsatte_land,prosent
+2006,05,alle,0.70,sysselsatte_land,prosent
 2006,05,asia,0.51,sysselsatte_land,prosent
 2006,05,eu_ost_europa,0.70,sysselsatte_land,prosent
 2006,05,nord_amerika_oseania,0.61,sysselsatte_land,prosent
@@ -1674,7 +1674,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,05,sor_og_mellom_amerika,0.66,sysselsatte_land,prosent
 2006,05,vest_europa,0.71,sysselsatte_land,prosent
 2006,06,afrika,0.47,sysselsatte_land,prosent
-2006,06,alle,0.61,sysselsatte_land,prosent
+2006,06,alle,0.71,sysselsatte_land,prosent
 2006,06,asia,0.53,sysselsatte_land,prosent
 2006,06,eu_ost_europa,0.69,sysselsatte_land,prosent
 2006,06,nord_amerika_oseania,0.65,sysselsatte_land,prosent
@@ -1683,7 +1683,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,06,sor_og_mellom_amerika,0.64,sysselsatte_land,prosent
 2006,06,vest_europa,0.72,sysselsatte_land,prosent
 2006,07,afrika,0.44,sysselsatte_land,prosent
-2006,07,alle,0.59,sysselsatte_land,prosent
+2006,07,alle,0.67,sysselsatte_land,prosent
 2006,07,asia,0.51,sysselsatte_land,prosent
 2006,07,eu_ost_europa,0.70,sysselsatte_land,prosent
 2006,07,nord_amerika_oseania,0.61,sysselsatte_land,prosent
@@ -1692,7 +1692,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,07,sor_og_mellom_amerika,0.56,sysselsatte_land,prosent
 2006,07,vest_europa,0.69,sysselsatte_land,prosent
 2006,08,afrika,0.34,sysselsatte_land,prosent
-2006,08,alle,0.53,sysselsatte_land,prosent
+2006,08,alle,0.67,sysselsatte_land,prosent
 2006,08,asia,0.47,sysselsatte_land,prosent
 2006,08,eu_ost_europa,0.67,sysselsatte_land,prosent
 2006,08,nord_amerika_oseania,0.45,sysselsatte_land,prosent
@@ -1701,7 +1701,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,08,sor_og_mellom_amerika,0.60,sysselsatte_land,prosent
 2006,08,vest_europa,0.68,sysselsatte_land,prosent
 2006,09,afrika,0.38,sysselsatte_land,prosent
-2006,09,alle,0.55,sysselsatte_land,prosent
+2006,09,alle,0.67,sysselsatte_land,prosent
 2006,09,asia,0.43,sysselsatte_land,prosent
 2006,09,eu_ost_europa,0.65,sysselsatte_land,prosent
 2006,09,nord_amerika_oseania,0.55,sysselsatte_land,prosent
@@ -1710,7 +1710,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,09,sor_og_mellom_amerika,0.52,sysselsatte_land,prosent
 2006,09,vest_europa,0.66,sysselsatte_land,prosent
 2006,10,afrika,0.43,sysselsatte_land,prosent
-2006,10,alle,0.57,sysselsatte_land,prosent
+2006,10,alle,0.68,sysselsatte_land,prosent
 2006,10,asia,0.49,sysselsatte_land,prosent
 2006,10,eu_ost_europa,0.67,sysselsatte_land,prosent
 2006,10,nord_amerika_oseania,0.48,sysselsatte_land,prosent
@@ -1719,7 +1719,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,10,sor_og_mellom_amerika,0.62,sysselsatte_land,prosent
 2006,10,vest_europa,0.68,sysselsatte_land,prosent
 2006,11,afrika,0.53,sysselsatte_land,prosent
-2006,11,alle,0.65,sysselsatte_land,prosent
+2006,11,alle,0.73,sysselsatte_land,prosent
 2006,11,asia,0.57,sysselsatte_land,prosent
 2006,11,eu_ost_europa,0.75,sysselsatte_land,prosent
 2006,11,nord_amerika_oseania,0.61,sysselsatte_land,prosent
@@ -1728,7 +1728,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,11,sor_og_mellom_amerika,0.62,sysselsatte_land,prosent
 2006,11,vest_europa,0.72,sysselsatte_land,prosent
 2006,12,afrika,0.49,sysselsatte_land,prosent
-2006,12,alle,0.62,sysselsatte_land,prosent
+2006,12,alle,0.71,sysselsatte_land,prosent
 2006,12,asia,0.54,sysselsatte_land,prosent
 2006,12,eu_ost_europa,0.77,sysselsatte_land,prosent
 2006,12,nord_amerika_oseania,0.61,sysselsatte_land,prosent
@@ -1737,7 +1737,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,12,sor_og_mellom_amerika,0.62,sysselsatte_land,prosent
 2006,12,vest_europa,0.72,sysselsatte_land,prosent
 2006,14,afrika,0.36,sysselsatte_land,prosent
-2006,14,alle,0.65,sysselsatte_land,prosent
+2006,14,alle,0.74,sysselsatte_land,prosent
 2006,14,asia,0.62,sysselsatte_land,prosent
 2006,14,eu_ost_europa,0.77,sysselsatte_land,prosent
 2006,14,nord_amerika_oseania,0.60,sysselsatte_land,prosent
@@ -1746,7 +1746,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,14,sor_og_mellom_amerika,0.64,sysselsatte_land,prosent
 2006,14,vest_europa,0.74,sysselsatte_land,prosent
 2006,15,afrika,0.44,sysselsatte_land,prosent
-2006,15,alle,0.65,sysselsatte_land,prosent
+2006,15,alle,0.72,sysselsatte_land,prosent
 2006,15,asia,0.59,sysselsatte_land,prosent
 2006,15,eu_ost_europa,0.74,sysselsatte_land,prosent
 2006,15,nord_amerika_oseania,0.59,sysselsatte_land,prosent
@@ -1755,7 +1755,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,15,sor_og_mellom_amerika,0.55,sysselsatte_land,prosent
 2006,15,vest_europa,0.75,sysselsatte_land,prosent
 2006,16,afrika,0.43,sysselsatte_land,prosent
-2006,16,alle,0.60,sysselsatte_land,prosent
+2006,16,alle,0.71,sysselsatte_land,prosent
 2006,16,asia,0.53,sysselsatte_land,prosent
 2006,16,eu_ost_europa,0.72,sysselsatte_land,prosent
 2006,16,nord_amerika_oseania,0.63,sysselsatte_land,prosent
@@ -1764,7 +1764,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,16,sor_og_mellom_amerika,0.59,sysselsatte_land,prosent
 2006,16,vest_europa,0.72,sysselsatte_land,prosent
 2006,17,afrika,0.27,sysselsatte_land,prosent
-2006,17,alle,0.55,sysselsatte_land,prosent
+2006,17,alle,0.69,sysselsatte_land,prosent
 2006,17,asia,0.50,sysselsatte_land,prosent
 2006,17,eu_ost_europa,0.79,sysselsatte_land,prosent
 2006,17,nord_amerika_oseania,0.49,sysselsatte_land,prosent
@@ -1773,7 +1773,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,17,sor_og_mellom_amerika,0.38,sysselsatte_land,prosent
 2006,17,vest_europa,0.67,sysselsatte_land,prosent
 2006,18,afrika,0.33,sysselsatte_land,prosent
-2006,18,alle,0.56,sysselsatte_land,prosent
+2006,18,alle,0.67,sysselsatte_land,prosent
 2006,18,asia,0.52,sysselsatte_land,prosent
 2006,18,eu_ost_europa,0.56,sysselsatte_land,prosent
 2006,18,nord_amerika_oseania,0.44,sysselsatte_land,prosent
@@ -1782,7 +1782,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,18,sor_og_mellom_amerika,0.56,sysselsatte_land,prosent
 2006,18,vest_europa,0.68,sysselsatte_land,prosent
 2006,19,afrika,0.48,sysselsatte_land,prosent
-2006,19,alle,0.66,sysselsatte_land,prosent
+2006,19,alle,0.70,sysselsatte_land,prosent
 2006,19,asia,0.61,sysselsatte_land,prosent
 2006,19,eu_ost_europa,0.66,sysselsatte_land,prosent
 2006,19,nord_amerika_oseania,0.66,sysselsatte_land,prosent
@@ -1791,7 +1791,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,19,sor_og_mellom_amerika,0.68,sysselsatte_land,prosent
 2006,19,vest_europa,0.76,sysselsatte_land,prosent
 2006,20,afrika,0.44,sysselsatte_land,prosent
-2006,20,alle,0.69,sysselsatte_land,prosent
+2006,20,alle,0.68,sysselsatte_land,prosent
 2006,20,asia,0.70,sysselsatte_land,prosent
 2006,20,eu_ost_europa,0.81,sysselsatte_land,prosent
 2006,20,nord_amerika_oseania,0.71,sysselsatte_land,prosent
@@ -1800,7 +1800,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2006,20,sor_og_mellom_amerika,0.83,sysselsatte_land,prosent
 2006,20,vest_europa,0.77,sysselsatte_land,prosent
 2007,00,afrika,0.49,sysselsatte_land,prosent
-2007,00,alle,0.63,sysselsatte_land,prosent
+2007,00,alle,0.72,sysselsatte_land,prosent
 2007,00,asia,0.56,sysselsatte_land,prosent
 2007,00,eu_ost_europa,0.75,sysselsatte_land,prosent
 2007,00,nord_amerika_oseania,0.64,sysselsatte_land,prosent
@@ -1809,7 +1809,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,00,sor_og_mellom_amerika,0.65,sysselsatte_land,prosent
 2007,00,vest_europa,0.72,sysselsatte_land,prosent
 2007,01,afrika,0.37,sysselsatte_land,prosent
-2007,01,alle,0.57,sysselsatte_land,prosent
+2007,01,alle,0.68,sysselsatte_land,prosent
 2007,01,asia,0.50,sysselsatte_land,prosent
 2007,01,eu_ost_europa,0.71,sysselsatte_land,prosent
 2007,01,nord_amerika_oseania,0.61,sysselsatte_land,prosent
@@ -1818,7 +1818,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,01,sor_og_mellom_amerika,0.62,sysselsatte_land,prosent
 2007,01,vest_europa,0.66,sysselsatte_land,prosent
 2007,02,afrika,0.57,sysselsatte_land,prosent
-2007,02,alle,0.67,sysselsatte_land,prosent
+2007,02,alle,0.74,sysselsatte_land,prosent
 2007,02,asia,0.59,sysselsatte_land,prosent
 2007,02,eu_ost_europa,0.74,sysselsatte_land,prosent
 2007,02,nord_amerika_oseania,0.71,sysselsatte_land,prosent
@@ -1827,7 +1827,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,02,sor_og_mellom_amerika,0.69,sysselsatte_land,prosent
 2007,02,vest_europa,0.74,sysselsatte_land,prosent
 2007,03,afrika,0.49,sysselsatte_land,prosent
-2007,03,alle,0.61,sysselsatte_land,prosent
+2007,03,alle,0.72,sysselsatte_land,prosent
 2007,03,asia,0.55,sysselsatte_land,prosent
 2007,03,eu_ost_europa,0.72,sysselsatte_land,prosent
 2007,03,nord_amerika_oseania,0.69,sysselsatte_land,prosent
@@ -1836,7 +1836,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,03,sor_og_mellom_amerika,0.66,sysselsatte_land,prosent
 2007,03,vest_europa,0.73,sysselsatte_land,prosent
 2007,04,afrika,0.34,sysselsatte_land,prosent
-2007,04,alle,0.59,sysselsatte_land,prosent
+2007,04,alle,0.68,sysselsatte_land,prosent
 2007,04,asia,0.53,sysselsatte_land,prosent
 2007,04,eu_ost_europa,0.73,sysselsatte_land,prosent
 2007,04,nord_amerika_oseania,0.61,sysselsatte_land,prosent
@@ -1845,7 +1845,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,04,sor_og_mellom_amerika,0.61,sysselsatte_land,prosent
 2007,04,vest_europa,0.68,sysselsatte_land,prosent
 2007,05,afrika,0.41,sysselsatte_land,prosent
-2007,05,alle,0.62,sysselsatte_land,prosent
+2007,05,alle,0.71,sysselsatte_land,prosent
 2007,05,asia,0.52,sysselsatte_land,prosent
 2007,05,eu_ost_europa,0.76,sysselsatte_land,prosent
 2007,05,nord_amerika_oseania,0.67,sysselsatte_land,prosent
@@ -1854,7 +1854,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,05,sor_og_mellom_amerika,0.69,sysselsatte_land,prosent
 2007,05,vest_europa,0.72,sysselsatte_land,prosent
 2007,06,afrika,0.51,sysselsatte_land,prosent
-2007,06,alle,0.64,sysselsatte_land,prosent
+2007,06,alle,0.72,sysselsatte_land,prosent
 2007,06,asia,0.56,sysselsatte_land,prosent
 2007,06,eu_ost_europa,0.74,sysselsatte_land,prosent
 2007,06,nord_amerika_oseania,0.70,sysselsatte_land,prosent
@@ -1863,7 +1863,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,06,sor_og_mellom_amerika,0.68,sysselsatte_land,prosent
 2007,06,vest_europa,0.72,sysselsatte_land,prosent
 2007,07,afrika,0.47,sysselsatte_land,prosent
-2007,07,alle,0.63,sysselsatte_land,prosent
+2007,07,alle,0.69,sysselsatte_land,prosent
 2007,07,asia,0.56,sysselsatte_land,prosent
 2007,07,eu_ost_europa,0.77,sysselsatte_land,prosent
 2007,07,nord_amerika_oseania,0.61,sysselsatte_land,prosent
@@ -1872,7 +1872,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,07,sor_og_mellom_amerika,0.62,sysselsatte_land,prosent
 2007,07,vest_europa,0.70,sysselsatte_land,prosent
 2007,08,afrika,0.39,sysselsatte_land,prosent
-2007,08,alle,0.57,sysselsatte_land,prosent
+2007,08,alle,0.68,sysselsatte_land,prosent
 2007,08,asia,0.52,sysselsatte_land,prosent
 2007,08,eu_ost_europa,0.74,sysselsatte_land,prosent
 2007,08,nord_amerika_oseania,0.54,sysselsatte_land,prosent
@@ -1881,7 +1881,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,08,sor_og_mellom_amerika,0.65,sysselsatte_land,prosent
 2007,08,vest_europa,0.65,sysselsatte_land,prosent
 2007,09,afrika,0.43,sysselsatte_land,prosent
-2007,09,alle,0.60,sysselsatte_land,prosent
+2007,09,alle,0.69,sysselsatte_land,prosent
 2007,09,asia,0.50,sysselsatte_land,prosent
 2007,09,eu_ost_europa,0.73,sysselsatte_land,prosent
 2007,09,nord_amerika_oseania,0.61,sysselsatte_land,prosent
@@ -1890,7 +1890,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,09,sor_og_mellom_amerika,0.59,sysselsatte_land,prosent
 2007,09,vest_europa,0.66,sysselsatte_land,prosent
 2007,10,afrika,0.48,sysselsatte_land,prosent
-2007,10,alle,0.61,sysselsatte_land,prosent
+2007,10,alle,0.71,sysselsatte_land,prosent
 2007,10,asia,0.53,sysselsatte_land,prosent
 2007,10,eu_ost_europa,0.71,sysselsatte_land,prosent
 2007,10,nord_amerika_oseania,0.50,sysselsatte_land,prosent
@@ -1899,7 +1899,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,10,sor_og_mellom_amerika,0.66,sysselsatte_land,prosent
 2007,10,vest_europa,0.72,sysselsatte_land,prosent
 2007,11,afrika,0.58,sysselsatte_land,prosent
-2007,11,alle,0.68,sysselsatte_land,prosent
+2007,11,alle,0.75,sysselsatte_land,prosent
 2007,11,asia,0.61,sysselsatte_land,prosent
 2007,11,eu_ost_europa,0.79,sysselsatte_land,prosent
 2007,11,nord_amerika_oseania,0.60,sysselsatte_land,prosent
@@ -1908,7 +1908,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,11,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2007,11,vest_europa,0.72,sysselsatte_land,prosent
 2007,12,afrika,0.54,sysselsatte_land,prosent
-2007,12,alle,0.66,sysselsatte_land,prosent
+2007,12,alle,0.73,sysselsatte_land,prosent
 2007,12,asia,0.56,sysselsatte_land,prosent
 2007,12,eu_ost_europa,0.81,sysselsatte_land,prosent
 2007,12,nord_amerika_oseania,0.65,sysselsatte_land,prosent
@@ -1917,7 +1917,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,12,sor_og_mellom_amerika,0.66,sysselsatte_land,prosent
 2007,12,vest_europa,0.72,sysselsatte_land,prosent
 2007,14,afrika,0.44,sysselsatte_land,prosent
-2007,14,alle,0.70,sysselsatte_land,prosent
+2007,14,alle,0.75,sysselsatte_land,prosent
 2007,14,asia,0.62,sysselsatte_land,prosent
 2007,14,eu_ost_europa,0.83,sysselsatte_land,prosent
 2007,14,nord_amerika_oseania,0.66,sysselsatte_land,prosent
@@ -1926,7 +1926,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,14,sor_og_mellom_amerika,0.73,sysselsatte_land,prosent
 2007,14,vest_europa,0.77,sysselsatte_land,prosent
 2007,15,afrika,0.46,sysselsatte_land,prosent
-2007,15,alle,0.69,sysselsatte_land,prosent
+2007,15,alle,0.74,sysselsatte_land,prosent
 2007,15,asia,0.63,sysselsatte_land,prosent
 2007,15,eu_ost_europa,0.78,sysselsatte_land,prosent
 2007,15,nord_amerika_oseania,0.62,sysselsatte_land,prosent
@@ -1935,7 +1935,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,15,sor_og_mellom_amerika,0.67,sysselsatte_land,prosent
 2007,15,vest_europa,0.77,sysselsatte_land,prosent
 2007,16,afrika,0.47,sysselsatte_land,prosent
-2007,16,alle,0.63,sysselsatte_land,prosent
+2007,16,alle,0.72,sysselsatte_land,prosent
 2007,16,asia,0.55,sysselsatte_land,prosent
 2007,16,eu_ost_europa,0.78,sysselsatte_land,prosent
 2007,16,nord_amerika_oseania,0.66,sysselsatte_land,prosent
@@ -1944,7 +1944,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,16,sor_og_mellom_amerika,0.62,sysselsatte_land,prosent
 2007,16,vest_europa,0.70,sysselsatte_land,prosent
 2007,17,afrika,0.34,sysselsatte_land,prosent
-2007,17,alle,0.61,sysselsatte_land,prosent
+2007,17,alle,0.71,sysselsatte_land,prosent
 2007,17,asia,0.52,sysselsatte_land,prosent
 2007,17,eu_ost_europa,0.82,sysselsatte_land,prosent
 2007,17,nord_amerika_oseania,0.58,sysselsatte_land,prosent
@@ -1953,7 +1953,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,17,sor_og_mellom_amerika,0.39,sysselsatte_land,prosent
 2007,17,vest_europa,0.67,sysselsatte_land,prosent
 2007,18,afrika,0.39,sysselsatte_land,prosent
-2007,18,alle,0.61,sysselsatte_land,prosent
+2007,18,alle,0.69,sysselsatte_land,prosent
 2007,18,asia,0.58,sysselsatte_land,prosent
 2007,18,eu_ost_europa,0.75,sysselsatte_land,prosent
 2007,18,nord_amerika_oseania,0.49,sysselsatte_land,prosent
@@ -1962,7 +1962,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,18,sor_og_mellom_amerika,0.59,sysselsatte_land,prosent
 2007,18,vest_europa,0.69,sysselsatte_land,prosent
 2007,19,afrika,0.52,sysselsatte_land,prosent
-2007,19,alle,0.68,sysselsatte_land,prosent
+2007,19,alle,0.71,sysselsatte_land,prosent
 2007,19,asia,0.61,sysselsatte_land,prosent
 2007,19,eu_ost_europa,0.74,sysselsatte_land,prosent
 2007,19,nord_amerika_oseania,0.67,sysselsatte_land,prosent
@@ -1971,7 +1971,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,19,sor_og_mellom_amerika,0.66,sysselsatte_land,prosent
 2007,19,vest_europa,0.76,sysselsatte_land,prosent
 2007,20,afrika,0.58,sysselsatte_land,prosent
-2007,20,alle,0.71,sysselsatte_land,prosent
+2007,20,alle,0.70,sysselsatte_land,prosent
 2007,20,asia,0.75,sysselsatte_land,prosent
 2007,20,eu_ost_europa,0.79,sysselsatte_land,prosent
 2007,20,nord_amerika_oseania,0.69,sysselsatte_land,prosent
@@ -1980,7 +1980,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2007,20,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2007,20,vest_europa,0.77,sysselsatte_land,prosent
 2008,00,afrika,0.50,sysselsatte_land,prosent
-2008,00,alle,0.64,sysselsatte_land,prosent
+2008,00,alle,0.72,sysselsatte_land,prosent
 2008,00,asia,0.57,sysselsatte_land,prosent
 2008,00,eu_ost_europa,0.73,sysselsatte_land,prosent
 2008,00,nord_amerika_oseania,0.66,sysselsatte_land,prosent
@@ -1989,7 +1989,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,00,sor_og_mellom_amerika,0.66,sysselsatte_land,prosent
 2008,00,vest_europa,0.73,sysselsatte_land,prosent
 2008,01,afrika,0.40,sysselsatte_land,prosent
-2008,01,alle,0.58,sysselsatte_land,prosent
+2008,01,alle,0.68,sysselsatte_land,prosent
 2008,01,asia,0.51,sysselsatte_land,prosent
 2008,01,eu_ost_europa,0.70,sysselsatte_land,prosent
 2008,01,nord_amerika_oseania,0.56,sysselsatte_land,prosent
@@ -1998,7 +1998,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,01,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2008,01,vest_europa,0.67,sysselsatte_land,prosent
 2008,02,afrika,0.58,sysselsatte_land,prosent
-2008,02,alle,0.67,sysselsatte_land,prosent
+2008,02,alle,0.73,sysselsatte_land,prosent
 2008,02,asia,0.60,sysselsatte_land,prosent
 2008,02,eu_ost_europa,0.71,sysselsatte_land,prosent
 2008,02,nord_amerika_oseania,0.72,sysselsatte_land,prosent
@@ -2007,7 +2007,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,02,sor_og_mellom_amerika,0.68,sysselsatte_land,prosent
 2008,02,vest_europa,0.75,sysselsatte_land,prosent
 2008,03,afrika,0.49,sysselsatte_land,prosent
-2008,03,alle,0.61,sysselsatte_land,prosent
+2008,03,alle,0.72,sysselsatte_land,prosent
 2008,03,asia,0.55,sysselsatte_land,prosent
 2008,03,eu_ost_europa,0.68,sysselsatte_land,prosent
 2008,03,nord_amerika_oseania,0.67,sysselsatte_land,prosent
@@ -2016,7 +2016,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,03,sor_og_mellom_amerika,0.67,sysselsatte_land,prosent
 2008,03,vest_europa,0.73,sysselsatte_land,prosent
 2008,04,afrika,0.38,sysselsatte_land,prosent
-2008,04,alle,0.60,sysselsatte_land,prosent
+2008,04,alle,0.68,sysselsatte_land,prosent
 2008,04,asia,0.53,sysselsatte_land,prosent
 2008,04,eu_ost_europa,0.70,sysselsatte_land,prosent
 2008,04,nord_amerika_oseania,0.61,sysselsatte_land,prosent
@@ -2025,7 +2025,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,04,sor_og_mellom_amerika,0.62,sysselsatte_land,prosent
 2008,04,vest_europa,0.68,sysselsatte_land,prosent
 2008,05,afrika,0.42,sysselsatte_land,prosent
-2008,05,alle,0.64,sysselsatte_land,prosent
+2008,05,alle,0.71,sysselsatte_land,prosent
 2008,05,asia,0.53,sysselsatte_land,prosent
 2008,05,eu_ost_europa,0.75,sysselsatte_land,prosent
 2008,05,nord_amerika_oseania,0.67,sysselsatte_land,prosent
@@ -2034,7 +2034,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,05,sor_og_mellom_amerika,0.66,sysselsatte_land,prosent
 2008,05,vest_europa,0.73,sysselsatte_land,prosent
 2008,06,afrika,0.52,sysselsatte_land,prosent
-2008,06,alle,0.65,sysselsatte_land,prosent
+2008,06,alle,0.72,sysselsatte_land,prosent
 2008,06,asia,0.56,sysselsatte_land,prosent
 2008,06,eu_ost_europa,0.75,sysselsatte_land,prosent
 2008,06,nord_amerika_oseania,0.72,sysselsatte_land,prosent
@@ -2043,7 +2043,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,06,sor_og_mellom_amerika,0.68,sysselsatte_land,prosent
 2008,06,vest_europa,0.74,sysselsatte_land,prosent
 2008,07,afrika,0.48,sysselsatte_land,prosent
-2008,07,alle,0.63,sysselsatte_land,prosent
+2008,07,alle,0.69,sysselsatte_land,prosent
 2008,07,asia,0.55,sysselsatte_land,prosent
 2008,07,eu_ost_europa,0.74,sysselsatte_land,prosent
 2008,07,nord_amerika_oseania,0.64,sysselsatte_land,prosent
@@ -2052,7 +2052,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,07,sor_og_mellom_amerika,0.60,sysselsatte_land,prosent
 2008,07,vest_europa,0.68,sysselsatte_land,prosent
 2008,08,afrika,0.42,sysselsatte_land,prosent
-2008,08,alle,0.59,sysselsatte_land,prosent
+2008,08,alle,0.69,sysselsatte_land,prosent
 2008,08,asia,0.53,sysselsatte_land,prosent
 2008,08,eu_ost_europa,0.72,sysselsatte_land,prosent
 2008,08,nord_amerika_oseania,0.56,sysselsatte_land,prosent
@@ -2061,7 +2061,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,08,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2008,08,vest_europa,0.66,sysselsatte_land,prosent
 2008,09,afrika,0.50,sysselsatte_land,prosent
-2008,09,alle,0.61,sysselsatte_land,prosent
+2008,09,alle,0.69,sysselsatte_land,prosent
 2008,09,asia,0.52,sysselsatte_land,prosent
 2008,09,eu_ost_europa,0.67,sysselsatte_land,prosent
 2008,09,nord_amerika_oseania,0.63,sysselsatte_land,prosent
@@ -2070,7 +2070,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,09,sor_og_mellom_amerika,0.59,sysselsatte_land,prosent
 2008,09,vest_europa,0.69,sysselsatte_land,prosent
 2008,10,afrika,0.50,sysselsatte_land,prosent
-2008,10,alle,0.63,sysselsatte_land,prosent
+2008,10,alle,0.71,sysselsatte_land,prosent
 2008,10,asia,0.55,sysselsatte_land,prosent
 2008,10,eu_ost_europa,0.73,sysselsatte_land,prosent
 2008,10,nord_amerika_oseania,0.53,sysselsatte_land,prosent
@@ -2079,7 +2079,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,10,sor_og_mellom_amerika,0.68,sysselsatte_land,prosent
 2008,10,vest_europa,0.72,sysselsatte_land,prosent
 2008,11,afrika,0.61,sysselsatte_land,prosent
-2008,11,alle,0.70,sysselsatte_land,prosent
+2008,11,alle,0.75,sysselsatte_land,prosent
 2008,11,asia,0.63,sysselsatte_land,prosent
 2008,11,eu_ost_europa,0.78,sysselsatte_land,prosent
 2008,11,nord_amerika_oseania,0.64,sysselsatte_land,prosent
@@ -2088,7 +2088,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,11,sor_og_mellom_amerika,0.66,sysselsatte_land,prosent
 2008,11,vest_europa,0.77,sysselsatte_land,prosent
 2008,12,afrika,0.54,sysselsatte_land,prosent
-2008,12,alle,0.66,sysselsatte_land,prosent
+2008,12,alle,0.73,sysselsatte_land,prosent
 2008,12,asia,0.58,sysselsatte_land,prosent
 2008,12,eu_ost_europa,0.76,sysselsatte_land,prosent
 2008,12,nord_amerika_oseania,0.69,sysselsatte_land,prosent
@@ -2097,7 +2097,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,12,sor_og_mellom_amerika,0.67,sysselsatte_land,prosent
 2008,12,vest_europa,0.74,sysselsatte_land,prosent
 2008,14,afrika,0.44,sysselsatte_land,prosent
-2008,14,alle,0.70,sysselsatte_land,prosent
+2008,14,alle,0.75,sysselsatte_land,prosent
 2008,14,asia,0.64,sysselsatte_land,prosent
 2008,14,eu_ost_europa,0.82,sysselsatte_land,prosent
 2008,14,nord_amerika_oseania,0.61,sysselsatte_land,prosent
@@ -2106,7 +2106,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,14,sor_og_mellom_amerika,0.69,sysselsatte_land,prosent
 2008,14,vest_europa,0.76,sysselsatte_land,prosent
 2008,15,afrika,0.50,sysselsatte_land,prosent
-2008,15,alle,0.72,sysselsatte_land,prosent
+2008,15,alle,0.74,sysselsatte_land,prosent
 2008,15,asia,0.66,sysselsatte_land,prosent
 2008,15,eu_ost_europa,0.81,sysselsatte_land,prosent
 2008,15,nord_amerika_oseania,0.60,sysselsatte_land,prosent
@@ -2115,7 +2115,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,15,sor_og_mellom_amerika,0.67,sysselsatte_land,prosent
 2008,15,vest_europa,0.78,sysselsatte_land,prosent
 2008,16,afrika,0.47,sysselsatte_land,prosent
-2008,16,alle,0.64,sysselsatte_land,prosent
+2008,16,alle,0.72,sysselsatte_land,prosent
 2008,16,asia,0.55,sysselsatte_land,prosent
 2008,16,eu_ost_europa,0.77,sysselsatte_land,prosent
 2008,16,nord_amerika_oseania,0.71,sysselsatte_land,prosent
@@ -2124,7 +2124,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,16,sor_og_mellom_amerika,0.61,sysselsatte_land,prosent
 2008,16,vest_europa,0.74,sysselsatte_land,prosent
 2008,17,afrika,0.40,sysselsatte_land,prosent
-2008,17,alle,0.62,sysselsatte_land,prosent
+2008,17,alle,0.70,sysselsatte_land,prosent
 2008,17,asia,0.53,sysselsatte_land,prosent
 2008,17,eu_ost_europa,0.73,sysselsatte_land,prosent
 2008,17,nord_amerika_oseania,0.57,sysselsatte_land,prosent
@@ -2133,7 +2133,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,17,sor_og_mellom_amerika,0.53,sysselsatte_land,prosent
 2008,17,vest_europa,0.71,sysselsatte_land,prosent
 2008,18,afrika,0.41,sysselsatte_land,prosent
-2008,18,alle,0.64,sysselsatte_land,prosent
+2008,18,alle,0.69,sysselsatte_land,prosent
 2008,18,asia,0.59,sysselsatte_land,prosent
 2008,18,eu_ost_europa,0.78,sysselsatte_land,prosent
 2008,18,nord_amerika_oseania,0.59,sysselsatte_land,prosent
@@ -2142,7 +2142,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,18,sor_og_mellom_amerika,0.66,sysselsatte_land,prosent
 2008,18,vest_europa,0.71,sysselsatte_land,prosent
 2008,19,afrika,0.54,sysselsatte_land,prosent
-2008,19,alle,0.68,sysselsatte_land,prosent
+2008,19,alle,0.71,sysselsatte_land,prosent
 2008,19,asia,0.62,sysselsatte_land,prosent
 2008,19,eu_ost_europa,0.71,sysselsatte_land,prosent
 2008,19,nord_amerika_oseania,0.64,sysselsatte_land,prosent
@@ -2151,7 +2151,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,19,sor_og_mellom_amerika,0.70,sysselsatte_land,prosent
 2008,19,vest_europa,0.77,sysselsatte_land,prosent
 2008,20,afrika,0.53,sysselsatte_land,prosent
-2008,20,alle,0.72,sysselsatte_land,prosent
+2008,20,alle,0.70,sysselsatte_land,prosent
 2008,20,asia,0.70,sysselsatte_land,prosent
 2008,20,eu_ost_europa,0.82,sysselsatte_land,prosent
 2008,20,nord_amerika_oseania,0.62,sysselsatte_land,prosent
@@ -2160,7 +2160,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2008,20,sor_og_mellom_amerika,0.78,sysselsatte_land,prosent
 2008,20,vest_europa,0.79,sysselsatte_land,prosent
 2009,00,afrika,0.45,sysselsatte_land,prosent
-2009,00,alle,0.62,sysselsatte_land,prosent
+2009,00,alle,0.70,sysselsatte_land,prosent
 2009,00,asia,0.54,sysselsatte_land,prosent
 2009,00,eu_ost_europa,0.70,sysselsatte_land,prosent
 2009,00,nord_amerika_oseania,0.65,sysselsatte_land,prosent
@@ -2169,7 +2169,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,00,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2009,00,vest_europa,0.72,sysselsatte_land,prosent
 2009,01,afrika,0.34,sysselsatte_land,prosent
-2009,01,alle,0.54,sysselsatte_land,prosent
+2009,01,alle,0.65,sysselsatte_land,prosent
 2009,01,asia,0.46,sysselsatte_land,prosent
 2009,01,eu_ost_europa,0.67,sysselsatte_land,prosent
 2009,01,nord_amerika_oseania,0.58,sysselsatte_land,prosent
@@ -2178,7 +2178,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,01,sor_og_mellom_amerika,0.61,sysselsatte_land,prosent
 2009,01,vest_europa,0.65,sysselsatte_land,prosent
 2009,02,afrika,0.54,sysselsatte_land,prosent
-2009,02,alle,0.65,sysselsatte_land,prosent
+2009,02,alle,0.71,sysselsatte_land,prosent
 2009,02,asia,0.58,sysselsatte_land,prosent
 2009,02,eu_ost_europa,0.68,sysselsatte_land,prosent
 2009,02,nord_amerika_oseania,0.69,sysselsatte_land,prosent
@@ -2187,7 +2187,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,02,sor_og_mellom_amerika,0.66,sysselsatte_land,prosent
 2009,02,vest_europa,0.73,sysselsatte_land,prosent
 2009,03,afrika,0.46,sysselsatte_land,prosent
-2009,03,alle,0.59,sysselsatte_land,prosent
+2009,03,alle,0.70,sysselsatte_land,prosent
 2009,03,asia,0.54,sysselsatte_land,prosent
 2009,03,eu_ost_europa,0.66,sysselsatte_land,prosent
 2009,03,nord_amerika_oseania,0.66,sysselsatte_land,prosent
@@ -2196,7 +2196,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,03,sor_og_mellom_amerika,0.62,sysselsatte_land,prosent
 2009,03,vest_europa,0.71,sysselsatte_land,prosent
 2009,04,afrika,0.32,sysselsatte_land,prosent
-2009,04,alle,0.57,sysselsatte_land,prosent
+2009,04,alle,0.66,sysselsatte_land,prosent
 2009,04,asia,0.49,sysselsatte_land,prosent
 2009,04,eu_ost_europa,0.68,sysselsatte_land,prosent
 2009,04,nord_amerika_oseania,0.57,sysselsatte_land,prosent
@@ -2205,7 +2205,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,04,sor_og_mellom_amerika,0.59,sysselsatte_land,prosent
 2009,04,vest_europa,0.67,sysselsatte_land,prosent
 2009,05,afrika,0.35,sysselsatte_land,prosent
-2009,05,alle,0.59,sysselsatte_land,prosent
+2009,05,alle,0.69,sysselsatte_land,prosent
 2009,05,asia,0.48,sysselsatte_land,prosent
 2009,05,eu_ost_europa,0.70,sysselsatte_land,prosent
 2009,05,nord_amerika_oseania,0.63,sysselsatte_land,prosent
@@ -2214,7 +2214,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,05,sor_og_mellom_amerika,0.64,sysselsatte_land,prosent
 2009,05,vest_europa,0.70,sysselsatte_land,prosent
 2009,06,afrika,0.46,sysselsatte_land,prosent
-2009,06,alle,0.62,sysselsatte_land,prosent
+2009,06,alle,0.70,sysselsatte_land,prosent
 2009,06,asia,0.52,sysselsatte_land,prosent
 2009,06,eu_ost_europa,0.72,sysselsatte_land,prosent
 2009,06,nord_amerika_oseania,0.73,sysselsatte_land,prosent
@@ -2223,7 +2223,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,06,sor_og_mellom_amerika,0.65,sysselsatte_land,prosent
 2009,06,vest_europa,0.72,sysselsatte_land,prosent
 2009,07,afrika,0.41,sysselsatte_land,prosent
-2009,07,alle,0.60,sysselsatte_land,prosent
+2009,07,alle,0.67,sysselsatte_land,prosent
 2009,07,asia,0.51,sysselsatte_land,prosent
 2009,07,eu_ost_europa,0.71,sysselsatte_land,prosent
 2009,07,nord_amerika_oseania,0.62,sysselsatte_land,prosent
@@ -2232,7 +2232,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,07,sor_og_mellom_amerika,0.56,sysselsatte_land,prosent
 2009,07,vest_europa,0.67,sysselsatte_land,prosent
 2009,08,afrika,0.35,sysselsatte_land,prosent
-2009,08,alle,0.55,sysselsatte_land,prosent
+2009,08,alle,0.67,sysselsatte_land,prosent
 2009,08,asia,0.48,sysselsatte_land,prosent
 2009,08,eu_ost_europa,0.67,sysselsatte_land,prosent
 2009,08,nord_amerika_oseania,0.55,sysselsatte_land,prosent
@@ -2241,7 +2241,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,08,sor_og_mellom_amerika,0.59,sysselsatte_land,prosent
 2009,08,vest_europa,0.65,sysselsatte_land,prosent
 2009,09,afrika,0.38,sysselsatte_land,prosent
-2009,09,alle,0.58,sysselsatte_land,prosent
+2009,09,alle,0.67,sysselsatte_land,prosent
 2009,09,asia,0.48,sysselsatte_land,prosent
 2009,09,eu_ost_europa,0.68,sysselsatte_land,prosent
 2009,09,nord_amerika_oseania,0.62,sysselsatte_land,prosent
@@ -2250,7 +2250,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,09,sor_og_mellom_amerika,0.54,sysselsatte_land,prosent
 2009,09,vest_europa,0.67,sysselsatte_land,prosent
 2009,10,afrika,0.44,sysselsatte_land,prosent
-2009,10,alle,0.60,sysselsatte_land,prosent
+2009,10,alle,0.69,sysselsatte_land,prosent
 2009,10,asia,0.52,sysselsatte_land,prosent
 2009,10,eu_ost_europa,0.69,sysselsatte_land,prosent
 2009,10,nord_amerika_oseania,0.53,sysselsatte_land,prosent
@@ -2259,7 +2259,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,10,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2009,10,vest_europa,0.70,sysselsatte_land,prosent
 2009,11,afrika,0.55,sysselsatte_land,prosent
-2009,11,alle,0.67,sysselsatte_land,prosent
+2009,11,alle,0.73,sysselsatte_land,prosent
 2009,11,asia,0.59,sysselsatte_land,prosent
 2009,11,eu_ost_europa,0.73,sysselsatte_land,prosent
 2009,11,nord_amerika_oseania,0.64,sysselsatte_land,prosent
@@ -2268,7 +2268,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,11,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2009,11,vest_europa,0.76,sysselsatte_land,prosent
 2009,12,afrika,0.50,sysselsatte_land,prosent
-2009,12,alle,0.64,sysselsatte_land,prosent
+2009,12,alle,0.72,sysselsatte_land,prosent
 2009,12,asia,0.55,sysselsatte_land,prosent
 2009,12,eu_ost_europa,0.73,sysselsatte_land,prosent
 2009,12,nord_amerika_oseania,0.68,sysselsatte_land,prosent
@@ -2277,7 +2277,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,12,sor_og_mellom_amerika,0.65,sysselsatte_land,prosent
 2009,12,vest_europa,0.73,sysselsatte_land,prosent
 2009,14,afrika,0.34,sysselsatte_land,prosent
-2009,14,alle,0.67,sysselsatte_land,prosent
+2009,14,alle,0.73,sysselsatte_land,prosent
 2009,14,asia,0.56,sysselsatte_land,prosent
 2009,14,eu_ost_europa,0.79,sysselsatte_land,prosent
 2009,14,nord_amerika_oseania,0.58,sysselsatte_land,prosent
@@ -2286,7 +2286,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,14,sor_og_mellom_amerika,0.64,sysselsatte_land,prosent
 2009,14,vest_europa,0.75,sysselsatte_land,prosent
 2009,15,afrika,0.47,sysselsatte_land,prosent
-2009,15,alle,0.69,sysselsatte_land,prosent
+2009,15,alle,0.72,sysselsatte_land,prosent
 2009,15,asia,0.61,sysselsatte_land,prosent
 2009,15,eu_ost_europa,0.78,sysselsatte_land,prosent
 2009,15,nord_amerika_oseania,0.62,sysselsatte_land,prosent
@@ -2295,7 +2295,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,15,sor_og_mellom_amerika,0.65,sysselsatte_land,prosent
 2009,15,vest_europa,0.75,sysselsatte_land,prosent
 2009,16,afrika,0.45,sysselsatte_land,prosent
-2009,16,alle,0.62,sysselsatte_land,prosent
+2009,16,alle,0.70,sysselsatte_land,prosent
 2009,16,asia,0.53,sysselsatte_land,prosent
 2009,16,eu_ost_europa,0.72,sysselsatte_land,prosent
 2009,16,nord_amerika_oseania,0.70,sysselsatte_land,prosent
@@ -2304,7 +2304,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,16,sor_og_mellom_amerika,0.61,sysselsatte_land,prosent
 2009,16,vest_europa,0.70,sysselsatte_land,prosent
 2009,17,afrika,0.35,sysselsatte_land,prosent
-2009,17,alle,0.57,sysselsatte_land,prosent
+2009,17,alle,0.69,sysselsatte_land,prosent
 2009,17,asia,0.48,sysselsatte_land,prosent
 2009,17,eu_ost_europa,0.64,sysselsatte_land,prosent
 2009,17,nord_amerika_oseania,0.58,sysselsatte_land,prosent
@@ -2313,7 +2313,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,17,sor_og_mellom_amerika,0.48,sysselsatte_land,prosent
 2009,17,vest_europa,0.69,sysselsatte_land,prosent
 2009,18,afrika,0.36,sysselsatte_land,prosent
-2009,18,alle,0.62,sysselsatte_land,prosent
+2009,18,alle,0.68,sysselsatte_land,prosent
 2009,18,asia,0.54,sysselsatte_land,prosent
 2009,18,eu_ost_europa,0.77,sysselsatte_land,prosent
 2009,18,nord_amerika_oseania,0.56,sysselsatte_land,prosent
@@ -2322,7 +2322,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,18,sor_og_mellom_amerika,0.62,sysselsatte_land,prosent
 2009,18,vest_europa,0.70,sysselsatte_land,prosent
 2009,19,afrika,0.45,sysselsatte_land,prosent
-2009,19,alle,0.65,sysselsatte_land,prosent
+2009,19,alle,0.69,sysselsatte_land,prosent
 2009,19,asia,0.56,sysselsatte_land,prosent
 2009,19,eu_ost_europa,0.74,sysselsatte_land,prosent
 2009,19,nord_amerika_oseania,0.63,sysselsatte_land,prosent
@@ -2331,7 +2331,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,19,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2009,19,vest_europa,0.75,sysselsatte_land,prosent
 2009,20,afrika,0.59,sysselsatte_land,prosent
-2009,20,alle,0.70,sysselsatte_land,prosent
+2009,20,alle,0.69,sysselsatte_land,prosent
 2009,20,asia,0.63,sysselsatte_land,prosent
 2009,20,eu_ost_europa,0.78,sysselsatte_land,prosent
 2009,20,nord_amerika_oseania,0.76,sysselsatte_land,prosent
@@ -2340,7 +2340,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2009,20,sor_og_mellom_amerika,0.61,sysselsatte_land,prosent
 2009,20,vest_europa,0.73,sysselsatte_land,prosent
 2010,00,afrika,0.44,sysselsatte_land,prosent
-2010,00,alle,0.62,sysselsatte_land,prosent
+2010,00,alle,0.69,sysselsatte_land,prosent
 2010,00,asia,0.53,sysselsatte_land,prosent
 2010,00,eu_ost_europa,0.71,sysselsatte_land,prosent
 2010,00,nord_amerika_oseania,0.64,sysselsatte_land,prosent
@@ -2349,7 +2349,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,00,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2010,00,vest_europa,0.71,sysselsatte_land,prosent
 2010,01,afrika,0.33,sysselsatte_land,prosent
-2010,01,alle,0.54,sysselsatte_land,prosent
+2010,01,alle,0.65,sysselsatte_land,prosent
 2010,01,asia,0.46,sysselsatte_land,prosent
 2010,01,eu_ost_europa,0.69,sysselsatte_land,prosent
 2010,01,nord_amerika_oseania,0.59,sysselsatte_land,prosent
@@ -2358,7 +2358,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,01,sor_og_mellom_amerika,0.59,sysselsatte_land,prosent
 2010,01,vest_europa,0.64,sysselsatte_land,prosent
 2010,02,afrika,0.51,sysselsatte_land,prosent
-2010,02,alle,0.64,sysselsatte_land,prosent
+2010,02,alle,0.71,sysselsatte_land,prosent
 2010,02,asia,0.57,sysselsatte_land,prosent
 2010,02,eu_ost_europa,0.68,sysselsatte_land,prosent
 2010,02,nord_amerika_oseania,0.69,sysselsatte_land,prosent
@@ -2367,7 +2367,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,02,sor_og_mellom_amerika,0.64,sysselsatte_land,prosent
 2010,02,vest_europa,0.72,sysselsatte_land,prosent
 2010,03,afrika,0.45,sysselsatte_land,prosent
-2010,03,alle,0.59,sysselsatte_land,prosent
+2010,03,alle,0.69,sysselsatte_land,prosent
 2010,03,asia,0.54,sysselsatte_land,prosent
 2010,03,eu_ost_europa,0.66,sysselsatte_land,prosent
 2010,03,nord_amerika_oseania,0.64,sysselsatte_land,prosent
@@ -2376,7 +2376,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,03,sor_og_mellom_amerika,0.64,sysselsatte_land,prosent
 2010,03,vest_europa,0.70,sysselsatte_land,prosent
 2010,04,afrika,0.30,sysselsatte_land,prosent
-2010,04,alle,0.57,sysselsatte_land,prosent
+2010,04,alle,0.66,sysselsatte_land,prosent
 2010,04,asia,0.47,sysselsatte_land,prosent
 2010,04,eu_ost_europa,0.70,sysselsatte_land,prosent
 2010,04,nord_amerika_oseania,0.57,sysselsatte_land,prosent
@@ -2385,7 +2385,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,04,sor_og_mellom_amerika,0.58,sysselsatte_land,prosent
 2010,04,vest_europa,0.68,sysselsatte_land,prosent
 2010,05,afrika,0.31,sysselsatte_land,prosent
-2010,05,alle,0.60,sysselsatte_land,prosent
+2010,05,alle,0.69,sysselsatte_land,prosent
 2010,05,asia,0.50,sysselsatte_land,prosent
 2010,05,eu_ost_europa,0.72,sysselsatte_land,prosent
 2010,05,nord_amerika_oseania,0.66,sysselsatte_land,prosent
@@ -2394,7 +2394,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,05,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2010,05,vest_europa,0.70,sysselsatte_land,prosent
 2010,06,afrika,0.43,sysselsatte_land,prosent
-2010,06,alle,0.62,sysselsatte_land,prosent
+2010,06,alle,0.69,sysselsatte_land,prosent
 2010,06,asia,0.51,sysselsatte_land,prosent
 2010,06,eu_ost_europa,0.72,sysselsatte_land,prosent
 2010,06,nord_amerika_oseania,0.71,sysselsatte_land,prosent
@@ -2403,7 +2403,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,06,sor_og_mellom_amerika,0.64,sysselsatte_land,prosent
 2010,06,vest_europa,0.73,sysselsatte_land,prosent
 2010,07,afrika,0.38,sysselsatte_land,prosent
-2010,07,alle,0.60,sysselsatte_land,prosent
+2010,07,alle,0.66,sysselsatte_land,prosent
 2010,07,asia,0.50,sysselsatte_land,prosent
 2010,07,eu_ost_europa,0.71,sysselsatte_land,prosent
 2010,07,nord_amerika_oseania,0.64,sysselsatte_land,prosent
@@ -2412,7 +2412,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,07,sor_og_mellom_amerika,0.57,sysselsatte_land,prosent
 2010,07,vest_europa,0.67,sysselsatte_land,prosent
 2010,08,afrika,0.35,sysselsatte_land,prosent
-2010,08,alle,0.55,sysselsatte_land,prosent
+2010,08,alle,0.66,sysselsatte_land,prosent
 2010,08,asia,0.47,sysselsatte_land,prosent
 2010,08,eu_ost_europa,0.67,sysselsatte_land,prosent
 2010,08,nord_amerika_oseania,0.52,sysselsatte_land,prosent
@@ -2421,7 +2421,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,08,sor_og_mellom_amerika,0.61,sysselsatte_land,prosent
 2010,08,vest_europa,0.63,sysselsatte_land,prosent
 2010,09,afrika,0.38,sysselsatte_land,prosent
-2010,09,alle,0.58,sysselsatte_land,prosent
+2010,09,alle,0.66,sysselsatte_land,prosent
 2010,09,asia,0.47,sysselsatte_land,prosent
 2010,09,eu_ost_europa,0.66,sysselsatte_land,prosent
 2010,09,nord_amerika_oseania,0.60,sysselsatte_land,prosent
@@ -2430,7 +2430,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,09,sor_og_mellom_amerika,0.56,sysselsatte_land,prosent
 2010,09,vest_europa,0.69,sysselsatte_land,prosent
 2010,10,afrika,0.42,sysselsatte_land,prosent
-2010,10,alle,0.59,sysselsatte_land,prosent
+2010,10,alle,0.68,sysselsatte_land,prosent
 2010,10,asia,0.51,sysselsatte_land,prosent
 2010,10,eu_ost_europa,0.68,sysselsatte_land,prosent
 2010,10,nord_amerika_oseania,0.53,sysselsatte_land,prosent
@@ -2439,7 +2439,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,10,sor_og_mellom_amerika,0.62,sysselsatte_land,prosent
 2010,10,vest_europa,0.70,sysselsatte_land,prosent
 2010,11,afrika,0.53,sysselsatte_land,prosent
-2010,11,alle,0.67,sysselsatte_land,prosent
+2010,11,alle,0.73,sysselsatte_land,prosent
 2010,11,asia,0.58,sysselsatte_land,prosent
 2010,11,eu_ost_europa,0.74,sysselsatte_land,prosent
 2010,11,nord_amerika_oseania,0.66,sysselsatte_land,prosent
@@ -2448,7 +2448,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,11,sor_og_mellom_amerika,0.62,sysselsatte_land,prosent
 2010,11,vest_europa,0.75,sysselsatte_land,prosent
 2010,12,afrika,0.48,sysselsatte_land,prosent
-2010,12,alle,0.63,sysselsatte_land,prosent
+2010,12,alle,0.71,sysselsatte_land,prosent
 2010,12,asia,0.53,sysselsatte_land,prosent
 2010,12,eu_ost_europa,0.71,sysselsatte_land,prosent
 2010,12,nord_amerika_oseania,0.65,sysselsatte_land,prosent
@@ -2457,7 +2457,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,12,sor_og_mellom_amerika,0.65,sysselsatte_land,prosent
 2010,12,vest_europa,0.71,sysselsatte_land,prosent
 2010,14,afrika,0.32,sysselsatte_land,prosent
-2010,14,alle,0.66,sysselsatte_land,prosent
+2010,14,alle,0.73,sysselsatte_land,prosent
 2010,14,asia,0.56,sysselsatte_land,prosent
 2010,14,eu_ost_europa,0.77,sysselsatte_land,prosent
 2010,14,nord_amerika_oseania,0.57,sysselsatte_land,prosent
@@ -2466,7 +2466,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,14,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2010,14,vest_europa,0.73,sysselsatte_land,prosent
 2010,15,afrika,0.43,sysselsatte_land,prosent
-2010,15,alle,0.68,sysselsatte_land,prosent
+2010,15,alle,0.71,sysselsatte_land,prosent
 2010,15,asia,0.59,sysselsatte_land,prosent
 2010,15,eu_ost_europa,0.76,sysselsatte_land,prosent
 2010,15,nord_amerika_oseania,0.62,sysselsatte_land,prosent
@@ -2475,7 +2475,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,15,sor_og_mellom_amerika,0.66,sysselsatte_land,prosent
 2010,15,vest_europa,0.75,sysselsatte_land,prosent
 2010,16,afrika,0.45,sysselsatte_land,prosent
-2010,16,alle,0.62,sysselsatte_land,prosent
+2010,16,alle,0.69,sysselsatte_land,prosent
 2010,16,asia,0.53,sysselsatte_land,prosent
 2010,16,eu_ost_europa,0.74,sysselsatte_land,prosent
 2010,16,nord_amerika_oseania,0.67,sysselsatte_land,prosent
@@ -2484,7 +2484,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,16,sor_og_mellom_amerika,0.62,sysselsatte_land,prosent
 2010,16,vest_europa,0.68,sysselsatte_land,prosent
 2010,17,afrika,0.34,sysselsatte_land,prosent
-2010,17,alle,0.56,sysselsatte_land,prosent
+2010,17,alle,0.68,sysselsatte_land,prosent
 2010,17,asia,0.46,sysselsatte_land,prosent
 2010,17,eu_ost_europa,0.68,sysselsatte_land,prosent
 2010,17,nord_amerika_oseania,0.51,sysselsatte_land,prosent
@@ -2493,7 +2493,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,17,sor_og_mellom_amerika,0.50,sysselsatte_land,prosent
 2010,17,vest_europa,0.68,sysselsatte_land,prosent
 2010,18,afrika,0.37,sysselsatte_land,prosent
-2010,18,alle,0.62,sysselsatte_land,prosent
+2010,18,alle,0.68,sysselsatte_land,prosent
 2010,18,asia,0.55,sysselsatte_land,prosent
 2010,18,eu_ost_europa,0.77,sysselsatte_land,prosent
 2010,18,nord_amerika_oseania,0.67,sysselsatte_land,prosent
@@ -2502,7 +2502,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,18,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2010,18,vest_europa,0.70,sysselsatte_land,prosent
 2010,19,afrika,0.46,sysselsatte_land,prosent
-2010,19,alle,0.65,sysselsatte_land,prosent
+2010,19,alle,0.69,sysselsatte_land,prosent
 2010,19,asia,0.56,sysselsatte_land,prosent
 2010,19,eu_ost_europa,0.75,sysselsatte_land,prosent
 2010,19,nord_amerika_oseania,0.62,sysselsatte_land,prosent
@@ -2511,7 +2511,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,19,sor_og_mellom_amerika,0.66,sysselsatte_land,prosent
 2010,19,vest_europa,0.72,sysselsatte_land,prosent
 2010,20,afrika,0.56,sysselsatte_land,prosent
-2010,20,alle,0.70,sysselsatte_land,prosent
+2010,20,alle,0.68,sysselsatte_land,prosent
 2010,20,asia,0.60,sysselsatte_land,prosent
 2010,20,eu_ost_europa,0.80,sysselsatte_land,prosent
 2010,20,nord_amerika_oseania,0.65,sysselsatte_land,prosent
@@ -2520,7 +2520,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2010,20,sor_og_mellom_amerika,0.82,sysselsatte_land,prosent
 2010,20,vest_europa,0.74,sysselsatte_land,prosent
 2011,00,afrika,0.44,sysselsatte_land,prosent
-2011,00,alle,0.63,sysselsatte_land,prosent
+2011,00,alle,0.69,sysselsatte_land,prosent
 2011,00,asia,0.54,sysselsatte_land,prosent
 2011,00,eu_ost_europa,0.73,sysselsatte_land,prosent
 2011,00,nord_amerika_oseania,0.66,sysselsatte_land,prosent
@@ -2529,7 +2529,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,00,sor_og_mellom_amerika,0.64,sysselsatte_land,prosent
 2011,00,vest_europa,0.70,sysselsatte_land,prosent
 2011,01,afrika,0.34,sysselsatte_land,prosent
-2011,01,alle,0.55,sysselsatte_land,prosent
+2011,01,alle,0.64,sysselsatte_land,prosent
 2011,01,asia,0.45,sysselsatte_land,prosent
 2011,01,eu_ost_europa,0.71,sysselsatte_land,prosent
 2011,01,nord_amerika_oseania,0.60,sysselsatte_land,prosent
@@ -2538,7 +2538,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,01,sor_og_mellom_amerika,0.61,sysselsatte_land,prosent
 2011,01,vest_europa,0.63,sysselsatte_land,prosent
 2011,02,afrika,0.52,sysselsatte_land,prosent
-2011,02,alle,0.66,sysselsatte_land,prosent
+2011,02,alle,0.71,sysselsatte_land,prosent
 2011,02,asia,0.57,sysselsatte_land,prosent
 2011,02,eu_ost_europa,0.72,sysselsatte_land,prosent
 2011,02,nord_amerika_oseania,0.72,sysselsatte_land,prosent
@@ -2547,7 +2547,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,02,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2011,02,vest_europa,0.72,sysselsatte_land,prosent
 2011,03,afrika,0.46,sysselsatte_land,prosent
-2011,03,alle,0.61,sysselsatte_land,prosent
+2011,03,alle,0.70,sysselsatte_land,prosent
 2011,03,asia,0.54,sysselsatte_land,prosent
 2011,03,eu_ost_europa,0.69,sysselsatte_land,prosent
 2011,03,nord_amerika_oseania,0.66,sysselsatte_land,prosent
@@ -2556,7 +2556,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,03,sor_og_mellom_amerika,0.64,sysselsatte_land,prosent
 2011,03,vest_europa,0.69,sysselsatte_land,prosent
 2011,04,afrika,0.32,sysselsatte_land,prosent
-2011,04,alle,0.57,sysselsatte_land,prosent
+2011,04,alle,0.65,sysselsatte_land,prosent
 2011,04,asia,0.49,sysselsatte_land,prosent
 2011,04,eu_ost_europa,0.71,sysselsatte_land,prosent
 2011,04,nord_amerika_oseania,0.56,sysselsatte_land,prosent
@@ -2565,7 +2565,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,04,sor_og_mellom_amerika,0.57,sysselsatte_land,prosent
 2011,04,vest_europa,0.65,sysselsatte_land,prosent
 2011,05,afrika,0.31,sysselsatte_land,prosent
-2011,05,alle,0.61,sysselsatte_land,prosent
+2011,05,alle,0.68,sysselsatte_land,prosent
 2011,05,asia,0.50,sysselsatte_land,prosent
 2011,05,eu_ost_europa,0.74,sysselsatte_land,prosent
 2011,05,nord_amerika_oseania,0.64,sysselsatte_land,prosent
@@ -2574,7 +2574,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,05,sor_og_mellom_amerika,0.60,sysselsatte_land,prosent
 2011,05,vest_europa,0.71,sysselsatte_land,prosent
 2011,06,afrika,0.44,sysselsatte_land,prosent
-2011,06,alle,0.63,sysselsatte_land,prosent
+2011,06,alle,0.69,sysselsatte_land,prosent
 2011,06,asia,0.52,sysselsatte_land,prosent
 2011,06,eu_ost_europa,0.74,sysselsatte_land,prosent
 2011,06,nord_amerika_oseania,0.72,sysselsatte_land,prosent
@@ -2583,7 +2583,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,06,sor_og_mellom_amerika,0.66,sysselsatte_land,prosent
 2011,06,vest_europa,0.74,sysselsatte_land,prosent
 2011,07,afrika,0.37,sysselsatte_land,prosent
-2011,07,alle,0.61,sysselsatte_land,prosent
+2011,07,alle,0.66,sysselsatte_land,prosent
 2011,07,asia,0.51,sysselsatte_land,prosent
 2011,07,eu_ost_europa,0.72,sysselsatte_land,prosent
 2011,07,nord_amerika_oseania,0.64,sysselsatte_land,prosent
@@ -2592,7 +2592,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,07,sor_og_mellom_amerika,0.58,sysselsatte_land,prosent
 2011,07,vest_europa,0.67,sysselsatte_land,prosent
 2011,08,afrika,0.35,sysselsatte_land,prosent
-2011,08,alle,0.56,sysselsatte_land,prosent
+2011,08,alle,0.65,sysselsatte_land,prosent
 2011,08,asia,0.48,sysselsatte_land,prosent
 2011,08,eu_ost_europa,0.70,sysselsatte_land,prosent
 2011,08,nord_amerika_oseania,0.54,sysselsatte_land,prosent
@@ -2601,7 +2601,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,08,sor_og_mellom_amerika,0.60,sysselsatte_land,prosent
 2011,08,vest_europa,0.63,sysselsatte_land,prosent
 2011,09,afrika,0.37,sysselsatte_land,prosent
-2011,09,alle,0.58,sysselsatte_land,prosent
+2011,09,alle,0.66,sysselsatte_land,prosent
 2011,09,asia,0.47,sysselsatte_land,prosent
 2011,09,eu_ost_europa,0.69,sysselsatte_land,prosent
 2011,09,nord_amerika_oseania,0.61,sysselsatte_land,prosent
@@ -2610,7 +2610,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,09,sor_og_mellom_amerika,0.61,sysselsatte_land,prosent
 2011,09,vest_europa,0.67,sysselsatte_land,prosent
 2011,10,afrika,0.41,sysselsatte_land,prosent
-2011,10,alle,0.60,sysselsatte_land,prosent
+2011,10,alle,0.68,sysselsatte_land,prosent
 2011,10,asia,0.51,sysselsatte_land,prosent
 2011,10,eu_ost_europa,0.68,sysselsatte_land,prosent
 2011,10,nord_amerika_oseania,0.56,sysselsatte_land,prosent
@@ -2619,7 +2619,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,10,sor_og_mellom_amerika,0.64,sysselsatte_land,prosent
 2011,10,vest_europa,0.70,sysselsatte_land,prosent
 2011,11,afrika,0.54,sysselsatte_land,prosent
-2011,11,alle,0.70,sysselsatte_land,prosent
+2011,11,alle,0.73,sysselsatte_land,prosent
 2011,11,asia,0.60,sysselsatte_land,prosent
 2011,11,eu_ost_europa,0.78,sysselsatte_land,prosent
 2011,11,nord_amerika_oseania,0.68,sysselsatte_land,prosent
@@ -2628,7 +2628,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,11,sor_og_mellom_amerika,0.65,sysselsatte_land,prosent
 2011,11,vest_europa,0.76,sysselsatte_land,prosent
 2011,12,afrika,0.48,sysselsatte_land,prosent
-2011,12,alle,0.65,sysselsatte_land,prosent
+2011,12,alle,0.71,sysselsatte_land,prosent
 2011,12,asia,0.55,sysselsatte_land,prosent
 2011,12,eu_ost_europa,0.75,sysselsatte_land,prosent
 2011,12,nord_amerika_oseania,0.65,sysselsatte_land,prosent
@@ -2637,7 +2637,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,12,sor_og_mellom_amerika,0.65,sysselsatte_land,prosent
 2011,12,vest_europa,0.71,sysselsatte_land,prosent
 2011,14,afrika,0.34,sysselsatte_land,prosent
-2011,14,alle,0.70,sysselsatte_land,prosent
+2011,14,alle,0.73,sysselsatte_land,prosent
 2011,14,asia,0.60,sysselsatte_land,prosent
 2011,14,eu_ost_europa,0.80,sysselsatte_land,prosent
 2011,14,nord_amerika_oseania,0.61,sysselsatte_land,prosent
@@ -2646,7 +2646,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,14,sor_og_mellom_amerika,0.67,sysselsatte_land,prosent
 2011,14,vest_europa,0.75,sysselsatte_land,prosent
 2011,15,afrika,0.43,sysselsatte_land,prosent
-2011,15,alle,0.69,sysselsatte_land,prosent
+2011,15,alle,0.71,sysselsatte_land,prosent
 2011,15,asia,0.59,sysselsatte_land,prosent
 2011,15,eu_ost_europa,0.77,sysselsatte_land,prosent
 2011,15,nord_amerika_oseania,0.67,sysselsatte_land,prosent
@@ -2655,7 +2655,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,15,sor_og_mellom_amerika,0.66,sysselsatte_land,prosent
 2011,15,vest_europa,0.75,sysselsatte_land,prosent
 2011,16,afrika,0.43,sysselsatte_land,prosent
-2011,16,alle,0.62,sysselsatte_land,prosent
+2011,16,alle,0.70,sysselsatte_land,prosent
 2011,16,asia,0.54,sysselsatte_land,prosent
 2011,16,eu_ost_europa,0.75,sysselsatte_land,prosent
 2011,16,nord_amerika_oseania,0.65,sysselsatte_land,prosent
@@ -2664,7 +2664,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,16,sor_og_mellom_amerika,0.61,sysselsatte_land,prosent
 2011,16,vest_europa,0.63,sysselsatte_land,prosent
 2011,17,afrika,0.33,sysselsatte_land,prosent
-2011,17,alle,0.60,sysselsatte_land,prosent
+2011,17,alle,0.68,sysselsatte_land,prosent
 2011,17,asia,0.49,sysselsatte_land,prosent
 2011,17,eu_ost_europa,0.74,sysselsatte_land,prosent
 2011,17,nord_amerika_oseania,0.52,sysselsatte_land,prosent
@@ -2673,7 +2673,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,17,sor_og_mellom_amerika,0.54,sysselsatte_land,prosent
 2011,17,vest_europa,0.69,sysselsatte_land,prosent
 2011,18,afrika,0.37,sysselsatte_land,prosent
-2011,18,alle,0.63,sysselsatte_land,prosent
+2011,18,alle,0.68,sysselsatte_land,prosent
 2011,18,asia,0.56,sysselsatte_land,prosent
 2011,18,eu_ost_europa,0.77,sysselsatte_land,prosent
 2011,18,nord_amerika_oseania,0.65,sysselsatte_land,prosent
@@ -2682,7 +2682,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,18,sor_og_mellom_amerika,0.65,sysselsatte_land,prosent
 2011,18,vest_europa,0.70,sysselsatte_land,prosent
 2011,19,afrika,0.45,sysselsatte_land,prosent
-2011,19,alle,0.65,sysselsatte_land,prosent
+2011,19,alle,0.69,sysselsatte_land,prosent
 2011,19,asia,0.57,sysselsatte_land,prosent
 2011,19,eu_ost_europa,0.75,sysselsatte_land,prosent
 2011,19,nord_amerika_oseania,0.75,sysselsatte_land,prosent
@@ -2700,7 +2700,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2011,20,sor_og_mellom_amerika,0.70,sysselsatte_land,prosent
 2011,20,vest_europa,0.72,sysselsatte_land,prosent
 2012,00,afrika,0.43,sysselsatte_land,prosent
-2012,00,alle,0.63,sysselsatte_land,prosent
+2012,00,alle,0.69,sysselsatte_land,prosent
 2012,00,asia,0.55,sysselsatte_land,prosent
 2012,00,eu_ost_europa,0.73,sysselsatte_land,prosent
 2012,00,nord_amerika_oseania,0.66,sysselsatte_land,prosent
@@ -2709,7 +2709,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,00,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2012,00,vest_europa,0.70,sysselsatte_land,prosent
 2012,01,afrika,0.33,sysselsatte_land,prosent
-2012,01,alle,0.55,sysselsatte_land,prosent
+2012,01,alle,0.64,sysselsatte_land,prosent
 2012,01,asia,0.46,sysselsatte_land,prosent
 2012,01,eu_ost_europa,0.70,sysselsatte_land,prosent
 2012,01,nord_amerika_oseania,0.62,sysselsatte_land,prosent
@@ -2718,7 +2718,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,01,sor_og_mellom_amerika,0.61,sysselsatte_land,prosent
 2012,01,vest_europa,0.62,sysselsatte_land,prosent
 2012,02,afrika,0.51,sysselsatte_land,prosent
-2012,02,alle,0.66,sysselsatte_land,prosent
+2012,02,alle,0.70,sysselsatte_land,prosent
 2012,02,asia,0.58,sysselsatte_land,prosent
 2012,02,eu_ost_europa,0.70,sysselsatte_land,prosent
 2012,02,nord_amerika_oseania,0.70,sysselsatte_land,prosent
@@ -2727,7 +2727,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,02,sor_og_mellom_amerika,0.65,sysselsatte_land,prosent
 2012,02,vest_europa,0.72,sysselsatte_land,prosent
 2012,03,afrika,0.45,sysselsatte_land,prosent
-2012,03,alle,0.61,sysselsatte_land,prosent
+2012,03,alle,0.69,sysselsatte_land,prosent
 2012,03,asia,0.54,sysselsatte_land,prosent
 2012,03,eu_ost_europa,0.69,sysselsatte_land,prosent
 2012,03,nord_amerika_oseania,0.69,sysselsatte_land,prosent
@@ -2736,7 +2736,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,03,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2012,03,vest_europa,0.70,sysselsatte_land,prosent
 2012,04,afrika,0.30,sysselsatte_land,prosent
-2012,04,alle,0.56,sysselsatte_land,prosent
+2012,04,alle,0.65,sysselsatte_land,prosent
 2012,04,asia,0.50,sysselsatte_land,prosent
 2012,04,eu_ost_europa,0.69,sysselsatte_land,prosent
 2012,04,nord_amerika_oseania,0.54,sysselsatte_land,prosent
@@ -2745,7 +2745,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,04,sor_og_mellom_amerika,0.56,sysselsatte_land,prosent
 2012,04,vest_europa,0.64,sysselsatte_land,prosent
 2012,05,afrika,0.29,sysselsatte_land,prosent
-2012,05,alle,0.60,sysselsatte_land,prosent
+2012,05,alle,0.68,sysselsatte_land,prosent
 2012,05,asia,0.51,sysselsatte_land,prosent
 2012,05,eu_ost_europa,0.71,sysselsatte_land,prosent
 2012,05,nord_amerika_oseania,0.65,sysselsatte_land,prosent
@@ -2754,7 +2754,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,05,sor_og_mellom_amerika,0.70,sysselsatte_land,prosent
 2012,05,vest_europa,0.70,sysselsatte_land,prosent
 2012,06,afrika,0.42,sysselsatte_land,prosent
-2012,06,alle,0.63,sysselsatte_land,prosent
+2012,06,alle,0.69,sysselsatte_land,prosent
 2012,06,asia,0.53,sysselsatte_land,prosent
 2012,06,eu_ost_europa,0.71,sysselsatte_land,prosent
 2012,06,nord_amerika_oseania,0.71,sysselsatte_land,prosent
@@ -2763,7 +2763,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,06,sor_og_mellom_amerika,0.65,sysselsatte_land,prosent
 2012,06,vest_europa,0.74,sysselsatte_land,prosent
 2012,07,afrika,0.37,sysselsatte_land,prosent
-2012,07,alle,0.61,sysselsatte_land,prosent
+2012,07,alle,0.65,sysselsatte_land,prosent
 2012,07,asia,0.52,sysselsatte_land,prosent
 2012,07,eu_ost_europa,0.72,sysselsatte_land,prosent
 2012,07,nord_amerika_oseania,0.65,sysselsatte_land,prosent
@@ -2772,7 +2772,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,07,sor_og_mellom_amerika,0.58,sysselsatte_land,prosent
 2012,07,vest_europa,0.67,sysselsatte_land,prosent
 2012,08,afrika,0.32,sysselsatte_land,prosent
-2012,08,alle,0.54,sysselsatte_land,prosent
+2012,08,alle,0.65,sysselsatte_land,prosent
 2012,08,asia,0.47,sysselsatte_land,prosent
 2012,08,eu_ost_europa,0.69,sysselsatte_land,prosent
 2012,08,nord_amerika_oseania,0.45,sysselsatte_land,prosent
@@ -2781,7 +2781,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,08,sor_og_mellom_amerika,0.59,sysselsatte_land,prosent
 2012,08,vest_europa,0.64,sysselsatte_land,prosent
 2012,09,afrika,0.36,sysselsatte_land,prosent
-2012,09,alle,0.58,sysselsatte_land,prosent
+2012,09,alle,0.66,sysselsatte_land,prosent
 2012,09,asia,0.48,sysselsatte_land,prosent
 2012,09,eu_ost_europa,0.69,sysselsatte_land,prosent
 2012,09,nord_amerika_oseania,0.58,sysselsatte_land,prosent
@@ -2790,7 +2790,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,09,sor_og_mellom_amerika,0.56,sysselsatte_land,prosent
 2012,09,vest_europa,0.68,sysselsatte_land,prosent
 2012,10,afrika,0.35,sysselsatte_land,prosent
-2012,10,alle,0.59,sysselsatte_land,prosent
+2012,10,alle,0.67,sysselsatte_land,prosent
 2012,10,asia,0.51,sysselsatte_land,prosent
 2012,10,eu_ost_europa,0.69,sysselsatte_land,prosent
 2012,10,nord_amerika_oseania,0.59,sysselsatte_land,prosent
@@ -2799,7 +2799,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,10,sor_og_mellom_amerika,0.62,sysselsatte_land,prosent
 2012,10,vest_europa,0.70,sysselsatte_land,prosent
 2012,11,afrika,0.53,sysselsatte_land,prosent
-2012,11,alle,0.70,sysselsatte_land,prosent
+2012,11,alle,0.73,sysselsatte_land,prosent
 2012,11,asia,0.60,sysselsatte_land,prosent
 2012,11,eu_ost_europa,0.78,sysselsatte_land,prosent
 2012,11,nord_amerika_oseania,0.67,sysselsatte_land,prosent
@@ -2808,7 +2808,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,11,sor_og_mellom_amerika,0.66,sysselsatte_land,prosent
 2012,11,vest_europa,0.75,sysselsatte_land,prosent
 2012,12,afrika,0.46,sysselsatte_land,prosent
-2012,12,alle,0.66,sysselsatte_land,prosent
+2012,12,alle,0.71,sysselsatte_land,prosent
 2012,12,asia,0.56,sysselsatte_land,prosent
 2012,12,eu_ost_europa,0.76,sysselsatte_land,prosent
 2012,12,nord_amerika_oseania,0.66,sysselsatte_land,prosent
@@ -2817,7 +2817,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,12,sor_og_mellom_amerika,0.64,sysselsatte_land,prosent
 2012,12,vest_europa,0.70,sysselsatte_land,prosent
 2012,14,afrika,0.29,sysselsatte_land,prosent
-2012,14,alle,0.67,sysselsatte_land,prosent
+2012,14,alle,0.72,sysselsatte_land,prosent
 2012,14,asia,0.59,sysselsatte_land,prosent
 2012,14,eu_ost_europa,0.78,sysselsatte_land,prosent
 2012,14,nord_amerika_oseania,0.62,sysselsatte_land,prosent
@@ -2826,7 +2826,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,14,sor_og_mellom_amerika,0.59,sysselsatte_land,prosent
 2012,14,vest_europa,0.71,sysselsatte_land,prosent
 2012,15,afrika,0.40,sysselsatte_land,prosent
-2012,15,alle,0.69,sysselsatte_land,prosent
+2012,15,alle,0.71,sysselsatte_land,prosent
 2012,15,asia,0.60,sysselsatte_land,prosent
 2012,15,eu_ost_europa,0.76,sysselsatte_land,prosent
 2012,15,nord_amerika_oseania,0.69,sysselsatte_land,prosent
@@ -2835,7 +2835,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,15,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2012,15,vest_europa,0.74,sysselsatte_land,prosent
 2012,16,afrika,0.43,sysselsatte_land,prosent
-2012,16,alle,0.62,sysselsatte_land,prosent
+2012,16,alle,0.70,sysselsatte_land,prosent
 2012,16,asia,0.53,sysselsatte_land,prosent
 2012,16,eu_ost_europa,0.74,sysselsatte_land,prosent
 2012,16,nord_amerika_oseania,0.67,sysselsatte_land,prosent
@@ -2844,7 +2844,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,16,sor_og_mellom_amerika,0.60,sysselsatte_land,prosent
 2012,16,vest_europa,0.61,sysselsatte_land,prosent
 2012,17,afrika,0.33,sysselsatte_land,prosent
-2012,17,alle,0.62,sysselsatte_land,prosent
+2012,17,alle,0.68,sysselsatte_land,prosent
 2012,17,asia,0.53,sysselsatte_land,prosent
 2012,17,eu_ost_europa,0.78,sysselsatte_land,prosent
 2012,17,nord_amerika_oseania,0.58,sysselsatte_land,prosent
@@ -2853,7 +2853,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,17,sor_og_mellom_amerika,0.56,sysselsatte_land,prosent
 2012,17,vest_europa,0.69,sysselsatte_land,prosent
 2012,18,afrika,0.32,sysselsatte_land,prosent
-2012,18,alle,0.62,sysselsatte_land,prosent
+2012,18,alle,0.67,sysselsatte_land,prosent
 2012,18,asia,0.57,sysselsatte_land,prosent
 2012,18,eu_ost_europa,0.77,sysselsatte_land,prosent
 2012,18,nord_amerika_oseania,0.65,sysselsatte_land,prosent
@@ -2862,7 +2862,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,18,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2012,18,vest_europa,0.67,sysselsatte_land,prosent
 2012,19,afrika,0.41,sysselsatte_land,prosent
-2012,19,alle,0.64,sysselsatte_land,prosent
+2012,19,alle,0.69,sysselsatte_land,prosent
 2012,19,asia,0.58,sysselsatte_land,prosent
 2012,19,eu_ost_europa,0.76,sysselsatte_land,prosent
 2012,19,nord_amerika_oseania,0.66,sysselsatte_land,prosent
@@ -2871,7 +2871,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,19,sor_og_mellom_amerika,0.66,sysselsatte_land,prosent
 2012,19,vest_europa,0.67,sysselsatte_land,prosent
 2012,20,afrika,0.42,sysselsatte_land,prosent
-2012,20,alle,0.69,sysselsatte_land,prosent
+2012,20,alle,0.68,sysselsatte_land,prosent
 2012,20,asia,0.62,sysselsatte_land,prosent
 2012,20,eu_ost_europa,0.79,sysselsatte_land,prosent
 2012,20,nord_amerika_oseania,0.56,sysselsatte_land,prosent
@@ -2880,7 +2880,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2012,20,sor_og_mellom_amerika,0.68,sysselsatte_land,prosent
 2012,20,vest_europa,0.77,sysselsatte_land,prosent
 2013,00,afrika,0.42,sysselsatte_land,prosent
-2013,00,alle,0.63,sysselsatte_land,prosent
+2013,00,alle,0.69,sysselsatte_land,prosent
 2013,00,asia,0.55,sysselsatte_land,prosent
 2013,00,eu_ost_europa,0.73,sysselsatte_land,prosent
 2013,00,nord_amerika_oseania,0.66,sysselsatte_land,prosent
@@ -2889,7 +2889,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,00,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2013,00,vest_europa,0.71,sysselsatte_land,prosent
 2013,01,afrika,0.33,sysselsatte_land,prosent
-2013,01,alle,0.56,sysselsatte_land,prosent
+2013,01,alle,0.63,sysselsatte_land,prosent
 2013,01,asia,0.46,sysselsatte_land,prosent
 2013,01,eu_ost_europa,0.70,sysselsatte_land,prosent
 2013,01,nord_amerika_oseania,0.61,sysselsatte_land,prosent
@@ -2898,7 +2898,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,01,sor_og_mellom_amerika,0.61,sysselsatte_land,prosent
 2013,01,vest_europa,0.63,sysselsatte_land,prosent
 2013,02,afrika,0.50,sysselsatte_land,prosent
-2013,02,alle,0.66,sysselsatte_land,prosent
+2013,02,alle,0.70,sysselsatte_land,prosent
 2013,02,asia,0.59,sysselsatte_land,prosent
 2013,02,eu_ost_europa,0.71,sysselsatte_land,prosent
 2013,02,nord_amerika_oseania,0.70,sysselsatte_land,prosent
@@ -2907,7 +2907,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,02,sor_og_mellom_amerika,0.66,sysselsatte_land,prosent
 2013,02,vest_europa,0.72,sysselsatte_land,prosent
 2013,03,afrika,0.46,sysselsatte_land,prosent
-2013,03,alle,0.62,sysselsatte_land,prosent
+2013,03,alle,0.69,sysselsatte_land,prosent
 2013,03,asia,0.55,sysselsatte_land,prosent
 2013,03,eu_ost_europa,0.70,sysselsatte_land,prosent
 2013,03,nord_amerika_oseania,0.70,sysselsatte_land,prosent
@@ -2916,7 +2916,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,03,sor_og_mellom_amerika,0.64,sysselsatte_land,prosent
 2013,03,vest_europa,0.72,sysselsatte_land,prosent
 2013,04,afrika,0.28,sysselsatte_land,prosent
-2013,04,alle,0.56,sysselsatte_land,prosent
+2013,04,alle,0.65,sysselsatte_land,prosent
 2013,04,asia,0.50,sysselsatte_land,prosent
 2013,04,eu_ost_europa,0.69,sysselsatte_land,prosent
 2013,04,nord_amerika_oseania,0.58,sysselsatte_land,prosent
@@ -2925,7 +2925,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,04,sor_og_mellom_amerika,0.53,sysselsatte_land,prosent
 2013,04,vest_europa,0.65,sysselsatte_land,prosent
 2013,05,afrika,0.29,sysselsatte_land,prosent
-2013,05,alle,0.60,sysselsatte_land,prosent
+2013,05,alle,0.68,sysselsatte_land,prosent
 2013,05,asia,0.51,sysselsatte_land,prosent
 2013,05,eu_ost_europa,0.73,sysselsatte_land,prosent
 2013,05,nord_amerika_oseania,0.65,sysselsatte_land,prosent
@@ -2934,7 +2934,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,05,sor_og_mellom_amerika,0.65,sysselsatte_land,prosent
 2013,05,vest_europa,0.67,sysselsatte_land,prosent
 2013,06,afrika,0.41,sysselsatte_land,prosent
-2013,06,alle,0.63,sysselsatte_land,prosent
+2013,06,alle,0.68,sysselsatte_land,prosent
 2013,06,asia,0.53,sysselsatte_land,prosent
 2013,06,eu_ost_europa,0.73,sysselsatte_land,prosent
 2013,06,nord_amerika_oseania,0.66,sysselsatte_land,prosent
@@ -2943,7 +2943,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,06,sor_og_mellom_amerika,0.65,sysselsatte_land,prosent
 2013,06,vest_europa,0.73,sysselsatte_land,prosent
 2013,07,afrika,0.38,sysselsatte_land,prosent
-2013,07,alle,0.61,sysselsatte_land,prosent
+2013,07,alle,0.65,sysselsatte_land,prosent
 2013,07,asia,0.52,sysselsatte_land,prosent
 2013,07,eu_ost_europa,0.72,sysselsatte_land,prosent
 2013,07,nord_amerika_oseania,0.60,sysselsatte_land,prosent
@@ -2952,7 +2952,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,07,sor_og_mellom_amerika,0.57,sysselsatte_land,prosent
 2013,07,vest_europa,0.67,sysselsatte_land,prosent
 2013,08,afrika,0.32,sysselsatte_land,prosent
-2013,08,alle,0.55,sysselsatte_land,prosent
+2013,08,alle,0.65,sysselsatte_land,prosent
 2013,08,asia,0.48,sysselsatte_land,prosent
 2013,08,eu_ost_europa,0.70,sysselsatte_land,prosent
 2013,08,nord_amerika_oseania,0.49,sysselsatte_land,prosent
@@ -2961,7 +2961,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,08,sor_og_mellom_amerika,0.59,sysselsatte_land,prosent
 2013,08,vest_europa,0.65,sysselsatte_land,prosent
 2013,09,afrika,0.34,sysselsatte_land,prosent
-2013,09,alle,0.58,sysselsatte_land,prosent
+2013,09,alle,0.65,sysselsatte_land,prosent
 2013,09,asia,0.49,sysselsatte_land,prosent
 2013,09,eu_ost_europa,0.69,sysselsatte_land,prosent
 2013,09,nord_amerika_oseania,0.57,sysselsatte_land,prosent
@@ -2970,7 +2970,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,09,sor_og_mellom_amerika,0.55,sysselsatte_land,prosent
 2013,09,vest_europa,0.67,sysselsatte_land,prosent
 2013,10,afrika,0.36,sysselsatte_land,prosent
-2013,10,alle,0.59,sysselsatte_land,prosent
+2013,10,alle,0.67,sysselsatte_land,prosent
 2013,10,asia,0.50,sysselsatte_land,prosent
 2013,10,eu_ost_europa,0.70,sysselsatte_land,prosent
 2013,10,nord_amerika_oseania,0.58,sysselsatte_land,prosent
@@ -2979,7 +2979,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,10,sor_og_mellom_amerika,0.59,sysselsatte_land,prosent
 2013,10,vest_europa,0.71,sysselsatte_land,prosent
 2013,11,afrika,0.53,sysselsatte_land,prosent
-2013,11,alle,0.69,sysselsatte_land,prosent
+2013,11,alle,0.73,sysselsatte_land,prosent
 2013,11,asia,0.60,sysselsatte_land,prosent
 2013,11,eu_ost_europa,0.77,sysselsatte_land,prosent
 2013,11,nord_amerika_oseania,0.67,sysselsatte_land,prosent
@@ -2988,7 +2988,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,11,sor_og_mellom_amerika,0.65,sysselsatte_land,prosent
 2013,11,vest_europa,0.75,sysselsatte_land,prosent
 2013,12,afrika,0.45,sysselsatte_land,prosent
-2013,12,alle,0.65,sysselsatte_land,prosent
+2013,12,alle,0.70,sysselsatte_land,prosent
 2013,12,asia,0.57,sysselsatte_land,prosent
 2013,12,eu_ost_europa,0.74,sysselsatte_land,prosent
 2013,12,nord_amerika_oseania,0.68,sysselsatte_land,prosent
@@ -2997,7 +2997,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,12,sor_og_mellom_amerika,0.64,sysselsatte_land,prosent
 2013,12,vest_europa,0.69,sysselsatte_land,prosent
 2013,14,afrika,0.29,sysselsatte_land,prosent
-2013,14,alle,0.67,sysselsatte_land,prosent
+2013,14,alle,0.72,sysselsatte_land,prosent
 2013,14,asia,0.60,sysselsatte_land,prosent
 2013,14,eu_ost_europa,0.77,sysselsatte_land,prosent
 2013,14,nord_amerika_oseania,0.60,sysselsatte_land,prosent
@@ -3006,7 +3006,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,14,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2013,14,vest_europa,0.71,sysselsatte_land,prosent
 2013,15,afrika,0.35,sysselsatte_land,prosent
-2013,15,alle,0.69,sysselsatte_land,prosent
+2013,15,alle,0.70,sysselsatte_land,prosent
 2013,15,asia,0.61,sysselsatte_land,prosent
 2013,15,eu_ost_europa,0.76,sysselsatte_land,prosent
 2013,15,nord_amerika_oseania,0.68,sysselsatte_land,prosent
@@ -3015,7 +3015,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,15,sor_og_mellom_amerika,0.64,sysselsatte_land,prosent
 2013,15,vest_europa,0.75,sysselsatte_land,prosent
 2013,16,afrika,0.42,sysselsatte_land,prosent
-2013,16,alle,0.64,sysselsatte_land,prosent
+2013,16,alle,0.70,sysselsatte_land,prosent
 2013,16,asia,0.56,sysselsatte_land,prosent
 2013,16,eu_ost_europa,0.75,sysselsatte_land,prosent
 2013,16,nord_amerika_oseania,0.63,sysselsatte_land,prosent
@@ -3024,7 +3024,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,16,sor_og_mellom_amerika,0.60,sysselsatte_land,prosent
 2013,16,vest_europa,0.68,sysselsatte_land,prosent
 2013,17,afrika,0.32,sysselsatte_land,prosent
-2013,17,alle,0.59,sysselsatte_land,prosent
+2013,17,alle,0.68,sysselsatte_land,prosent
 2013,17,asia,0.53,sysselsatte_land,prosent
 2013,17,eu_ost_europa,0.73,sysselsatte_land,prosent
 2013,17,nord_amerika_oseania,0.62,sysselsatte_land,prosent
@@ -3033,7 +3033,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,17,sor_og_mellom_amerika,0.53,sysselsatte_land,prosent
 2013,17,vest_europa,0.70,sysselsatte_land,prosent
 2013,18,afrika,0.28,sysselsatte_land,prosent
-2013,18,alle,0.60,sysselsatte_land,prosent
+2013,18,alle,0.67,sysselsatte_land,prosent
 2013,18,asia,0.56,sysselsatte_land,prosent
 2013,18,eu_ost_europa,0.74,sysselsatte_land,prosent
 2013,18,nord_amerika_oseania,0.62,sysselsatte_land,prosent
@@ -3042,7 +3042,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,18,sor_og_mellom_amerika,0.62,sysselsatte_land,prosent
 2013,18,vest_europa,0.69,sysselsatte_land,prosent
 2013,19,afrika,0.40,sysselsatte_land,prosent
-2013,19,alle,0.65,sysselsatte_land,prosent
+2013,19,alle,0.69,sysselsatte_land,prosent
 2013,19,asia,0.59,sysselsatte_land,prosent
 2013,19,eu_ost_europa,0.75,sysselsatte_land,prosent
 2013,19,nord_amerika_oseania,0.69,sysselsatte_land,prosent
@@ -3051,7 +3051,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,19,sor_og_mellom_amerika,0.69,sysselsatte_land,prosent
 2013,19,vest_europa,0.69,sysselsatte_land,prosent
 2013,20,afrika,0.38,sysselsatte_land,prosent
-2013,20,alle,0.67,sysselsatte_land,prosent
+2013,20,alle,0.68,sysselsatte_land,prosent
 2013,20,asia,0.62,sysselsatte_land,prosent
 2013,20,eu_ost_europa,0.75,sysselsatte_land,prosent
 2013,20,nord_amerika_oseania,0.56,sysselsatte_land,prosent
@@ -3060,7 +3060,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2013,20,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2013,20,vest_europa,0.74,sysselsatte_land,prosent
 2014,00,afrika,0.42,sysselsatte_land,prosent
-2014,00,alle,0.63,sysselsatte_land,prosent
+2014,00,alle,0.69,sysselsatte_land,prosent
 2014,00,asia,0.56,sysselsatte_land,prosent
 2014,00,eu_ost_europa,0.73,sysselsatte_land,prosent
 2014,00,nord_amerika_oseania,0.66,sysselsatte_land,prosent
@@ -3069,7 +3069,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,00,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2014,00,vest_europa,0.71,sysselsatte_land,prosent
 2014,01,afrika,0.34,sysselsatte_land,prosent
-2014,01,alle,0.57,sysselsatte_land,prosent
+2014,01,alle,0.63,sysselsatte_land,prosent
 2014,01,asia,0.48,sysselsatte_land,prosent
 2014,01,eu_ost_europa,0.71,sysselsatte_land,prosent
 2014,01,nord_amerika_oseania,0.62,sysselsatte_land,prosent
@@ -3078,7 +3078,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,01,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2014,01,vest_europa,0.63,sysselsatte_land,prosent
 2014,02,afrika,0.50,sysselsatte_land,prosent
-2014,02,alle,0.67,sysselsatte_land,prosent
+2014,02,alle,0.70,sysselsatte_land,prosent
 2014,02,asia,0.60,sysselsatte_land,prosent
 2014,02,eu_ost_europa,0.71,sysselsatte_land,prosent
 2014,02,nord_amerika_oseania,0.69,sysselsatte_land,prosent
@@ -3087,7 +3087,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,02,sor_og_mellom_amerika,0.66,sysselsatte_land,prosent
 2014,02,vest_europa,0.73,sysselsatte_land,prosent
 2014,03,afrika,0.46,sysselsatte_land,prosent
-2014,03,alle,0.62,sysselsatte_land,prosent
+2014,03,alle,0.70,sysselsatte_land,prosent
 2014,03,asia,0.56,sysselsatte_land,prosent
 2014,03,eu_ost_europa,0.70,sysselsatte_land,prosent
 2014,03,nord_amerika_oseania,0.69,sysselsatte_land,prosent
@@ -3096,7 +3096,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,03,sor_og_mellom_amerika,0.64,sysselsatte_land,prosent
 2014,03,vest_europa,0.71,sysselsatte_land,prosent
 2014,04,afrika,0.29,sysselsatte_land,prosent
-2014,04,alle,0.57,sysselsatte_land,prosent
+2014,04,alle,0.65,sysselsatte_land,prosent
 2014,04,asia,0.50,sysselsatte_land,prosent
 2014,04,eu_ost_europa,0.69,sysselsatte_land,prosent
 2014,04,nord_amerika_oseania,0.60,sysselsatte_land,prosent
@@ -3105,7 +3105,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,04,sor_og_mellom_amerika,0.55,sysselsatte_land,prosent
 2014,04,vest_europa,0.64,sysselsatte_land,prosent
 2014,05,afrika,0.28,sysselsatte_land,prosent
-2014,05,alle,0.59,sysselsatte_land,prosent
+2014,05,alle,0.67,sysselsatte_land,prosent
 2014,05,asia,0.52,sysselsatte_land,prosent
 2014,05,eu_ost_europa,0.72,sysselsatte_land,prosent
 2014,05,nord_amerika_oseania,0.67,sysselsatte_land,prosent
@@ -3114,7 +3114,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,05,sor_og_mellom_amerika,0.62,sysselsatte_land,prosent
 2014,05,vest_europa,0.68,sysselsatte_land,prosent
 2014,06,afrika,0.42,sysselsatte_land,prosent
-2014,06,alle,0.63,sysselsatte_land,prosent
+2014,06,alle,0.68,sysselsatte_land,prosent
 2014,06,asia,0.54,sysselsatte_land,prosent
 2014,06,eu_ost_europa,0.73,sysselsatte_land,prosent
 2014,06,nord_amerika_oseania,0.66,sysselsatte_land,prosent
@@ -3123,7 +3123,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,06,sor_og_mellom_amerika,0.65,sysselsatte_land,prosent
 2014,06,vest_europa,0.72,sysselsatte_land,prosent
 2014,07,afrika,0.39,sysselsatte_land,prosent
-2014,07,alle,0.62,sysselsatte_land,prosent
+2014,07,alle,0.66,sysselsatte_land,prosent
 2014,07,asia,0.53,sysselsatte_land,prosent
 2014,07,eu_ost_europa,0.73,sysselsatte_land,prosent
 2014,07,nord_amerika_oseania,0.62,sysselsatte_land,prosent
@@ -3132,7 +3132,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,07,sor_og_mellom_amerika,0.56,sysselsatte_land,prosent
 2014,07,vest_europa,0.67,sysselsatte_land,prosent
 2014,08,afrika,0.32,sysselsatte_land,prosent
-2014,08,alle,0.55,sysselsatte_land,prosent
+2014,08,alle,0.64,sysselsatte_land,prosent
 2014,08,asia,0.49,sysselsatte_land,prosent
 2014,08,eu_ost_europa,0.68,sysselsatte_land,prosent
 2014,08,nord_amerika_oseania,0.54,sysselsatte_land,prosent
@@ -3141,7 +3141,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,08,sor_og_mellom_amerika,0.58,sysselsatte_land,prosent
 2014,08,vest_europa,0.65,sysselsatte_land,prosent
 2014,09,afrika,0.32,sysselsatte_land,prosent
-2014,09,alle,0.57,sysselsatte_land,prosent
+2014,09,alle,0.65,sysselsatte_land,prosent
 2014,09,asia,0.48,sysselsatte_land,prosent
 2014,09,eu_ost_europa,0.68,sysselsatte_land,prosent
 2014,09,nord_amerika_oseania,0.58,sysselsatte_land,prosent
@@ -3150,7 +3150,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,09,sor_og_mellom_amerika,0.51,sysselsatte_land,prosent
 2014,09,vest_europa,0.67,sysselsatte_land,prosent
 2014,10,afrika,0.34,sysselsatte_land,prosent
-2014,10,alle,0.58,sysselsatte_land,prosent
+2014,10,alle,0.67,sysselsatte_land,prosent
 2014,10,asia,0.49,sysselsatte_land,prosent
 2014,10,eu_ost_europa,0.71,sysselsatte_land,prosent
 2014,10,nord_amerika_oseania,0.59,sysselsatte_land,prosent
@@ -3159,7 +3159,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,10,sor_og_mellom_amerika,0.58,sysselsatte_land,prosent
 2014,10,vest_europa,0.70,sysselsatte_land,prosent
 2014,11,afrika,0.51,sysselsatte_land,prosent
-2014,11,alle,0.69,sysselsatte_land,prosent
+2014,11,alle,0.72,sysselsatte_land,prosent
 2014,11,asia,0.60,sysselsatte_land,prosent
 2014,11,eu_ost_europa,0.78,sysselsatte_land,prosent
 2014,11,nord_amerika_oseania,0.66,sysselsatte_land,prosent
@@ -3168,7 +3168,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,11,sor_og_mellom_amerika,0.65,sysselsatte_land,prosent
 2014,11,vest_europa,0.75,sysselsatte_land,prosent
 2014,12,afrika,0.46,sysselsatte_land,prosent
-2014,12,alle,0.67,sysselsatte_land,prosent
+2014,12,alle,0.71,sysselsatte_land,prosent
 2014,12,asia,0.58,sysselsatte_land,prosent
 2014,12,eu_ost_europa,0.76,sysselsatte_land,prosent
 2014,12,nord_amerika_oseania,0.66,sysselsatte_land,prosent
@@ -3177,7 +3177,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,12,sor_og_mellom_amerika,0.62,sysselsatte_land,prosent
 2014,12,vest_europa,0.70,sysselsatte_land,prosent
 2014,14,afrika,0.29,sysselsatte_land,prosent
-2014,14,alle,0.67,sysselsatte_land,prosent
+2014,14,alle,0.72,sysselsatte_land,prosent
 2014,14,asia,0.58,sysselsatte_land,prosent
 2014,14,eu_ost_europa,0.79,sysselsatte_land,prosent
 2014,14,nord_amerika_oseania,0.67,sysselsatte_land,prosent
@@ -3186,7 +3186,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,14,sor_og_mellom_amerika,0.59,sysselsatte_land,prosent
 2014,14,vest_europa,0.72,sysselsatte_land,prosent
 2014,15,afrika,0.35,sysselsatte_land,prosent
-2014,15,alle,0.68,sysselsatte_land,prosent
+2014,15,alle,0.70,sysselsatte_land,prosent
 2014,15,asia,0.61,sysselsatte_land,prosent
 2014,15,eu_ost_europa,0.76,sysselsatte_land,prosent
 2014,15,nord_amerika_oseania,0.63,sysselsatte_land,prosent
@@ -3195,7 +3195,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,15,sor_og_mellom_amerika,0.63,sysselsatte_land,prosent
 2014,15,vest_europa,0.73,sysselsatte_land,prosent
 2014,16,afrika,0.43,sysselsatte_land,prosent
-2014,16,alle,0.64,sysselsatte_land,prosent
+2014,16,alle,0.69,sysselsatte_land,prosent
 2014,16,asia,0.56,sysselsatte_land,prosent
 2014,16,eu_ost_europa,0.74,sysselsatte_land,prosent
 2014,16,nord_amerika_oseania,0.67,sysselsatte_land,prosent
@@ -3204,7 +3204,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,16,sor_og_mellom_amerika,0.60,sysselsatte_land,prosent
 2014,16,vest_europa,0.69,sysselsatte_land,prosent
 2014,17,afrika,0.30,sysselsatte_land,prosent
-2014,17,alle,0.58,sysselsatte_land,prosent
+2014,17,alle,0.67,sysselsatte_land,prosent
 2014,17,asia,0.53,sysselsatte_land,prosent
 2014,17,eu_ost_europa,0.70,sysselsatte_land,prosent
 2014,17,nord_amerika_oseania,0.61,sysselsatte_land,prosent
@@ -3213,7 +3213,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,17,sor_og_mellom_amerika,0.58,sysselsatte_land,prosent
 2014,17,vest_europa,0.67,sysselsatte_land,prosent
 2014,18,afrika,0.32,sysselsatte_land,prosent
-2014,18,alle,0.61,sysselsatte_land,prosent
+2014,18,alle,0.67,sysselsatte_land,prosent
 2014,18,asia,0.58,sysselsatte_land,prosent
 2014,18,eu_ost_europa,0.74,sysselsatte_land,prosent
 2014,18,nord_amerika_oseania,0.61,sysselsatte_land,prosent
@@ -3222,7 +3222,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,18,sor_og_mellom_amerika,0.64,sysselsatte_land,prosent
 2014,18,vest_europa,0.68,sysselsatte_land,prosent
 2014,19,afrika,0.41,sysselsatte_land,prosent
-2014,19,alle,0.64,sysselsatte_land,prosent
+2014,19,alle,0.68,sysselsatte_land,prosent
 2014,19,asia,0.60,sysselsatte_land,prosent
 2014,19,eu_ost_europa,0.74,sysselsatte_land,prosent
 2014,19,nord_amerika_oseania,0.69,sysselsatte_land,prosent
@@ -3231,7 +3231,7 @@ aar,fylke_nr,vreg_9,tabellvariabel,tabell_navn,enhet
 2014,19,sor_og_mellom_amerika,0.71,sysselsatte_land,prosent
 2014,19,vest_europa,0.70,sysselsatte_land,prosent
 2014,20,afrika,0.40,sysselsatte_land,prosent
-2014,20,alle,0.66,sysselsatte_land,prosent
+2014,20,alle,0.67,sysselsatte_land,prosent
 2014,20,asia,0.61,sysselsatte_land,prosent
 2014,20,eu_ost_europa,0.72,sysselsatte_land,prosent
 2014,20,nord_amerika_oseania,0.66,sysselsatte_land,prosent
