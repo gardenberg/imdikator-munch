@@ -1,0 +1,442 @@
+Nr;kommune_nr;Navn gammel;naringsregion_nr;Region
+101;0101;Halden;01;Halden
+104;0104;Moss;03;Mosseregionen
+105;0105;Sarpsborg;04;Nedre Glomma
+106;0106;Fredrikstad;04;Nedre Glomma
+111;0111;Hvaler;04;Nedre Glomma
+118;0118;Aremark;02;Indre Østfold
+119;0119;Marker;02;Indre Østfold
+121;0121;Rømskog;02;Indre Østfold
+122;0122;Trøgstad;02;Indre Østfold
+123;0123;Spydeberg;02;Indre Østfold
+124;0124;Askim;02;Indre Østfold
+125;0125;Eidsberg;02;Indre Østfold
+127;0127;Skiptvet;02;Indre Østfold
+128;0128;Rakkestad;02;Indre Østfold
+135;0135;Råde;03;Mosseregionen
+136;0136;Rygge;03;Mosseregionen
+137;0137;Våler;03;Mosseregionen
+138;0138;Hobøl;02;Indre Østfold
+211;0211;Vestby;06;Follo
+213;0213;Ski;06;Follo
+214;0214;Ås;06;Follo
+215;0215;Frogn;06;Follo
+216;0216;Nesodden;06;Follo
+217;0217;Oppegård;06;Follo
+219;0219;Bærum;05;Akershus Vest
+220;0220;Asker;05;Akershus Vest
+221;0221;Aurskog Høland;07;Nedre Romerike
+226;0226;Sørum;07;Nedre Romerike
+227;0227;Fet;07;Nedre Romerike
+228;0228;Rælingen;07;Nedre Romerike
+229;0229;Enebakk;06;Follo
+230;0230;Lørenskog;07;Nedre Romerike
+231;0231;Skedsmo;07;Nedre Romerike
+233;0233;Nittedal;07;Nedre Romerike
+234;0234;Gjerdrum;08;Øvre Romerike
+235;0235;Ullensaker;08;Øvre Romerike
+236;0236;Nes;08;Øvre Romerike
+237;0237;Eidsvoll;08;Øvre Romerike
+238;0238;Nannestad;08;Øvre Romerike
+239;0239;Hurdal;08;Øvre Romerike
+301;0301;Oslo;09;Oslo
+402;0402;Kongsvinger;11;Glåmdal
+403;0403;Hamar;12;Hamarregionen
+412;0412;Ringsaker;12;Hamarregionen
+415;0415;Løten;12;Hamarregionen
+417;0417;Stange;12;Hamarregionen
+418;0418;Nord-Odal;11;Glåmdal
+419;0419;Sør-Odal;11;Glåmdal
+420;0420;Eidskog;11;Glåmdal
+423;0423;Grue;11;Glåmdal
+425;0425;Åsnes;11;Glåmdal
+426;0426;Våler;11;Glåmdal
+427;0427;Elverum;13;Sør Østerdal
+428;0428;Trysil;13;Sør Østerdal
+429;0429;Åmot;13;Sør Østerdal
+430;0430;Stor-Elvdal;13;Sør Østerdal
+432;0432;Rendalen;10;Fjellregionen
+434;0434;Engerdal;13;Sør Østerdal
+436;0436;Tolga;10;Fjellregionen
+437;0437;Tynset;10;Fjellregionen
+438;0438;Alvdal;10;Fjellregionen
+439;0439;Folldal;10;Fjellregionen
+441;0441;Os;10;Fjellregionen
+501;0501;Lillehammer;16;Lillehammerregionen
+502;0502;Gjøvik;14;Gjøvikregionen
+511;0511;Dovre;18;Nord-Gudbrandsdal
+512;0512;Lesja;18;Nord-Gudbrandsdal
+513;0513;Skjåk;18;Nord-Gudbrandsdal
+514;0514;Lom;18;Nord-Gudbrandsdal
+515;0515;Vågå;18;Nord-Gudbrandsdal
+516;0516;Nord-Fron;17;Midt-Gudbrandsdal
+517;0517;Sel;18;Nord-Gudbrandsdal
+519;0519;Sør-Fron;17;Midt-Gudbrandsdal
+520;0520;Ringebu;17;Midt-Gudbrandsdal
+521;0521;Øyer;16;Lillehammerregionen
+522;0522;Gausdal;16;Lillehammerregionen
+528;0528;Østre Toten;14;Gjøvikregionen
+529;0529;Vestre Toten;14;Gjøvikregionen
+532;0532;Jevnaker;15;Hadeland
+533;0533;Lunner;15;Hadeland
+534;0534;Gran;15;Hadeland
+536;0536;Søndre Land;14;Gjøvikregionen
+538;0538;Nordre Land;14;Gjøvikregionen
+540;0540;Sør-Aurdal;19;Valdres
+541;0541;Etnedal;19;Valdres
+542;0542;Nord-Aurdal;19;Valdres
+543;0543;Vestre Slidre;19;Valdres
+544;0544;Øystre Slidre;19;Valdres
+545;0545;Vang;19;Valdres
+602;0602;Drammen;20;Drammensregionen
+604;0604;Kongsberg;22;Kongsberg/Numedal
+605;0605;Ringerike;24;Ringerike/Hole
+612;0612;Hole;24;Ringerike/Hole
+615;0615;Flå;21;Hallingdal
+616;0616;Nes;21;Hallingdal
+617;0617;Gol;21;Hallingdal
+618;0618;Hemsedal;21;Hallingdal
+619;0619;Ål;21;Hallingdal
+620;0620;Hol;21;Hallingdal
+621;0621;Sigdal;23;Midt-Buskerud
+622;0622;Krødsherad;23;Midt-Buskerud
+623;0623;Modum;23;Midt-Buskerud
+624;0624;Øvre Eiker;20;Drammensregionen
+625;0625;Nedre Eiker;20;Drammensregionen
+626;0626;Lier;86;Vestviken
+627;0627;Røyken;86;Vestviken
+628;0628;Hurum;86;Vestviken
+631;0631;Flesberg;22;Kongsberg/Numedal
+632;0632;Rollag;22;Kongsberg/Numedal
+633;0633;Nore og Uvdal;22;Kongsberg/Numedal
+701;0701;Horten;25;Tønsbergregionen
+702;0702;Holmestrand;25;Tønsbergregionen
+704;0704;Tønsberg;25;Tønsbergregionen
+706;0706;Sandefjord;26;Sandefjord/Larvik
+709;0709;Larvik;26;Sandefjord/Larvik
+711;0711;Svelvik;20;Drammensregionen
+713;0713;Sande;20;Drammensregionen
+714;0714;Hof;25;Tønsbergregionen
+716;0716;Re;25;Tønsbergregionen
+718;0718;Ramnes;25;Tønsbergregionen
+719;0719;Andebu;25;Tønsbergregionen
+720;0720;Stokke;25;Tønsbergregionen
+722;0722;Nøtterøy;25;Tønsbergregionen
+723;0723;Tjøme;25;Tønsbergregionen
+728;0728;Lardal;26;Sandefjord/Larvik
+805;0805;Porsgrunn;27;Grenland
+806;0806;Skien;27;Grenland
+807;0807;Notodden;29;Øst-Telemark
+811;0811;Siljan;27;Grenland
+814;0814;Bamble;27;Grenland
+815;0815;Kragerø;27;Grenland
+817;0817;Drangedal;27;Grenland
+819;0819;Nome;28;Midt-Telemark
+821;0821;Bø;28;Midt-Telemark
+822;0822;Sauherad;28;Midt-Telemark
+826;0826;Tinn;29;Øst-Telemark
+827;0827;Hjartdal;29;Øst-Telemark
+828;0828;Seljord;30;Vest-Telemark
+829;0829;Kviteseid;30;Vest-Telemark
+830;0830;Nissedal;30;Vest-Telemark
+831;0831;Fyresdal;30;Vest-Telemark
+833;0833;Tokke;30;Vest-Telemark
+834;0834;Vinje;30;Vest-Telemark
+901;0901;Risør;32;Arendalregionen
+904;0904;Grimstad;32;Arendalregionen
+906;0906;Arendal;32;Arendalregionen
+911;0911;Gjerstad;32;Arendalregionen
+912;0912;Vegårshei;32;Arendalregionen
+914;0914;Tvedestrand;32;Arendalregionen
+919;0919;Froland;32;Arendalregionen
+926;0926;Lillesand;35;Kristiansandregionen
+928;0928;Birkenes;35;Kristiansandregionen
+929;0929;Åmli;32;Arendalregionen
+935;0935;Iveland;35;Kristiansandregionen
+937;0937;Evje og Hornnes;31;Setesdal
+938;0938;Bygland;31;Setesdal
+940;0940;Valle;31;Setesdal
+941;0941;Bykle;31;Setesdal
+1001;1001;Kristiansand;35;Kristiansandregionen
+1002;1002;Mandal;34;Mandalsregionen
+1003;1003;Farsund;33;Lister
+1004;1004;Flekkefjord;33;Lister
+1014;1014;Vennesla;35;Kristiansandregionen
+1017;1017;Songdalen;35;Kristiansandregionen
+1018;1018;Søgne;35;Kristiansandregionen
+1021;1021;Marnardal;34;Mandalsregionen
+1026;1026;Åseral;34;Mandalsregionen
+1027;1027;Audnedal;34;Mandalsregionen
+1029;1029;Lindesnes;34;Mandalsregionen
+1032;1032;Lyngdal;33;Lister
+1034;1034;Hægebostad;33;Lister
+1037;1037;Kvinesdal;33;Lister
+1046;1046;Sirdal;33;Lister
+1101;1101;Eigersund;36;Dalane
+1102;1102;Sandnes;39;Stavangerregionen
+1103;1103;Stavanger;39;Stavangerregionen
+1106;1106;Haugesund;37;Haugesundregionen
+1111;1111;Sokndal;36;Dalane
+1112;1112;Lund;36;Dalane
+1114;1114;Bjerkreim;36;Dalane
+1119;1119;Hå;39;Stavangerregionen
+1120;1120;Klepp;39;Stavangerregionen
+1121;1121;Time;39;Stavangerregionen
+1122;1122;Gjesdal;39;Stavangerregionen
+1124;1124;Sola;39;Stavangerregionen
+1127;1127;Randaberg;39;Stavangerregionen
+1129;1129;Forsand;38;Ryfylke
+1130;1130;Strand;38;Ryfylke
+1133;1133;Hjelmeland;38;Ryfylke
+1134;1134;Suldal;38;Ryfylke
+1135;1135;Sauda;37;Haugesundregionen
+1141;1141;Finnøy;38;Ryfylke
+1142;1142;Rennesøy;39;Stavangerregionen
+1144;1144;Kvitsøy;39;Stavangerregionen
+1145;1145;Bokn;37;Haugesundregionen
+1146;1146;Tysvær;37;Haugesundregionen
+1149;1149;Karmøy;37;Haugesundregionen
+1151;1151;Utsira;37;Haugesundregionen
+1154;1154;Vindafjord;37;Haugesundregionen
+1159;1159;Ølen;37;Haugesundregionen
+1160;1160;Vindafjord;37;Haugesundregionen
+1201;1201;Bergen;40;Bergen
+1211;1211;Etne;46;Sunnhordland
+1214;1214;Ølen;37;Haugesundregionen
+1216;1216;Sveio;46;Sunnhordland
+1219;1219;Bømlo;46;Sunnhordland
+1221;1221;Stord;46;Sunnhordland
+1222;1222;Fitjar;46;Sunnhordland
+1223;1223;Tysnes;46;Sunnhordland
+1224;1224;Kvinnherad;46;Sunnhordland
+1227;1227;Jondal;42;Hardanger
+1228;1228;Odda;42;Hardanger
+1231;1231;Ullensvang;42;Hardanger
+1232;1232;Eidfjord;42;Hardanger
+1233;1233;Ulvik;42;Hardanger
+1234;1234;Granvin;42;Hardanger
+1235;1235;Voss;43;Voss
+1238;1238;Kvam;42;Hardanger
+1241;1241;Fusa;41;Bjørnefjorden
+1242;1242;Samnanger;41;Bjørnefjorden
+1243;1243;Os;41;Bjørnefjorden
+1244;1244;Austevoll;46;Sunnhordland
+1245;1245;Sund;47;Hordaland Vest
+1246;1246;Fjell;47;Hordaland Vest
+1247;1247;Askøy;47;Hordaland Vest
+1251;1251;Vaksdal;45;Osterfjorden
+1252;1252;Modalen;45;Osterfjorden
+1253;1253;Osterøy;45;Osterfjorden
+1256;1256;Meland;44;Nordhordland
+1259;1259;Øygarden;47;Hordaland Vest
+1260;1260;Radøy;44;Nordhordland
+1263;1263;Lindås;44;Nordhordland
+1264;1264;Austrheim;44;Nordhordland
+1265;1265;Fedje;44;Nordhordland
+1266;1266;Masfjorden;44;Nordhordland
+1401;1401;Flora;51;Sunnfjord
+1411;1411;Gulen;48;HAFS
+1412;1412;Solund;48;HAFS
+1413;1413;Hyllestad;48;HAFS
+1416;1416;Høyanger;50;Sogn
+1417;1417;Vik;50;Sogn
+1418;1418;Balestrand;50;Sogn
+1419;1419;Leikanger;50;Sogn
+1420;1420;Sogndal;50;Sogn
+1421;1421;Aurland;50;Sogn
+1422;1422;Lærdal;50;Sogn
+1424;1424;Årdal;50;Sogn
+1426;1426;Luster;50;Sogn
+1428;1428;Askvoll;48;HAFS
+1429;1429;Fjaler;48;HAFS
+1430;1430;Gaular;51;Sunnfjord
+1431;1431;Jølster;51;Sunnfjord
+1432;1432;Førde;51;Sunnfjord
+1433;1433;Naustdal;51;Sunnfjord
+1438;1438;Bremanger;49;Nordfjord
+1439;1439;Vågsøy;49;Nordfjord
+1441;1441;Selje;49;Nordfjord
+1443;1443;Eid;49;Nordfjord
+1444;1444;Hornindal;49;Nordfjord
+1445;1445;Gloppen;49;Nordfjord
+1449;1449;Stryn;49;Nordfjord
+1502;1502;Molde;53;Romsdal
+1503;1503;Kristiansund;52;Nordmøre
+1504;1504;Ålesund;56;Ålesundregionen
+1505;1505;Kristiansund;52;Nordmøre
+1511;1511;Vanylven;55;Søre Sunnmøre
+1514;1514;Sande;55;Søre Sunnmøre
+1515;1515;Herøy;55;Søre Sunnmøre
+1516;1516;Ulstein;55;Søre Sunnmøre
+1517;1517;Hareid;55;Søre Sunnmøre
+1519;1519;Volda;55;Søre Sunnmøre
+1520;1520;Ørsta;55;Søre Sunnmøre
+1523;1523;Ørskog;54;Storfjord
+1524;1524;Norddal;54;Storfjord
+1525;1525;Stranda;54;Storfjord
+1526;1526;Stordal;54;Storfjord
+1528;1528;Sykkylven;54;Storfjord
+1529;1529;Skodje;56;Ålesundregionen
+1531;1531;Sula;56;Ålesundregionen
+1532;1532;Giske;56;Ålesundregionen
+1534;1534;Haram;56;Ålesundregionen
+1535;1535;Vestnes;53;Romsdal
+1539;1539;Rauma;53;Romsdal
+1543;1543;Nesset;53;Romsdal
+1545;1545;Midsund;53;Romsdal
+1546;1546;Sandøy;56;Ålesundregionen
+1547;1547;Aukra;53;Romsdal
+1548;1548;Fræna;53;Romsdal
+1551;1551;Eide;52;Nordmøre
+1554;1554;Averøy;52;Nordmøre
+1556;1556;Frei;52;Nordmøre
+1557;1557;Gjemnes;52;Nordmøre
+1560;1560;Tingvoll;52;Nordmøre
+1563;1563;Sunndal;52;Nordmøre
+1566;1566;Surnadal;52;Nordmøre
+1567;1567;Rindal;52;Nordmøre
+1569;1569;Aure;52;Nordmøre
+1571;1571;Halsa;52;Nordmøre
+1572;1572;Tustna;52;Nordmøre
+1573;1573;Smøla;52;Nordmøre
+1576;1576;Aure;52;Nordmøre
+1601;1601;Trondheim;61;Trondheimsregionen
+1612;1612;Hemne;60;Orkdalregionen
+1613;1613;Snillfjord;60;Orkdalregionen
+1617;1617;Hitra;58;Hitra/Frøya
+1620;1620;Frøya;58;Hitra/Frøya
+1621;1621;Ørland;57;Fosen
+1622;1622;Agdenes;60;Orkdalregionen
+1624;1624;Rissa;57;Fosen
+1627;1627;Bjugn;57;Fosen
+1630;1630;Åfjord;57;Fosen
+1632;1632;Roan;57;Fosen
+1633;1633;Osen;57;Fosen
+1634;1634;Oppdal;59;Oppdal/Rennebu
+1635;1635;Rennebu;59;Oppdal/Rennebu
+1636;1636;Meldal;60;Orkdalregionen
+1638;1638;Orkdal;60;Orkdalregionen
+1640;1640;Røros;62;Rørosregionen
+1644;1644;Holtålen;62;Rørosregionen
+1648;1648;Midtre Gauldal;61;Trondheimsregionen
+1653;1653;Melhus;61;Trondheimsregionen
+1657;1657;Skaun;61;Trondheimsregionen
+1662;1662;Klæbu;61;Trondheimsregionen
+1663;1663;Malvik;61;Trondheimsregionen
+1664;1664;Selbu;61;Trondheimsregionen
+1665;1665;Tydal;62;Rørosregionen
+1702;1702;Steinkjer;64;Innherred
+1703;1703;Namsos;67;Midtre Namdal
+1711;1711;Meråker;63;Stjørdalsregionen
+1714;1714;Stjørdal;63;Stjørdalsregionen
+1717;1717;Frosta;63;Stjørdalsregionen
+1718;1718;Leksvik;57;Fosen
+1719;1719;Levanger;64;Innherred
+1721;1721;Verdal;64;Innherred
+1723;1723;Mosvik;64;Innherred
+1724;1724;Verran;64;Innherred
+1725;1725;Namdalseid;67;Midtre Namdal
+1729;1729;Inderøy;64;Innherred
+1736;1736;Snåsa;65;Indre Namdal
+1738;1738;Lierne;65;Indre Namdal
+1739;1739;Røyrvik;65;Indre Namdal
+1740;1740;Namsskogan;65;Indre Namdal
+1742;1742;Grong;65;Indre Namdal
+1743;1743;Høylandet;65;Indre Namdal
+1744;1744;Overhalla;67;Midtre Namdal
+1748;1748;Fosnes;67;Midtre Namdal
+1749;1749;Flatanger;67;Midtre Namdal
+1750;1750;Vikna;66;Kystgruppen
+1751;1751;Nærøy;66;Kystgruppen
+1755;1755;Leka;66;Kystgruppen
+1756;1756;Inderøy;64;Innherred
+1804;1804;Bodø;73;Salten
+1805;1805;Narvik;74;Ofoten
+1811;1811;Bindal;68;Sør-Helgeland
+1812;1812;Sømna;68;Sør-Helgeland
+1813;1813;Brønnøy;68;Sør-Helgeland
+1815;1815;Vega;68;Sør-Helgeland
+1816;1816;Vevelstad;68;Sør-Helgeland
+1818;1818;Herøy;69;HALD
+1820;1820;Alstahaug;69;HALD
+1822;1822;Leirfjord;69;HALD
+1824;1824;Vefsn;71;Mosjøregionen
+1825;1825;Grane;71;Mosjøregionen
+1826;1826;Hattfjelldal;71;Mosjøregionen
+1827;1827;Dønna;69;HALD
+1828;1828;Nesna;72;Ranaregionen
+1832;1832;Hemnes;72;Ranaregionen
+1833;1833;Rana;72;Ranaregionen
+1834;1834;Lurøy;70;Ytre Helgeland
+1835;1835;Træna;70;Ytre Helgeland
+1836;1836;Rødøy;70;Ytre Helgeland
+1837;1837;Meløy;73;Salten
+1838;1838;Gildeskål;73;Salten
+1839;1839;Beiarn;73;Salten
+1840;1840;Saltdal;73;Salten
+1841;1841;Fauske;73;Salten
+1842;1842;Skjerstad;73;Salten
+1845;1845;Sørfold;73;Salten
+1848;1848;Steigen;73;Salten
+1849;1849;Hamarøy;73;Salten
+1850;1850;Tysfjord;74;Ofoten
+1851;1851;Lødingen;76;Vesterålen
+1852;1852;Tjeldsund;74;Ofoten
+1853;1853;Evenes;74;Ofoten
+1854;1854;Ballangen;74;Ofoten
+1856;1856;Røst;75;Lofoten
+1857;1857;Værøy;75;Lofoten
+1859;1859;Flakstad;75;Lofoten
+1860;1860;Vestvågøy;75;Lofoten
+1865;1865;Vågan;75;Lofoten
+1866;1866;Hadsel;76;Vesterålen
+1867;1867;Bø;76;Vesterålen
+1868;1868;Øksnes;76;Vesterålen
+1870;1870;Sortland;76;Vesterålen
+1871;1871;Andøy;76;Vesterålen
+1874;1874;Moskenes;75;Lofoten
+1901;1901;Harstad;77;Sør-Troms
+1902;1902;Tromsø;79;Tromsøregionen
+1903;1903;Harstad;77;Sør-Troms
+1911;1911;Kvæfjord;77;Sør-Troms
+1913;1913;Skånland;77;Sør-Troms
+1915;1915;Bjarkøy;77;Sør-Troms
+1917;1917;Ibestad;77;Sør-Troms
+1919;1919;Gratangen;77;Sør-Troms
+1920;1920;Lavangen;77;Sør-Troms
+1922;1922;Bardu;78;Midt-Troms
+1923;1923;Salangen;77;Sør-Troms
+1924;1924;Målselv;78;Midt-Troms
+1925;1925;Sørreisa;78;Midt-Troms
+1926;1926;Dyrøy;78;Midt-Troms
+1927;1927;Tranøy;78;Midt-Troms
+1928;1928;Torsken;78;Midt-Troms
+1929;1929;Berg;78;Midt-Troms
+1931;1931;Lenvik;78;Midt-Troms
+1933;1933;Balsfjord;79;Tromsøregionen
+1936;1936;Karlsøy;79;Tromsøregionen
+1938;1938;Lyngen;80;Nord-Troms
+1939;1939;Storfjord;80;Nord-Troms
+1940;1940;Kåfjord;80;Nord-Troms
+1941;1941;Skjervøy;80;Nord-Troms
+1942;1942;Nordreisa;80;Nord-Troms
+1943;1943;Kvænangen;80;Nord-Troms
+2002;2002;Vardø;83;Øst-Finnmark
+2003;2003;Vadsø;83;Øst-Finnmark
+2004;2004;Hammerfest;81;Vest-Finnmark
+2011;2011;Kautokeino;82;Midt-Finnmark
+2012;2012;Alta;81;Vest-Finnmark
+2014;2014;Loppa;81;Vest-Finnmark
+2015;2015;Hasvik;81;Vest-Finnmark
+2017;2017;Kvalsund;81;Vest-Finnmark
+2018;2018;Måsøy;81;Vest-Finnmark
+2019;2019;Nordkapp;81;Vest-Finnmark
+2020;2020;Porsanger;82;Midt-Finnmark
+2021;2021;Karasjok;82;Midt-Finnmark
+2022;2022;Lebesby;82;Midt-Finnmark
+2023;2023;Gamvik;83;Øst-Finnmark
+2024;2024;Berlevåg;83;Øst-Finnmark
+2025;2025;Tana;82;Midt-Finnmark
+2027;2027;Nesseby;83;Øst-Finnmark
+2028;2028;Båtsfjord;83;Øst-Finnmark
+2030;2030;Sør-Varanger;83;Øst-Finnmark
